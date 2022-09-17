@@ -1,0 +1,140 @@
+@import 'styles/_shared.scss';
+
+.SpotlightGrid {
+  width: 100%;
+  z-index: 1;
+  @include flex(column);
+
+  overflow: scroll;
+
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* Chrome and other webkit */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    color: $TEXT_COLOR;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    @include flex(row, flex-start, stretch);
+
+    &--loading {
+      display: none;
+    }
+  }
+
+  &__header {
+    width: 100%;
+  }
+
+  &__main {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  &__content {
+    display: table;
+    width: 100%;
+    padding: $SMALL_SPACING;
+
+    > :last-child {
+      @-moz-document url-prefix() {
+        margin-bottom: $SMALL_SPACING;
+      }
+    }
+
+    &--header {
+      display: flex;
+      padding-top: 22px;
+      padding-bottom: 22px;
+
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: $TEXT_COLOR;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+      }
+
+      .prev-chart {
+        margin-left: 1em;
+        .ct-chart {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__chart {
+    border: 1px solid $PALE_GREY;
+    border-radius: 4px;
+    padding: 1.5 * $SMALL_SPACING $SMALL_SPACING $SMALL_SPACING 0;
+    margin-bottom: 2 * $SMALL_SPACING;
+  }
+
+  // to leave some space between the chart and the export button below
+  .Table {
+    position: relative;
+  }
+
+  &__anonymous {
+    margin: 2 * $SMALL_SPACING auto;
+    font-style: italic;
+    color: $TEXT_COLOR_SECONDARY;
+  }
+
+  &__tabbox {
+    margin-top: 1em;
+  }
+
+  &__tab {
+    min-width: $TABITEM_WIDTH;
+
+    &-external-selected {
+      &::before {
+        background-color: $TOMATO;
+      }
+    }
+  }
+}
+
+.ConfirmPhraseModalContent {
+  &__infobox {
+    border: 1px dashed $BORDER_COLOR;
+    padding: $SMALL_SPACING;
+    max-width: 450px;
+    margin: $SMALL_SPACING auto;
+    text-align: left;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-desc {
+      margin-top: $BASE_SPACING;
+      color: $HELPER_TEXT_COLOR;
+      font-size: 11px;
+    }
+
+    &-img {
+      margin-left: $SMALL_SPACING;
+    }
+  }
+
+  .ModalIcon {
+    text-align: center;
+    margin-bottom: 22px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

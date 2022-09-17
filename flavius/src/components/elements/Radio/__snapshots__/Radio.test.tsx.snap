@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio renders correctly 1`] = `
+<div>
+  <div
+    class="Radio Radio--custom"
+  >
+    <label
+      class="Radio__label Radio__label--right"
+    >
+      <input
+        checked=""
+        name="select-it"
+        type="radio"
+        value=""
+      />
+      <i
+        class="Radio__helper"
+      />
+      <span
+        class="Radio__label-text"
+      >
+        Select it
+      </span>
+    </label>
+  </div>
+</div>
+`;

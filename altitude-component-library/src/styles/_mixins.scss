@@ -1,0 +1,148 @@
+@import './_skeleton.scss';
+
+@mixin icon {
+  $width: 18px;
+
+  display: inline-block;
+  width: $width;
+  height: $width;
+  padding: 0;
+  margin: 8px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+@mixin clear-button-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@mixin vertical-separator {
+  color: $PALE_GREY_LIGHT;
+  margin: 0 $BASE_SPACING;
+  font-size: 22px;
+}
+
+@mixin brand-link {
+  color: $TEXT_COLOR;
+
+  &:hover {
+    color: $AZURE;
+    text-decoration: none;
+  }
+}
+
+@mixin card($margin: $BASE_SPACING) {
+  border: 1px solid $PALE_GREY_LIGHT;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: $margin;
+}
+
+@mixin card-label {
+  color: rgba($NAVY_BLUE, 0.5);
+  background-color: $PALE_GREY_LIGHTEST;
+  text-align: center;
+
+  padding: 12px 18px;
+  height: 55px;
+
+  // center alignment both vertically and horizontally
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin gradient-mask-bottom {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.1) 95%);
+}
+
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin absolute-full-size {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// iPad Pro 11 inch
+@mixin ipad {
+  @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+// Mixin that ought to be used to set the font family and optionally the size
+@mixin set-typography($variant, $weight: 'normal') {
+  font-weight: map-get($FONT_WEIGHTS, $weight);
+  font-size: map-get($FONT_SIZES, $variant);
+  line-height: map-get($LINE_HEIGHTS, $variant);
+}
+
+@mixin set-font-weight($weight: 'normal') {
+  font-weight: map-get($FONT_WEIGHTS, $weight);
+}
+
+$SKELETON_HEIGHT: 380px;
+
+@mixin list-skeleton-loading() {
+  animation: shine-list 1000ms infinite ease-in;
+  height: $SKELETON_HEIGHT;
+}
+
+@mixin list-skeleton() {
+  $shapes: lines(
+    6,
+    $PALE_GREY_LIGHTER,
+    $PALE_GREY_LIGHTER,
+    $PALE_GREY_LIGHTER,
+    100%,
+    100%,
+    100%,
+    100%,
+    52px,
+    10px,
+    right,
+    32px,
+    10%
+  );
+  @include skeleton($shapes...);
+  height: $SKELETON_HEIGHT;
+}
+
+@keyframes shine-list {
+  @for $i from 0 through 40 {
+    $percent: $i * 2.5%;
+    #{$percent} {
+      $shapes: lines(
+        6,
+        $PALE_GREY_LIGHTER,
+        #ffffff,
+        $PALE_GREY_LIGHTER,
+        $percent,
+        $percent + 5%,
+        $percent + 10%,
+        100%,
+        52px,
+        10px,
+        right,
+        32px,
+        10%
+      );
+      @include skeleton($shapes...);
+    }
+  }
+}

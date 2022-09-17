@@ -1,0 +1,57 @@
+@import 'styles/_shared.scss';
+
+.DashboardRiskTile {
+  border-radius: 6px;
+  border: solid 1px $PALE_GREY;
+  min-height: 0;
+  height: 100%;
+  flex: 1 1 0;
+  padding: $SMALL_SPACING;
+  @include flex(column, space-between, stretch);
+
+  a {
+    text-decoration: none;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 5px;
+    background-color: $PALE_GREY_LIGHTEST;
+    display: flex;
+    width: 100%;
+    min-height: 0;
+    padding: $SMALL_SPACING / 2 $SMALL_SPACING;
+    flex: 1;
+    margin-top: $BASE_SPACING;
+    @include flex(row, center, center);
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: $LIGHT_BLUE;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__title {
+    border-bottom: solid 1px $PALE_GREY;
+    padding-bottom: 17px;
+    margin-bottom: 19px;
+    font-weight: 900;
+  }
+
+  &__label {
+    color: $LIGHT_GREY;
+    max-width: 60%;
+    @include flex(column, center, center);
+  }
+
+  &__count {
+    color: $DARK_GREY_BLUE;
+    font-weight: 600;
+    margin-right: $SMALL_SPACING / 2;
+  }
+}

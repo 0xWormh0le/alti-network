@@ -1,0 +1,29 @@
+@import 'styles/_shared.scss';
+
+.App {
+  min-height: 100%;
+  height: auto;
+
+  @include flex(column, space-between);
+
+  padding: 0;
+
+  &__wrapper {
+    background-color: $DARK;
+    width: 100%;
+
+    @include flex(row, flex-start, stretch);
+    flex: 1 1 100%;
+  }
+
+  &__main {
+    flex: 1 1 100%;
+    margin-top: $STANDARD_BAR_HEIGHT + 1;
+    margin-left: 0;
+    background-color: white;
+
+    &--authenticated {
+      margin-left: $MIN_SIDEBAR_WIDTH;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../styles/_shared.scss';
+
+.Typography {
+  &--h1 {
+    @include set-typography('H1', 'semibold');
+  }
+
+  &--h2 {
+    @include set-typography('H2', 'light');
+  }
+
+  &--h3 {
+    @include set-typography('H3', 'normal');
+  }
+
+  &--h4 {
+    @include set-typography('H4', 'semibold');
+  }
+
+  &--subhead1 {
+    @include set-typography('SUBHEAD1', 'bold');
+  }
+
+  &--subhead2 {
+    @include set-typography('SUBHEAD2', 'light');
+  }
+
+  &--body {
+    @include set-typography('BODY', 'normal');
+  }
+
+  &--body-large {
+    @include set-typography('BODY_LARGE', 'normal');
+  }
+
+  &--body-small {
+    @include set-typography('BODY_SMALL', 'normal');
+  }
+
+  &--body-tiny {
+    @include set-typography('BODY_TINY', 'normal');
+  }
+
+  &--label {
+    @include set-typography('LABEL', 'bold');
+  }
+
+  &--label-large {
+    @include set-typography('LABEL_LARGE', 'bold');
+  }
+
+  &--bold {
+    @include set-font-weight('bold');
+  }
+
+  &--semibold {
+    @include set-font-weight('semibold');
+  }
+
+  &--medium {
+    @include set-font-weight('medium');
+  }
+
+  &--normal {
+    @include set-font-weight('normal');
+  }
+
+  &--light {
+    @include set-font-weight('light');
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

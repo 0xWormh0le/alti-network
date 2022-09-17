@@ -1,0 +1,113 @@
+@import 'styles/_shared.scss';
+
+$TABITEM_WIDTH: 15em;
+$TABITEM_HEIGHT: 10em;
+
+.AppSpotlightGridTabItem {
+  padding-top: $BASE_SPACING;
+  width: $TABITEM_WIDTH;
+  height: $TABITEM_HEIGHT;
+  cursor: pointer;
+
+  &--title {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 21px;
+    text-align: center;
+    color: $TEXT_COLOR;
+  }
+
+  &--content {
+    padding-left: 34px;
+    padding-top: 15px;
+    @include flex(row-reverse, center, flex-start);
+  }
+
+  &--chart {
+    padding-top: 15px;
+  }
+
+  &--details {
+    font-family: LatoLatin;
+    font-size: 10px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    color: $PAGINATION_SIDE_TEXT_COLOR;
+    padding-right: 16px;
+    padding-left: 10px;
+    min-width: 90px;
+    white-space: nowrap;
+
+    ul {
+      list-style: none; /* Remove default bullets */
+      padding-inline-start: 10px;
+
+      li span {
+        font-weight: 400;
+      }
+
+      li::before {
+        content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+
+      li.Severe1::before {
+        color: $SEVEREITY1_BG;
+      }
+      li.Severe2::before {
+        color: $SEVEREITY2_BG;
+      }
+      li.Severe3::before {
+        color: $SEVEREITY3_BG;
+      }
+      li.Severe4::before {
+        color: $SEVEREITY4_BG;
+      }
+      li.Severe5::before {
+        color: $SEVEREITY5_BG;
+      }
+    }
+  }
+}
+
+.SideNavNumberLoading {
+  width: 32px;
+  min-width: 32px;
+}
+
+.AppSpotlightTabLoading {
+  display: flex;
+  box-shadow: inset 0 0 2px 0 rgba(19, 70, 108, 0.25);
+
+  &__item {
+    overflow: hidden;
+    min-width: $TABITEM_WIDTH;
+    width: $TABITEM_WIDTH;
+    height: $TABITEM_HEIGHT;
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    min-width: $TABITEM_WIDTH * 2;
+    width: $TABITEM_WIDTH * 2;
+    height: $TABITEM_HEIGHT;
+    box-shadow: inset 3px 3px 2px -3px rgba(19, 70, 108, 0.25), inset 0 -3px 2px -3px rgba(19, 70, 108, 0.25);
+
+    &.left {
+      left: 0;
+    }
+
+    &.right {
+      right: 0;
+    }
+  }
+}

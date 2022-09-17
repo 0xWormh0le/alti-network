@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSpotlightGridNav renders correctly 1`] = `
+<div>
+  <div
+    class="AppSpotlightGridTabItem"
+  >
+    <div
+      class="AppSpotlightGridTabItem--title"
+    >
+      Authorized By
+    </div>
+    <div
+      class="AppSpotlightGridTabItem--content"
+    >
+      <div
+        class="AppSpotlightGridTabItem--details"
+      >
+        of 100 total users
+      </div>
+      <div
+        class="AppSpotlightGridTabItem--chart"
+      >
+        <div
+          class="DonutChart DonutChart__auth"
+        >
+          <div
+            class="ct-chart "
+          />
+          <div
+            class="DonutChart__body"
+          >
+            <div
+              class="DonutChart__body--title"
+            >
+              90%
+            </div>
+            <div
+              class="DonutChart__body--subtitle"
+            >
+              of Users
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

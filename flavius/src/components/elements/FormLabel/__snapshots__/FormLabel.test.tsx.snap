@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormLabel renders correctly 1`] = `
+<div>
+  <label
+    class="FormLabel"
+    for="name"
+  >
+    Name
+  </label>
+</div>
+`;

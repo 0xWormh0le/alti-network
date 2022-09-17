@@ -1,0 +1,20 @@
+{
+    "body": {
+        "altimeterMethod": "identify",
+        "eventName": "test",
+        "userId": "testing_user",
+        "newUserId": "new_testing_user",
+        "metadata": {
+            "testing": "testing"
+        }
+    },
+    "requestContext": {
+        "authorizer": {
+            "project_id": "thoughtlabs"
+        },
+        "identity": {
+            "sourceIp": "0.0.0.0",
+            "userAgent": "test"
+        }
+    }
+}

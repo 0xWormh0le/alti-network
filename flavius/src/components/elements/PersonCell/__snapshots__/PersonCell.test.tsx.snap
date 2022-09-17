@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonCell renders correctly 1`] = `
+<div>
+  <div
+    class="PersonCell"
+  >
+    <a
+      class="PersonCell__link"
+      href="/dashboard/spotlight/joe%40thoughtlabs.io"
+    >
+      <div
+        class="PersonCell__email"
+      >
+        <span
+          class="trigger"
+        >
+          joe@thoughtlabs.i...
+        </span>
+        <span
+          class="Typography Typography--body PersonCell__email-ext trigger Marker Marker__ext"
+        >
+          EXT
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+`;

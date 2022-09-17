@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviewChart renders correctly 1`] = `
+<div>
+  <div
+    class="PreviewChartWrapper"
+  >
+    <div
+      class="hot-point hidden blue"
+    />
+    <div
+      class="ct-chart PreviewChart ct-double-octave blue"
+    />
+    <div
+      class="PreviewChartState"
+    />
+  </div>
+</div>
+`;

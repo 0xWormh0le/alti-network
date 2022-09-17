@@ -1,0 +1,7 @@
+@import 'styles/_shared.scss';
+
+.DashboardGrid {
+  &__main {
+    @include flex(row, flex-start, stretch);
+  }
+}

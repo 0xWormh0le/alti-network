@@ -1,0 +1,31 @@
+type: lambda
+runtime: python3.7
+function_name: altitude-{{ENV}}-lambda-delete-permissions-orch-{{SUFFIX}}
+handler: services.delete_permissions_orch.delete_permissions_orch_handler.main_handler
+iam_role: arn:aws:iam::{{AWS_ACCOUNT}}:role/altitude-{{ENV}}-lambda-execution-frontend-role
+description: External API service to orchestrate permission deletion from Google API
+use_vpc: True
+memory_size: 1728
+timeout: &timeout 900
+tracing_config_mode: Active
+notification_email: devops@altitudenetworks.com
+log_group_subscriptions:
+  - filter_name: log-dna
+    destination_arn: {{ENV_CONFIG.logdna_destination_arn}}
+environment:
+  {% set DEBUG_MODE = "true" if ENV == "dev" else "false" %}
+  DEBUG_MODE: '{{DEBUG_MODE}}'
+triggers:
+  {% for PROJECT_CONFIG in PROJECT_CONFIGS %}
+  - type: sqs
+    name: {{PROJECT_CONFIG.project_name}}-{{ENV}}-delete-permissions-orch-{{SUFFIX}}
+    max_message_size: 262144
+    message_retention_period: 1209600
+    visibility_timeout: *timeout
+    kms_key_id: {{PROJECT_CONFIG.kms_key_id}}
+    dlq:
+      name: {{PROJECT_CONFIG.project_name}}-{{ENV}}-delete-permissions-orch-{{SUFFIX}}-dlq
+      max_receive_count: 1
+    tags:
+      Project: {{PROJECT_CONFIG.project_name}}
+  {% endfor %}

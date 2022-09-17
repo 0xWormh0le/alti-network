@@ -1,0 +1,8 @@
+.PersonAvatar {
+  display: flex;
+  align-items: center;
+
+  &__clickable {
+    cursor: pointer;
+  }
+}

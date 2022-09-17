@@ -1,0 +1,20 @@
+// Import styles from component library, temporarily, once we have all components migrated to the library, all individual imports will be replaced by single file
+@import '~@altitudenetworks/component-library/dist/scss/components/base/BaseAvatar.scss';
+@import '~@altitudenetworks/component-library/dist/scss/components/elements/Accordion.scss';
+@import '~@altitudenetworks/component-library/dist/scss/components/elements/Tab.scss';
+@import '~@altitudenetworks/component-library/dist/scss/components/elements/ModernTable.scss';
+@import '~@altitudenetworks/component-library/dist/scss/components/elements/ErrorBox.scss';
+@import 'styles/library-overrides';
+
+// Global styles and variables
+@import 'styles/global.scss';
+
+// react-s-alert library styles
+@import '~react-s-alert/dist/s-alert-default.css';
+@import '~react-s-alert/dist/s-alert-css-effects/jelly.css';
+
+// Chartist library styles
+@import '~chartist/dist/scss/chartist.scss';
+
+// react-router-modal styles
+@import '~react-router-modal/css/react-router-modal.css';

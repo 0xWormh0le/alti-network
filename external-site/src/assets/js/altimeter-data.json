@@ -1,0 +1,140 @@
+{
+  "signup_with_email_header": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Sign Up",
+    "metadata": {
+      "signupMethod": "Email",
+      "signUpLocation": "header"
+    }
+  },
+  "signup_with_email_top": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Sign Up",
+    "metadata": {
+      "signupMethod": "Email",
+      "signUpLocation": "top"
+    }
+  },
+  "signup_with_email_bottom": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Sign Up",
+    "metadata": {
+      "signupMethod": "Email",
+      "signUpLocation": "bottom"
+    }
+  },
+  "signup_with_email_modal": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Sign Up",
+    "metadata": {
+      "signupMethod": "Email",
+      "signUpLocation": "modal"
+    }
+  },
+  "newsletter_subscribe": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Subscribed to Michaels Newsletter",
+    "metadata": {
+      "signupMethod": "Email",
+      "signUpLocation": "bottom"
+    }
+  },
+  "signup_with_google_top": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Sign Up",
+    "metadata": {
+      "signupMethod": "Google",
+      "signUpLocation": "top"
+    }
+  },
+  "signup_with_google_bottom": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Sign Up",
+    "metadata": {
+      "signupMethod": "Google",
+      "signUpLocation": "bottom"
+    }
+  },
+  "schedule_demo": {
+    "altimeterMethod": "track",
+    "eventName": "Scheduled Demo"
+  },
+  "explore_demo": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked \"explore demo\""
+  },
+  "resolution_tab": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked \"Resolution Tab\""
+  },
+  "problem_button_1": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked \"Problem button\"",
+    "metadata": {
+      "sectionNumber": 1
+    }
+  },
+  "problem_button_2": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked \"Problem button\"",
+    "metadata": {
+      "sectionNumber": 2
+    }
+  },
+  "problem_button_3": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked \"Problem button\"",
+    "metadata": {
+      "sectionNumber": 3
+    }
+  },
+  "get_a_demo_cta_top": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Get A Demo",
+    "metadata": {
+      "location": "top"
+    }
+  },
+  "get_a_demo_cta_bottom": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Get A Demo",
+    "metadata": {
+      "location": "bottom"
+    }
+  },
+  "offboarding_cta_top": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Offboarding Get Started",
+    "metadata": {
+      "location": "top"
+    }
+  },
+  "offboarding_cta_bottom": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Offboarding Get Started",
+    "metadata": {
+      "location": "bottom"
+    }
+  },
+  "welcome_cta_top": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked a CTA button",
+    "metadata": {
+      "location": "top"
+    }
+  },
+  "welcome_cta_bottom": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked a CTA button",
+    "metadata": {
+      "location": "bottom"
+    }
+  },
+  "investor_blog_post_banner_cta": {
+    "altimeterMethod": "track",
+    "eventName": "Clicked Blog Banner CTA button",
+    "metadata": {
+      "postTitle": "An Investor's Perspective for Cloud-Native DLP"
+    }
+  }
+}

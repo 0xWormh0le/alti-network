@@ -1,0 +1,52 @@
+{% extends '../layouts/layout.njk' %}
+
+{% block scripts %}
+<script type="text/javascript">
+(function ($) {
+    $(document).ready(function () {
+      $('#featured-section').load('/resources/partials/featured.html');
+    });
+})(jQuery);
+</script>
+{% endblock %}
+
+<link rel="stylesheet" href="/path/to/styles/default.css">
+{% block body %}
+<a class='resources__back-link' href='/resources'><img src="/images/arrow-left.svg"> All Resources</a>
+<div class='resources__wrapper'>
+  <h1 class='post-title'>{{ title }}</h1>
+  <div class='author-header'>Webcast and Podcast  |  {{ author }}, {{ prettyDate }}</div>
+  {% if video %}
+  <div class='resources__vimeo-embed'>
+    <iframe src="{{ video }}" width="90%" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+  {% endif %}
+  {{ body | decode | safe }}
+  <h3>Read, Listen, and Subscribe to the Podcast</h3>
+  <div class='podcast-links'>
+    <a href="https://podcasts.apple.com/us/podcast/ciso-to-ciso-cybersecurity-talk/id1525931953" rel='noopener'>
+      <img src='/images/podcast-links/apple.svg'>
+    </a>
+    <a href="https://www.breaker.audio/ciso-to-ciso-cybersecurity-talk" rel='noopener'>
+      <img src='/images/podcast-links/breaker.svg'>
+    </a>
+    <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8yODBlNzY5NC9wb2RjYXN0L3Jzcw==" rel='noopener'>
+      <img src='/images/podcast-links/google.svg'>
+    </a>
+    <a href="https://overcast.fm/itunes1525931953/ciso-to-ciso-cybersecurity-talk" rel='noopener'>
+      <img src='/images/podcast-links/overcast.svg'>
+    </a>
+    <a href="https://pca.st/leffff6q" rel='noopener'>
+      <img src='/images/podcast-links/pocket.png'>
+    </a>
+    <a href="https://radiopublic.com/ciso-to-ciso-cybersecurity-talk-G7RZk4" rel='noopener'>
+      <img src='/images/podcast-links/radiopublic.svg'>
+    </a>
+    <a href="https://open.spotify.com/show/6NxIr42rgnGXayn9jPq54h" rel='noopener'>
+      <img src='/images/podcast-links/spotify.svg'>
+    </a>
+  </div>
+  {{ transcript | decode | safe }}
+</div>
+<div id='featured-section'></div>
+{% endblock %}

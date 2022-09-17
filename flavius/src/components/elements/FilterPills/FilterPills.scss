@@ -1,0 +1,38 @@
+@import 'styles/_shared.scss';
+
+.FilterPills {
+  max-width: 600px;
+  margin-bottom: 10px;
+
+  &__title {
+    color: $TEXT_COLOR;
+    padding-right: 10px;
+  }
+
+  &__pill {
+    height: 25px;
+    @include flex(row, center, center);
+    display: inline-flex;
+    border-radius: 3px;
+    color: $BLUE_GREY_MEDIUM;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    user-select: none;
+    opacity: 0.7;
+    background-color: $PALE_GREY_LIGHTER;
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    &-remove {
+      padding: 1px 10px 1px 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: $DUSK_BLUE;
+      }
+    }
+  }
+}

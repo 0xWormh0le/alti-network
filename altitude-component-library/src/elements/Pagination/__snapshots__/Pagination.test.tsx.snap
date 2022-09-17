@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders correctly 1`] = `
+<div>
+  <div
+    class="Pagination"
+  >
+    <div
+      class="Pagination__group"
+    >
+      <div
+        aria-label="prev"
+        class="PaginationItem PaginationItem--arrow"
+      >
+        <button
+          class="Typography Typography--body-tiny PaginationItem__link"
+        >
+          <svg
+            class="Pagination__arrow"
+            height="20"
+            viewBox="0 0 20 20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              fill="currentColor"
+              points="5,10 15,1 15,19"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        aria-label="1"
+        class="PaginationItem PaginationItem--number"
+      >
+        <button
+          class="Typography Typography--body-tiny PaginationItem__link"
+        >
+          1
+        </button>
+      </div>
+      <div
+        aria-label="2"
+        class="PaginationItem PaginationItem--number"
+      >
+        <button
+          class="Typography Typography--body-tiny PaginationItem__link"
+        >
+          2
+        </button>
+      </div>
+      <div
+        aria-label="3"
+        class="PaginationItem PaginationItem--number"
+      >
+        <button
+          class="Typography Typography--body-tiny PaginationItem__link"
+        >
+          3
+        </button>
+      </div>
+      <div
+        aria-label="next"
+        class="PaginationItem PaginationItem--arrow"
+      >
+        <button
+          class="Typography Typography--body-tiny PaginationItem__link"
+        >
+          <svg
+            class="Pagination__arrow"
+            height="20"
+            viewBox="0 0 20 20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              fill="currentColor"
+              points="15,10 5,1 5,19"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

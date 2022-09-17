@@ -1,0 +1,59 @@
+@import '../../../styles/_variables.scss';
+
+.AppSpotlightGrantContainer {
+  margin-top: -33px;
+  padding: 26px 32px 0 32px;
+  width: calc(100% - 245px);
+
+  &__top-bar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 17px;
+  }
+
+  &__bottom {
+    position: relative;
+    height: 84px;
+    overflow-y: scroll;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      overflow-y: visible;
+      outline-color: white;
+
+      .AppSpotlightAppScopes {
+        padding-left: 33px;
+        padding-right: 33px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        box-shadow: 0 3px 15px 0 #e1e2e5;
+      }
+    }
+
+    &:focus > &--close {
+      display: block;
+      cursor: pointer;
+    }
+
+    &--close {
+      position: absolute;
+      z-index: 11;
+      right: 14px;
+      top: 14px;
+      width: 10px;
+      height: 10px;
+      display: none;
+    }
+  }
+
+  &--error {
+    text-align: center;
+    color: #c2c5cb;
+    border-radius: 4px;
+    border: dashed 1px #e1e2e5;
+    padding: $BASE_SPACING * 3 $BASE_SPACING;
+  }
+}

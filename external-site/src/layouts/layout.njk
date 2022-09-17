@@ -1,0 +1,12 @@
+{% extends "./layout-base.njk" %}
+
+{% block main %}
+  {% include "./partials/header.njk" %}
+  <div class="scroll-wrapper">
+    {% block body %}
+      This is the default contents
+    {% endblock %}
+
+    {% include "./partials/footer.njk" %}
+  </div>
+{% endblock %}

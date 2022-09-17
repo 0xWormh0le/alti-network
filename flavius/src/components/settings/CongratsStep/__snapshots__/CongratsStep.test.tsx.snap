@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CongratsStep renders correctly 1`] = `
+<div>
+  <section
+    class="CongratsStep TwoFactorAuthentication__step"
+  >
+    <h3
+      class="Typography Typography--h3 Typography--semibold CongratsStep__title"
+    >
+      <img
+        alt="checkmark"
+        class="CongratsStep__icon"
+        src="verified.svg"
+      />
+      Congratulations, you are enrolled!
+    </h3>
+    <p
+      class="Typography Typography--body-large"
+    >
+      The changes will take effect the next time you log in.
+    </p>
+    <p
+      class="Typography Typography--body-large"
+    >
+      After that, whenever you log in to Altitude Networks app, we will ask you for a confirmation code.
+    </p>
+  </section>
+</div>
+`;

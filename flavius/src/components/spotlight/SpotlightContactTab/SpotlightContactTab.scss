@@ -1,0 +1,19 @@
+@import 'styles/_shared.scss';
+
+.SpotlightContactTabItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__email-text {
+    line-height: 1;
+  }
+
+  &--selected {
+    color: #222c3c;
+  }
+
+  &__external-marker {
+    margin-left: 0.5em;
+  }
+}

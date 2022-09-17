@@ -1,0 +1,11 @@
+@import 'styles/_shared.scss';
+
+.Support {
+  &__wrapper {
+    overflow: scroll;
+    min-height: 80vh;
+    height: 80vh;
+    padding: 2em;
+    overflow-x: visible;
+  }
+}

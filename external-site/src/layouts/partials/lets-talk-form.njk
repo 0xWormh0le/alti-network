@@ -1,0 +1,29 @@
+<div class="home-section get-started--section get-started--home">
+  <object id="bits-animation" data="/images/bits.svg" type="image/svg+xml" class="get-started__bits"></object>
+  <div class="get-started__container">
+    <h2>Ready to learn more about how Altitude Networks can protect your sensitive files?</h2>
+    <p>Fill in some contact info below or schedule a meeting so we can reach out to provide more details on how Altitude Networks can protect you from data loss in the cloud.</p>
+    <form class="get-started__form get-started__form--modal get-started--section__form calendly-closed" data-id="1">
+      <input type="text" name="first-name" value="" placeholder="First Name" required />
+      <input type="text" name="last-name" value="" placeholder="Last Name" required />
+      <input class="get-started--section__form--email" type="email" name="work-email" value="" placeholder="Business Email" required />
+      <input type="text" name="company-name" value="" placeholder="Company (optional)" />
+      <input type="tel" name="phone" value="" placeholder="Phone Number (optional)" />
+      <textarea name="more-info" value="" placeholder="Additional Info (optional)"></textarea>
+      <button type="submit" class="cta-button" data-altimeter="lets_talk">Let's Talk</button>
+    </form>
+    <div class="get-started__success">
+      <span class="get-started__success-icon calendly-closed">✔</span>
+      We'll be in touch!
+    </div>
+    <div class="form-separator calendly-closed">
+      <span>OR</span>
+      <hr/>
+    </div>
+    <button class="cta-button cta-button--outline cta-button--hide-calendly calendly-open">Back to Form</button>
+    <button class="cta-button cta-button--outline cta-button--schedule-meeting calendly-closed">Schedule a Meeting</button>
+    <div class='calendly-wrapper'>
+      <div id="calendly-widget-{{ meta.type| default('page') }}" class="calendly-inline-widget" data-auto-load="true"></div>
+    </div>
+  </div>
+</div>

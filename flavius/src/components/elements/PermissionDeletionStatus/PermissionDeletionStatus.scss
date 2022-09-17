@@ -1,0 +1,26 @@
+@import 'styles/_shared.scss';
+
+.PermissionDeletionStatus {
+  @include flex(row, flex-start, baseline);
+  padding: $SMALL_SPACING;
+  margin: 0;
+  color: $LIGHT_GREY;
+  font-style: italic;
+
+  img {
+    margin: 0 5px 0 $BASE_SPACING;
+  }
+}
+
+.Spotlight {
+  .PermissionDeletionStatus {
+    padding: $SMALL_SPACING $SMALL_SPACING $SMALL_SPACING 43px;
+  }
+}
+
+.ResolveRisk {
+  .PermissionDeletionStatus {
+    justify-content: center;
+    padding-bottom: 0;
+  }
+}

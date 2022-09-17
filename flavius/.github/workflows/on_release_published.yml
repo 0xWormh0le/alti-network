@@ -1,0 +1,62 @@
+name: Deploy to Production
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch: {}
+
+jobs:
+  deploy-to-prod:
+    runs-on: ubuntu-latest
+    env:
+      NODE_ENV: prod
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: |
+          npm install
+      - name: Build application
+        run: |
+          npm run build
+          npm run gzip
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_STAGING }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_STAGING }}
+          aws-region: us-west-2
+      - name: Upload static to S3
+        uses: docker://amazon/aws-cli:latest
+        with:
+          entrypoint: /usr/local/bin/aws
+          args: s3 sync ./build s3://altitude-${{ env.NODE_ENV }}-web-app --exclude="*.gz" --exclude="**/*.gz"
+      - name: Upload archives to S3
+        uses: docker://amazon/aws-cli:latest
+        with:
+          entrypoint: /usr/local/bin/aws
+          args: s3 sync ./build s3://altitude-${{ env.NODE_ENV }}-web-app --exclude="*" --include="*.gz" --include="**/*.gz" --content-encoding gzip
+      - name: Invalidate CloudFront for dev
+        uses: docker://amazon/aws-cli:latest
+        with:
+          entrypoint: /usr/local/bin/aws
+          args: cloudfront create-invalidation --distribution-id ${{ secrets.CF_DISTRO_ID_FLAVIUS_PROD }} --paths "/*"
+      - name: Report to Sentry
+        env:
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: altitude-networks
+          SENTRY_PROJECT: flavius
+        run: |
+          PACKAGE_VERSION=$(node -pe "require('./package.json').version")
+          RELEASE_NAME=flavius@${PACKAGE_VERSION}
+
+          npx sentry-cli releases new ${RELEASE_NAME} --finalize --log-level=debug
+          npx sentry-cli releases deploys ${RELEASE_NAME} new -e ${NODE_ENV} --log-level=debug
+          npx sentry-cli releases files ${RELEASE_NAME} upload-sourcemaps build/static/js --validate --rewrite --log-level=debug

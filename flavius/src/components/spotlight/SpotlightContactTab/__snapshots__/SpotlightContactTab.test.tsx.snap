@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpotlightContactTab renders correctly 1`] = `
+<div>
+  <div
+    class="SpotlightContactTabItem external"
+  >
+    <span
+      class="PersonAvatar SpotlightContactTabItem__avatar trigger"
+    >
+      <div
+        class="BaseAvatar "
+        style="font-size: 0.75em; margin-right: 1em;"
+      >
+        <div
+          class="BaseAvatar__image"
+        >
+          <img
+            alt="tu"
+            src="avatar"
+            style="width: 2em;"
+          />
+        </div>
+      </div>
+    </span>
+    <div
+      class="Typography Typography--h4 SpotlightContactTabItem__email-text"
+    >
+      test@email.com
+    </div>
+    <span
+      class="Typography Typography--body SpotlightContactTabItem__external-marker Marker Marker__email_external"
+    >
+      External
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormControl renders correctly 1`] = `
+<div>
+  <input
+    class="FormControl FormControl--flat"
+    name="fullName"
+    type="text"
+    value="John Doe"
+  />
+</div>
+`;

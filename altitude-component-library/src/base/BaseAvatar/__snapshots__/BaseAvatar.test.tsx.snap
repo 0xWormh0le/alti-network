@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseAvatar renders correctly 1`] = `
+<div>
+  <div
+    class="BaseAvatar "
+  >
+    <div
+      class="BaseAvatar__image"
+    >
+      <img
+        alt="tn"
+        src="test/path"
+        style="width: 2em;"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,42 @@
+name: Test & validates service templates
+
+"on":
+  push:
+    branches-ignore:
+      - release/*
+
+    paths:
+      - services/**
+  workflow_dispatch: {}
+
+jobs:
+  validate_service_templates:
+    runs-on: ubuntu-latest
+    # To add custom steps to this workflow, start step name with `Custom: `
+    # To override existing step, set name to `Custom: <original_step_name>`
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        env:
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+        run: |
+          python -m pip install -i https://${INTERNAL_PYPI_USERNAME}:${INTERNAL_PYPI_PASS}@${INTERNAL_PYPI_URL} -U deployment_management
+      - name: Validate service templates
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_DEV }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}"
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+          ENV: dev
+          AWS_REGION: us-west-2
+          SUFFIX: "01"
+        run: |
+          service_deployer full_app --env ${ENV} --region ${AWS_REGION} --suffix ${SUFFIX} --validate --local --skip-package

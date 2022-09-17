@@ -1,0 +1,12 @@
+@import 'styles/_shared.scss';
+
+.PhraseCount {
+  display: flex;
+  justify-content: flex-end;
+  color: $LIGHTER_GREY;
+
+  &__loading {
+    width: 15px;
+    height: 11px;
+  }
+}

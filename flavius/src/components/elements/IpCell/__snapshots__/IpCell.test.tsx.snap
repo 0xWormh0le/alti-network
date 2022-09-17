@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IpCell renders correctly 1`] = `
+<div>
+  <div
+    class="IpCell"
+  >
+    <div
+      class="TooltipIp-wrapper"
+    >
+      <div
+        class="TooltipIpCell"
+      >
+        <div
+          class="trigger"
+          data-testid="ipaddress"
+        >
+          <p
+            class="Typography Typography--body-small Typography--normal TooltipIpContainer__displayIp"
+          >
+            74.155.155.25
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

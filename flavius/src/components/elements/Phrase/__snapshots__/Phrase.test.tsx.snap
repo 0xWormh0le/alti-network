@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Phrase renders large size correctly 1`] = `
+<div>
+  <div
+    class="Phrase Phrase--lg"
+  >
+    external
+  </div>
+</div>
+`;
+
+exports[`Phrase renders small size correctly 1`] = `
+<div>
+  <div
+    class="Phrase Phrase--sm"
+  >
+    internal
+  </div>
+</div>
+`;

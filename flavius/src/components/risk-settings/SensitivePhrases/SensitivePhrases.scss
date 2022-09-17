@@ -1,0 +1,9 @@
+@import 'styles/_shared.scss';
+
+.SensitivePhrases {
+  &__existing-phrases,
+  .NewSensitivePhrase {
+    padding: $SMALL_SPACING;
+    border: 1px solid $PALE_GREY;
+  }
+}

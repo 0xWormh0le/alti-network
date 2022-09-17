@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slack Settings renders correctly 1`] = `
+<div>
+  <div
+    class="SlackSettings"
+  >
+    <h3
+      class="Typography Typography--h3 SectionTitle"
+    >
+      Slack Integration
+    </h3>
+    <form
+      class="SlackSettings__form"
+    >
+      <div
+        class="FormGroup"
+      >
+        <label
+          class="FormLabel"
+        >
+          Configure settings for risk notifications in Slack
+        </label>
+      </div>
+      <button
+        class="Button Button--primary"
+        disabled=""
+        type="submit"
+      >
+        <svg
+          class="Spinner Button__spinner"
+          viewBox="0 0 50 50"
+        >
+          <circle
+            class="path"
+            cx="25"
+            cy="25"
+            fill="none"
+            r="20"
+            stroke-width="5"
+          />
+        </svg>
+        Adding to Slack
+      </button>
+    </form>
+  </div>
+</div>
+`;

@@ -1,0 +1,27 @@
+@import 'styles/_shared.scss';
+
+.Dashboard {
+  color: $TEXT_COLOR;
+
+  &__wrapper {
+    max-width: $MAX_CONTENT_WIDTH;
+    margin: $SMALL_SPACING $PAGE_MARGIN;
+
+    &_separator {
+      border-bottom: 1px solid $PALE_GREY;
+      max-width: $MAX_CONTENT_WIDTH;
+    }
+  }
+
+  &__wrapper_top {
+    @include flex(row, flex-start, flex-start);
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .Dashboard__wrapper_top {
+    margin-top: 2rem;
+    @include flex(column, flex-start, flex-start);
+  }
+}

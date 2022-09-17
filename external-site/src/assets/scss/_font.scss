@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../webfonts/LatoLatin-Light.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/LatoLatin-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/LatoLatin-Light.woff2') format('woff2'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Light.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100;
+  font-display: block;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../webfonts/LatoLatin-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/LatoLatin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/LatoLatin-Regular.woff2') format('woff2'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../webfonts/LatoLatin-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/LatoLatin-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/LatoLatin-Medium.woff2') format('woff2'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../webfonts/LatoLatin-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/LatoLatin-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/LatoLatin-Semibold.woff2') format('woff2'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Semibold.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../webfonts/LatoLatin-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../webfonts/LatoLatin-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/LatoLatin-Bold.woff2') format('woff2'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/LatoLatin-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../webfonts/Montserrat-Regular.eot');
+  src: url('../webfonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/Montserrat-Regular.woff2') format('woff2'),
+       url('../webfonts/Montserrat-Regular.woff') format('woff'),
+       url('../webfonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../webfonts/Montserrat-SemiBold.eot');
+  src: url('../webfonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/Montserrat-SemiBold.woff2') format('woff2'),
+       url('../webfonts/Montserrat-SemiBold.woff') format('woff'),
+       url('../webfonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../webfonts/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+  text-rendering: optimizeLegibility;
+}

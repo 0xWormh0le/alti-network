@@ -1,0 +1,9 @@
+{
+    "pathParameters": {"personId": "lucas@thoughtlabs00.onmicrosoft.com"},
+    "queryStringParameters": {
+        "page-number": "1",
+        "page-size": "10",
+        "platform-ids": "[\"o365\"]"
+    },
+    "requestContext": {"authorizer": {"project_id": "thoughtlabs"}}
+}

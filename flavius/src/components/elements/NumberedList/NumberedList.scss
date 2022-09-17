@@ -1,0 +1,77 @@
+@import 'styles/_shared.scss';
+
+.NumberedList {
+  $this: &;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: $BASE_SPACING;
+
+  &__item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    &:first-child {
+      #{$this}__col-number {
+        margin-top: $BASE_SPACING;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &:last-child {
+      #{$this}__col-number {
+        margin-top: $BASE_SPACING;
+        &:before {
+          height: $BASE_SPACING;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__col-number {
+    display: flex;
+    margin-right: 15px;
+    margin-top: 3px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 9px;
+      border-left: 1px dashed $SILVER;
+    }
+
+    &:before {
+      top: 0;
+      height: 3px;
+    }
+
+    &:after {
+      height: 100%;
+    }
+  }
+
+  &__item-number {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    color: $SILVER;
+    border: 1px solid $SILVER;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 16px;
+    position: relative;
+    z-index: 1;
+  }
+}

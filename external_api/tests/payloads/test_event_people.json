@@ -1,0 +1,13 @@
+{
+    "requestContext": {
+        "authorizer": {
+            "project_id": "thoughtlabs"
+        }
+    },
+    "queryStringParameters": {
+        "risk-id": "944827222186",
+        "platform-id": "o365",
+        "domain": "external",
+        "page-number": 1
+    }
+}

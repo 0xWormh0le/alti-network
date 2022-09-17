@@ -1,0 +1,133 @@
+---
+title: Cloud Security for Google Workspace | Altitude Networks
+description: Quickly protect your cloud data from risks such as unauthorized file-sharing or rogue applications with Altitude Networks DLP security solution for Google Workspace.
+url: /gsuite-googleworkspace
+gsuite: true
+---
+{% extends "./layouts/layout.njk" %}
+
+{% block scripts %}
+<script async defer src="https://widgets.boast.io/current/components.js"></script>
+{% endblock %}
+
+{% block body %}
+<section class="GoogleWorkspace">
+  <div class="landingHeadContainer">
+    <div class="landingHeadTop">
+      <h1 class="landingHero flexRow flexRow--centered">
+        <span class="altitude-title" style="height:50px;">Altitude Networks for</span>
+        <img
+          src="/images/google-workspace-logo.svg" 
+          alt="Google workspace" 
+          class="img-google" />
+        <span style="display: none;">Google Workspace</span>
+        <span style="height:32px;" class="landingSubHero--parent">(formerly G Suite)</span>
+      </h1>
+      <p class="GoogleWorkspace-description">
+        Google Workspace, formerly known as G Suite, is an integral part of your company. Their suite of services allows your employees to seamlessly communicate and share data in the cloud, which means this data is sensitive to potential risks, including unauthorized file sharing, rogue applications, and a variety of phishing attacks. With the Altitude Networks DLP cloud security solution, you can quickly know when sensitive data is at risk, view top-level security alerts, and remediate these issues with one-click. Contact us today to learn more!
+      </p>
+      <div class="flexRow marginTop-10" >
+        <div class="marginRight20">
+          <ul class="checklist landingChecklist">
+            <li>Protect your cloud data across employees and external partners</li>
+            <li>Pre-tuned system brings value on day one</li>
+            <li>Remove authorized sharing with 1-click</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="checklist landingChecklist">
+            <li>Identify data theft and personal account access by former or departing employees</li>
+            <li>Historical analysis to find and fix pre-existing risks</li>
+            <li>Simple setup, API integration in &lt; 10 minutes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="landingHeadBottom">&nbsp;</div>
+  </div>
+
+  <div class="landingBodyContainer marginTop0">
+    <div class="landingBody">
+      <div class="flexRow marginTop20">
+        <div class="landingLeft">
+          <div class="landingCol--title">
+            <span class="color-blurb--text-blue">Automatic Classification</span> of Sensitive Files
+          </div>
+          <div class="landingCol--text color-blurb color-blurb--blue">
+            Know when sensitive data is at risk
+          </div>
+        </div>
+        <div class="landingRight">
+          <img src="/images/solutions-automatic-classification.png" alt="Automatic classification"/>
+        </div>
+      </div>
+
+      <div class="flexRow marginTop30">
+        <div class="landingLeft">
+          <div class="landingCol--title">
+            <span class="color-blurb--text-orange">Smart Alerting</span> Requires Minimal Time
+          </div>
+          <div class="landingCol--text color-blurb color-blurb--orange">
+            There's no reason to see thousands of security alerts; focus only on what truly matters.
+          </div>
+        </div>
+        <div class="landingRight">
+          <img src="/images/solutions-smart-alerting.svg" alt="Smart alerting"/>
+        </div>
+      </div>
+
+      <div class="flexRow marginTop30">
+        <div class="landingLeft">
+          <div class="landingCol--title">
+            <span class="color-blurb--text-gold">Remediate Issues</span> With a Click
+          </div>
+          <div class="landingCol--text color-blurb color-blurb--gold">
+            Remove any account access to a single file, or 100's of files, with one click
+          </div>
+        </div>
+        <div class="landingRight">
+          <img src="/images/solutions-resolve-risk.png" alt="Resolve risk"/>
+        </div>
+      </div>
+
+      <div class="flexRow marginTop30">
+        <div class="landingLeft">
+          <div class="landingCol--title">
+            <span class="color-blurb--text-green">One Click</span> Offboarding
+          </div>
+          <div class="landingCol--text color-blurb color-blurb--green">
+            Detect and remediate backdoor access to corporate files via personal account sharing
+          </div>
+        </div>
+        <div class="landingRight">
+          <img src="/images/solutions-one-click-offboarding.png" alt="One-click offboarding"/>
+        </div>
+      </div>
+
+      <div class="flexRow marginTop30">
+        <div class="landingLeft">
+          <div class="landingCol--title">
+            Identify <span class="color-blurb--text-red">Rogue Application</span> Access
+          </div>
+          <div class="landingCol--text color-blurb color-blurb--red">
+            Uncover OAuth'ed applications with access to corporate data and understand breadth of user installation and data access.
+          </div>
+        </div>
+        <div class="landingRight">
+          <img src="/images/solutions-identify-rogue-application.png" alt="Identify rogue applications"/>
+        </div>
+      </div>
+      
+      <div class="testimonials">
+        <h2>Testimonials</h2>
+        <div data-boast-component="boast-display-widget" data-widget-id="7b999529-c617-42e8-bbeb-86f47a28750f"></div>
+      </div>
+
+      <div class="solutionsFormContainer marginTop20">
+        {% include "./layouts/partials/learn-more-form.njk" %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

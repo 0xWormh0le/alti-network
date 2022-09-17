@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlertContentTemplate renders correctly 1`] = `
+<div>
+  <div
+    class="s-alert FlaviusAlert FlaviusAlert--info"
+    id="test-alert"
+  >
+    <div
+      class="FlaviusAlert__body"
+    >
+      <svg
+        class="FlaviusAlert__icon"
+        height="16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 4c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm2 8H6v-1h1V8H6V7h3v4h1v1z"
+          fill="#008EED"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <div
+        class="FlaviusAlert__content"
+      >
+        Login successful
+        <div
+          class="FlaviusAlert__description"
+        >
+          You logged in successfully as test user
+        </div>
+      </div>
+      <span
+        class="FlaviusAlert__close"
+        tabindex="0"
+      >
+        <svg
+          class="FlaviusAlert__close-icon"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.25 1.25l17.5 17.5m0-17.5l-17.5 17.5"
+            fill="none"
+            fill-rule="evenodd"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="4"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,29 @@
+@import 'styles/_shared.scss';
+
+.WelcomeMessage {
+  text-align: left;
+
+  &__title {
+    color: $TEXT_COLOR;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__app-name {
+    color: $MAIN_BRAND_COLOR;
+
+    &--demo {
+      &:after {
+        content: 'Demo Preview';
+      }
+    }
+  }
+
+  &__first-paragraph {
+    color: $TEXT_COLOR;
+  }
+
+  &__paragraph {
+    color: $TEXT_COLOR_SECONDARY;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js",
+      "src/react-app.d.ts",
+      "src/types/**.ts",
+      "**/*/*.stories.tsx",
+      ".githooks"
+    ]
+  },
+  "rules": {
+    "ordered-imports": false,
+    "member-ordering": false,
+    "object-literal-sort-keys": false,
+    "no-console": [true, "log", "info", "warn"],
+    "interface-name": false,
+    "jsx-no-lambda": false,
+    "quotemark": [true, "single", "avoid-escape"],
+    "semicolon": [true, "never"],
+    "array-type": [true, "array-simple"],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false,
+    "one-variable-per-declaration": false,
+    "semicolon": [true, "never"],
+    "quotemark": [true, "single", "avoid-escape"],
+    "no-conditional-assignment": true,
+    "no-console": true,
+    "no-debugger": true,
+    "no-duplicate-variable": true,
+    "no-empty": true,
+    "no-switch-case-fall-through": true,
+    "no-unsafe-finally": true,
+    "use-isnan": true,
+    "no-eval": true,
+    "no-trailing-whitespace": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "plugins": {
+    "metalsmith-sass": {
+      "outputStyle": "expanded"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../styles/_shared.scss';
+
+.ErrorBox {
+  display: grid;
+  place-items: center;
+  border: $PALE_GREY solid 1px;
+  margin: 1em auto;
+  text-align: center;
+
+  &__message-container {
+    padding: 3em 0;
+  }
+
+  &__main-message {
+    font-weight: 700;
+    color: $DARK_GREY_BLUE;
+    font-size: 14px;
+  }
+
+  &__secondary-message {
+    color: $LIGHT_GREY;
+    font-size: 13px;
+    margin: 1em 0 !important;
+  }
+
+  &__retry-button {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: $LIGHT_GREY;
+    border-color: $PALE_GREY;
+
+    background-color: $PALE_GREY_LOW_OPACITY;
+  }
+
+  &__retry-button:hover {
+    color: $LIGHT_GREY;
+    border-color: $PALE_GREY;
+    box-shadow: none;
+    background-color: $PALE_GREY_LIGHT;
+  }
+}

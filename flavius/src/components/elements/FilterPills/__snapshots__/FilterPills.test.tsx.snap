@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterPills renders correctly 1`] = `
+<div>
+  <div
+    class="FilterPills"
+  >
+    <span
+      class="Typography Typography--label-large Typography--light FilterPills__title"
+    >
+      Filtered by
+    </span>
+    <div
+      class="Typography Typography--body-small FilterPills__pill"
+    >
+      External Link (sensitive)
+      <span
+        class="Typography Typography--label-large FilterPills__pill-remove"
+      >
+        ×
+      </span>
+    </div>
+    <div
+      class="Typography Typography--body-small FilterPills__pill"
+    >
+      Shared to Personal (sensitive)
+      <span
+        class="Typography Typography--label-large FilterPills__pill-remove"
+      >
+        ×
+      </span>
+    </div>
+  </div>
+</div>
+`;

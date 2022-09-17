@@ -1,0 +1,50 @@
+@import 'styles/_shared.scss';
+
+.Files {
+  &__main {
+    padding: $SMALL_SPACING $LARGE_SPACING;
+  }
+
+  &__other-activity-link {
+    font-size: 0.8em;
+  }
+
+  .SectionTitle {
+    color: $HEADER_COLOR;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__metadata {
+    color: $TEXT_COLOR_SECONDARY;
+    font-size: 0.8em;
+
+    margin-bottom: $BASE_SPACING;
+
+    &-entry {
+      display: flex;
+      gap: $BASE_SPACING;
+    }
+  }
+
+  &__exposure {
+    color: $TEXT_COLOR_SECONDARY;
+    text-transform: capitalize;
+
+    &.internal {
+      color: $KELLY_GREEN;
+    }
+
+    &.internal_discoverable {
+      color: $GOLDEN_YELLOW;
+    }
+
+    &.external_discoverable {
+      color: $ORANGISH;
+    }
+
+    &.external {
+      color: $TOMATO;
+    }
+  }
+}

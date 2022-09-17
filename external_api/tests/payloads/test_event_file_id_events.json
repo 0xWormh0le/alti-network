@@ -1,0 +1,16 @@
+{
+  "pathParameters": {
+    "fileId": "16mKl4YxXv2er1TO7VjPx0hfrv7LhcQKe"
+  },
+  "queryStringParameters": {
+    "page-size": "10",
+    "page-number": "1",
+    "order-by": "datetime",
+    "sort": "desc"
+  },
+  "requestContext": {
+    "authorizer": {
+      "project_id": "thoughtlabs"
+    }
+  }
+}

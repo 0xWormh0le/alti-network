@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewSensitivePhrase renders correctly 1`] = `
+<div>
+  <form
+    class="NewSensitivePhrase"
+  >
+    <h3
+      class="Typography Typography--h3"
+    >
+      Add Sensitive Phrase
+    </h3>
+    <div
+      class="NumberedList"
+    >
+      <div
+        class="NumberedList__item"
+      >
+        <div
+          class="NumberedList__col-number"
+        >
+          <div
+            class="NumberedList__item-number"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="NewSensitivePhrase__field"
+        >
+          <input
+            class="FormControl FormControl--flat"
+            name="phrase"
+            placeholder="Enter Sensitive Phrase"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="NumberedList__item"
+      >
+        <div
+          class="NumberedList__col-number"
+        >
+          <div
+            class="NumberedList__item-number"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="NewSensitivePhrase__field"
+        >
+          <div
+            class="NewSensitivePhrase__radios"
+          >
+            <div
+              class="Radio Radio--inline NewSensitivePhrase__radio"
+            >
+              <label
+                class="Radio__label Radio__label--right"
+              >
+                <input
+                  checked=""
+                  name="exact"
+                  type="radio"
+                  value="true"
+                />
+                <i
+                  class="Radio__helper"
+                />
+                <span
+                  class="Radio__label-text"
+                >
+                  Exact Matching
+                </span>
+              </label>
+            </div>
+            <div
+              class="Radio Radio--inline NewSensitivePhrase__radio"
+            >
+              <label
+                class="Radio__label Radio__label--right"
+              >
+                <input
+                  name="exact"
+                  type="radio"
+                  value="false"
+                />
+                <i
+                  class="Radio__helper"
+                />
+                <span
+                  class="Radio__label-text"
+                >
+                  Partial Matching
+                </span>
+              </label>
+            </div>
+          </div>
+          <div
+            class="NewSensitivePhrase__help-box"
+          >
+            <div
+              class="Typography Typography--body-tiny NewSensitivePhrase__helper-text"
+            >
+              For example, "int" would match the filename "Number or int" but would NOT match  "Internal Review".
+            </div>
+            <img
+              alt="exact matching"
+              class="NewSensitivePhrase__helper-img"
+              src="exact-matching.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="NumberedList__item"
+      >
+        <div
+          class="NumberedList__col-number"
+        >
+          <div
+            class="NumberedList__item-number"
+          >
+            3
+          </div>
+        </div>
+        <button
+          class="Button NewSensitivePhrase__button Button--primary Button--disabled"
+          disabled=""
+          type="submit"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;

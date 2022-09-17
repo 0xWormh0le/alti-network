@@ -1,0 +1,71 @@
+@import 'styles/_shared.scss';
+
+$PHRASE_TABLE_BLANK_HEIGHT: 300px;
+
+.PhraseTable {
+  border-radius: 4px;
+  overflow: hidden;
+
+  .Table__table {
+    border: 1px solid $BORDER_COLOR;
+  }
+
+  tbody tr {
+    &:nth-child(odd) {
+      background-color: $TABLE_DARK_BG_COLOR;
+    }
+
+    &__icon {
+      color: #454545;
+    }
+  }
+
+  td,
+  th {
+    padding: 15px;
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+      padding-left: $BASE_SPACING * 3;
+    }
+
+    &:last-child {
+      text-align: right;
+      padding-right: $BASE_SPACING * 3;
+      width: 88px;
+    }
+  }
+
+  th {
+    white-space: nowrap;
+  }
+
+  &__delete {
+    display: inline-flex;
+    text-transform: uppercase;
+  }
+
+  &__no-results {
+    display: flex;
+    height: $PHRASE_TABLE_BLANK_HEIGHT;
+    align-items: center;
+    justify-content: center;
+    padding: $BASE_SPACING * 5;
+    border-top: 1px solid $BORDER_COLOR;
+
+    &-text {
+      flex: 1;
+      text-align: center;
+      border-radius: 4px;
+      border: 1px dashed $BORDER_COLOR;
+      padding: $BASE_SPACING * 3;
+      color: $PLACEHOLDER_COLOR;
+    }
+  }
+}
+
+.PhraseTableLoading {
+  width: 100%;
+  height: $PHRASE_TABLE_BLANK_HEIGHT;
+}

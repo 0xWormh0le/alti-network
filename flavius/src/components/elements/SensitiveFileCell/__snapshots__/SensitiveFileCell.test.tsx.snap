@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SensitiveFileCell renders correctly 1`] = `
+<div>
+  <div
+    class="sensitiveFileAlert trigger"
+    data-testid="sensitiveFileAlert"
+  >
+    <span
+      class="Typography Typography--body Marker Marker__sensitive_content"
+    >
+      Sensitive Content
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+app: external_api
+steps:
+  - name: Enable cloudwatch events for external_api
+    workflow: enable_event_rules
+  - name: Create cloudwatch events for external_api
+    workflow: put_event_rules
+  - name: Upsert lambdas for external_api
+    workflow: upsert_lambdas
+  - name: Create project sqs queues for external_api
+    workflow: upsert_sqs_queues
+  - name: Upsert Apigateways
+    workflow: upsert_apigateways

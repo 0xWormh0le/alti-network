@@ -1,0 +1,58 @@
+@import 'styles/_shared.scss';
+
+$DEFAULT_PADDING: 22px;
+
+.Settings {
+  &__main {
+    margin: $PAGE_MARGIN;
+    max-width: $MAX_CONTENT_WIDTH;
+  }
+
+  &__main &__config-section:not(:last-child) {
+    margin-bottom: $DEFAULT_PADDING;
+  }
+
+  &__config-section {
+    border: 1px solid $PALE_GREY_LIGHT;
+    border-radius: 3px;
+    padding: $DEFAULT_PADDING;
+  }
+
+  &__config-tip {
+    display: flex;
+    max-width: 28em;
+    font-size: 1em;
+    padding: 1.2em 1.2em 1.2em 1.5em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    border: 1px solid $PALE_GREY;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05);
+
+    p {
+      margin: 0;
+      padding-left: 0.5em;
+    }
+
+    img {
+      width: 0.9rem;
+    }
+  }
+
+  &__tab {
+    color: inherit;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  hr {
+    margin-top: $LARGE_SPACING;
+    margin-bottom: $LARGE_SPACING;
+    border-style: solid;
+    border-top-style: none;
+    color: $PALE_GREY_LIGHT;
+  }
+}

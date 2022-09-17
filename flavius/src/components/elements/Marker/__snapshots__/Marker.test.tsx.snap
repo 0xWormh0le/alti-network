@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markers renders correctly 1`] = `
+<div>
+  <span
+    class="Typography Typography--body Marker Marker__ext"
+  >
+    EXT
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__sensitive_content"
+  >
+    Sensitive Content
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__email_external"
+  >
+    External
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__none"
+  >
+    No Link Sharing
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__group"
+  >
+    No Link Sharing
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__user"
+  >
+    No Link Sharing
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__unknown"
+  >
+    Unknown
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__internal"
+  >
+    Internal Link Sharing
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__internal_discoverable"
+  >
+    Internal & Discoverable
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__external"
+  >
+    External Link Sharing
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__external_discoverable"
+  >
+    External & Discoverable
+  </span>
+  <span
+    class="Typography Typography--body Marker Marker__sensitive"
+  >
+    Sensitive Content
+  </span>
+</div>
+`;

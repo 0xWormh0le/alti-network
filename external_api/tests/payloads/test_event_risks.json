@@ -1,0 +1,10 @@
+{
+    "requestContext": {"authorizer": {"project_id": "thoughtlabs"}},
+    "queryStringParameters": {
+        "page-number": "1",
+        "page-size": "2",
+        "order-by": "datetime",
+        "sensitive-content-only": "false",
+        "platform-ids": "[\"o365\"]"
+    }
+}

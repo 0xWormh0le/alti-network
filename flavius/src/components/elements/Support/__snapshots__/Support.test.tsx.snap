@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Support renders correctly 1`] = `
+<div>
+  <div
+    class="Support__wrapper"
+  >
+    <div
+      class="Support"
+      id="Support"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,11 @@
+@import 'styles/_shared.scss';
+
+.SectionTitle {
+  color: $HEADER_COLOR;
+  margin-bottom: $BASE_SPACING;
+}
+
+.SectionTitleDark {
+  color: #333;
+  margin-bottom: $BASE_SPACING;
+}

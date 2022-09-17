@@ -1,0 +1,509 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardGrid renders correctly 1`] = `
+<div>
+  <div
+    class="DashboardGrid"
+  >
+    <h3
+      class="Typography Typography--h3 SectionTitle"
+    >
+      Risk Summary
+    </h3>
+    <div
+      class="DashboardGrid__main"
+    >
+      <div
+        class="DashboardCards"
+      >
+        <div
+          class="DashboardCards__card DashboardCards__card--active"
+        >
+          <div
+            class="Typography Typography--h1 DashboardCards__card-value"
+          >
+            0
+          </div>
+          <span
+            class="Typography Typography--label DashboardCards__card-label"
+          >
+            Sharing Risks
+          </span>
+        </div>
+        <div
+          class="DashboardCards__card"
+        >
+          <div
+            class="Typography Typography--h1 DashboardCards__card-value"
+          >
+            0
+          </div>
+          <span
+            class="Typography Typography--label DashboardCards__card-label"
+          >
+            Relationship Risks
+          </span>
+        </div>
+        <div
+          class="DashboardCards__card"
+        >
+          <div
+            class="Typography Typography--h1 DashboardCards__card-value"
+          >
+            0
+          </div>
+          <span
+            class="Typography Typography--label DashboardCards__card-label"
+          >
+            Activity Risks
+          </span>
+        </div>
+        <div
+          class="DashboardCards__card"
+        >
+          <div
+            class="Typography Typography--h1 DashboardCards__card-value"
+          >
+            0
+          </div>
+          <span
+            class="Typography Typography--label DashboardCards__card-label"
+          >
+            Informational Risks
+          </span>
+        </div>
+      </div>
+      <div
+        class="RiskTypesList"
+      >
+        <div
+          class="RiskTypesList__table"
+        >
+          <div
+            class="RiskTypesList__headers"
+          >
+            <div
+              class="Typography Typography--body-small Typography--bold Typography--uppercase RiskTypesList__heading-cell RiskTypesList--severity-column"
+            >
+              Risk severity
+            </div>
+            <div
+              class="Typography Typography--body-small Typography--bold Typography--uppercase RiskTypesList__heading-cell RiskTypesList--type-column"
+            >
+              Risk type
+            </div>
+            <div
+              class="Typography Typography--body-small Typography--bold Typography--uppercase RiskTypesList__heading-cell RiskTypesList--count-column"
+            >
+              Risk count
+            </div>
+            <div
+              class="RiskTypesList__heading-cell RiskTypesList--actions-column"
+            />
+          </div>
+          <div
+            class="RiskTypesList__rows"
+          >
+            <div
+              class="RiskTypeRow"
+            >
+              <div
+                class="RiskTypeRow--severity RiskTypesList--severity-column"
+              >
+                <div
+                  class="RiskIndicator RiskIndicator--bar"
+                >
+                  <div
+                    class="RiskIndicator__inner RiskIndicator--high"
+                  />
+                </div>
+              </div>
+              <div
+                class="RiskTypesList--type-column"
+              >
+                <span
+                  class="Typography Typography--body Typography--semibold"
+                >
+                  File Shared by Link Externally - Created Over 180 Days Ago
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--count-column"
+              >
+                <span
+                  class="Typography Typography--h2"
+                >
+                  1
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--actions-column"
+              >
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[1050]"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    See all
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div
+              class="RiskTypeRow"
+            >
+              <div
+                class="RiskTypeRow--severity RiskTypesList--severity-column"
+              >
+                <div
+                  class="RiskIndicator RiskIndicator--bar"
+                >
+                  <div
+                    class="RiskIndicator__inner RiskIndicator--medium"
+                  />
+                </div>
+              </div>
+              <div
+                class="RiskTypesList--type-column"
+              >
+                <span
+                  class="Typography Typography--body Typography--semibold"
+                >
+                  File Shared by Link Externally - Company Owned
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--count-column"
+              >
+                <span
+                  class="Typography Typography--h2"
+                >
+                  482
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--actions-column"
+              >
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[1020]"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    See all
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div
+              class="RiskTypeRow"
+            >
+              <div
+                class="RiskTypeRow--severity RiskTypesList--severity-column"
+              >
+                <div
+                  class="RiskIndicator RiskIndicator--bar"
+                >
+                  <div
+                    class="RiskIndicator__inner RiskIndicator--medium"
+                  />
+                </div>
+              </div>
+              <div
+                class="RiskTypesList--type-column"
+              >
+                <span
+                  class="Typography Typography--body Typography--semibold"
+                >
+                  File Shared to Personal Email Account - Company Owned
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--count-column"
+              >
+                <span
+                  class="Typography Typography--h2"
+                >
+                  6
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--actions-column"
+              >
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[2000]"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    See all
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div
+              class="RiskTypeRow"
+            >
+              <div
+                class="RiskTypeRow--severity RiskTypesList--severity-column"
+              >
+                <div
+                  class="RiskIndicator RiskIndicator--bar"
+                >
+                  <div
+                    class="RiskIndicator__inner RiskIndicator--medium"
+                  />
+                </div>
+              </div>
+              <div
+                class="RiskTypesList--type-column"
+              >
+                <span
+                  class="Typography Typography--body Typography--semibold"
+                >
+                  File Shared to Personal Email Account - Created Over 180 Days Ago
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--count-column"
+              >
+                <span
+                  class="Typography Typography--h2"
+                >
+                  3
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--actions-column"
+              >
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[2010]"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    See all
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div
+              class="RiskTypeRow"
+            >
+              <div
+                class="RiskTypeRow--severity RiskTypesList--severity-column"
+              >
+                <div
+                  class="RiskIndicator RiskIndicator--bar"
+                >
+                  <div
+                    class="RiskIndicator__inner RiskIndicator--medium"
+                  />
+                </div>
+              </div>
+              <div
+                class="RiskTypesList--type-column"
+              >
+                <span
+                  class="Typography Typography--body Typography--semibold"
+                >
+                  Many Recent Downloads - Internal Account
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--count-column"
+              >
+                <span
+                  class="Typography Typography--h2"
+                >
+                  2
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--actions-column"
+              >
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[3100]"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    See all
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div
+              class="RiskTypeRow"
+            >
+              <div
+                class="RiskTypeRow--severity RiskTypesList--severity-column"
+              >
+                <div
+                  class="RiskIndicator RiskIndicator--bar"
+                >
+                  <div
+                    class="RiskIndicator__inner RiskIndicator--low"
+                  />
+                </div>
+              </div>
+              <div
+                class="RiskTypesList--type-column"
+              >
+                <span
+                  class="Typography Typography--body Typography--semibold"
+                >
+                  Most Shared Files - Company Owned
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--count-column"
+              >
+                <span
+                  class="Typography Typography--h2"
+                >
+                  10
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--actions-column"
+              >
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[0]"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    See all
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div
+              class="RiskTypeRow"
+            >
+              <div
+                class="RiskTypeRow--severity RiskTypesList--severity-column"
+              >
+                <div
+                  class="RiskIndicator RiskIndicator--bar"
+                >
+                  <div
+                    class="RiskIndicator__inner RiskIndicator--low"
+                  />
+                </div>
+              </div>
+              <div
+                class="RiskTypesList--type-column"
+              >
+                <span
+                  class="Typography Typography--body Typography--semibold"
+                >
+                  Most Shared Files - Externally Owned
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--count-column"
+              >
+                <span
+                  class="Typography Typography--h2"
+                >
+                  8
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--actions-column"
+              >
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[10]"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    See all
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div
+              class="RiskTypeRow"
+            >
+              <div
+                class="RiskTypeRow--severity RiskTypesList--severity-column"
+              >
+                <div
+                  class="RiskIndicator RiskIndicator--bar"
+                >
+                  <div
+                    class="RiskIndicator__inner RiskIndicator--low"
+                  />
+                </div>
+              </div>
+              <div
+                class="RiskTypesList--type-column"
+              >
+                <span
+                  class="Typography Typography--body Typography--semibold"
+                >
+                  Potentially Sensitive File Shared by Link Internally - Company Owned
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--count-column"
+              >
+                <span
+                  class="Typography Typography--h2"
+                >
+                  4
+                </span>
+              </div>
+              <div
+                class="RiskTypesList--actions-column"
+              >
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[1011]"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    See all
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="NavButton"
+          href="/risks?riskTypeIds=[1050,1020,2000,2010,3100,0,10,1011]"
+        >
+          <button
+            aria-label="show all risks"
+            class="Button RiskTypesList__show-all-button Button--primary Button--size-large"
+            type="button"
+          >
+            Show All Sharing Risks
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

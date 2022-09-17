@@ -1,0 +1,307 @@
+@import 'styles/_shared.scss';
+
+$SEPARATOR_WIDTH: $SMALL_SPACING;
+
+.FileGridHeader {
+  $this: &;
+
+  width: 100%;
+  padding: 22px;
+  min-width: fit-content;
+
+  &__platform-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &--wrapper {
+    min-width: fit-content;
+    border-radius: 6px;
+    border: solid 1px #e4e8ea;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em;
+  }
+
+  &--section {
+    & > div {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .FileInfo,
+      .PermissionInfo,
+      .FileDate {
+        margin-bottom: auto;
+      }
+    }
+  }
+
+  &--split {
+    border-right: solid 2px #e6eaee;
+    margin: 0 1em;
+  }
+
+  &__descriptor {
+    color: $BLUE_GREY;
+    font-size: 12px;
+    margin-right: 5px;
+    text-align: right;
+
+    &--align {
+      width: 6em;
+    }
+  }
+
+  &__file-info-link {
+    color: $DARK_GREY_BLUE;
+    font-size: small;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.disabled {
+      color: $BLUEY_GREY;
+      font-style: italic;
+    }
+  }
+
+  &__file-info-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 14px;
+  }
+
+  &__button-wrapper {
+    margin-top: 0.5em;
+
+    button {
+      width: 100%;
+      font-size: 12px;
+      line-height: 1.67;
+      padding: 4px;
+
+      &--text {
+        color: #0177ff;
+      }
+    }
+  }
+
+  .FileAttributeGroup {
+    margin-bottom: 3px;
+
+    .FileAttribute {
+      display: flex;
+      align-items: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__file-info {
+    max-width: 18em;
+    min-width: 15em;
+
+    .FileInfo {
+      display: flex;
+      font-weight: bold;
+      color: #354052;
+
+      &__icon {
+        margin-right: 8px;
+
+        img {
+          display: block;
+          max-width: 25px;
+          max-height: 25px;
+          font-size: 12px;
+          font-weight: normal;
+        }
+      }
+
+      &__name {
+        margin-bottom: 0;
+        font-size: 18px;
+        overflow-wrap: anywhere;
+      }
+
+      &__link-btn {
+        display: block;
+        color: $DARK_GREY_BLUE;
+
+        &:hover {
+          text-decoration: none;
+
+          .FileInfo__icon {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  &__permission-info {
+    min-width: 18em;
+    max-width: 26em;
+
+    .PermissionInfo {
+      .OwnedBy {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+
+  &__file-date {
+    min-width: 10em;
+
+    .FileAttributeGroup {
+      margin-bottom: 0.5em;
+    }
+
+    .FileDate {
+      margin-bottom: 18px;
+    }
+
+    #{$this}__file-attribute {
+      min-width: 5em;
+    }
+  }
+
+  &__title {
+    @include flex(row, center, center);
+    padding: $SEPARATOR_WIDTH 2 * $SEPARATOR_WIDTH 5px;
+    justify-content: space-between;
+
+    &--permissions {
+      padding: 0;
+    }
+  }
+
+  &__edit-permission {
+    padding: 5px;
+
+    a {
+      width: 120px;
+      height: 30px;
+      border-radius: 4px;
+      border: solid 1px #0177ff;
+      padding: 12px 18px;
+      font-family: LatoLatin;
+      font-size: 10px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.8;
+      letter-spacing: normal;
+      text-align: center;
+      color: #0177ff;
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+        background: #0177ff;
+      }
+    }
+  }
+
+  &__right {
+    @include flex(row);
+  }
+
+  &__subheader {
+    @include flex(row, flex-start, center);
+    margin: 0 $SEPARATOR_WIDTH $SEPARATOR_WIDTH 2 * $SEPARATOR_WIDTH;
+
+    &--permissions {
+      margin: 0;
+    }
+  }
+
+  &__filename {
+    display: inline-block;
+    color: $HEADER_COLOR;
+    margin: 0;
+    max-width: 60vw;
+
+    &:hover {
+      color: #008eed;
+    }
+  }
+
+  .PersonAvatar {
+    margin-right: 6px;
+  }
+
+  &__file-attribute {
+    @include set-typography('BODY_SMALL', 'normal');
+    color: $TEXT_COLOR_SECONDARY;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 6em;
+
+    &-avatar {
+      font-size: 0.8em;
+    }
+
+    &-value {
+      height: 21px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      color: $TEXT_COLOR;
+      overflow-wrap: anywhere;
+      line-height: 1rem;
+    }
+  }
+
+  &__owner {
+    height: fit-content;
+    padding: 0.7em 0.5em;
+    border-radius: 0.6em;
+    background-color: #f9f9f9;
+  }
+
+  &__link {
+    @include brand-link();
+  }
+
+  &__sharing-indicator {
+    margin-left: 10px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    & > div {
+      margin-right: 3px;
+    }
+  }
+}
+
+.SingleFile {
+  .FileGridHeaderLoading {
+    margin: $SEPARATOR_WIDTH 2 * $SEPARATOR_WIDTH;
+  }
+}
+
+.FileGridHeaderLoading {
+  display: flex;
+  align-items: flex-start;
+
+  &__content {
+    width: 100%;
+  }
+
+  &__sharing-indicator {
+    margin-left: auto;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

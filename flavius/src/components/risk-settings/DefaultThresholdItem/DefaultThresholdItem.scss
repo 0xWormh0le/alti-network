@@ -1,0 +1,46 @@
+@import 'styles/_shared.scss';
+
+.DefaultThresholdItem {
+  display: flex;
+  justify-content: space-between;
+
+  &__loading {
+    margin-top: 3 * $BASE_SPACING;
+  }
+
+  &__content {
+    &-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-top: $BASE_SPACING;
+      margin-bottom: $BASE_SPACING;
+      color: $DARK_GREY_BLUE;
+    }
+
+    &-description {
+      font-size: 0.9rem;
+      color: $BLUEY_GREY;
+    }
+  }
+
+  &__files {
+    margin-left: $BASE_SPACING;
+
+    input {
+      width: 5em;
+    }
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+  }
+
+  &__error {
+    display: block;
+    font-size: smaller;
+    line-height: 1.5;
+    color: $TOMATO;
+    margin-top: $BASE_SPACING;
+  }
+}

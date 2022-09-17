@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Platform Icon Test matches PlatformIcon snapshot 1`] = `
+<div>
+  <div
+    class="platform-icon-container"
+    data-testid="platform-icon"
+  >
+    <img
+      alt="Google Workspace"
+      class="platform-icon"
+      src="google-logo.svg"
+      title="Google Workspace"
+    />
+  </div>
+</div>
+`;

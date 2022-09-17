@@ -1,0 +1,58 @@
+@import 'styles/_shared.scss';
+
+$CARDS_MARGIN: 10px;
+$CARD_WIDTH: 140px;
+
+.DashboardCards {
+  height: 100%;
+  @include flex(column, space-between);
+
+  // top and left margins are negative because we want to compensate for the cards' individual
+  // margin that is applied below via the @include card($CARDS_MARGIN)
+  margin-top: -1 * $CARDS_MARGIN;
+  margin-right: $CARDS_MARGIN;
+  margin-bottom: -1 * $CARDS_MARGIN;
+  margin-left: -1 * $CARDS_MARGIN;
+
+  &__card {
+    @include card($CARDS_MARGIN);
+    width: $CARD_WIDTH;
+  }
+
+  &__card-value,
+  &__card-label {
+    transition: background-color $TRANSITION_DURATION ease-in-out;
+  }
+
+  &__card-value {
+    @include flex(column, center, center);
+    height: 90px;
+    text-align: center;
+  }
+
+  &__card-label {
+    @include card-label();
+  }
+
+  &__card:hover {
+    > .DashboardCards__card-value {
+      background-color: rgba($AZURE, 0.05);
+    }
+
+    > .DashboardCards__card-label {
+      background-color: rgba($AZURE, 0.1);
+    }
+  }
+
+  &__card--active,
+  &__card--active:hover {
+    > .DashboardCards__card-value {
+      background-color: rgba($AZURE, 0.1);
+    }
+
+    > .DashboardCards__card-label {
+      color: $PALE_GREY;
+      background-color: $AZURE;
+    }
+  }
+}

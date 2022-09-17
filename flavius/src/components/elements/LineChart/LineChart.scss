@@ -1,0 +1,42 @@
+@import 'styles/_shared.scss';
+
+.LineChart {
+  // customization of lines
+  .ct-series-a .ct-line {
+    stroke: $CHART_COLOR_BRIGHT_BLUE;
+    stroke-width: 3px;
+  }
+
+  // customization of data points
+  .ct-series-a .ct-point {
+    stroke: $CHART_COLOR_BRIGHT_BLUE;
+    stroke-width: 4px;
+    fill: white;
+  }
+
+  // customization of grid
+  .ct-grid {
+    stroke: $CHART_COLOR_GRID;
+    stroke-dasharray: 0;
+  }
+
+  // customization of labels
+  .ct-labels {
+    text-transform: uppercase;
+  }
+
+  .ct-label {
+    color: $TEXT_COLOR_SECONDARY;
+    font-size: map-get($FONT_SIZES, 'BODY');
+  }
+
+  .ct-label.ct-horizontal {
+    position: relative;
+    right: 20px;
+    top: 5px;
+  }
+
+  .ct-label.ct-horizontal.ct-end {
+    justify-content: center;
+  }
+}

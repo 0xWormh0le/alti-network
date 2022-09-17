@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound renders correctly 1`] = `
+<div>
+  <div
+    class="Page"
+  >
+    <div
+      class="NotFound"
+    >
+      <div
+        class="Actionbar"
+      >
+        <div
+          class="Typography Typography--h4 Typography--normal Actionbar__title-wrapper"
+        >
+          Sorry, page not found!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

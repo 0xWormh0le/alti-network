@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpotlightGridNav renders correctly 1`] = `
+<div>
+  <div
+    class="SpotlightGridNav"
+  >
+    <div
+      class="SpotlightGridNav__group"
+    >
+      <p
+        class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+      >
+        Risks
+      </p>
+      <hr />
+      <nav
+        class="SpotlightGridNav__item SpotlightGridNav__item--selected"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          All
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          Created
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+    </div>
+    <div
+      class="SpotlightGridNav__group"
+    >
+      <p
+        class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+      >
+        Files
+      </p>
+      <hr />
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          Accessible
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          Owned & At-Risk
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          Received
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          Shared
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+    </div>
+    <div
+      class="SpotlightGridNav__group"
+    >
+      <p
+        class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+      >
+        Activity
+      </p>
+      <hr />
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          Downloads (non-app)
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          App Downloads
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          Collaborator Adds
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="SpotlightGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small SpotlightGridNav__item-label"
+        >
+          All File Events
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+        />
+      </nav>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,19 @@
+@import 'styles/_shared.scss';
+
+.AppSpotlightHeader {
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border: solid 1px;
+  border-radius: 6px;
+  border-color: $BORDER_COLOR;
+}
+
+.AppSpotlightHeaderLoading {
+  padding: $SMALL_SPACING;
+
+  &__content {
+    width: 500px;
+    height: 260px;
+  }
+}

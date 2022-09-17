@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 21</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-28.5130679%" y1="-18.5338815%" x2="116.721788%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DFECC6" offset="0%"></stop>
+            <stop stop-color="#63AB76" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-28.5130679%" y1="16.3766688%" x2="116.721788%" y2="74.5304442%" id="linearGradient-2">
+            <stop stop-color="#DFECC6" offset="0%"></stop>
+            <stop stop-color="#63AB76" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="For-approval" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Edit-permissions-5-success" transform="translate(-675.000000, -284.000000)">
+            <g id="Group-24" transform="translate(370.000000, 212.000000)">
+                <g id="Group-17" transform="translate(115.000000, 72.000000)">
+                    <g id="Group-21" transform="translate(190.000000, 0.000000)">
+                        <path d="M25,0 C38.8071187,0 50,11.1928813 50,25 C50,38.8071187 38.8071187,50 25,50 C11.1928813,50 0,38.8071187 0,25 C0,11.1928813 11.1928813,0 25,0 Z M25,3 C12.8497355,3 3,12.8497355 3,25 C3,37.1502645 12.8497355,47 25,47 C37.1502645,47 47,37.1502645 47,25 C47,12.8497355 37.1502645,3 25,3 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                        <path d="M22.8631772,32.8634209 L35.8310376,19.6363636 C36.0985614,19.3634927 36.2323232,19.0403562 36.2323232,18.6669539 C36.2323232,18.2935516 36.0985614,17.9704151 35.8310376,17.6975442 L35.5858586,17.4093063 C35.3183349,17.1364354 35.0015305,17 34.6354454,17 C34.2693603,17 33.9525559,17.1364354 33.6850321,17.4093063 L21.912764,29.3787161 L15.5472911,22.9241706 C15.2797674,22.6512997 14.962963,22.5148643 14.5968779,22.5148643 C14.2307928,22.5148643 13.9139884,22.6512997 13.6464646,22.9241706 L13.4012856,23.2124084 C13.1337619,23.4852793 13,23.8084159 13,24.1818182 C13,24.5552205 13.1337619,24.878357 13.4012856,25.1512279 L20.9623508,32.8634209 C21.2298745,33.1362918 21.5466789,33.2727273 21.912764,33.2727273 C22.2788491,33.2727273 22.5956535,33.1362918 22.8631772,32.8634209 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

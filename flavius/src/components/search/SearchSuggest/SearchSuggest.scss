@@ -1,0 +1,145 @@
+@import 'styles/_shared.scss';
+
+$PERSON_SELECT_HOVER_BG_COLOR: #e8f2ff;
+$PERSON_SELECT_CLEAR_COLOR: #6e6e6e;
+$PERSON_SELECT_MENU_BG_COLOR: #fbfcfc;
+$PERSON_SELECT_HEIGHT: 50px;
+
+.SearchSuggest {
+  $this: &;
+
+  max-width: 620px;
+  padding: $BASE_SPACING * 2;
+
+  #{$this}__control {
+    padding-left: $SMALL_SPACING;
+    padding-right: $SMALL_SPACING;
+    height: $PERSON_SELECT_HEIGHT;
+    font-size: map-get($FONT_SIZES, H4);
+    @include flex(row, flex-start, center);
+  }
+
+  &__item {
+    $item: &;
+
+    max-width: 100%;
+    position: relative;
+    padding: $BASE_SPACING $SMALL_SPACING;
+    cursor: pointer;
+    @include flex(row, flex-start, center);
+
+    &:not(:first-child):before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: $SMALL_SPACING;
+      right: $SMALL_SPACING;
+      border-top: 1px solid $PALE_GREY;
+    }
+
+    &-text {
+      margin-left: $SMALL_SPACING;
+      flex: 3;
+
+      &-bold {
+        font-weight: 700;
+      }
+    }
+
+    &-value {
+      margin-left: $SMALL_SPACING;
+      flex: 5;
+    }
+
+    &-hist {
+      margin-left: $SMALL_SPACING;
+      font-weight: 500;
+      flex: 1;
+    }
+
+    &-icon {
+      color: $LIGHT_GREY;
+    }
+
+    &--active,
+    &--focus {
+      background-color: $PERSON_SELECT_HOVER_BG_COLOR;
+      &:before {
+        border-top-color: transparent !important;
+      }
+      + #{$item}:before {
+        border-top-color: transparent !important;
+      }
+    }
+
+    &--file-icon {
+      width: 20px;
+    }
+
+    &:active {
+      background-color: $BLUE_LIGHT;
+    }
+  }
+
+  &__clear {
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1rem;
+    background-color: $BORDER_COLOR;
+    color: $PERSON_SELECT_CLEAR_COLOR;
+    cursor: pointer;
+    padding: 0;
+    @include flex(row, center, center);
+
+    &:hover {
+      background-color: $LIGHTER_GREY;
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    color: $LIGHTER_GREY;
+  }
+
+  &__placeholder {
+    color: $LIGHTER_GREY;
+    position: absolute;
+  }
+
+  &__container {
+    height: $PERSON_SELECT_HEIGHT;
+    cursor: text;
+
+    &-inner {
+      overflow: hidden;
+      border-radius: 4px;
+      &:hover,
+      &--focus {
+        box-shadow: 2px -2px 5px 0 rgba(53, 64, 82, 0.1), -2px 3px 5px 0 rgba(53, 64, 82, 0.1);
+      }
+    }
+  }
+
+  &__menu {
+    position: relative;
+    background-color: $PERSON_SELECT_MENU_BG_COLOR;
+    z-index: 9999;
+  }
+
+  &__menu-list {
+    max-height: 300px;
+    overflow: auto;
+  }
+
+  &__no-options {
+    margin: $SMALL_SPACING;
+    padding: $SMALL_SPACING;
+    text-align: center;
+    border: dashed 1px $BORDER_COLOR;
+    color: $PLACEHOLDER_COLOR;
+  }
+}

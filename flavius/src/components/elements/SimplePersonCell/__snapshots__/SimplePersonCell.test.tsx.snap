@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimplePersonCell renders correctly 1`] = `
+<div>
+  <div
+    class="SimplePersonCell"
+  >
+    <a
+      class="SimplePersonCell__link"
+      href="/dashboard/spotlight/bobbie%40thoughtlabs.io"
+    >
+      <div
+        class="SimplePersonCell__full-name"
+      >
+        Hawaii Bobbie
+      </div>
+      <div
+        class="SimplePersonCell__email"
+      >
+        bobbie@thoughtlabs.io
+      </div>
+    </a>
+  </div>
+</div>
+`;

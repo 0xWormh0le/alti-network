@@ -1,0 +1,26 @@
+type: apigateway
+name: altitude-{{ENV}}-apigw-{{SUFFIX}}
+spec_path: external_api/api/flavius.v1.yml
+stage_name: &stage_name "{{ENV}}-{{SUFFIX}}"
+stage_description: Flavius {{ENV}} {{SUFFIX}}
+endpoint_type: REGIONAL
+{% if ENV == 'staging' %}
+cors_origin: app-staging.altitudenetworks.com
+domain_name: api-staging.altitudenetworks.com
+{% endif %}
+{% if ENV == 'prod' %}
+cors_origin: app.altitudenetworks.com
+domain_name: api.altitudenetworks.com
+{% endif %}
+{% if ENV == 'dev' %}
+domain_name: api-dev.altitudenetworks.com
+{% endif %}
+authorizer_name: altitude-{{ENV}}-lambda-apigw-authorizer-{{SUFFIX}}
+authorizer_alias: "{{ENV}}"
+authorizer_invoke_role_arn: arn:aws:iam::{{AWS_ACCOUNT}}:role/altitude-{{ENV}}-authorizer-role
+domain_base_path: *stage_name
+tags:
+  ApplicationRole: FlaviusAPI
+models:
+  - model: Person
+    path: external_api/schema/user-v1.0.yml

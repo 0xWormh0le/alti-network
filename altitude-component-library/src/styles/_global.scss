@@ -1,0 +1,44 @@
+@import './shared.scss';
+@import './fonts.scss';
+@import './reset.scss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #333;
+
+  @include set-typography('BODY_LARGE', 'normal');
+  font-family: $FONT_FAMILY_SANS_SERIF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $FONT_FAMILY_SANS_SERIF;
+}
+
+/* avoid mobile browser to zoom in form elements on focus */
+select.form-control,
+textarea.form-control,
+input.form-control {
+  font-size: 16px;
+}
+input[type='file'] {
+  width: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}

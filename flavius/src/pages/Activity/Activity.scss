@@ -1,0 +1,134 @@
+@import 'styles/_shared.scss';
+
+.Activity {
+  &__title {
+    img {
+      width: auto;
+      height: 1.5rem;
+      margin-left: $BASE_SPACING;
+      vertical-align: -0.1em;
+    }
+  }
+
+  &__main {
+    margin: $PAGE_MARGIN;
+    max-width: $MAX_CONTENT_WIDTH;
+  }
+
+  &__filter {
+    background-color: rgba($color: $PALE_GREY, $alpha: 0.25);
+    padding: $SMALL_SPACING;
+    border: 1px solid $PALE_GREY;
+    border-radius: 4px;
+    margin-top: $SMALL_SPACING;
+    margin-bottom: $SMALL_SPACING;
+
+    &-row {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: $BASE_SPACING;
+    }
+
+    &-item {
+      margin-right: $SMALL_SPACING;
+
+      .Filter__dropdown-item {
+        font-size: map-get($FONT_SIZES, 'BODY');
+
+        input {
+          margin-top: 0;
+          margin-right: $BASE_SPACING;
+        }
+      }
+
+      label {
+        display: block;
+      }
+
+      input,
+      select {
+        border-radius: 4px;
+        border: solid 1px $PALE_GREY;
+        background-color: $WHITE;
+      }
+    }
+
+    .Filter {
+      &__FileActivity {
+        &-container {
+          width: 15rem;
+        }
+
+        &-dropdown {
+          width: 22rem;
+        }
+      }
+
+      &__DateRange {
+        &-container {
+          display: flex;
+
+          img {
+            margin-left: $SMALL_SPACING / 2;
+            margin-right: $SMALL_SPACING / 2;
+          }
+        }
+      }
+
+      &__AccountList {
+        padding: 0;
+        margin: 0;
+        counter-reset: section;
+        list-style-type: none;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: $SMALL_SPACING / 2;
+
+          &__input {
+            &-wrapper {
+              margin-left: $SMALL_SPACING / 2;
+              margin-right: $SMALL_SPACING / 2;
+            }
+
+            input {
+              width: 15rem;
+            }
+          }
+
+          button {
+            padding: 4px 8px;
+
+            &.btn-remove {
+              text-decoration: underline;
+            }
+          }
+
+          &::before {
+            counter-increment: section;
+            content: counters(section, '.') '. ';
+          }
+        }
+      }
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid $PALE_GREY;
+      margin-top: $PAGE_MARGIN / 2;
+      margin-bottom: $PAGE_MARGIN;
+    }
+
+    &-actions {
+      display: flex;
+      align-items: center;
+
+      button {
+        margin-right: $SMALL_SPACING / 2;
+      }
+    }
+  }
+}

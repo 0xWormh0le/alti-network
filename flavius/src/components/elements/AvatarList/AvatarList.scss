@@ -1,0 +1,31 @@
+@import 'styles/_shared.scss';
+
+$EXPAND_ICON_SIZE: 34px;
+
+.AvatarList {
+  &__item,
+  &__expand {
+    display: inline-block;
+    margin: 3px;
+    user-select: none;
+
+    &-globe {
+      width: $EXPAND_ICON_SIZE;
+      height: $EXPAND_ICON_SIZE;
+      margin: 3px;
+      path {
+        fill: $TOMATO;
+      }
+    }
+  }
+
+  &__expand {
+    @include clear-button-style();
+  }
+
+  &__expand-icon {
+    width: $EXPAND_ICON_SIZE;
+    height: $EXPAND_ICON_SIZE;
+    fill: $TEXT_COLOR_SECONDARY;
+  }
+}

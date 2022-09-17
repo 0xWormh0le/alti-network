@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RisksTable renders correctly 1`] = `
+<div>
+  <div
+    class="ErrorBox"
+  >
+    <div
+      class="ErrorBox__message-container"
+    >
+      <div
+        class="ErrorBox__main-message"
+      >
+        Something went wrong.
+      </div>
+      <div
+        class="ErrorBox__secondary-message"
+      >
+        This is likely on our end.
+      </div>
+    </div>
+  </div>
+</div>
+`;

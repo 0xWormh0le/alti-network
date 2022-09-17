@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavButton renders correctly 1`] = `
+<div>
+  <a
+    class="NavButton"
+    href="/risks"
+  >
+    <button
+      class="Button Button--custom Button--primary"
+      type="button"
+    >
+      Top Risks
+    </button>
+  </a>
+</div>
+`;

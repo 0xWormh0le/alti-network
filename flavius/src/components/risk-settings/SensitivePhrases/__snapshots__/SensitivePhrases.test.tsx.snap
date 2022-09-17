@@ -1,0 +1,537 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SensitivePhrases renders correctly 1`] = `
+<div>
+  <div
+    class="SensitivePhrases"
+  >
+    <form
+      class="NewSensitivePhrase"
+    >
+      <h3
+        class="Typography Typography--h3"
+      >
+        Add Sensitive Phrase
+      </h3>
+      <div
+        class="NumberedList"
+      >
+        <div
+          class="NumberedList__item"
+        >
+          <div
+            class="NumberedList__col-number"
+          >
+            <div
+              class="NumberedList__item-number"
+            >
+              1
+            </div>
+          </div>
+          <div
+            class="NewSensitivePhrase__field"
+          >
+            <input
+              class="FormControl FormControl--flat"
+              name="phrase"
+              placeholder="Enter Sensitive Phrase"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="NumberedList__item"
+        >
+          <div
+            class="NumberedList__col-number"
+          >
+            <div
+              class="NumberedList__item-number"
+            >
+              2
+            </div>
+          </div>
+          <div
+            class="NewSensitivePhrase__field"
+          >
+            <div
+              class="NewSensitivePhrase__radios"
+            >
+              <div
+                class="Radio Radio--inline NewSensitivePhrase__radio"
+              >
+                <label
+                  class="Radio__label Radio__label--right"
+                >
+                  <input
+                    checked=""
+                    name="exact"
+                    type="radio"
+                    value="true"
+                  />
+                  <i
+                    class="Radio__helper"
+                  />
+                  <span
+                    class="Radio__label-text"
+                  >
+                    Exact Matching
+                  </span>
+                </label>
+              </div>
+              <div
+                class="Radio Radio--inline NewSensitivePhrase__radio"
+              >
+                <label
+                  class="Radio__label Radio__label--right"
+                >
+                  <input
+                    name="exact"
+                    type="radio"
+                    value="false"
+                  />
+                  <i
+                    class="Radio__helper"
+                  />
+                  <span
+                    class="Radio__label-text"
+                  >
+                    Partial Matching
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div
+              class="NewSensitivePhrase__help-box"
+            >
+              <div
+                class="Typography Typography--body-tiny NewSensitivePhrase__helper-text"
+              >
+                For example, "int" would match the filename "Number or int" but would NOT match  "Internal Review".
+              </div>
+              <img
+                alt="exact matching"
+                class="NewSensitivePhrase__helper-img"
+                src="exact-matching.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="NumberedList__item"
+        >
+          <div
+            class="NumberedList__col-number"
+          >
+            <div
+              class="NumberedList__item-number"
+            >
+              3
+            </div>
+          </div>
+          <button
+            class="Button NewSensitivePhrase__button Button--primary Button--disabled"
+            disabled=""
+            type="submit"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </form>
+    <div
+      class="SensitivePhrases__existing-phrases"
+    >
+      <h3
+        class="Typography Typography--h3"
+      >
+        Active Phrases
+      </h3>
+      <p
+        class="Typography Typography--body-small PhraseCount"
+      >
+        <span
+          class="trigger"
+        >
+          5
+           of 
+          20
+           available phrases
+        </span>
+      </p>
+      <div
+        class="Table PhraseTable"
+      >
+        <table
+          class="Table__table"
+        >
+          <thead>
+            <tr
+              class="Table__heading"
+            >
+              <th
+                class="Table__heading-cell"
+              >
+                <span>
+                  sensitive phrase
+                </span>
+              </th>
+              <th
+                class="Table__heading-cell"
+              >
+                <span>
+                  exact matching
+                </span>
+              </th>
+              <th
+                class="Table_heading-cell"
+              />
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="Table__row"
+            >
+              <td
+                class="Table__cell"
+              >
+                <div
+                  class="Phrase Phrase--sm"
+                >
+                  comp
+                </div>
+              </td>
+              <td
+                class="Table__cell"
+              >
+                <svg
+                  class="PhraseRow__icon"
+                  height="9"
+                  viewBox="0 0 13 9"
+                  width="13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.188 1.824L5.452 8.687a1.06 1.06 0 0 1-1.506 0L.812 5.541a1.072 1.072 0 0 1 0-1.511 1.062 1.062 0 0 1 1.506 0l2.381 2.39L10.682.313a1.062 1.062 0 0 1 1.506 0 1.071 1.071 0 0 1 0 1.511z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </td>
+              <td
+                class="Table__cell"
+              >
+                <button
+                  class="Button PhraseTable__delete Button--pagination"
+                  type="button"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="Table__row"
+            >
+              <td
+                class="Table__cell"
+              >
+                <div
+                  class="Phrase Phrase--sm"
+                >
+                  financial
+                </div>
+              </td>
+              <td
+                class="Table__cell"
+              >
+                <svg
+                  class="PhraseRow__icon"
+                  height="9"
+                  viewBox="0 0 13 9"
+                  width="13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.188 1.824L5.452 8.687a1.06 1.06 0 0 1-1.506 0L.812 5.541a1.072 1.072 0 0 1 0-1.511 1.062 1.062 0 0 1 1.506 0l2.381 2.39L10.682.313a1.062 1.062 0 0 1 1.506 0 1.071 1.071 0 0 1 0 1.511z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </td>
+              <td
+                class="Table__cell"
+              >
+                <button
+                  class="Button PhraseTable__delete Button--pagination"
+                  type="button"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="Table__row"
+            >
+              <td
+                class="Table__cell"
+              >
+                <div
+                  class="Phrase Phrase--sm"
+                >
+                  internal
+                </div>
+              </td>
+              <td
+                class="Table__cell"
+              >
+                <svg
+                  class="PhraseRow__icon"
+                  height="9"
+                  viewBox="0 0 13 9"
+                  width="13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.188 1.824L5.452 8.687a1.06 1.06 0 0 1-1.506 0L.812 5.541a1.072 1.072 0 0 1 0-1.511 1.062 1.062 0 0 1 1.506 0l2.381 2.39L10.682.313a1.062 1.062 0 0 1 1.506 0 1.071 1.071 0 0 1 0 1.511z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </td>
+              <td
+                class="Table__cell"
+              >
+                <button
+                  class="Button PhraseTable__delete Button--pagination"
+                  type="button"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="Table__row"
+            >
+              <td
+                class="Table__cell"
+              >
+                <div
+                  class="Phrase Phrase--sm"
+                >
+                  earnings
+                </div>
+              </td>
+              <td
+                class="Table__cell"
+              />
+              <td
+                class="Table__cell"
+              >
+                <button
+                  class="Button PhraseTable__delete Button--pagination"
+                  type="button"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="Table__row"
+            >
+              <td
+                class="Table__cell"
+              >
+                <div
+                  class="Phrase Phrase--sm"
+                >
+                  external
+                </div>
+              </td>
+              <td
+                class="Table__cell"
+              />
+              <td
+                class="Table__cell"
+              >
+                <button
+                  class="Button PhraseTable__delete Button--pagination"
+                  type="button"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        class="EntityCountPagination"
+      >
+        <div />
+        <div
+          class="EntityCountPagination__pagination-info"
+        >
+          <div
+            class="EntityCountPagination__page-size EntityCountPagination__items-count"
+          >
+            <span>
+              Displaying 0 Items Per Page
+            </span>
+          </div>
+          <div
+            class="Pagination"
+          >
+            <div
+              class="Pagination__group"
+            >
+              <div
+                class="PaginationItem PaginationItem--side"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  1
+                </button>
+              </div>
+            </div>
+            <div
+              class="Pagination__group"
+            >
+              <div
+                aria-label="prev"
+                class="PaginationItem PaginationItem--arrow"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  <svg
+                    class="Pagination__arrow"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="5,10 15,1 15,19"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                aria-label="1"
+                class="PaginationItem PaginationItem--number"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  1
+                </button>
+              </div>
+              <div
+                aria-label="2"
+                class="PaginationItem PaginationItem--number"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  2
+                </button>
+              </div>
+              <div
+                aria-label="3"
+                class="PaginationItem PaginationItem--number"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  3
+                </button>
+              </div>
+              <div
+                aria-label="4"
+                class="PaginationItem PaginationItem--number"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  4
+                </button>
+              </div>
+              <div
+                aria-label="5"
+                class="PaginationItem PaginationItem--number"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  5
+                </button>
+              </div>
+              <div
+                aria-label="next"
+                class="PaginationItem PaginationItem--arrow"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  <svg
+                    class="Pagination__arrow"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="15,10 5,1 5,19"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="Pagination__group"
+            >
+              <div
+                class="PaginationItem PaginationItem--side"
+              >
+                <button
+                  class="Typography Typography--body-tiny PaginationItem__link"
+                >
+                  10
+                </button>
+              </div>
+            </div>
+            <form
+              class="PageNumberInput"
+            >
+              <div
+                class="Typography Typography--body-tiny Typography--semibold PageNumberInput__label"
+              >
+                Go to page
+              </div>
+              <div
+                class="PageNumberInput__input-wrapper"
+              >
+                <input
+                  class="PageNumberInput__input"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <button
+                class="Button PageNumberInput__submit Button--pagination Button--disabled"
+                disabled=""
+                type="submit"
+              >
+                GO
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

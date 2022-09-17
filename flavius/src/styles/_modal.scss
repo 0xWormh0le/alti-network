@@ -1,0 +1,12 @@
+.ModalPage {
+  height: calc(100% - #{$STANDARD_BAR_HEIGHT});
+  overflow-y: auto;
+  margin-top: $STANDARD_BAR_HEIGHT;
+
+  // Do not use fixed Actionbar in iPad
+  @include ipad {
+    height: 100%;
+    overflow-y: auto;
+    margin-top: 0;
+  }
+}

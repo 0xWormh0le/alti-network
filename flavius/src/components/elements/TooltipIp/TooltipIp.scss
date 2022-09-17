@@ -1,0 +1,132 @@
+@import 'styles/_shared.scss';
+
+.TooltipIpCell {
+  display: inline-flex;
+  cursor: default;
+  height: 16px;
+}
+
+.SvgMap {
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.SvgMapWrapper {
+  width: 249px;
+  height: 200px;
+  padding-bottom: 22px;
+}
+
+.location-indicator {
+  width: 20px;
+  height: 20px;
+  border: solid 4px $WHITE;
+  background-color: $SEVEREITY3_BG;
+}
+
+.TooltipIpContainer {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  height: 100%;
+  min-height: 120px;
+  overflow-y: hidden;
+  background: $DARKER;
+  opacity: 1 !important;
+
+  &__displayIp {
+    font-size: map-get($FONT_SIZES, 'BODY_SMALL');
+    line-height: map-get($LINE_HEIGHTS, 'BODY_SMALL');
+    max-width: 180px;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    color: $LIGHT_GREY;
+    margin-bottom: 10px;
+  }
+
+  &__infoLabel {
+    color: $LIGHT_GREY;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: map-get($FONT_SIZES, 'BODY_TINY');
+  }
+
+  &__mapError {
+    font-size: map-get($FONT_SIZES, 'BODY_SMALL');
+    padding-top: 20px;
+  }
+
+  &__infoText {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 100%;
+  }
+
+  &__ipWrap {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__infoIp {
+    display: block;
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__infoBox {
+    height: 120px;
+    border-radius: 4px;
+    border: solid 1px $LIGHT_GREY;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    & > div {
+      border-bottom: 1px solid $LIGHT_GREY;
+    }
+    & > div:nth-of-type(3) {
+      border-bottom: none;
+    }
+    & > div:nth-of-type(4) {
+      border-bottom: none;
+    }
+  }
+  &__row {
+    display: grid;
+    box-sizing: border-box;
+    max-width: 245px;
+    grid-template-columns: 25% 75%;
+    height: 40px;
+    text-align: left;
+
+    & > div:nth-of-type(odd) {
+      justify-self: end;
+      padding-right: 16px;
+    }
+    & > div:nth-of-type(even) {
+      justify-self: start;
+      font-size: map-get($FONT_SIZES, 'BODY');
+    }
+  }
+}
+
+.errorWrapper {
+  @include set-typography('BODY_LARGE', 'normal');
+  line-height: map-get($LINE_HEIGHTS, 'BODY_SMALL');
+  color: $LIGHT_GREY;
+  & img {
+    margin-top: 10px;
+    width: 39px;
+    height: 54px;
+  }
+}

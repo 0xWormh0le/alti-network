@@ -1,0 +1,173 @@
+---
+title: Cloud Protection for Enterprises | Altitude Network’s Platforms
+description: Protect your company’s cloud collaboration efforts with Altitude Networks’ DLP security solution, currently available for Microsoft 365 and Google Workspace. Learn more here!
+url: /solutions
+solutions: true
+---
+{% block scripts %}
+<script>
+  (function ($) {
+    $(document).ready(function () {
+      
+    });
+    
+  })(jQuery);
+</script>
+{% endblock %}
+{% extends "./layouts/layout.njk" %}
+{% block body %}
+<section class="">
+<div class="landingHeadContainer">
+  <div class="landingHeadTop">
+    <div class="landingHero">
+      Protect Cloud Collaboration for Enterprises
+    </div>
+    <div class="landingThreeColumns">
+      <div class="landingThreeColumns--col">
+        <div  class="landingCheck">
+          <div>
+            <img 
+              src="/images/landingpage-checkmark.svg" 
+              alt="checkmark" 
+              class="hero-content__descr--check-mark" 
+            />
+          </div>
+          <div>
+            <span class="hero-content__descr--title">Sensitive Data Protection</span>
+            <span>Find and protect accidental or <br />malicious data sharing</span>
+          </div>
+        </div>
+        
+          
+      </div>
+      <div class="landingThreeColumns--col">
+        <div  class="landingCheck">
+          <div>
+            <img 
+              src="/images/landingpage-checkmark.svg" 
+              alt="checkmark" 
+              class="hero-content__descr--check-mark" 
+            />
+          </div>
+          <div>
+            <span class="hero-content__descr--title">Offboarding</span>
+            <span>Identify data theft and personal account access by former or departing employees</span>
+          </div>
+        </div>
+      </div>
+      <div class="landingThreeColumns--col">
+        <div  class="landingCheck">
+          <div>
+            <img 
+              src="/images/landingpage-checkmark.svg" 
+              alt="checkmark" 
+              class="hero-content__descr--check-mark" 
+            />
+          </div>
+          <div>
+            <span class="hero-content__descr--title">Rogue Apps</span>
+            <span>
+              3rd party applications<br />
+              exfiltrating cloud data
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="landingHeadBottom">&nbsp;</div>
+  <p class="intro-content">Altitude Networks DLP security solution allows your employees to collaborate in the cloud without the risk of malicious data sharing, insider threats, or unauthorized access from 3rd party applications. We currently support Microsoft 365 and Google Workspace cloud platforms and we are working on securing more, including Slack, Dropbox, Confluence, Salesforce, and more. Cloud security is no longer just an option. It’s a necessity for today’s fast-paced, cloud-driven working environments. <a href="https://altitudenetworks.com/assessment">Get your free security assessment today</a>!</p>
+</div>
+<div class="landingBodyContainer">
+  <div class="landingBody">
+    <div class="landingBody--header">We support these cloud platforms</div>
+    <div class="row feature-page-cards-section__row">
+
+    
+    <div class="card" style="cursor: default">
+      <div class="card-box">
+        <div class="card-box-img-container">
+          <a href="/gsuite-googleworkspace" style="padding:0">
+            <img 
+              src="/images/google-workspace-logo.svg" 
+              alt="Google workspace" 
+              width="157"
+              height="20"
+              />
+          </a>
+        </div>
+        <a href="/gsuite-googleworkspace" style="padding:0">
+          <div class="secondary-button-container landingSecondaryButton">
+            <span class="secondary-button" type="button">Learn More</span>
+          </div>
+        </a>
+      </div>
+      <div class="landingDivider">&nbsp;</div>
+    </div>
+    
+
+    <div class="card" style="cursor: default">
+      <div class="card-box">
+        <div class="card-box-img-container">
+          <a href="/microsoft-0365" style="padding:0">
+            <img 
+              src="/images/Ofc365_rgb_Orng166.png" 
+              alt="Microsoft 365"  
+              width="111" 
+              height="25"
+            />
+          </a>
+        </div>
+        <a href="/microsoft-0365" style="padding:0">
+          <div class="secondary-button-container landingSecondaryButton">
+            <span class="secondary-button" type="button">Learn More</span>
+          </div>
+          <div class="landingDivider">&nbsp;</div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="card" style="cursor:default">
+      <div class="card-box">
+        <div class="card-box-img-container">
+          <a href="/other-platforms"  style="padding:0;color:#354052;text-decoration:none">
+            <div class="flexRow flexRow--centered">
+              <div><img src="/images/flame.svg" alt="upcoming" vertical-align="middle" /></div>
+              <div class="card-box--title">Upcoming</div>
+            </div>
+          </a>
+          <div class="flexRowAllViews flexRow--centered marginTop10">
+            <div>
+              <img src="/images/box-logo.svg" alt="Box" class="solutionLogos" />
+            </div>
+            <div>
+              <img src="/images/dropbox-logo.svg" alt="Dropbox" class="solutionLogos" />
+            </div>
+            <div>
+              <img src="/images/slack-logo.png" alt="Slack" class="solutionLogos"/>
+            </div>
+            <div>
+              <img src="/images/confluence-logo.svg" alt="Confluence" class="solutionLogos" />
+            </div>
+            <div>
+              <img src="/images/salesforce-logo.svg" alt="Salesforce" class="solutionLogos" />
+            </div>
+          </div>
+        </div>
+        <a href="/other-platforms"  style="padding:0;">
+          <div class="secondary-button-container landingSecondaryButton">
+            <span href="/other-platforms" class="secondary-button" type="button">Learn More</span>
+          </div>
+        </a>
+        <div class="landingDivider">&nbsp;</div>
+      </div>
+    </div>
+
+
+  <div class="solutionsFormContainer marginTop20">
+    {% include "./layouts/partials/platform-form.html.njk" %}
+  </div>
+</div>
+</section>
+{% endblock %}

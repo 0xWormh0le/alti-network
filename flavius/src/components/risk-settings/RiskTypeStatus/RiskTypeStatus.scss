@@ -1,0 +1,17 @@
+@import 'styles/_shared.scss';
+
+.RiskTypeStatus {
+  &__configuration {
+    display: flex;
+    flex-direction: row;
+
+    > div {
+      flex-grow: 1;
+    }
+  }
+
+  &__information {
+    margin-left: $LARGE_SPACING;
+    max-width: 17rem;
+  }
+}

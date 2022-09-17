@@ -1,0 +1,42 @@
+const colorList = [
+  '#EA4335',
+  '#E1245D',
+  '#9E4AAC',
+  '#FBC310',
+  '#FF8246',
+  '#FF8246',
+  '#00832D',
+  '#61AE7B',
+  '#1E8AA1',
+  '#07689F',
+  '#092762'
+]
+
+const timeDisplayFormat = {
+  DATE_FORMAT: 'MMM D, YYYY',
+  DATE_FORMAT_MONTH_SHORT_DAY_SHORT: 'MMM D',
+  DATE_FORMAT_MONTH_SHORT: 'MMM',
+  DATE_FORMAT_MONTH_SHORT_YEAR_SHORT: "MMM 'YY",
+  DATE_FORMAT_MONTH_SHORT_YEAR: 'MMM YYYY',
+  TIME_FORMAT: 'hh:mma',
+  COMMON_FORMAT_SHORT_DATE: 'MM/DD/YYYY HH:mm:ss'
+}
+
+const CONSTANTS = {
+  EXTERNAL_OR_UNKNOWN: 'CONSTANT_EXTERNAL_DRIVE', // this should match what the API returns, currenly is CONSTANT_EXTERNAL_DRIVE, once the API updates, we will refer to the line below
+  // EXTERNAL_OR_UNKNOWN: 'EXTERNAL_OR_UNKNOWN'
+  PAGE_SIZE_CUTOFFS: [10, 20, 25, 50],
+  DEFAULT_PAGE_SIZE: 10,
+  MAX_PAGE_SIZE: 50,
+  MIN_PAGE_SIZE: 5,
+  CSV_PAGE_SIZE: 2000,
+  MIN_PASSWORD_LENGTH: 10,
+  FEEDBACK_EMAIL_ADDRESS: 'feedback@altitudenetworks.com',
+  DEMO_EMAIL_ADDRESS: 'demo@kindco.io',
+  RELOAD_TIME: 24 * 3600 * 1000,
+  PAGE_COUNT_CACHE_TTL: 3600,
+  COLOR_LIST: colorList,
+  TIME_DISPLAY_FORMAT: timeDisplayFormat
+}
+
+export default CONSTANTS

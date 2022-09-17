@@ -1,0 +1,22 @@
+@import 'styles/_shared.scss';
+
+.ScanQrCodeStep {
+  &__title {
+    color: $TEXT_COLOR;
+    margin-bottom: 1rem;
+  }
+
+  &__qr {
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  &__code {
+    overflow-wrap: break-word;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    @include brand-link();
+  }
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <span
+    class="Typography Typography--body trigger Marker Marker__internal"
+  >
+    Internal Link Sharing
+  </span>
+</div>
+`;

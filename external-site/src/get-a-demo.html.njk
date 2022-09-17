@@ -1,0 +1,116 @@
+---
+title: Get a Demo
+---
+
+{% extends "./layouts/layout-base.njk" %}
+
+{% block main %}
+  <div class="scroll-wrapper welcome-scroll-wrapper">
+    <section class="welcome-header">
+      <div class="welcome-header__logo">
+        <a class="logo" href="/">
+          <img src="/images/logo-outline.svg" alt="Altitude Networks" />
+        </a>
+      </div>
+      <div class="welcome-section__container">
+        <div class="welcome-header__row">
+          <div class="welcome-header__col">
+            <h2 class="welcome-header__headline">
+              See a Live Demo of Altitude Networks Platform
+            </h2>
+            <div class="welcome-header__content">
+              <p>
+                Companies are using Altitude Networks to fill the gap of security in cloud collaboration for multiple threats including:
+              </p>
+              <ul>
+                <li>Protecting intellectual property from theft by off-boarding employees</li>
+                <li>Validating ex-contractors don’t have residual access to data through other accounts</li>
+                <li>Preventing sharing of critical internal files to personal accounts</li>
+                <li>Blocking inadvertent internal sharing of sensitive or privileged files to the entire company</li>
+                <li>Identifying and remediating public access to critical company files</li>
+              </ul>
+              <p>
+                See how Altitude Networks can help protect your cloud data now by filling out the form on this page.
+              </p>
+            </div>
+          </div>
+          <div class="welcome-header__col">
+            <div class="welcome-header-cta">
+              <object id="bits-animation" data="/images/bits.svg" type="image/svg+xml" class="welcome-header__bits"></object>
+              <h3 class="welcome-header-cta__title">
+                See a Demo
+              </h3>
+              <form class="cta-subscribe__form cta-subscribe__form--vertical get-a-demo__form">
+                <input class="cta-input cta-input--shadowed" type="text" name="first-name" value="" placeholder="First Name" />
+                <input class="cta-input cta-input--shadowed" type="text" name="last-name" value="" placeholder="Last Name" />
+                <input class="cta-input cta-input--shadowed" type="email" name="work-email" value="" placeholder="Work Email" required />
+                <button type="submit" class="cta-button welcome-header-cta__button" data-altimeter="get_a_demo_cta_top">Get a Demo</button>
+                <div class="cta-subscribe__notice">
+                  We will <em>only</em> use your email to contact you for this demo.
+                </div>
+              </form>
+              <div class="cta-subscribe__success">
+                <span class="cta-subscribe__success-icon">✔</span>
+                Thank you for signing up, we will be in touch soon!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome-section welcome-cards-section">
+      <div class="welcome-section__container">
+        <div class="row welcome-cards-section__row">
+          <div class="card">
+            <div class="card__title">Continuous</div>
+            <img src="/images/scalability.svg" class="card__icon" />
+            <p class="card__text">
+              Data is constantly shared. Your security must be constantly defending.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__title">Accurate</div>
+            <img src="/images/accuracy.svg" class="card__icon" />
+            <p class="card__text">
+              Get results, actions, and defense you can trust with minimal effort.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__title">Intelligent</div>
+            <img src="/images/automation.svg" class="card__icon" />
+            <p class="card__text">
+              Get the smarts of a security analyst, with the scale of computers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome-section welcome-cta-section">
+      <object id="bits-animation" data="/images/bits.svg" type="image/svg+xml" class="welcome-cta-section__bits"></object>
+      <div class="welcome-section__container">
+        <h2 class="welcome-cta-section__title">
+          See a Live Demo of Altitude Networks Platform
+        </h2>
+        <!-- <p class="welcome-cta-section__text">
+          We'll get in touch soon with more info
+        </p> -->
+        <div class="cta-subscribe welcome-cta-subscribe">
+          <form class="cta-subscribe__form--vertical get-a-demo__form">
+            <input class="cta-input" type="email" name="work-email" value="" placeholder="Your Work Email" required />
+            <button type="submit" class="cta-button" data-altimeter="get_a_demo_cta_bottom">Get a Demo</button>
+            <div class="cta-subscribe__notice">
+              We will <em>only</em> use your email to contact you for this demo.
+            </div>
+          </form>
+          <div class="cta-subscribe__success">
+            <span class="cta-subscribe__success-icon">✔</span>
+            Thank you for signing up, we will be in touch soon!
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "./layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}

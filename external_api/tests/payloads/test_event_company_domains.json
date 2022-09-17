@@ -1,0 +1,9 @@
+{
+    "requestContext": {
+        "authorizer": {
+            "project_id": "thoughtlabs"
+        }
+    },
+    "httpMethod": "GET",
+    "queryStringParameters": {}
+}

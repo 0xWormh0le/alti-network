@@ -1,0 +1,13 @@
+@import 'styles/_shared.scss';
+
+.LogoutButton {
+  margin: 0 $BASE_SPACING;
+  text-decoration: underline;
+  color: $TEXT_COLOR !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.LogoutButton:hover {
+  background-color: white !important;
+}

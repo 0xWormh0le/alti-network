@@ -1,0 +1,26 @@
+@import 'styles/_shared.scss';
+
+.DateAndTimeCell {
+  min-width: 83px;
+  max-width: 300px;
+
+  &__date,
+  &__time {
+    display: block;
+  }
+
+  &__time {
+    @include set-typography('BODY_SMALL', 'normal');
+    color: $TEXT_COLOR_SECONDARY;
+  }
+
+  &__time-container {
+    display: flex;
+    gap: $BASE_SPACING;
+  }
+
+  &__date--unknown {
+    font-style: oblique;
+    color: $TEXT_COLOR_SECONDARY;
+  }
+}

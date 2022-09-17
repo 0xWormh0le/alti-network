@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowItWorksStep renders correctly 1`] = `
+<div>
+  <section
+    class="HowItWorksStep TwoFactorAuthentication__step"
+  >
+    <h3
+      class="Typography Typography--h3 Typography--semibold HowItWorksStep__title"
+    >
+      How Two-Factor Authentication works
+    </h3>
+    <p
+      class="Typography Typography--body-large"
+    >
+      <img
+        alt="padlock"
+        class="HowItWorksStep__icon"
+        src="padlock.svg"
+      />
+      When logging in, you'll need to provide a login code.
+    </p>
+    <p
+      class="Typography Typography--body-large"
+    >
+      <img
+        alt="smartphone"
+        class="HowItWorksStep__icon"
+        src="smartphone.svg"
+      />
+      The logic code will be sent to you via a mobile app, which uses TOTP protocol.
+    </p>
+    <p
+      class="Typography Typography--body-large"
+    >
+      <img
+        alt="checkmark"
+        class="HowItWorksStep__icon"
+        src="verified.svg"
+      />
+      When you type in the login code, we'll know it's really you.
+    </p>
+    <button
+      class="Button HowItWorksStep__button Button--primary"
+      type="button"
+    >
+      Start
+    </button>
+  </section>
+</div>
+`;

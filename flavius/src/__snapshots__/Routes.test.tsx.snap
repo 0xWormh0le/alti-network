@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes renders correctly 1`] = `
+<div>
+  <div
+    class="Actionbar"
+  >
+    <div
+      class="Typography Typography--h4 Typography--normal Actionbar__title-wrapper"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,760 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Subnavigation behavior renders correctly 1`] = `
+<div>
+  <div
+    class="SpotlightGrid"
+  >
+    <div
+      class="SpotlightGrid__header"
+    >
+      <div
+        class="SpotlightHeader"
+      >
+        <div
+          class="SpotlightHeader__title"
+        >
+          <h3
+            class="Typography Typography--h3 Typography--normal SpotlightHeader__title-name"
+          >
+            Amir Kavousian
+          </h3>
+          <span
+            class="Typography Typography--body SpotlightHeader__title--email trigger"
+          >
+            amir@thoughtlabs.io
+          </span>
+        </div>
+      </div>
+      <div
+        class="Tabs SpotlightGrid__tabbox"
+      >
+        <div
+          class="Tabs__tab-list SpotlightGrid__tablist"
+        >
+          <div
+            aria-roledescription="tab"
+            class="Tabs__tab SpotlightGrid__tab"
+          >
+            <div
+              class="SpotlightContactTabItem external"
+            >
+              <span
+                class="PersonAvatar SpotlightContactTabItem__avatar trigger"
+              >
+                <div
+                  class="BaseAvatar "
+                  style="font-size: 0.75em; margin-right: 1em;"
+                >
+                  <div
+                    class="BaseAvatar__image"
+                  >
+                    <img
+                      alt="AK"
+                      src="avatar"
+                      style="width: 2em;"
+                    />
+                  </div>
+                </div>
+              </span>
+              <div
+                class="Typography Typography--h4 SpotlightContactTabItem__email-text"
+              >
+                amir@thoughtlabs.i...
+              </div>
+            </div>
+          </div>
+          <div
+            aria-roledescription="tab"
+            class="Tabs__tab SpotlightGrid__tab"
+          >
+            <div
+              class="SpotlightContactTabItem"
+            >
+              <span
+                class="PersonAvatar SpotlightContactTabItem__avatar trigger"
+              >
+                <div
+                  class="BaseAvatar "
+                  style="font-size: 0.75em; margin-right: 1em;"
+                >
+                  <div
+                    class="BaseAvatar__image"
+                  >
+                    <img
+                      alt="t"
+                      src="avatar"
+                      style="width: 2em;"
+                    />
+                  </div>
+                </div>
+              </span>
+              <div
+                class="Typography Typography--h4 SpotlightContactTabItem__email-text"
+              >
+                test@email.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="Typography Typography--body PermissionDeletionStatus"
+      >
+        Removing 
+        9 permissions
+        <img
+          alt="Success"
+          src="success-small.svg"
+        />
+        2
+         successful
+        <img
+          alt="Pending"
+          src="pending.svg"
+        />
+        3
+         in progress
+        <img
+          alt="Failed"
+          src="warning-small.svg"
+        />
+        2
+         failed
+      </p>
+    </div>
+    <div
+      class="SpotlightGrid__wrapper"
+    >
+      <div
+        class="SpotlightGridNav"
+      >
+        <div
+          class="SpotlightGridNav__group"
+        >
+          <p
+            class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+          >
+            Risks
+          </p>
+          <hr />
+          <nav
+            class="SpotlightGridNav__item SpotlightGridNav__item--selected"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              All
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Created
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+        </div>
+        <div
+          class="SpotlightGridNav__group"
+        >
+          <p
+            class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+          >
+            Files
+          </p>
+          <hr />
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Accessible
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Owned & At-Risk
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Received
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Shared
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+        </div>
+        <div
+          class="SpotlightGridNav__group"
+        >
+          <p
+            class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+          >
+            Activity
+          </p>
+          <hr />
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Downloads (non-app)
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              App Downloads
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Collaborator Adds
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              All File Events
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+        </div>
+      </div>
+      <div
+        class="SpotlightGrid__main"
+      >
+        <div
+          class="SpotlightGrid__content"
+        >
+          <div
+            class="SpotlightGrid__content--header"
+          >
+            <h3
+              class="Typography Typography--h3 title"
+            >
+              All Risks
+            </h3>
+            <div
+              class="prev-chart"
+            >
+              <div
+                class="PreviewChartWrapper"
+              >
+                <div
+                  class="hot-point hidden blue"
+                />
+                <div
+                  class="ct-chart PreviewChart ct-double-octave blue"
+                />
+                <div
+                  class="PreviewChartState"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="Table RisksTable"
+          >
+            <table
+              class="Table__table"
+            >
+              <thead>
+                <tr
+                  class="Table__heading"
+                >
+                  <th
+                    class="Table__heading-cell-sortable"
+                  >
+                    <span>
+                      Severity
+                    </span>
+                    <span
+                      class="Table__heading-sorting-state"
+                    >
+                      <svg
+                        class=""
+                        height="11"
+                        viewBox="0 0 7 11"
+                        width="7"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.884 10.71l-.016.011-.051.045a.492.492 0 0 1-.636-.056L.355 7.884A.504.504 0 0 1 .3 7.246l.057-.067a.493.493 0 0 1 .705-.003l2.471 2.472L6.01 7.172a.504.504 0 0 1 .637-.055l.068.056a.493.493 0 0 1 0 .705l-2.83 2.831zM3.884.276L3.868.264 3.817.219a.492.492 0 0 0-.636.056L.355 3.102a.504.504 0 0 0-.055.637l.057.068a.493.493 0 0 0 .705.002l2.471-2.472L6.01 3.813a.504.504 0 0 0 .637.056l.068-.057a.493.493 0 0 0 0-.704L3.886.276z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </th>
+                  <th
+                    class="Table__heading-cell"
+                  >
+                    <span>
+                      Risk type
+                    </span>
+                  </th>
+                  <th
+                    class="Table__heading-cell"
+                  >
+                    <span>
+                      Files At Risk
+                    </span>
+                  </th>
+                  <th
+                    class="Table__heading-cell"
+                  >
+                    <span>
+                      File Owner
+                    </span>
+                  </th>
+                  <th
+                    class="Table__heading-cell-sortable"
+                  >
+                    <span>
+                      Detected On
+                    </span>
+                    <span
+                      class="Table__heading-sorting-state"
+                    >
+                      ↓
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="Table__row"
+                >
+                  <td
+                    class="Table__cell"
+                  >
+                    <div
+                      class="RiskIndicator RiskIndicator--bar"
+                    >
+                      <div
+                        class="RiskIndicator__inner RiskIndicator--medium"
+                      />
+                    </div>
+                  </td>
+                  <td
+                    class="Table__cell"
+                  >
+                    <div
+                      class="RiskDescriptionCell"
+                    >
+                      <span>
+                        File Shared by Link Externally - Company Owned
+                      </span>
+                    </div>
+                  </td>
+                  <td
+                    class="Table__cell"
+                  >
+                    <div
+                      class="FileCell FileCell__multiline"
+                    >
+                      <div
+                        class="FileCell__icons"
+                      >
+                        <span
+                          class="AppIndicator"
+                        >
+                          <div
+                            class="platform-container"
+                          >
+                            <a
+                              class="trigger"
+                              href="webLink"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="platform-icon-container"
+                                    data-testid="platform-icon"
+                                  >
+                                    <img
+                                      alt="Google Workspace"
+                                      class="platform-icon"
+                                      src="google-logo.svg"
+                                      title="Google Workspace"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </span>
+                        <div
+                          style="margin-right: 0.3em;"
+                        />
+                        <div
+                          class="file_icon_container"
+                        >
+                          <div
+                            class="trigger"
+                          />
+                        </div>
+                      </div>
+                      <a
+                        class="FileCell__link"
+                        data-testid="file-cell-link"
+                        href="/dashboard/file/1_4sZI4rBgwnC2VDUKCSLFHMJc77oWEI2?owner=bobbie@thoughtlabs.io&selection=sensitive&platformId=gsuite&sensitive=true"
+                      >
+                        <div>
+                          <div>
+                            ptinpoly.c
+                          </div>
+                          <div
+                            class="FileCell__spacer-top-5"
+                          >
+                            <div
+                              class="sensitiveFileAlert trigger"
+                              data-testid="sensitiveFileAlert"
+                            >
+                              <span
+                                class="Typography Typography--body Marker Marker__sensitive_content"
+                              >
+                                Sensitive Content
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td
+                    class="Table__cell"
+                  >
+                    <div
+                      class="PersonCell"
+                    >
+                      <a
+                        class="PersonCell__link"
+                        href="/dashboard/spotlight/bobbie%40thoughtlabs.io"
+                      >
+                        <div
+                          class="PersonCell__email"
+                        >
+                          <span
+                            class="trigger"
+                          >
+                            bobbie@thoughtlab...
+                          </span>
+                          <span
+                            class="Typography Typography--body PersonCell__email-ext trigger Marker Marker__ext"
+                          >
+                            EXT
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td
+                    class="Table__cell"
+                  >
+                    <div
+                      class="DateAndTimeCell"
+                    >
+                      <time
+                        class="DateAndTimeCell__date"
+                        datetime="1566244504000"
+                      >
+                        Aug 19, 2019
+                      </time>
+                      <div
+                        class="DateAndTimeCell__time-container"
+                      >
+                        <time
+                          class="DateAndTimeCell__time"
+                          datetime="1566244504000"
+                        >
+                          12:55pm
+                        </time>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="Table__children"
+            >
+              <div
+                class="EntityCountPagination"
+              >
+                <div>
+                  <button
+                    class="Button EntityCountPagination__export-button Button--secondary"
+                    type="button"
+                  >
+                    Export All
+                  </button>
+                </div>
+                <div
+                  class="EntityCountPagination__pagination-info"
+                >
+                  <div
+                    class="EntityCountPagination__page-size EntityCountPagination__items-count"
+                  >
+                    <span>
+                      Displaying
+                    </span>
+                    <div
+                      class="EntityCountPagination__controller"
+                    >
+                      <select
+                        class="FormControl FormControl--flat"
+                      >
+                        <option
+                          class="FormControl FormControl--flat"
+                          value="10"
+                        >
+                          10
+                        </option>
+                        <option
+                          class="FormControl FormControl--flat"
+                          value="20"
+                        >
+                          20
+                        </option>
+                        <option
+                          class="FormControl FormControl--flat"
+                          value="25"
+                        >
+                          25
+                        </option>
+                        <option
+                          class="FormControl FormControl--flat"
+                          value="50"
+                        >
+                          50
+                        </option>
+                      </select>
+                    </div>
+                    <span>
+                      Items Per Page
+                    </span>
+                  </div>
+                  <div
+                    class="Pagination"
+                  >
+                    <div
+                      class="Pagination__group"
+                    >
+                      <div
+                        class="PaginationItem PaginationItem--side"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link PaginationItem__link--disabled"
+                        >
+                          1
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="Pagination__group"
+                    >
+                      <div
+                        aria-label="prev"
+                        class="PaginationItem PaginationItem--arrow"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link PaginationItem__link--disabled"
+                        >
+                          <svg
+                            class="Pagination__arrow"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <polygon
+                              fill="currentColor"
+                              points="5,10 15,1 15,19"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div
+                        aria-label="1"
+                        class="PaginationItem PaginationItem--number"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link PaginationItem__link--active"
+                        >
+                          1
+                        </button>
+                      </div>
+                      <div
+                        aria-label="2"
+                        class="PaginationItem PaginationItem--number"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link"
+                        >
+                          2
+                        </button>
+                      </div>
+                      <div
+                        aria-label="3"
+                        class="PaginationItem PaginationItem--number"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link"
+                        >
+                          3
+                        </button>
+                      </div>
+                      <div
+                        aria-label="4"
+                        class="PaginationItem PaginationItem--number"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link"
+                        >
+                          4
+                        </button>
+                      </div>
+                      <div
+                        aria-label="5"
+                        class="PaginationItem PaginationItem--number"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link"
+                        >
+                          5
+                        </button>
+                      </div>
+                      <div
+                        aria-label="next"
+                        class="PaginationItem PaginationItem--arrow"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link"
+                        >
+                          <svg
+                            class="Pagination__arrow"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <polygon
+                              fill="currentColor"
+                              points="15,10 5,1 5,19"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="Pagination__group"
+                    >
+                      <div
+                        class="PaginationItem PaginationItem--side"
+                      >
+                        <button
+                          class="Typography Typography--body-tiny PaginationItem__link"
+                        >
+                          49
+                        </button>
+                      </div>
+                    </div>
+                    <form
+                      class="PageNumberInput"
+                    >
+                      <div
+                        class="Typography Typography--body-tiny Typography--semibold PageNumberInput__label"
+                      >
+                        Go to page
+                      </div>
+                      <div
+                        class="PageNumberInput__input-wrapper"
+                      >
+                        <input
+                          class="PageNumberInput__input"
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                      <button
+                        class="Button PageNumberInput__submit Button--pagination Button--disabled"
+                        disabled=""
+                        type="submit"
+                      >
+                        GO
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

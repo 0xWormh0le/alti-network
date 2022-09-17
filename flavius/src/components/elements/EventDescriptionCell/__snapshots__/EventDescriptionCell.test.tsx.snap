@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateAndTimeCell renders correctly 1`] = `
+<div>
+  <div
+    class="SingleFileCell EventDescriptionCell"
+  >
+    Access changed from 'shared_externally': can_edit to 'shared_externally: none'
+    <div
+      class="EventDescriptionCell__ipContainer"
+    >
+      <div
+        class="TooltipIp-wrapper"
+      >
+        <div
+          class="TooltipIpCell"
+        >
+          <div
+            class="trigger"
+            data-testid="ipaddress"
+          >
+            <p
+              class="Typography Typography--body-small Typography--normal TooltipIpContainer__displayIp"
+            >
+              35.155.135.135
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

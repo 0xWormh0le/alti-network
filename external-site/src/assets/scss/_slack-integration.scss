@@ -1,0 +1,242 @@
+/*#### Sensitive Content Detection PAGES #####*/
+
+.slack-integration {
+  background-color: #FBFBFB;
+  font-family: "Lato", Helvetica, sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__container {
+    max-width: 950px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+  }
+
+  &-button {
+    display: flex;
+    background-color: #FFFFFF !important;
+    box-shadow: inset 0 0 0 1px #c7cacd;
+    border: solid 1px #C7CACD;
+
+    &-img {
+      width: 2rem !important;
+      margin: auto;
+      margin-right: .5rem;
+    }
+
+    @media (max-width: 928px) {
+      margin: auto;
+    }
+  }
+  &-button:hover {
+    box-shadow: 0 0 3px 3px #4285f430;
+    color: #555555 !important;
+  }
+
+  &__first {
+    text-align: center;
+
+    &-logo {
+      padding: 1rem;
+      width: 19rem;
+
+      @media (max-width: 928px) {
+        margin: auto;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 3rem;
+
+      &-image {
+        width: 60%;
+
+        @media (max-width: 928px) {
+          width: 100%;
+          max-width: 40rem;
+          margin: auto;
+        }
+      }
+      &-title {
+        width: 40%;
+        text-align: left;
+
+        @media (max-width: 928px) {
+          text-align: center;
+          width: 100%;
+        }
+
+        p {
+          color: #616061;
+          margin: 0 0 2rem 0;
+          font-size: 1.5rem;
+          margin: 0;
+          padding: 0;
+        }
+
+        &-top {
+          font-weight: bold;
+        }
+
+        &-bottom {
+          padding: 1rem 0 !important;
+          font-weight: 500;
+        }
+      }
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 5rem;
+      font-weight: 900;
+    }
+
+    &-demo {
+      background-color: #ffffff;
+      padding: 3rem;
+
+      &-image-box {
+        max-width: 30rem;
+        margin: 0 auto;
+      }
+    }
+  }  
+
+  &__second {
+    padding: 0.5rem 0;
+
+    &-element {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      align-items: center;
+
+      &--row-reverse {
+        @media (max-width: 729px) {
+          flex-direction: column-reverse;
+        }
+      }
+
+      &-part {
+        width: 50%;
+        padding: 0 1rem;
+
+        @media (max-width: 729px) {
+          width: 100%;
+        }
+      }
+    }
+
+    &-title {
+      text-align: left;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #000000;
+      margin: 0;
+      padding: 1rem 0;
+      line-height: 3rem;
+
+      @media (max-width: 729px) {
+        text-align: center;
+      }
+    }
+
+    &-description {
+      text-align: left;
+      font-size: 1.5rem;
+
+      @media (max-width: 729px) {
+        text-align: center;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__third {
+    background-color: #ffffff;
+
+    &-container {
+      max-width: 70rem;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    &-pre-title {
+      font-weight: 900;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      color: #616061;
+      padding: 1rem 0;
+      margin: 0;
+    }
+    
+    &-title {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    &-description {
+      display: flex;
+      padding: 1rem 0;
+
+      &-number {
+        background-color: #FBC310;
+        min-width: 2.5rem;
+        margin-right: 1rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        border-radius: 50%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-family: lato;
+        font-weight: 700;
+      }
+
+      &-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        p {
+          color: #616061;
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          margin: 0;
+          margin-right: 1rem;
+        }
+
+        p.add-slack {
+          min-width: 20rem;
+        }
+
+        button {
+          margin: 0;
+        }
+
+        &-image {
+          width: 100%;
+          max-width: 50rem;
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhraseCount renders correctly 1`] = `
+<div>
+  <p
+    class="Typography Typography--body-small PhraseCount"
+  >
+    <span
+      class="trigger"
+    >
+      10
+       of 
+      20
+       available phrases
+    </span>
+  </p>
+</div>
+`;
+
+exports[`PhraseCount renders loading status correctly 1`] = `
+<div>
+  <p
+    class="Typography Typography--body-small PhraseCount"
+  >
+    <span
+      class="trigger"
+    >
+      <svg
+        aria-labelledby="phrasecount-loading-aria"
+        class="PhraseCount__loading"
+        height="11"
+        preserveAspectRatio="none"
+        role="img"
+        width="15"
+      >
+        <title
+          id="phrasecount-loading-aria"
+        >
+          Loading...
+        </title>
+        <rect
+          clip-path="url(#phrasecount-loading-diff)"
+          height="100%"
+          role="presentation"
+          style="fill: url(#phrasecount-loading-animated-diff);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs
+          role="presentation"
+        >
+          <clippath
+            id="phrasecount-loading-diff"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="15"
+              x="0"
+              y="0"
+            />
+          </clippath>
+          <lineargradient
+            id="phrasecount-loading-animated-diff"
+          >
+            <stop
+              offset="0%"
+              stop-color="#eeeeee"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-2; -2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#fdfdfd"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-1; -1; 2"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#eeeeee"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="0; 0; 3"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+       of 
+      20
+       available phrases
+    </span>
+  </p>
+</div>
+`;

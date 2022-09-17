@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberedList renders correctly 1`] = `
+<div>
+  <div
+    class="NumberedList"
+  >
+    <div
+      class="NumberedList__item"
+    >
+      <div
+        class="NumberedList__col-number"
+      >
+        <div
+          class="NumberedList__item-number"
+        >
+          1
+        </div>
+      </div>
+      <span>
+        item1
+      </span>
+    </div>
+    <div
+      class="NumberedList__item"
+    >
+      <div
+        class="NumberedList__col-number"
+      >
+        <div
+          class="NumberedList__item-number"
+        >
+          2
+        </div>
+      </div>
+      <span>
+        item2
+      </span>
+    </div>
+  </div>
+</div>
+`;

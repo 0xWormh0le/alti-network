@@ -1,0 +1,10 @@
+{
+  "pathParameters": {
+    "personId": "MiChAeL@tHoUghTlaBs.io"
+  },
+  "requestContext": {
+    "authorizer": {
+      "project_id": "thoughtlabs"
+    }
+  }
+}

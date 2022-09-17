@@ -1,0 +1,82 @@
+@import 'styles/_shared.scss';
+
+.AppSpotlightGrid {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 1;
+  padding: $BASE_SPACING * 3 $BASE_SPACING * 3 0 $BASE_SPACING * 3;
+
+  &__wrapper {
+    margin-left: -$BASE_SPACING * 3;
+    margin-right: -$BASE_SPACING * 3;
+    padding-top: 3em;
+    background: white;
+    z-index: 9;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    z-index: 2;
+    display: flex;
+    box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.08);
+
+    &--header {
+      padding-top: $SMALL_SPACING;
+      display: flex;
+
+      .title {
+        font-size: 18px;
+        color: $TEXT_COLOR;
+        padding-top: $SMALL_SPACING;
+        padding-bottom: $SMALL_SPACING;
+      }
+
+      .prev-chart {
+        width: 180px;
+        height: 81px;
+        margin-left: 10px;
+        .ct-chart {
+          height: 100%;
+        }
+      }
+    }
+
+    &--details {
+      flex-grow: 1;
+      padding: 0 31px 31px;
+    }
+
+    &--chart {
+      flex-grow: 1;
+      padding-right: 60px;
+      height: 260px;
+
+      .ct-chart {
+        height: 100%;
+      }
+    }
+  }
+
+  &__Tab {
+    padding: 0;
+  }
+
+  .ChartLoading {
+    width: 100%;
+    height: 240px;
+    left: 0;
+    top: 0;
+  }
+
+  .PrevChartLoading {
+    width: 100%;
+    height: 71px;
+    left: 0;
+    top: 0;
+  }
+}

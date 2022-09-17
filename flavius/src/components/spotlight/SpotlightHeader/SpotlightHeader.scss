@@ -1,0 +1,57 @@
+@import 'styles/_shared.scss';
+
+.SpotlightHeader {
+  width: 100%;
+  @include flex(row, flex-start, center);
+  padding: $SMALL_SPACING;
+
+  &__person-header {
+    margin: $SMALL_SPACING 2 * $SMALL_SPACING;
+    @include flex(row, flex-start, center);
+  }
+
+  &__external {
+    margin-left: 0.5em;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    &--email {
+      margin-left: 0.5em;
+      font-size: 14px;
+      line-height: 1.57;
+      letter-spacing: normal;
+      color: #222c3c;
+    }
+
+    &-name {
+      color: $TEXT_COLOR;
+      padding: 0 $BASE_SPACING 0 $BASE_SPACING;
+      margin-bottom: 0;
+      display: inline;
+    }
+
+    &-label {
+      color: $BLUE_GREY_MEDIUM;
+    }
+
+    &-separator {
+      @include vertical-separator();
+    }
+
+    &-count {
+      color: $DARK;
+    }
+  }
+}
+
+.SpotlightHeaderLoading {
+  padding: $SMALL_SPACING;
+
+  &__content {
+    width: 500px;
+    height: 40px;
+  }
+}

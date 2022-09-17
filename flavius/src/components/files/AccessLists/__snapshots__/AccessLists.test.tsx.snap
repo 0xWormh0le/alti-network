@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccessLists renders correctly 1`] = `
+<div>
+  <div
+    class="AccessLists"
+  >
+    <div
+      class="AccessList"
+    >
+      <h6
+        class="Typography Typography--subhead1"
+      >
+        Internal
+         Access:
+      </h6>
+      <div
+        class="AccessList__count"
+      >
+        <span
+          class="AccessList__value"
+        >
+          1
+        </span>
+        <span
+          class="Typography Typography--body-small AccessList__unit"
+        >
+          person
+        </span>
+      </div>
+      <div
+        class="Typography Typography--label Typography--normal AccessList__shared-with"
+      >
+        Shared with:
+      </div>
+      <div
+        class="AvatarList"
+      >
+        <a
+          href="/dashboard/spotlight/test%40email.com"
+        >
+          <span
+            class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+          >
+            <div
+              class="BaseAvatar "
+            >
+              <div
+                class="BaseAvatar__text"
+                style="background-color: rgb(255, 130, 70);"
+              >
+                <div>
+                  T
+                  U
+                </div>
+              </div>
+            </div>
+          </span>
+        </a>
+      </div>
+    </div>
+    <span
+      class="AccessLists__separator"
+    />
+    <div
+      class="AccessList"
+    >
+      <h6
+        class="Typography Typography--subhead1"
+      >
+        External
+         Access:
+      </h6>
+      <div
+        class="AccessList__count"
+      >
+        <span
+          class="AccessList__value"
+        >
+          0
+        </span>
+        <span
+          class="Typography Typography--body-small AccessList__unit"
+        >
+          people
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

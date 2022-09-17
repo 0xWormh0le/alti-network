@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Unit Tests renders Accordion correctly 1`] = `
+<div>
+  <div
+    class="Accordion"
+  />
+</div>
+`;
+
+exports[`Accordion Unit Tests renders AccordionDetails correctly 1`] = `
+<div>
+  <div
+    class="Accordion__details Accordion__details--close"
+    style="max-height: 0px;"
+  />
+</div>
+`;
+
+exports[`Accordion Unit Tests renders AccordionSummary correctly 1`] = `
+<div>
+  <div
+    class="Accordion__summary"
+  >
+    <button
+      class="Accordion__expand Accordion__expand--close"
+    >
+      <chevron-down.svg />
+    </button>
+  </div>
+</div>
+`;

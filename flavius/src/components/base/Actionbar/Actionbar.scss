@@ -1,0 +1,65 @@
+@import 'styles/_shared.scss';
+
+.Actionbar {
+  width: 100%;
+  height: $STANDARD_BAR_HEIGHT;
+  @include flex(row, space-between, center);
+
+  box-shadow: none;
+
+  padding-left: $LARGE_SPACING;
+  padding-top: 16px;
+
+  &__title-wrapper {
+    @include flex(row, flex-start, center);
+    color: $TEXT_COLOR;
+  }
+
+  .Icon {
+    fill: $TEXT_COLOR;
+    margin-right: 8px;
+  }
+}
+
+.ModalWrapper,
+.ModalConfirmationDialog {
+  .Actionbar {
+    width: calc(100% + 1px);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-image: $BLUE_LINEAR_GRADIENT;
+    box-shadow: none;
+    padding-top: 0;
+
+    &__title-wrapper {
+      color: white;
+    }
+
+    // Do not use fixed Actionbar in iPad
+    @include ipad {
+      position: static;
+      z-index: auto;
+    }
+
+    .Icon {
+      fill: white;
+    }
+
+    &__close {
+      cursor: pointer;
+      font-size: 38px;
+      line-height: 52px;
+      font-weight: 100;
+      height: $STANDARD_BAR_HEIGHT;
+      padding: 0 $SMALL_SPACING;
+      color: white;
+      transition: color, background-color $TRANSITION_DURATION ease-in-out;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $PALE_GREY_LIGHTER;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+type: lambda
+runtime: python3.7
+function_name: &function_name apigateway-{{ENV}}-lambda-integration-test-{{SUFFIX}}
+handler: services.apigateway_integration_test.apigateway_integration_test_handler.main_handler
+iam_role: arn:aws:iam::{{AWS_ACCOUNT}}:role/altitude-{{ENV}}-apigateway-integration-role
+description: Runs tests against the API Gateway infrastructure
+use_vpc: False
+memory_size: 1728
+timeout: 900
+tracing_config_mode: Active
+notification_email: devops@altitudenetworks.com
+log_group_subscriptions:
+  - filter_name: log-dna
+    destination_arn: {{ENV_CONFIG.logdna_destination_arn}}
+environment:
+  {% set DEBUG_MODE = "true" if ENV == "dev" else "false" %}
+  DEBUG_MODE: '{{DEBUG_MODE}}'
+event_rules:
+  - name: apigateway-{{ENV}}-integration-test
+    {% if ENV == 'dev' %}
+    cron: cron(0 * * * ? *)
+    {% endif %}
+    {% if ENV == 'staging' %}
+    cron: cron(20 * * * ? *)
+    {% endif %}
+    {% if ENV == 'prod' %}
+    cron: cron(0/15 * * * ? *)
+    {% endif %}
+    permission_id: apigateway-{{ENV}}-integration-test
+    targets:
+      - type: lambda
+        id: apigateway-{{ENV}}-integration-test
+        function_name: *function_name
+        input:
+            project_id: "thoughtlabs"
+            env: "{{ENV}}"
+            aws_region: "{{AWS_REGION}}"
+            suffix: "{{SUFFIX}}"
+            job_name: "run-apigateway-tests"

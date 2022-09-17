@@ -1,0 +1,19 @@
+@import 'styles/_shared.scss';
+
+.Signup {
+  color: $TEXT_COLOR;
+
+  &__button {
+    width: 100%;
+    height: 45px;
+  }
+
+  & form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  &__form {
+    padding: 45px 0;
+  }
+}

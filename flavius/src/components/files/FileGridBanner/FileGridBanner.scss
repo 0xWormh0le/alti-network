@@ -1,0 +1,21 @@
+@import 'styles/_shared.scss';
+
+.FileGridBanner {
+  background-color: $BIT_YELLOW;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $FILE_GRID_BANNER_PADDING;
+  position: fixed;
+  top: $STANDARD_BAR_HEIGHT;
+  left: 0;
+  width: 100%;
+  height: $FILE_GRID_BANNER_HEIGHT;
+  color: $FILE_GRID_BANNER_COLOR;
+  font-size: 14px;
+  line-height: 23px;
+
+  &__icon {
+    margin-right: $FILE_GRID_BANNER_PADDING;
+  }
+}

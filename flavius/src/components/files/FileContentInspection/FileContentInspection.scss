@@ -1,0 +1,66 @@
+@import 'styles/_shared.scss';
+
+$MAX_WIDTH: 360px;
+$LABEL_WIDTH: 150px;
+
+.FileContentInspectionTableWrapper {
+  width: $MAX_WIDTH;
+
+  &--Phrase {
+    .Table__heading-cell:nth-child(2) {
+      text-align: center;
+    }
+  }
+
+  th:nth-child(1) {
+    padding-left: 0;
+  }
+
+  tr {
+    td .center {
+      text-align: center;
+    }
+  }
+
+  &__loader {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  &__no-results {
+    display: flex;
+    height: 20em;
+    align-items: center;
+    justify-content: center;
+    padding: $BASE_SPACING * 5;
+    border-top: 1px solid $BORDER_COLOR;
+
+    &-text {
+      flex: 1;
+      text-align: center;
+      border-radius: 4px;
+      border: 1px dashed $BORDER_COLOR;
+      padding: $BASE_SPACING * 3;
+      color: $PLACEHOLDER_COLOR;
+    }
+  }
+
+  &__keywordLabel {
+    max-width: $LABEL_WIDTH;
+    height: 23px;
+    padding: 0px 6px;
+    border-radius: 4px;
+    border: solid 1px $LIGHT_GREY_MEDIUM;
+    background-color: #f6f6f6;
+    @include set-typography('SUBHEAD2', 'bold');
+    letter-spacing: normal;
+    text-align: left;
+    color: $TOMATO;
+    font-family: $FONT_FAMILY_COURIER;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: table-caption;
+  }
+}

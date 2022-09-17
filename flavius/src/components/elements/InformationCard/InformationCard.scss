@@ -1,0 +1,42 @@
+@import 'styles/_shared.scss';
+
+.InformationCard {
+  &__details {
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  &__summary {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25em;
+  }
+
+  &__icon {
+    margin-bottom: 1em;
+    margin-right: 0.25em;
+  }
+
+  &__read-more {
+    margin-top: 1em;
+
+    button {
+      color: $VIBRANT_BLUE_ACCENT;
+      font-weight: 700;
+      padding-left: 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &,
+      &:active,
+      &:focus {
+        background: none;
+        box-shadow: none;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}

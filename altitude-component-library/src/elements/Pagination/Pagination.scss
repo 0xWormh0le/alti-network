@@ -1,0 +1,24 @@
+@import '../../styles/_shared.scss';
+
+.Pagination {
+  display: inline-flex;
+  border-radius: 0.25rem;
+
+  &__group {
+    margin: 0 $BASE_SPACING / 2;
+    display: flex;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__arrow {
+    width: 10px;
+    height: 10px;
+  }
+}

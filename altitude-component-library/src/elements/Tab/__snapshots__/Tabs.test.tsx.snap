@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs renders correctly 1`] = `
+<div>
+  <div
+    class="Tabs"
+  >
+    <div
+      class="Tabs__tab-list"
+    >
+      <div
+        aria-roledescription="tab"
+        class="Tabs__tab Tabs__tab--selected"
+      >
+        Name
+      </div>
+      <div
+        aria-roledescription="tab"
+        class="Tabs__tab"
+      >
+        Gender
+      </div>
+      <div
+        aria-roledescription="tab"
+        class="Tabs__tab"
+      >
+        Advanced
+      </div>
+    </div>
+    <div
+      aria-roledescription="tabPanel"
+      class="Tabs__tab-panel  "
+    >
+      Altitude Network
+    </div>
+    <div
+      aria-roledescription="tabPanel"
+      class="hidden"
+    />
+    <div
+      aria-roledescription="tabPanel"
+      class="hidden"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+@import 'styles/_shared.scss';
+
+.DisableStep {
+  &__title {
+    color: $TEXT_COLOR;
+    margin-bottom: 1rem;
+  }
+
+  &__form-group {
+    width: 100%;
+  }
+}

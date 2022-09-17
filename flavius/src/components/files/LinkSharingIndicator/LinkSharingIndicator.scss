@@ -1,0 +1,14 @@
+@import 'styles/_shared.scss';
+
+.LinkSharingIndicator {
+  @include flex(row, center, center);
+  color: $TEXT_COLOR;
+
+  border: 1px solid $PALE_GREY_LIGHT;
+  border-radius: 3px;
+  padding: 10px;
+
+  &__label {
+    margin-right: 8px;
+  }
+}

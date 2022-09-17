@@ -1,0 +1,75 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Heartbeat
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push: {}
+  schedule:
+    - cron: '5 12-23 * * 1-5'
+  workflow_dispatch: {}
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: node-modules
+        with:
+          path: |
+            **/node_modules
+            ~/.cache/Cypress
+            build
+          key: ${{ runner.os }}-e2e-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-e2e-${{ env.cache-name }}-
+      - name: Install dependencies
+        run: |
+          npm install
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_STAGING }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_STAGING }}
+          aws-region: us-west-2
+      - name: Run e2e tests
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          CYPRESS_USER_PASSWORD: ${{ secrets.CYPRESS_USER_PASSWORD }}
+          HEARTBEAT_TEST: 'true'
+        run: |
+          npm run e2e
+      - name: Get current time
+        id: time
+        if: always()
+        run: |
+          E2E_END_TIME=$(date -u +'%Y-%m-%dT%H:%M:%S%z')
+          echo "::set-output name=result::${E2E_END_TIME}"
+      - name: Report success to CloudWatch
+        uses: docker://amazon/aws-cli:latest
+        with:
+          entrypoint: /usr/local/bin/aws
+          args: cloudwatch put-metric-data --metric-name CurrentStatus --namespace altitude/flavius --value 0 --timestamp "${{ steps.time.outputs.result }}"
+      - name: Report error to CloudWatch
+        uses: docker://amazon/aws-cli:latest
+        if: failure()
+        with:
+          entrypoint: /usr/local/bin/aws
+          args: cloudwatch put-metric-data --metric-name CurrentStatus --namespace altitude/flavius --value 1 --timestamp "${{ steps.time.outputs.result }}"
+      - name: Report error to Sentry
+        if: failure()
+        env:
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+        run: |
+          npx sentry-cli send-event -m "ALERT! Flavius production error detected in end-to-end hearbeat test run" --log-level=debug

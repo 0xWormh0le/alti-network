@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonutChart renders correctly 1`] = `
+<div>
+  <div
+    class="DonutChart DonutChart__value-type-example"
+  >
+    <div
+      class="ct-chart "
+    />
+    <div
+      class="DonutChart__body"
+    >
+      <div
+        class="DonutChart__body--title"
+      >
+        hello
+      </div>
+      <div
+        class="DonutChart__body--subtitle"
+      >
+        world
+      </div>
+    </div>
+  </div>
+</div>
+`;

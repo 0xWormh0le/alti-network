@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppIndicator renders correctly 1`] = `
+<div>
+  <span
+    class="AppIndicator test"
+  >
+    <div
+      class="platform-container"
+    >
+      <div
+        class="trigger"
+      >
+        <div>
+          <div
+            class="platform-icon-container"
+            data-testid="platform-icon"
+          >
+            <img
+              alt="Google Workspace"
+              class="platform-icon"
+              src="google-logo.svg"
+              title="Google Workspace"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+</div>
+`;

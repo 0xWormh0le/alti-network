@@ -1,0 +1,19 @@
+@import 'styles/_shared.scss';
+
+.SimplePersonCell {
+  min-width: 90px;
+  &__link {
+    @include brand-link();
+
+    &:hover {
+      .PersonCell__email {
+        color: $AZURE;
+      }
+    }
+  }
+
+  &__email {
+    @include set-typography('BODY_SMALL', 'semibold');
+    color: $TEXT_COLOR_SECONDARY;
+  }
+}

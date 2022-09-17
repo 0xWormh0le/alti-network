@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-page_top-funnel-v5" transform="translate(-790.000000, -1958.000000)" fill="#0077B5" fill-rule="nonzero">
+            <g id="Group-36" transform="translate(0.000000, 651.000000)">
+                <g id="Group-16" transform="translate(0.000000, 95.000000)">
+                    <g id="Group-45">
+                        <g id="footer" transform="translate(0.000000, 1124.000000)">
+                            <g id="Group-10" transform="translate(257.000000, 50.000000)">
+                                <g id="Group-9" transform="translate(430.000000, 0.000000)">
+                                    <g id="linkedin" transform="translate(103.000000, 38.000000)">
+                                        <path d="M26.4,0 L3.6,0 C1.6117749,0 0,1.6117749 0,3.6 L0,26.4 C0,28.3882251 1.6117749,30 3.6,30 L26.4,30 C28.3882251,30 30,28.3882251 30,26.4 L30,3.6 C30,1.6117749 28.3882251,0 26.4,0 Z M10.896,22.11 L7.8195,22.11 L7.8195,12.21 L10.896,12.21 L10.896,22.11 Z M9.357,10.860023 C8.36890106,10.8649525 7.56379446,10.0681068 7.5585304,9.08000935 C7.5533177,8.09191188 8.34993036,7.28657474 9.33802626,7.28102188 C10.3261222,7.27552615 11.1316898,8.07190573 11.1375,9.06 C11.134277,10.0442081 10.3411557,10.843343 9.357,10.854 L9.357,10.860023 Z M22.407,22.11 L19.338,22.11 L19.338,17.2875 C19.338,16.1385 19.314,14.6655 17.739,14.6655 C16.1385,14.6655 15.894,15.9135 15.894,17.205 L15.894,22.11 L12.822,22.11 L12.822,12.21 L15.7725,12.21 L15.7725,13.56 L15.816,13.56 C16.2255,12.7815 17.229,11.961 18.726,11.961 C21.837,11.961 22.41,14.0115 22.41,16.6725 L22.407,22.11 Z" id="Shape"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

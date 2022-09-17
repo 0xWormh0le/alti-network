@@ -1,0 +1,105 @@
+name: Run unit and integration tests
+
+"on":
+  push:
+    branches:
+      - master
+
+    paths-ignore:
+      - docs/**
+      - external_api/version.txt
+      - CHANGELOG.md
+      - README.md
+  workflow_dispatch: {}
+
+jobs:
+  tests:
+    name: Unit & Integration tests
+    runs-on: ubuntu-latest
+    env:
+      PIP_NO_CACHE_DIR: false
+      PIP_USER: 1
+      PYTHONUSERBASE: "${{ github.workspace }}/.cache/py-user-base"
+
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version:
+          - 3.7
+
+    # To add custom steps to this workflow, start step name with `Custom: `
+    # To override existing step, set name to `Custom: <original_step_name>`
+    steps:
+      - name: Add PYTHONUSERBASE to PATH
+        id: add-pythonuserbase
+        run: |
+          echo '${{ env.PYTHONUSERBASE }}/bin/' >> $GITHUB_PATH
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: "Set up Python ${{ matrix.python-version }}"
+        uses: actions/setup-python@v2
+        with:
+          python-version: "${{ matrix.python-version }}"
+      - name: Cache Python site-packages
+        uses: actions/cache@v2
+        with:
+          path: "${{ env.PYTHONUSERBASE }}"
+          key: "${{ runner.os }}-${{ matrix.python-version }}-full-${{ env.CACHE_KEY }}-${{ hashFiles('./Pipfile.lock') }}"
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.python-version }}-full-${{ env.CACHE_KEY }}-
+      - name: Install package dependencies
+        env:
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+        run: |
+          python -m pip install -i https://${INTERNAL_PYPI_USERNAME}:${INTERNAL_PYPI_PASS}@${INTERNAL_PYPI_URL} -U github_actions_script awscliv2
+          python -m github_actions_script install_dev -d
+          pre_commit --install --check pytest pytest-cov -d
+      - name: Unit tests
+        env:
+          ENV: dev
+          AWS_REGION: us-west-2
+          AWS_DEFAULT_REGION: us-west-2
+          SUFFIX: "01"
+        run: |
+          pre_commit -d --check pytest
+      - name: Setup AWS CLI V2
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_DEV }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}"
+          ROLE_ARN: "${{ secrets.AWS_DEPLOYMENT_ROLE_ARN_DEV }}"
+          AWS_REGION: us-west-2
+        run: |
+          awsv2 --install
+          awsv2 --configure default ${AWS_ACCESS_KEY_ID} ${AWS_SECRET_ACCESS_KEY}
+          awsv2 configure set region ${AWS_REGION}
+          awsv2 --assume-role deployment default ${ROLE_ARN}
+      - name: Integration tests
+        env:
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+          ENV: dev
+          AWS_PROFILE: deployment
+          AWS_REGION: us-west-2
+          AWS_DEFAULT_REGION: us-west-2
+          SUFFIX: "01"
+        run: |
+          pre_commit -d --check pytest-integration
+      - name: Send coverage report
+        if: "matrix.python-version == '3.7'"
+        env:
+          ENV: dev
+          AWS_PROFILE: deployment
+          AWS_REGION: us-west-2
+          AWS_DEFAULT_REGION: us-west-2
+          CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
+          SUFFIX: "01"
+        run: |
+          [ -z "$CODECOV_TOKEN" ] && echo "CODECOV_TOKEN is not set, skipping"
+          [ -z "$CODECOV_TOKEN" ] && exit
+          [ ! -d "tests" ] && echo "tests directory not found, skipping"
+          [ ! -d "tests" ] && exit
+          pre_commit -d --check pytest-cov
+          python -m codecov

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardRiskTile renders correctly 1`] = `
+<div>
+  <div
+    class="DashboardRiskTile"
+  >
+    <div
+      class="Typography Typography--label DashboardRiskTile__title"
+    >
+      title test
+    </div>
+    children test
+    <a
+      href="/"
+    >
+      <button
+        class="DashboardRiskTile__button"
+      >
+        <span
+          class="Typography Typography--h1 DashboardRiskTile__count"
+        >
+          1000
+        </span>
+        <span
+          class="Typography Typography--label DashboardRiskTile__label"
+        >
+          risks associated
+        </span>
+      </button>
+    </a>
+  </div>
+</div>
+`;

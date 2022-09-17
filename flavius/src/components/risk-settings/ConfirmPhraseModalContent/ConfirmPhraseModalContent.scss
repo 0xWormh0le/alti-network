@@ -1,0 +1,24 @@
+@import 'styles/_shared.scss';
+
+.ConfirmPhraseModalContent {
+  &__infobox {
+    border: 1px dashed $BORDER_COLOR;
+    padding: $SMALL_SPACING;
+    max-width: 450px;
+    margin: $SMALL_SPACING auto;
+    text-align: left;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+
+    &-desc {
+      margin-top: $BASE_SPACING;
+      color: $HELPER_TEXT_COLOR;
+      font-size: 11px;
+    }
+
+    &-img {
+      margin-left: $SMALL_SPACING;
+    }
+  }
+}

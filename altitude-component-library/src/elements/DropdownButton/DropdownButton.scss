@@ -1,0 +1,162 @@
+@import '../../styles/_shared.scss';
+
+.DropdownWrapper {
+  position: relative;
+  justify-content: flex-start !important;
+
+  .Button--dropdown {
+    padding: 4px 20px 4px 12px;
+    &:hover {
+      polygon {
+        fill: white;
+      }
+    }
+  }
+
+  &.disabled {
+    svg {
+      polygon {
+        fill: #9fa9ba;
+      }
+    }
+
+    &:focus-within {
+      .DropdownPopup {
+        display: none;
+      }
+    }
+  }
+
+  svg {
+    width: 6px;
+    margin-left: -14px;
+    margin-top: 12px;
+  }
+
+  @include flex(row, center);
+
+  .DropdownPopup {
+    display: none;
+    position: absolute;
+    margin-top: 2.75em;
+    width: 114px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.07), 0 15px 35px 0 rgba(50, 50, 93, 0.1);
+    padding: 0;
+    z-index: 2;
+    background: white;
+    // text-transform: uppercase;
+
+    &:hover {
+      & > :first-child {
+        background-color: $VIBRANT_BLUE;
+      }
+    }
+
+    &--arrow {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: white;
+      top: -2px;
+      left: 54px;
+      transform: rotate(45deg);
+      z-index: -2;
+    }
+
+    &--arrow-off {
+      polygon {
+        fill: $DUSK_BLUE_DARK;
+        transition: fill $TRANSITION_DURATION ease-in-out, color $TRANSITION_DURATION ease-in-out,
+          border $TRANSITION_DURATION ease-in-out;
+      }
+    }
+
+    &--arrow-on {
+      polygon {
+        fill: white;
+        transition: fill $TRANSITION_DURATION ease-in-out, color $TRANSITION_DURATION ease-in-out,
+          border $TRANSITION_DURATION ease-in-out;
+      }
+    }
+
+    li {
+      list-style-type: none;
+      font-family: LatoLatin;
+      font-size: 10px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      line-height: 2.2;
+      height: 30px;
+      padding: 4px;
+      // text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+
+      &:last-of-type:hover {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+
+      &:first-of-type {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+
+      a {
+        color: #354052;
+        text-decoration: none;
+        display: block;
+      }
+
+      &.disabled {
+        color: #9fa9ba;
+        display: none;
+
+        &:hover {
+          background-color: white;
+          color: #9fa9ba;
+        }
+      }
+
+      &:hover {
+        background-color: $VIBRANT_BLUE;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &:focus-within {
+    outline-style: none;
+
+    .Button--dropdown {
+      color: #9fa9ba;
+      border-color: #9fa9ba;
+    }
+
+    svg {
+      transform: rotate(180deg);
+
+      polygon {
+        fill: #9fa9ba;
+      }
+    }
+
+    &.disabled {
+      svg {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &:focus-within .DropdownPopup {
+    display: block;
+  }
+}

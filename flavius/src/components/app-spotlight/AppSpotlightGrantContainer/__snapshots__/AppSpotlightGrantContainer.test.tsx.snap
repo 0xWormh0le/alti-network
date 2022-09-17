@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSpotlightGrantContainer renders correctly 1`] = `
+<div>
+  <div
+    class="AppSpotlightGrantContainer"
+  >
+    <div
+      class="AppSpotlightGrantContainer__top"
+    >
+      <h3
+        class="Typography Typography--h3 Typography--normal AppSpotlightAppImage__top-title"
+      >
+        This app has been granted access to:
+      </h3>
+    </div>
+    <div
+      class="AppSpotlightGrantContainer__top-bar"
+    >
+      <div
+        class="AppSpotlightAppbar"
+      >
+        <div
+          class="horizontal-menu"
+          style="align-items: center; display: flex; user-select: none;"
+        >
+          <div
+            class="AppSpotlightAppbar__arrow-wrapper AppSpotlightAppbar__arrow-wrapper--disabled"
+          >
+            <div
+              class="AppSpotlightAppbar__arrow"
+            >
+              ‹
+            </div>
+          </div>
+          <div
+            class="menu-wrapper"
+            style="overflow: hidden; user-select: none;"
+          >
+            <div
+              class="menu-wrapper--inner"
+              style="transform: translate3d(0px, 0, 0); transition: transform 0s; white-space: nowrap; text-align: left;"
+            >
+              <div
+                class="AppSpotlightAppbar__item "
+                role="button"
+                style="display: inline-block;"
+                tabindex="0"
+              >
+                <div
+                  class="AppSpotlightAppbarItem selected"
+                >
+                  <div
+                    class="AppSpotlightAppbarItem__wrapper"
+                  >
+                    <img
+                      alt="Gmail"
+                      class="AppSpotlightAppbarItem__wrapper--image"
+                      draggable="false"
+                      src="/services/gmail.png"
+                    />
+                    <span
+                      class="Typography Typography--label Typography--normal AppSpotlightAppbarItem__wrapper--title"
+                    >
+                      Gmail
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="AppSpotlightAppbar__item "
+                role="button"
+                style="display: inline-block;"
+                tabindex="0"
+              >
+                <div
+                  class="AppSpotlightAppbarItem"
+                >
+                  <div
+                    class="AppSpotlightAppbarItem__wrapper"
+                  >
+                    <img
+                      alt="Sheets"
+                      class="AppSpotlightAppbarItem__wrapper--image"
+                      draggable="false"
+                      src="/services/sheets.png"
+                    />
+                    <span
+                      class="Typography Typography--label Typography--normal AppSpotlightAppbarItem__wrapper--title"
+                    >
+                      Sheets
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="AppSpotlightAppbar__arrow-wrapper AppSpotlightAppbar__arrow-wrapper--disabled"
+          >
+            <div
+              class="AppSpotlightAppbar__arrow"
+            >
+              ›
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="AppSpotlightGrantContainer__bottom"
+      tabindex="0"
+    >
+      <span
+        class="AppSpotlightGrantContainer__bottom--close"
+      >
+        ×
+      </span>
+      <ul
+        class="AppSpotlightAppScopes"
+      >
+        <li>
+          Manage your sensitive mail settings, including who can manage your mail
+        </li>
+        <li>
+          Send email on your behalf
+        </li>
+        <li>
+          View your email messages and settings
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

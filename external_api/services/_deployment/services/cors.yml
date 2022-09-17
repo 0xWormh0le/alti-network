@@ -1,0 +1,16 @@
+type: lambda
+runtime: python3.7
+function_name: &func_name altitude-{{ENV}}-lambda-cors-{{SUFFIX}}
+handler: services.cors.cors_handler.main_handler
+iam_role: arn:aws:iam::{{AWS_ACCOUNT}}:role/altitude-{{ENV}}-lambda-execution-frontend-role
+description: Lambda function for CORS OPTIONS header
+memory_size: 1728
+timeout: 30
+tracing_config_mode: Active
+notification_email: devops@altitudenetworks.com
+log_group_subscriptions:
+  - filter_name: log-dna
+    destination_arn: {{ENV_CONFIG.logdna_destination_arn}}
+environment:
+  {% set DEBUG_MODE = "true" if ENV == "dev" else "false" %}
+  DEBUG_MODE: '{{DEBUG_MODE}}'

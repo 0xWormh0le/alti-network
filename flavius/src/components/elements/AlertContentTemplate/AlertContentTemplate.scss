@@ -1,0 +1,59 @@
+@import 'styles/_shared.scss';
+
+.FlaviusAlert {
+  padding: 0 0 0 8px !important;
+  border-radius: 4px;
+  box-shadow: $ALERT_BOX_SHADOW;
+  overflow: hidden;
+  max-width: $ALERT_MAX_WIDTH;
+
+  &--error {
+    background-color: $TOMATO !important;
+  }
+
+  &--warning {
+    background-color: $GOLDEN_YELLOW !important;
+  }
+
+  &--info {
+    background-color: $AZURE !important;
+  }
+
+  &--success {
+    background-color: $PALE_GREEN !important;
+  }
+
+  &__body {
+    background-color: $ALERT_BG;
+    color: $DARK_GREY_BLUE;
+    padding: $BASE_SPACING $BASE_SPACING * 1.5;
+    @include set-typography('BODY', 'normal');
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: $BASE_SPACING * 1.5;
+  }
+
+  &__content {
+    flex: 1;
+    @include set-typography('LABEL', 'medium');
+  }
+
+  &__description {
+    @include set-typography('BODY', 'normal');
+  }
+
+  &__close {
+    cursor: pointer;
+    margin-left: $BASE_SPACING * 1.5;
+    outline: none !important;
+    color: $BLUE_GREY;
+  }
+
+  &__close-icon {
+    width: 10px;
+    height: 10px;
+  }
+}

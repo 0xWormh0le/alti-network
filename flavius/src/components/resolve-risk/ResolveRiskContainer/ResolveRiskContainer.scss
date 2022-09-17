@@ -1,0 +1,91 @@
+@import 'styles/_shared.scss';
+
+.ResolveRiskContainer {
+  padding: 32px;
+
+  &--wrapper {
+    padding-top: 22px;
+
+    &-heading {
+      width: 495px;
+      height: 24px;
+      font-family: LatoLatin;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #354052;
+    }
+  }
+
+  &__heading {
+    font-family: LatoLatin;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: normal;
+    text-align: center;
+    color: #354052;
+
+    &--hr {
+      border: solid 1px #e6eaee;
+      margin-top: 22px;
+    }
+
+    &--action {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .Button--primary {
+    padding: 8px 2 * $LARGE_SPACING;
+    font-family: LatoLatin;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+.ResolveRiskLoading {
+  width: 100%;
+  height: 320px;
+}
+
+.ModalIcon {
+  padding-bottom: $LARGE_SPACING;
+}
+
+.ConfirmPhraseModalContent {
+  &__infobox {
+    border: 1px dashed $BORDER_COLOR;
+    padding: $SMALL_SPACING;
+    max-width: 450px;
+    margin: $SMALL_SPACING auto;
+    text-align: left;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-desc {
+      margin-top: $BASE_SPACING;
+      color: $HELPER_TEXT_COLOR;
+      font-size: 11px;
+    }
+
+    &-img {
+      margin-left: $SMALL_SPACING;
+    }
+  }
+}

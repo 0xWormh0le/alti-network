@@ -1,0 +1,14 @@
+@import 'styles/_shared.scss';
+
+.ManagePlatforms {
+  max-width: 50%;
+
+  &__description {
+    margin-left: $SMALL_SPACING;
+    margin-top: $SMALL_SPACING;
+  }
+  &__cards {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+}

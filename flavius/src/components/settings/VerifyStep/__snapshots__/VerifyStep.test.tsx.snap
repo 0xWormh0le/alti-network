@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VerifyStep renders correctly 1`] = `
+<div>
+  <section
+    class="VerifyStep TwoFactorAuthentication__step"
+  >
+    <form>
+      <h3
+        class="Typography Typography--h3 Typography--semibold VerifyStep__title"
+      >
+        Try your code
+      </h3>
+      <p>
+        Use your security app to generate a code and enter it below.
+      </p>
+      <div
+        class="FormGroup VerifyStep__form-group"
+      >
+        <input
+          class="FormControl FormControl--flat"
+          id="challengeAnswer"
+          value="answer"
+        />
+      </div>
+      <button
+        class="Button VerifyStep__button Button--primary"
+        type="button"
+      >
+        Verify
+      </button>
+    </form>
+  </section>
+</div>
+`;

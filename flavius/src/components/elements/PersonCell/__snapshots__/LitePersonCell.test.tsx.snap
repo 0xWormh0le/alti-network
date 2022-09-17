@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LitePersonCell renders correctly 1`] = `
+<div>
+  <div
+    class="PersonCell"
+  >
+    <a
+      class="PersonCell__email"
+      href="/dashboard/spotlight/primary%40address.com?platformId=box"
+    >
+      <div
+        class="PersonCell__email"
+      >
+        <span
+          class="trigger"
+        >
+          primary@address.com
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,103 @@
+---
+title: Cloud Security Posture | Free Security Assessment | Altitutde
+url: /get-free-security-assessment
+description: Get started with a free security assessment. Optimized for G Suite, Altitude Networks is offering the only file sharing and data security risk analysis for enterprises at zero cost.
+thumbnail: /images/rsa-thumbnail.png
+rsa: true
+---
+
+{% extends "./layouts/layout-base.njk" %}
+
+{% block main %}
+  <div class="scroll-wrapper welcome-scroll-wrapper rsa-page">
+    {% include "./layouts/partials/header-no-nav.njk" %}
+    <section class="welcome-section hero-section">
+      <h1><span>Understand Your Entire</span><br/>
+      <span>Cloud Security Posture with a</span><br/>
+      <span>Free Rapid Security Assessment</span></h1>
+    </section>
+    <section class="welcome-header">
+      <div class="rsa-page-section__container">
+        <div class="welcome-header__row">
+          <div class="welcome-header__col--wide">
+            <h2 class="welcome-header__headline welcome-header__headline--with-subheader">
+              Cloud Based Data Loss
+            </h2>
+            <h3 class="welcome-header__subheader">
+               is happening every day
+            </h3>
+            <div class="welcome-header__content">
+              <div class="image-info image-info--0">
+                <p>
+                  Critical company documents are accidentaly shared to personal accounts every day 
+                </p>
+              </div>
+              <img id="image--share-to-personal" src="/images/share-to-personal.png">
+            </div>
+            
+            <h2 id="critical-risk-headline" class="welcome-header__headline welcome-header__headline--with-subheader">
+              This is a critical risk
+            </h2>
+            <h3 class="welcome-header__subheader">
+               and invisible to your security teams
+            </h3>
+            <div class="welcome-header__content">
+              <div class="image-info image-info--1">
+                <p>
+                  Anyone in the world could access this internal board deck
+                </p>
+              </div>
+              <div class="image-info image-info--2">
+                <p>
+                  An external contractor's personal email has access to this earnings report
+                </p>
+              </div>
+              <div class="image-info image-info--3">
+                <p>
+                  Employee compensation data leaked to the entire company!
+                </p>
+              </div>
+              <img id="image--sharing-examples" src="/images/sharing-examples.png">
+            </div>
+
+            <h2 class="welcome-header__headline welcome-header__headline--with-subheader">
+              We Find it.
+            </h2>
+            <h3 class="welcome-header__subheader">
+               Get a snapshot of your cloud data security posture for free
+            </h3>
+            <div class="welcome-header__content">
+              <img id="image--rsa-example" src="/images/rsa-example.png">
+            </div>
+            
+          </div>
+          <div class="welcome-header__col--narrow">
+            <div class="welcome-header-cta welcome-header-cta--b">
+              <!-- <object id="bits-animation" data="/images/bits.svg" type="image/svg+xml" class="welcome-header__bits"></object> -->
+              <h3 class="welcome-header-cta__title">
+                Check Your Cloud<br/>
+                Security Posture for Free
+              </h3>
+              <form class="cta-subscribe__form cta-subscribe__form--vertical get-an-rsa__form">
+                <input class="cta-input cta-input--shadowed" type="email" name="work-email" value="" placeholder="Work Email" required />
+                <input class="cta-input cta-input--shadowed" type="text" name="first-name" value="" placeholder="First Name" />
+                <input class="cta-input cta-input--shadowed" type="text" name="last-name" value="" placeholder="Last Name" />
+                <input class="cta-input cta-input--shadowed" type="text" name="company-name" value="" placeholder="Company Name" />
+                <button type="submit" class="cta-button welcome-header-cta__button" data-altimeter="welcome_cta_top">Get My Assessment</button>
+                <div class="cta-subscribe__notice">
+                  No payment required.<br/>
+                  We will <em>only</em> use your email to contact you for this security assessment.
+                </div>
+              </form>
+              <div class="cta-subscribe__success">
+                <span class="cta-subscribe__success-icon">✔</span>
+                Thank you, we will be in touch soon!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "./layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}

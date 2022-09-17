@@ -1,0 +1,124 @@
+---
+title: Cloud Security and Data Loss Prevention | Pricing
+description: Altitude Networks is a cloud security and data loss prevention company protecting your company's cloud data against accidental sharing, theft, and more.
+pricing: true
+url: /pricing
+---
+
+{% extends './layouts/layout.njk' %}
+
+{% block scripts %}
+<script type="text/javascript">
+  (function ($) {
+    $(document).ready(function () {
+      $('.pricing-faqs__section').click(event => {
+        $(event.currentTarget).toggleClass('active');
+      });
+
+      $('.cta-pricing-option').on('click', event => {
+        altNet.altimeter({
+          altimeterMethod: "track",
+          eventName: "Pricing Option Clicked: " + $(event.currentTarget).attr('option'),
+        });
+        $('.cta-pricing-modal').fadeIn();
+      });
+
+      $('.cta-pricing-modal__close').on('click', () => {
+        $('.cta-pricing-modal').fadeOut();
+        hideCalendly();
+      });
+    });
+  })(jQuery);
+</script>
+<script async defer src="https://widgets.boast.io/current/components.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class='resources pricing'>
+  <div class='resources__wrapper resources__wrapper--home'>
+    <h1>Choose Your Plan</h1>
+    <div class='pricing-subhead'>
+      Supports <span class='inline-logo' id='google-workspace-logo'></span> (formerly G Suite) and Microsoft 365
+    </div>
+    <div class='row feature-page-cards-section__row'>
+      <div class='card'>
+        <h3>Pro</h3>
+        <div><strong>$ 833 USD</strong> / mo</div>
+        <hr/>
+        <p>Up to 50 users <br/> Billed annually</p>
+        <button class='cta-button cta-button--outline cta-pricing-option' option='Pro'>Get Started</button>
+      </div>
+      <div class='card'>
+        <h3>Business</h3>
+        <div><strong>$ 1,249 USD</strong> / mo</div>
+        <hr/>
+        <p>Up to 250 users <br/> Billed annually</p>
+        <button class='cta-button cta-button--outline cta-pricing-option' option='Business'>Get Started</button>
+      </div>
+      <div class='card'>
+        <h3>Enterprise</h3>
+        <div><strong>Contact Us</strong></div>
+        <hr/>
+        <p>250+ users<br/>&nbsp;</p>
+        <button class='cta-button cta-button--outline cta-pricing-option' option='Enterprise'>Contact Us</button>
+      </div>
+    </div>
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+      <div data-boast-component="boast-display-widget" data-widget-id="7b999529-c617-42e8-bbeb-86f47a28750f"></div>
+    </section>
+    <div class='pricing-faqs'>
+      <h2>Commonly Asked Questions</h2>
+      <hr>
+      <div class="pricing-faqs__section">
+        <div class="pricing-faqs__section--content">
+          <h4>What Security Certifications does Altitude Networks have?</h4>
+          <p>Altitude Networks is SOC 2 Type II Certified. We follow all the Privacy and Security practices you would expect from a company serious about Data Security.</p>
+        </div>
+        <div class="pricing-faqs__section--toggle"></div>
+      </div>
+      <hr>
+      <div class="pricing-faqs__section">
+        <div class="pricing-faqs__section--content">
+          <h4>What is the Altitude Networks setup process like?</h4>
+          <p>Onboarding is fast and simple through cloud connectivity. Your admin will spend < 10 minutes (yes literally!) to authorize cloud connectivity between your G Suite/Microsoft 365 instance and our application. No endpoint agents on laptops or devices to put into a datacenter.</p>
+        </div>
+        <div class="pricing-faqs__section--toggle"></div>
+      </div>
+      <hr>
+      <div class="pricing-faqs__section">
+        <div class="pricing-faqs__section--content">
+          <h4>Do you support Microsoft 365?</h4>
+          <p>Yes, we support Microsoft 365, SharePoint and OneDrive</p>
+        </div>
+        <div class="pricing-faqs__section--toggle"></div>
+      </div>
+      <hr>
+      <div class="pricing-faqs__section">
+        <div class="pricing-faqs__section--content">
+          <h4>How do I calculate the number of users?</h4>
+          <p>Every account protected by Altitude Networks is considered a user. The number of users is calculated for billing purposes as the number of unique Google Workspace and Microsoft 365 accounts that are active inside your organization. For example, if your company has 300 employees using Google Workspace, you will need 300 licenses of Altitude Networks to protect 300 users.</p>
+        </div>
+        <div class="pricing-faqs__section--toggle"></div>
+      </div>
+      <hr>
+    </div>
+  </div>
+  {% include "./layouts/partials/learn-more-form.njk" %}
+  <hr>
+</div>
+<div class="cta-pricing-modal">
+  <div class="cta-pricing-modal__content">
+    <a href="#" class="cta-pricing-modal__close">
+      <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1.25 1.25l17.5 17.5M18.75 1.25l-17.5 17.5"/>
+        </g>
+      </svg>
+    </a>
+    {% set meta = { type: 'modal' } %}
+    {% include "./layouts/partials/pricing-form.njk" %}
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+  </div>
+</div>
+{% endblock %}

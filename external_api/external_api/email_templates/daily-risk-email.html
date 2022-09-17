@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link
+    href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,600;1,400&display=swap"
+    rel="stylesheet">
+  <base target="_blank">
+  <title>Altitude Networks | Daily Risk Email</title>
+  <style type="text/css">
+    body {
+      font-size: 20px;
+    }
+
+    body * {
+      font-family: 'Lato', Helvetica, sans-serif !important;
+    }
+
+    table td {
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body style="margin: 0;">
+  <!-- logo -->
+  <div style="padding: 1rem; text-align: center;">
+    <a href="https://altitudenetworks.com">
+      <img src="https://external-site-dev.altitudenetworks.com/images/risk-email-assets/logo-horizontal.png">
+    </a>
+  </div>
+
+  <!-- header -->
+  <div style="padding: 1.5rem; text-align: center; background-color: #0177FF; color: white;">
+    <p style="margin-top: 0; margin-bottom: 0; font-size: 22px; line-height: 24px; font-weight: bold; text-decoration: solid;">{{company_name}}</p>
+    <p style="font-size: 20px; line-height: 24px; margin: .7rem 0 3rem;">Your Daily Risk Summary Update</p>
+    <p style="font-size: 16px; line-height: 24px; font-weight: bold; margin-top: 0; opacity: .7;">{{current_day}}</p>
+    <p style="font-size: 3rem; margin: .5rem;">{{risks_created_today}}</p>
+    <p style="font-size: 1.5rem; margin-bottom: 0; margin-top: 0;">New Risks Found</p>
+  </div>
+
+
+  <!-- body -->
+  <div style="padding: 1.5rem; max-width: 30rem; margin: auto;">
+
+    <!-- categories with most risks -->
+    {% if category_with_most_risks | length > 0 %}
+    <table style="width: 100%; border-collapse: collapse;" cellpadding="10">
+      <tr>
+        <td style="color: gray; border: none;">SEVERITY</td>
+        <td style="color: gray; text-align: left; border: none;">RISK TYPE</td>
+        <td style="color: gray; border: none;">COUNT</td>
+      </tr>
+
+
+      <!--- This is a loop for jinja -->
+      {# Section renders categories with most risks #}
+      {% for risk in category_with_most_risks %}
+
+      {% if loop.index == 1 %}
+      <!-- we have border-top starting the second loop. First loop won't have border-top -->
+      <tr>
+        <td>
+          <div style="position: relative; height: 1.5rem;">
+            <span
+              style="color: #E23115; left: 70%; top: 0; position: absolute; transform: translateX(-50%); font-size: 0.8rem;">5</span>
+            <div
+              style="height: 5px; background-color: #D8D8D8; margin-top: 1rem; position: absolute; bottom: 0; left: 0; right: 0;">
+              <div style="height: 5px; width: 70%; background-color: #E23115;"></div>
+            </div>
+          </div>
+        </td>
+        <td style="color: #354052;">
+          {{risk.description}}
+        </td>
+        <td style="text-align: center;">
+          <a href="{{risk.url}}" style="font-size: 1.5rem; color: #0177FF">{{risk.count}}</a>
+        </td>
+      </tr>
+
+
+      {% elif loop.index == 2 %}
+      <!-- we have border-top starting the second loop. First loop won't have border-top -->
+      <tr>
+        <td>
+          <div style="position: relative; height: 1.5rem;">
+            <span
+              style="color: #E23115; left: 70%; top: 0; position: absolute; transform: translateX(-50%); font-size: 0.8rem;">4</span>
+            <div
+              style="height: 5px; background-color: #D8D8D8; margin-top: 1rem; position: absolute; bottom: 0; left: 0; right: 0;">
+              <div style="height: 5px; width: 70%; background-color: #E23115;"></div>
+            </div>
+          </div>
+        </td>
+        <td style="color: #354052;">
+          {{risk.description}}
+        </td>
+        <td style="text-align: center;">
+          <a href="{{risk.url}}" style="font-size: 1.5rem; color: #0177FF">{{risk.count}}</a>
+        </td>
+      </tr>
+
+      
+      {% elif loop.index == 3 %}
+      <!-- we have border-top starting the second loop. First loop won't have border-top -->
+      <tr>
+        <td>
+          <div style="position: relative; height: 1.5rem;">
+            <span
+              style="color: #F9773D; left: 30%; top: 0; position: absolute; transform: translateX(-50%); font-size: 0.8rem;">3</span>
+            <div
+              style="height: 5px; background-color: #D8D8D8; margin-top: 1rem; position: absolute; bottom: 0; left: 0; right: 0;">
+              <div style="height: 5px; width: 30%; background-color: #F9773D;"></div>
+            </div>
+          </div>
+        </td>
+        <td style="color: #354052;">
+          {{risk.description}}
+        </td>
+        <td style="text-align: center;">
+          <a href="{{risk.url}}" style="font-size: 1.5rem; color: #0177FF">{{risk.count}}</a>
+        </td>
+      </tr>
+
+
+      {% elif loop.index == 4 %}
+      <!-- we have border-top starting the second loop. First loop won't have border-top -->  
+      <tr>
+        <td>
+          <div style="position: relative; height: 1.5rem;">
+            <span
+              style="color: #FBC310; left: 30%; top: 0; position: absolute; transform: translateX(-50%); font-size: 0.8rem;">2</span>
+            <div
+              style="height: 5px; background-color: #D8D8D8; margin-top: 1rem; position: absolute; bottom: 0; left: 0; right: 0;">
+              <div style="height: 5px; width: 30%; background-color: #FBC310;"></div>
+            </div>
+          </div>
+        </td>
+        <td style="color: #354052;">
+          {{risk.description}}
+        </td>
+        <td style="text-align: center;">
+          <a href="{{risk.url}}" style="font-size: 1.5rem; color: #0177FF">{{risk.count}}</a>
+        </td>
+      </tr>
+
+      {% endif %}
+      {% endfor %}
+      <!--End of Loop -->
+    </table>
+
+    {% endif %}
+    <!-- End if statement -->
+
+
+    <!-- Risk Summary Metrics -->
+    <p style="color: black; font-size: 16px; line-height: 24px; font-weight: bold;">Risk Summary (as of {{current_day}})</p>
+
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" valign="middle" style="border: 0;">
+          <div style="padding: .5rem;">
+            <a href="{{active_risks_url}}&riskTypeIds=1021"
+              target="_blank" style="text-decoration: none; color: inherit">
+              <div
+                style="border: 1px solid #ddd; border-radius: 5px; padding: 2rem 1rem; color: #354052; text-align: center; line-height: 1.5;">
+                <p style="margin-top: 0;">{{risk_desc_1021}}</p>
+                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 2rem;">{{risk_count_1021}}</p>
+              </div>
+            </a>
+          </div>
+        </td>
+        <td align="center" valign="middle" style="border: 0;">
+          <div style="padding: .5rem;">
+            <a href="{{active_risks_url}}&riskTypeIds=1011"
+              target="_blank" style="text-decoration: none; color: inherit">
+              <div
+                style="border: 1px solid #ddd; border-radius: 5px; padding: 2rem 1rem; color: #354052; text-align: center; line-height: 1.5;">
+                <p style="margin: 0;">{{risk_desc_1011}}</p>
+                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 2rem;">{{risk_count_1011}}</p>
+              </div>
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle" style="border: 0;">
+          <div style="padding: .5rem;">
+            <a href="{{active_risks_url}}&riskTypeIds=2001"
+              target="_blank" style="text-decoration: none; color: inherit">
+              <div
+                style="border: 1px solid #ddd; border-radius: 5px; padding: 2rem 1rem; color: #354052; text-align: center; line-height: 1.5;">
+                <p style="margin-top: 0;">{{risk_desc_2001}}</p>
+                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 2rem;">{{risk_count_2001}}</p>
+              </div>
+            </a>
+          </div>
+        </td>
+        <td align="center" valign="middle" style="border: 0;">
+          <div style="padding: .5rem;">
+            <a href="{{active_risks_url}}&riskTypeIds=3100"
+              target="_blank" style="text-decoration: none; color: inherit">
+              <div
+                style="border: 1px solid #ddd; border-radius: 5px; padding: 2rem 1rem; color: #354052; text-align: center; line-height: 1.5;">
+                <p style="margin: 0;">{{risk_desc_3100}}</p>
+                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 2rem;">{{risk_count_3100}}</p>
+              </div>
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Active risks -->
+    <a href="{{active_risks_url}}" target="_blank"
+      style="margin-top: 1rem; font-size: 16px; background-color: #0177FF; color: white; padding: .7rem; display: block; border-radius: 5px; text-align: center; text-decoration: none;">
+      View All Risks
+    </a>
+
+
+    <!-- Announcement -->
+    <div style="margin-top: 1rem;">
+      <p
+        style="display: inline-block; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 16px; line-height: 24px; font-weight: bold; margin: 0;">
+        Latest Blog
+      </p>
+      <a href="{{blog_url}}" target="_blank" style="display: block; margin-top: 1rem;">
+        <p style="color: #7F8FA4; font-size: 16px; line-height: 24px; font-weight: bold;">{{blog_title}}</p>
+        <!-- update image src here -->
+        <img src="{{blog_img}}" style="width: 100%" />
+      </a>
+    </div>
+
+    <!-- thank you -->
+    <div style="margin-top: 1rem; text-align: center;">
+      <p style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px;">
+        Thank you for using Altitude Networks.
+      </p>
+      <a style="font-family: 'Montserrat', sans-serif; font-size: 11px; color: #888"
+        href="mailto: support@altitudenetworks.com">
+        Have questions? Contact us.
+      </a>
+    </div>
+
+    <!-- footer -->
+    <div style="border-top: 1px solid #eee; text-align: center; margin-top: 1rem;">
+      <table style="margin-top: 1rem; margin-left: auto; margin-right: auto;" cellpadding="10">
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://www.facebook.com/altitude-networks/" target="_blank">
+                <img src="https://external-site-dev.altitudenetworks.com/images/risk-email-assets/facebook.png" />
+              </a>
+            </td>
+            <td>
+              <a href="https://www.linkedin.com/company/altitude-networks/" target="_blank">
+                <img src="https://external-site-dev.altitudenetworks.com/images/risk-email-assets/linkedin.png" />
+              </a>
+            </td>
+            <td>
+              <a href="https://www.twitter.com/altitude/" target="_blank">
+                <img src="https://external-site-dev.altitudenetworks.com/images/risk-email-assets/twitter.png" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://altitudenetworks.com/resources/" target="_blank"
+                style="font-family: 'Montserrat', sans-serif; font-size: 11px; color: #888">
+                Resources
+              </a>
+            </td>
+            <td>
+              <a href="https://altitudenetworks.com/resources/blog/" target="_blank"
+                style="font-family: 'Montserrat', sans-serif; font-size: 11px; color: #888">
+                Solutions
+              </a>
+            </td>
+            <td>
+              <a href="https://altitudenetworks.com/assessment/" target="_blank"
+                style="font-family: 'Montserrat', sans-serif; font-size: 11px; color: #888">
+                Assessment
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-family: 'Montserrat', sans-serif; font-size: 11px; color: #888"
+        href="mailto: support@altitudenetworks.com">
+        @ {{copyright_year}} Altitude Networks
+        <br />
+        785 Market St #950, San Francisco, CA 94103, USA
+      </p>
+    </div>
+  </div>
+</body>
+</html>

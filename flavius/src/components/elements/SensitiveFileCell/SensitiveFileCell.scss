@@ -1,0 +1,162 @@
+@import 'styles/_shared.scss';
+
+.sensitiveFileAlert {
+  width: fit-content;
+}
+
+.sensitiveFileWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left !important;
+  padding: 10px 14px 14px 14px;
+
+  &__title {
+    @include set-typography('BODY_LARGE', 'normal');
+    color: $LIGHT_GREY;
+    display: flex;
+    justify-self: start;
+    padding: 0px 0px 6px 2px;
+
+    margin-bottom: $BASE_SPACING;
+  }
+
+  &__risk-message {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    @include set-typography('BODY_SMALL', 'normal');
+    width: 100%;
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__moreText {
+    @include set-typography('BODY', 'normal');
+    color: white;
+    padding-top: 8px;
+    padding-left: 8px;
+  }
+
+  &__empty {
+    @include set-typography('BODY', 'normal');
+    color: white;
+    margin-top: -8px;
+    padding-left: 8px;
+    line-height: 16px;
+    font-style: italic;
+    color: $LIGHT_GREY;
+  }
+
+  &__columns {
+    border: 1px solid #90959d;
+    border-radius: 3px;
+    @include flex(column, center, flex-start);
+    & > div:nth-child(even) {
+      line-height: 1px;
+      min-height: 1px;
+      background: #90959d;
+      width: 100%;
+      padding: 0;
+    }
+    & > div:last-child {
+      background: transparent;
+    }
+    & > div {
+      @include flex(row, flex-start);
+      @include set-typography('BODY_SMALL', 'normal');
+      color: white;
+      padding: 6px 0px 6px 0px;
+
+      div {
+        margin: 0px 4px 0 0px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+      }
+    }
+  }
+
+  &__spacer {
+    margin-top: 14px;
+  }
+
+  &__subtitle {
+    @include set-typography('BODY_TINY', 'bold');
+    color: white;
+    padding-left: 8px;
+    padding-right: 12px;
+    width: fit-content;
+  }
+
+  &__multipleTitle {
+    @include flex(column, flex-start, flex-start);
+    @include set-typography('BODY_LARGE', 'normal');
+    line-height: 1.6em;
+    color: white;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  &__multipleSubtitle {
+    @include set-typography('BODY_SMALL', 'bold');
+    color: white;
+    padding-left: 8px;
+    padding-right: 12px;
+    width: 50px;
+  }
+
+  &__multipleKey {
+    @include set-typography('BODY_TINY', 'bold');
+    color: $LIGHT_GREY;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    & ul {
+      padding: 0;
+      padding-left: 14px;
+    }
+  }
+
+  &__multipleLink {
+    background: $VIBRANT_BLUE;
+    width: 182px;
+    height: 24px;
+    padding: 2px 0 3px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin-top: $BASE_SPACING;
+    @include set-typography('BODY_TINY', 'bold');
+    @include flex(column, center, center);
+  }
+
+  &__phrase {
+    border: 1px solid #dadada;
+    background: #f6f6f6;
+    color: #e1245d;
+    border-radius: 4px;
+    display: flex;
+    margin-left: 8px !important;
+    padding: 0px 4px 0px 4px;
+  }
+
+  &__static-message {
+    border: 1px solid #dadada;
+    padding: $BASE_SPACING * 2;
+    padding-left: $BASE_SPACING;
+    text-align: left;
+    color: $LIGHT_GREY;
+    font-size: 1.25em;
+  }
+
+  &__phraseDetails {
+    padding: 0px 4px 0px 4px;
+    @include set-typography('BODY_TINY', 'bold');
+    color: white;
+  }
+}

@@ -1,0 +1,102 @@
+@import 'styles/_shared.scss';
+
+$FIXED_HEADER_SPACING: 2 * $STANDARD_BAR_HEIGHT + 1;
+
+.SearchPage {
+  @include flex(column);
+  height: calc(100vh - #{$STANDARD_BAR_HEIGHT + 1});
+
+  .Actionbar {
+    position: fixed;
+    z-index: $STACKING_CONTEXT_HIGH;
+  }
+
+  &__label {
+    margin-left: 1.6rem;
+  }
+
+  &__content {
+    width: auto;
+    max-width: 1200px;
+    margin-left: 1.6rem;
+
+    > .SpotlightGrid {
+      border-top: 1px solid $PALE_GREY;
+      height: calc(100% - 116px);
+      overflow-y: auto;
+
+      &__person-header {
+        margin-left: $LARGE_SPACING;
+      }
+    }
+  }
+
+  &__search-container {
+    border: 1px solid #e6eaee;
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    display: flex;
+
+    & > div:nth-child(1) {
+      margin-right: 2rem;
+      width: 300px;
+    }
+    & > div:nth-child(2) {
+      min-width: 20rem;
+    }
+  }
+
+  .Spotlight__no-results {
+    margin-top: $FIXED_HEADER_SPACING + $LARGE_SPACING;
+  }
+
+  .Loading__wrapper {
+    margin-top: 2 * $FIXED_HEADER_SPACING;
+  }
+
+  &__label {
+    color: $BLUE_GREY;
+  }
+
+  &__search-group-container {
+    @include flex(column);
+    width: 100%;
+    margin: 0;
+    padding: $BASE_SPACING $LARGE_SPACING $SMALL_SPACING;
+    background-color: $PALE_GREY_LIGHTER;
+    border-bottom: 1px solid $PALE_GREY;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: fixed;
+    z-index: $STACKING_CONTEXT_HIGH;
+    margin-top: $STANDARD_BAR_HEIGHT;
+  }
+
+  &__search-group-controls {
+    @include flex(row, center, center);
+
+    input {
+      width: calc(100vw - (359px));
+      height: 40px;
+      min-width: 500px;
+      max-width: 1000px;
+      margin-right: $BASE_SPACING;
+    }
+  }
+
+  &__select {
+    z-index: 1000;
+  }
+}
+
+.SearchPageComponent {
+  width: 100%;
+  min-height: 4rem;
+}
+
+.file-id-column {
+  min-width: 30rem;
+  margin-left: 1rem;
+}

@@ -1,0 +1,465 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleFile renders correctly 1`] = `
+<div>
+  <div
+    class="ModalPage"
+  >
+    <div
+      class="SingleFile"
+    >
+      <div
+        class="Actionbar"
+      >
+        <div
+          class="Typography Typography--h4 Typography--normal Actionbar__title-wrapper"
+        >
+          <div
+            class="Breadcrumb"
+          >
+            <svg
+              class="Icon"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.333 14.69c-1.654 0-3-1.346-3-3 0-1.655 1.346-3 3-3s3 1.345 3 3c0 1.654-1.346 3-3 3M11 6.69c0 .183-.15.333-.333.333a.334.334 0 0 1-.334-.333c0-.39-.68-.817-1.666-.955v5.955a3.671 3.671 0 0 0 3.666 3.667A3.672 3.672 0 0 0 16 11.69c0-.803-.262-1.543-.7-2.147l-1.994-4.652a.33.33 0 0 0-.07-.104l-.95-.949-.975-2.559a.346.346 0 0 0-.076-.117c-.635-.635-1.836-.635-2.47 0a.333.333 0 0 0-.098.235v3.665C10.034 5.222 11 5.867 11 6.69m-7.333 8c-1.654 0-3-1.346-3-3 0-1.655 1.346-3 3-3 1.653 0 3 1.345 3 3 0 1.654-1.347 3-3 3M0 11.69a3.671 3.671 0 0 0 3.667 3.667 3.672 3.672 0 0 0 3.666-3.667V5.735c-.986.138-1.666.564-1.666.955a.334.334 0 0 1-.667 0c0-.823.965-1.469 2.333-1.628V1.357a.335.335 0 0 0-.098-.237C6.6.485 5.4.485 4.765 1.12a.33.33 0 0 0-.078.119l-.974 2.6-.948.948a.332.332 0 0 0-.072.104L.7 9.543A3.642 3.642 0 0 0 0 11.69"
+              />
+              <path
+                d="M3.667 10.023a.333.333 0 0 0 0-.667 2.335 2.335 0 0 0-2.334 2.334.334.334 0 0 0 .667 0c0-.92.747-1.667 1.667-1.667m8.666 0a.333.333 0 0 0 0-.667A2.335 2.335 0 0 0 10 11.69a.334.334 0 0 0 .667 0c0-.92.747-1.667 1.666-1.667"
+              />
+            </svg>
+            <div
+              class="Breadcrumb__item"
+            >
+              File
+            </div>
+          </div>
+        </div>
+        <div
+          class="Actionbar__close"
+        >
+          ×
+        </div>
+      </div>
+      <div
+        class="FileGrid FileGrid--externally-owned"
+      >
+        <div
+          class="FileGridBanner"
+        >
+          <svg
+            class="FileGridBanner__icon"
+            height="16"
+            viewBox="0 0 512 512"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505.403 406.394L295.389 58.102c-8.274-13.721-23.367-22.245-39.39-22.245s-31.116 8.524-39.391 22.246L6.595 406.394c-8.551 14.182-8.804 31.95-.661 46.37 8.145 14.42 23.491 23.378 40.051 23.378h420.028c16.56 0 31.907-8.958 40.052-23.379 8.143-14.421 7.89-32.189-.662-46.369zm-28.364 29.978a12.684 12.684 0 0 1-11.026 6.436H45.985a12.68 12.68 0 0 1-11.025-6.435 12.683 12.683 0 0 1 .181-12.765L245.156 75.316A12.732 12.732 0 0 1 256 69.192c4.41 0 8.565 2.347 10.843 6.124l210.013 348.292a12.677 12.677 0 0 1 .183 12.764z"
+              stroke="currentColor"
+            />
+            <path
+              d="M256.154 173.005c-12.68 0-22.576 6.804-22.576 18.866 0 36.802 4.329 89.686 4.329 126.489.001 9.587 8.352 13.607 18.248 13.607 7.422 0 17.937-4.02 17.937-13.607 0-36.802 4.329-89.686 4.329-126.489 0-12.061-10.205-18.866-22.267-18.866zM256.465 353.306c-13.607 0-23.814 10.824-23.814 23.814 0 12.68 10.206 23.814 23.814 23.814 12.68 0 23.505-11.134 23.505-23.814 0-12.99-10.826-23.814-23.505-23.814z"
+              stroke="currentColor"
+            />
+          </svg>
+          <span>
+            This file is owned by the external account test@email.com.
+          </span>
+        </div>
+        <div
+          class="FileGridHeader"
+        >
+          <div
+            class="FileGridHeader--wrapper"
+          >
+            <div
+              class="FileGridHeader--section"
+            >
+              <div
+                class="FileGridHeader__file-info"
+              >
+                <div
+                  class="FileInfo"
+                >
+                  <div
+                    class="FileInfo__icon"
+                  >
+                    <a
+                      class="FileInfo__link-btn"
+                      href="https://docs.google.com/document/d/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3/edit?usp=drivesdk"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="doc"
+                        src="https://drive-thirdparty.googleusercontent.com/256/type/document/png"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    title="Quarterly Earnings"
+                  >
+                    <a
+                      class="FileInfo__link-btn FileInfo__name"
+                      href="https://docs.google.com/document/d/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3/edit?usp=drivesdk"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      title="Quarterly Earnings"
+                    >
+                      Quarterly Earnings
+                    </a>
+                    <div
+                      class="FileGridHeader__platform-container"
+                    >
+                      <span
+                        class="FileGridHeader__descriptor"
+                      >
+                        Platform
+                      </span>
+                      <span
+                        class="FileGridHeader__file-info-icon"
+                      >
+                        <div
+                          class="platform-container"
+                        >
+                          <div
+                            class="trigger"
+                          >
+                            <div>
+                              <div
+                                class="platform-icon-container"
+                                data-testid="platform-icon"
+                              >
+                                <img
+                                  alt="Google Workspace"
+                                  class="platform-icon"
+                                  src="google-logo.svg"
+                                  title="Google Workspace"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="FileGridHeader__button-wrapper"
+                >
+                  <a
+                    class="FileInfo__link-btn"
+                    href="https://docs.google.com/document/d/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3/edit?usp=drivesdk"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button
+                      class="Button Button--secondary"
+                      type="button"
+                    >
+                      View Original File in Drive
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="FileGridHeader--split"
+            />
+            <div
+              class="FileGridHeader--section"
+            >
+              <div
+                class="FileGridHeader__permission-info"
+              >
+                <div
+                  class="PermissionInfo"
+                >
+                  <div
+                    class="OwnedBy FileAttributeGroup"
+                  >
+                    <div
+                      class="FileAttribute"
+                    >
+                      <span
+                        class="FileGridHeader__file-attribute"
+                      >
+                        Owned by
+                      </span>
+                      <span>
+                        <span
+                          class="FileGridHeader__file-attribute-value FileGridHeader__owner"
+                        >
+                          <a
+                            href="/dashboard/spotlight/test%40email.com"
+                          >
+                            <span
+                              class="PersonAvatar FileGridHeader__file-attribute-avatar PersonAvatar__clickable trigger"
+                            >
+                              <div
+                                class="BaseAvatar "
+                              >
+                                <div
+                                  class="BaseAvatar__text"
+                                  style="background-color: rgb(255, 130, 70);"
+                                >
+                                  <div>
+                                    T
+                                    U
+                                  </div>
+                                </div>
+                              </div>
+                            </span>
+                          </a>
+                          <strong>
+                            Test User
+                          </strong>
+                          <span
+                            class="Typography Typography--body trigger Marker Marker__ext"
+                          >
+                            EXT
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="FileSharing FileAttributeGroup"
+                  >
+                    <div
+                      class="FileAttribute"
+                    >
+                      <span
+                        class="FileGridHeader__file-attribute"
+                      >
+                        File sharing
+                      </span>
+                      <span>
+                        <span
+                          class="FileGridHeader__file-attribute-value"
+                        >
+                          1 Internal, 0 External
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="LinkSharing FileAttributeGroup"
+                  >
+                    <div
+                      class="FileGridHeader__row"
+                    >
+                      <div>
+                        <span
+                          class="Typography Typography--body Marker Marker__user"
+                        >
+                          No Link Sharing
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="FileGridHeader__button-wrapper"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    Edit Permissions
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="FileGridHeader--split"
+            />
+            <div
+              class="FileGridHeader--section"
+            >
+              <div
+                class="FileGridHeader__file-date"
+              >
+                <div
+                  class="FileDate"
+                >
+                  <div
+                    class="File__created FileAttributeGroup"
+                  >
+                    <div
+                      class="FileAttribute"
+                    >
+                      <span
+                        class="FileGridHeader__file-attribute"
+                      >
+                        Created
+                      </span>
+                      <span>
+                        <div
+                          class="FileGridHeader__file-attribute-value"
+                        >
+                          <time
+                            datetime="1504170378000"
+                          >
+                            Aug 31, 2017
+                          </time>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="File__modified FileAttributeGroup"
+                  >
+                    <div
+                      class="FileAttribute"
+                    >
+                      <span
+                        class="FileGridHeader__file-attribute"
+                      >
+                        Modified
+                      </span>
+                      <span>
+                        <div
+                          class="FileGridHeader__file-attribute-value"
+                        >
+                          <time
+                            datetime="1534150370000"
+                          >
+                            Aug 13, 2018
+                          </time>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="File__analyzed FileAttributeGroup"
+                  >
+                    <div
+                      class="FileAttribute"
+                    >
+                      <span
+                        class="FileGridHeader__file-attribute"
+                      >
+                        Analyzed
+                      </span>
+                      <span>
+                        <div
+                          class="FileGridHeader__file-attribute-value"
+                        >
+                          <span>
+                            Unknown
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="FileGridHeader__button-wrapper hidden"
+                >
+                  <button
+                    class="Button Button--secondary"
+                    type="button"
+                  >
+                    Analyze File
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="FileGrid__wrapper"
+        >
+          <div
+            class="FileGridNav"
+          >
+            <div
+              class="FileGridNav__group"
+            >
+              <nav
+                class="FileGridNav__item FileGridNav__item--selected"
+              >
+                <span
+                  class="Typography Typography--body-small FileGridNav__item-label"
+                >
+                  File Action Timeline
+                </span>
+                <span
+                  class="Typography Typography--body-small Typography--bold FileGridNav__item-value"
+                />
+              </nav>
+              <nav
+                class="FileGridNav__item"
+              >
+                <span
+                  class="Typography Typography--body-small FileGridNav__item-label"
+                >
+                  Internal Collaborators
+                </span>
+                <span
+                  class="Typography Typography--body-small Typography--bold FileGridNav__item-value"
+                >
+                  1
+                </span>
+              </nav>
+              <nav
+                class="FileGridNav__item"
+              >
+                <span
+                  class="Typography Typography--body-small FileGridNav__item-label"
+                >
+                  External Collaborators
+                </span>
+                <span
+                  class="Typography Typography--body-small Typography--bold FileGridNav__item-value"
+                >
+                  0
+                </span>
+              </nav>
+              <nav
+                class="FileGridNav__item"
+              >
+                <span
+                  class="Typography Typography--body-small FileGridNav__item-label"
+                >
+                  All Folder Contents
+                </span>
+                <span
+                  class="Typography Typography--body-small Typography--bold FileGridNav__item-value"
+                />
+              </nav>
+            </div>
+          </div>
+          <div
+            class="FileGrid__section FileGrid__events"
+          >
+            <div
+              class="FileGrid__section--body"
+            >
+              <h3
+                class="Typography Typography--h3 SectionTitle"
+              >
+                File Action Timeline
+              </h3>
+              <div
+                class="FileGrid__external"
+              >
+                <div
+                  class="Typography Typography--h4 Typography--light"
+                >
+                  Action Timeline not available for Files owned by accounts outside your company.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AvatarList renders correctly 1`] = `
+<div>
+  <div
+    class="AvatarList"
+  >
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__text"
+            style="background-color: rgb(158, 74, 172);"
+          >
+            <div>
+              J
+              G
+            </div>
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__image"
+          >
+            <img
+              alt="CB"
+              src="http://i.pravatar.cc/200?img=15"
+              style="width: 2em;"
+            />
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__text"
+            style="background-color: rgb(9, 39, 98);"
+          >
+            <div>
+              K
+              C
+            </div>
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__text"
+            style="background-color: rgb(225, 36, 93);"
+          >
+            <div>
+              L
+              O
+            </div>
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__image"
+          >
+            <img
+              alt="JM"
+              src="http://i.pravatar.cc/200?img=12"
+              style="width: 2em;"
+            />
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__text"
+            style="background-color: rgb(7, 104, 159);"
+          >
+            <div>
+              L
+              A
+            </div>
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__text"
+            style="background-color: rgb(9, 39, 98);"
+          >
+            <div>
+              R
+              G
+            </div>
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__text"
+            style="background-color: rgb(158, 74, 172);"
+          >
+            <div>
+              T
+              H
+            </div>
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__text"
+            style="background-color: rgb(9, 39, 98);"
+          >
+            <div>
+              M
+              A
+            </div>
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__image"
+          >
+            <img
+              alt="KC"
+              src="http://i.pravatar.cc/200?img=19"
+              style="width: 2em;"
+            />
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__image"
+          >
+            <img
+              alt="BS"
+              src="http://i.pravatar.cc/200?img=59"
+              style="width: 2em;"
+            />
+          </div>
+        </div>
+      </span>
+    </a>
+    <a
+      href="/dashboard/spotlight/test%40gmail.com"
+    >
+      <span
+        class="PersonAvatar AvatarList__item PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+        >
+          <div
+            class="BaseAvatar__image"
+          >
+            <img
+              alt="LY"
+              src="http://i.pravatar.cc/200?img=87"
+              style="width: 2em;"
+            />
+          </div>
+        </div>
+      </span>
+    </a>
+    <button
+      class="AvatarList__expand"
+      data-testid="expand-avatar-list"
+    >
+      <svg
+        class="AvatarList__expand-icon"
+        height="256"
+        role="img"
+        viewBox="0 0 256 256"
+        width="256"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Expand list button
+        </title>
+        <circle
+          cx="57.6"
+          cy="128"
+          r="18"
+        />
+        <circle
+          cx="128"
+          cy="128"
+          r="18"
+        />
+        <circle
+          cx="198.4"
+          cy="128"
+          r="18"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

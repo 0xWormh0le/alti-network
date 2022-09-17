@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardFileInfo renders Unknown if creator field is missing 1`] = `
+<div>
+  <div
+    class="DashboardFileInfo"
+  >
+    <div
+      class="DashboardFileInfo__text"
+    >
+      <div
+        class="Typography Typography--label DashboardFileInfo__filename"
+      >
+        aes_test.c
+      </div>
+      <div
+        class="Typography Typography--body DashboardFileInfo__email"
+      >
+        Owner: 
+        Unknown
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DashboardFileInfo renders correctly 1`] = `
+<div>
+  <div
+    class="DashboardFileInfo"
+  >
+    <div
+      class="DashboardFileInfo__text"
+    >
+      <div
+        class="Typography Typography--label DashboardFileInfo__filename"
+      >
+        Quarterly Earnings
+      </div>
+      <div
+        class="Typography Typography--body DashboardFileInfo__email"
+      >
+        Owner: 
+        <a
+          href="/dashboard/spotlight/test%40email.com"
+        >
+          test@email.com
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

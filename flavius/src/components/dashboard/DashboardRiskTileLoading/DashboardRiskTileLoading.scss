@@ -1,0 +1,34 @@
+@import 'styles/_shared.scss';
+
+.DashboardRiskTileLoading {
+  &__title {
+    margin-bottom: 19px;
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__desc {
+    margin-left: $BASE_SPACING;
+    width: calc(100% - 40px - #{$BASE_SPACING});
+    height: 43px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &__button {
+    margin-top: $BASE_SPACING;
+    width: 100%;
+    height: 68px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "projectId": "cjgtxg",
+  "requestTimeout": 20000,
+  "defaultCommandTimeout": 20000,
+  "viewportWidth": 1280,
+  "viewportHeight": 860,
+  "ignoreTestFiles": ["benchmark.spec.ts"]
+}

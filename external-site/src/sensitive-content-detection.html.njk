@@ -1,0 +1,114 @@
+---
+title: Content & Data Leakage Prevention | Altitude Networks
+url: /sensitive-content-detection
+scd: true
+description: Preventing content leaks when it comes to your company’s sensitive data is no longer a hassle with Altitude's automatic sensitive content detection platform. Learn more!
+---
+
+{% extends "./layouts/layout.njk" %}
+
+{% block scripts %}
+  <script src="{{ fingerprint['assets/js/sensitive-content-detection.js'] }}"></script>
+{% endblock %}
+
+{% block body %}
+<section class="sensitive-files">
+  <section class="sensitive-files__header">
+    <h1>
+      Are Your
+      <span class="sensitive-files__header--blue">Sensitive Files</span>
+      Safe in
+      <img id="sensitive-files-header-img" class="sensitive-files__header-google" src="/images/sensitive-content/box.png" />
+      ?
+    </h1>
+    <h2 class="sensitive-files__header-description">Discover, Remediate and Prevent Sensitive Data Risks</h2>
+
+    <div class="sensitive-files__header-elements">
+      <img class="sensitive-files__header-image" src="/images/sensitive-content/background.svg"/>
+      <div class="sensitive-files__header-parts">
+        <img class="sensitive-files__header-parts-first" src="/images/sensitive-content/part1.svg"/>
+        <img class="sensitive-files__header-parts-second" src="/images/sensitive-content/part2.svg"/>
+      </div>
+    </div>
+
+    <div class="sensitive-files__header-technologies">
+      <div class="sensitive-files__header-technology">
+        <img class="sensitive-files__header-technology-first" src="/images/sensitive-content/rectangle1.svg"/>
+        <h2>Automatic File Sensitivity Classification</h2>
+        <p class="sensitive-files__header-technology-description">Sensitive phrase in file names, sensitive file content, sharing patterns that flag potential risk.</p>
+        <a href="#automatic-file-sensitivity" class="sensitive-files__header-cta-button sensitive-files__header-cta-button--outline" option="Enterprise">Learn more</a>
+      </div>
+      <div class="sensitive-files__header-technology">
+        <img class="sensitive-files__header-technology-first" src="/images/sensitive-content/rectangle2.svg"/>
+        <h2>Real Time and Continuous Risk Dectection & Remediation</h2>
+        <p class="sensitive-files__header-technology-description">Continuous dectection as risks happen, remediate in an instant.</p>
+        <a href="#real-time" class="sensitive-files__header-cta-button sensitive-files__header-cta-button--outline" option="Enterprise">Learn more</a>
+      </div>
+      <div class="sensitive-files__header-technology">
+        <img class="sensitive-files__header-technology-first" src="/images/sensitive-content/rectangle3.svg"/>
+        <h2>Data Risk management Integrated with Cloud DLP</h2>
+        <p class="sensitive-files__header-technology-description">Works with <a class="link" href="/gsuite-googleworkspace">Google Workspace</a>, <a class="link" href="/microsoft-0365">Microsoft 365</a>, and upcoming platforms.</p>
+        <a href="#data-risk-management" class="sensitive-files__header-cta-button sensitive-files__header-cta-button--outline" option="Enterprise">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sensitive-files__body">
+
+    <div class="sensitive-files__body-element" id="automatic-file-sensitivity">
+      <div class="sensitive-files__body-element-part">
+        <p class="sensitive-files__body-title">Automatic File Sensitivity Classification</p>
+        <p class="sensitive-files__body-description sensitive-files__body-description--border-first">Automatic file sensitivity labelling and intelligent risks discovery classify risks into severity levels based on sharing permissions. No tagging or labelling of data required.</p>
+      </div>
+      <div class="sensitive-files__body-element-part">
+        <img class="sensitive-files__body-element-image" src="/images/sensitive-content/automatic_file.png"/>
+      </div>
+    </div>
+
+    <div class="sensitive-files__body-element sensitive-files__body-element--row-reverse" id="real-time">
+      <div class="sensitive-files__body-element-part">
+        <img class="sensitive-files__body-element-image-mobile" src="/images/sensitive-content/real_time.png"/>
+      </div>
+      <div class="sensitive-files__body-element-part">
+        <p class="sensitive-files__body-title">Real Time and Continuous Detection & Remediation</p>
+        <p class="sensitive-files__body-description sensitive-files__body-description--border-second">Automatic, continous and scalable risk detection & remediation, so your data always stays safe.</p>
+      </div>
+    </div>
+
+    <div class="sensitive-files__body-element">
+      <div class="sensitive-files__body-element-part">
+        <p class="sensitive-files__body-title">Custom Sensitive Phrase Inclusion</p>
+        <p class="sensitive-files__body-description sensitive-files__body-description--border-third">Add custom words or phrases to the file sensitivity intelligence to match your company's business and risk profile.</p>
+      </div>
+      <div class="sensitive-files__body-element-part">
+        <img class="sensitive-files__body-element-image" src="/images/sensitive-content/custom_sensitive.png"/>
+      </div>
+    </div>
+    
+    <div class="sensitive-files__body-element  sensitive-files__body-element--row-reverse">
+      <div class="sensitive-files__body-element-part">
+        <img class="sensitive-files__body-element-image" src="/images/sensitive-content/sensitive_content.png"/>
+      </div>
+      <div class="sensitive-files__body-element-part">
+        <p class="sensitive-files__body-title">Sensitive Content Detection</p>
+        <p class="sensitive-files__body-description sensitive-files__body-description--border-forth">Automatically understand what data is sensitive, and when sensitive data is at risk.</p>
+      </div>
+    </div>
+
+    <div class="sensitive-files__body-element" id="data-risk-management">
+      <div class="sensitive-files__body-element-part">
+        <p class="sensitive-files__body-title">Data Risk Management Integrated with Cloud DLP</p>
+        <p class="sensitive-files__body-description sensitive-files__body-description--border-fifth">Currently support Google Workspace and Microsoft 365, with more platforms upcoming.</p>
+      </div>
+      <div class="sensitive-files__body-element-part">
+        <img class="sensitive-files__body-element-image" src="/images/sensitive-content/data_risk.svg"/>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sensitive-files__footer">
+      {% include "./layouts/partials/learn-more-form.njk" %}
+  </section>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "requestContext": {
+    "authorizer": {
+        "project_id": "thoughtlabs"
+    }
+  },
+  "Records": [
+    {
+      "body": "{\"permission_details\": {\"owner_email\": \"michael@thoughtlabs.io\", \"file_id\": \"1pY55hCKgoXVkp_7_qpQevyidt-wJLmXE\", \"permissions_id\":\"anyoneWithLink\"}, \"email\": \"check.nyah@gmail.com\", \"risk_id\": \"7addd78cabb7de59d7ea721c464e93f186390006\"}"
+    }
+  ]
+}

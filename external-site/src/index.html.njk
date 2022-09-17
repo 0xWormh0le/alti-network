@@ -1,0 +1,346 @@
+---
+title: Cloud Security and Data Loss Prevention | Altitude Networks
+description: Altitude Networks is a cloud security and data loss prevention company protecting your company's cloud data against accidental sharing, theft, and more.
+url: /
+---
+
+{% extends "./layouts/layout.njk" %}
+
+{% block scripts %}
+  <script src="{{ fingerprint['assets/js/index.js'] }}"></script>
+  <script async defer src="https://widgets.boast.io/current/components.js"></script>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.min.css"/>
+{% endblock %}
+
+
+{% block body %}
+<!-- <section class="home-banner">
+  <div class="banner-inner">
+    <div class="banner-title"><img src="/images/bricks.svg" alt="bricks" />Come visit us at Black Hat USA 2021 for a demo at Innovation City (Booth IC03).</div>
+    <button><img src="/images/close.svg" alt="close" /></button>
+  </div>
+</section> -->
+  <section class="home-section home-hero-section hero-section">
+      <div class="hidden-sm-up">
+        <img src="/images/green-dots.svg" alt="green dots" class="home-hero-section__green-dots" />
+        <img src="/images/blue-dots.svg" alt="blue dots" class="home-hero-section__blue-dots" />
+        <img src="/images/red-dots.svg" alt="red dots" class="home-hero-section__red-dots" />
+      </div>
+      <div class="home-hero-section__inner">
+        <h1 class="home-hero-section__title">
+          Data that stays safe means collaborating without the risk.
+        </h1>
+        <p class="home-hero-section__text">
+          <em>Altitude Networks</em>&nbsp;&nbsp;is at the forefront of enterprise cloud security and data loss protection&mdash;protecting your company’s cloud data against unauthorized access, accidental or malicious sharing, and theft. With our DLP application, you can quickly identify, remediate, and prevent data loss in the cloud with one click.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="testimonials-section__title">
+        <h5>Watch Bob Lord, former CSO of the Democratic National Committee, and Steve Tran, CISO of MGM Studios explain why they chose Altitude Networks.</h5>
+      </div>
+      <div class="video-wrapper">
+        <div class="testimonials-section__container">
+          <div class='resources__vimeo-embed'>
+            <iframe src="https://player.vimeo.com/video/607725035" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonials-section__container">
+          <div class='resources__vimeo-embed'>
+            <iframe src="https://player.vimeo.com/video/622783637" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="testimonials-section__arrow left">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+          <path fill="currentColor" d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"></path>
+        </svg>
+      </button>
+      <button class="testimonials-section__arrow right">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+          <path fill="currentColor" d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"></path>
+        </svg>
+      </button> -->
+    </section>
+
+    <h3 id="logo-header">
+      Protecting Critical Data at
+    </h3>
+
+    <section class="home-section logo-section">
+      <div class="logo-box">
+        <img src="/images/vendor-logos/tradeshift.png" title="Hacker One"/>
+      </div>
+      <div class="logo-box">
+        <img src="/images/vendor-logos/transcend-education.png" title="Hacker One"/>
+      </div>
+      <div class="logo-box">
+        <img src="/images/vendor-logos/rocketpower.png" title="Hacker One"/>
+      </div>
+      <div class="logo-box">
+        <img src="/images/vendor-logos/hackerone.svg" title="Hacker One"/>
+      </div>
+      <div class="logo-box">
+        <img src="/images/vendor-logos/dnc.png" id="dnc-logo" title="Democratic National Committee"/>
+      </div>
+      <div class="logo-box">
+        <img src="/images/vendor-logos/astranis.png" id="astranis-logo" title="Astranis"/>
+      </div>
+      <div class="logo-box">
+        <img src="/images/vendor-logos/accomplice.png" title="Accomplice"/>
+      </div>
+      <div class="logo-box">
+        <img src="/images/vendor-logos/expel.svg" id="expel-logo" title="Expel"/>
+      </div>
+    </section>
+    <!--
+    <section class="banner-section">
+      <div class='banner-section__dots'></div>
+      <div class='banner-section__copy banner-section__copy--light'>
+        Get a Free Security Assessment&mdash; our Fast, Detailed Snapshot of Your Cloud Security Posture
+      </div>
+      <a href="/free-security-assessment.html">
+        <button class="banner-button">Check My Cloud Security</button>
+      </a>
+    </section>
+    -->
+
+    <section class="home-section pain-section pain-section--stolen">
+      <div class="pain-section__container">
+        <h2 class="pain-section__title">
+          Tracking <span class="pain-section__title-emphasis">stolen</span> cloud documents is time consuming.
+        </h2>
+        <div class="pain-section__content">
+          <div class="pain-section__descr">
+            <p>With 1 click, remediate unauthorized access.</p>
+            <a href='/how-it-works'><button class="pain-section__button" data-altimeter="problem_button_1">Learn More</button></a>
+          </div>
+          <div class="pain-section__img-wrap">
+            <div id="animation-1" class="pain-section__img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section pain-section pain-section--critical">
+      <div class="pain-section__container">
+        <h2 class="pain-section__title">
+          Someone just shared a <span class="pain-section__title-emphasis">critical</span> file. To the wrong person.
+        </h2>
+        <div class="pain-section__content">
+          <div class="pain-section__descr">
+            <p>Identify who has undesired access to your important files and resolve it before it becomes an incident.</p>
+            <a href='/how-it-works'><button class="pain-section__button" data-altimeter="problem_button_2">Learn More</button></a>
+          </div>
+          <div class="pain-section__img-container">
+            <div class="pain-section__img-wrap" style="--aspect-ratio: 1394/646;">
+              <div id="animation-2" class="pain-section__img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section pain-section pain-section--protection">
+      <div class="pain-section__container">
+        <h2 class="pain-section__title">
+          Continuous <span class="pain-section__title-emphasis">protection</span>. For all your cloud collaboration.
+        </h2>
+        <div class="pain-section__content">
+          <div class="pain-section__descr">
+            <p>Employees share files all the time which means you need security that is always working.</p>
+            <a href='/how-it-works'><button class="pain-section__button" data-altimeter="problem_button_3">Learn More</button></a>
+          </div>
+          <div class="pain-section__img-wrap">
+            <div id="animation-3" class="pain-section__img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section cta-try-section">
+      <div class="cta-try-section__container">
+        <div class="cta-try-section__row">
+          <div class="cta-try-section__col">
+            <h2 class="cta-try-section__title">
+              Find it.
+            </h2>
+            <object id="find-it-animation" data="/images/find-it.svg" type="image/svg+xml" class="cta-try-section__tile"></object>
+          </div>
+          <div class="cta-try-section__col">
+            <h2 class="cta-try-section__title">
+              Fix it.
+            </h2>
+            <object id="fix-it-animation" data="/images/fix-it.svg" type="image/svg+xml" class="cta-try-section__tile"></object>
+          </div>
+          <div class="cta-try-section__col">
+            <h2 class="cta-try-section__title">
+              Prevent it.
+            </h2>
+            <object id="prevent-it-animation" data="/images/prevent-it.svg" type="image/svg+xml" class="cta-try-section__tile"></object>
+          </div>
+        </div>
+        <p class="cta-try-section__text">
+          Organizations and their products and services are moving faster than ever before. In a world where remote work is becoming standard practice, employees are constantly creating content, sharing and deleting files in the cloud, and being offboarded. It’s vital that your business has a comprehensive solution to understand your company's posture management and where it might be vulnerable.
+        </p>
+      </div>
+    </section>
+
+    <section class="home-section resolutions-section">
+      <div class="resolutions-section__container">
+        <div class="resolutions-section__content active" id="resolutions-continuous">
+          <div class="resolutions-section__header">
+            <h2 class="resolutions-section__title resolutions-section__title--variant1">
+              <br/>
+              Continuously Securing Your Enterprise Data
+            </h2>
+            <p class="resolutions-section__text resolutions-section__text--variant1">
+              Data is constantly shared. Your security must be constantly defending.
+            </p>
+          </div>
+          <div class="resolutions-section__video-wrap">
+            <video muted="muted" class='video-continuous'>
+              <source src="videos/continuous.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+
+            <div class="resolutions-section__arrows">
+              <a class="resolutions-section__arrow left" href="javascript:;">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="32px" height="32px" class="hidden-sm-down">
+                  <path fill="currentColor" d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"></path>
+                </svg>
+                <object data="/images/arrow-mobile-left.svg" type="image/svg+xml" class="hidden-md-up"></object>
+              </a>
+              <a class="resolutions-section__arrow right" href="javascript:;">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="32px" height="32px" class="hidden-sm-down">
+                  <path fill="currentColor" d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"></path>
+                </svg>
+                <object data="/images/arrow-mobile-right.svg" type="image/svg+xml" class="hidden-md-up"></object>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="resolutions-section__content" id="resolutions-accurate" >
+          <div class="resolutions-section__header">
+            <h2 class="resolutions-section__title resolutions-section__title--variant2">
+              Tools should solve a problem, not create extra work for your team.
+            </h2>
+            <p class="resolutions-section__text resolutions-section__text--variant2">
+              Get results, actions, and defense you can trust with minimal effort.
+            </p>
+          </div>
+          <div class="resolutions-section__video-wrap">
+            <video muted="muted" class='video-accurate'>
+              <source src="videos/accurate.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+
+            <div class="resolutions-section__arrows">
+              <a class="resolutions-section__arrow left" href="javascript:;">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="32px" height="32px" class="hidden-sm-down">
+                  <path fill="currentColor" d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"></path>
+                </svg>
+                <object data="/images/arrow-mobile-left.svg" type="image/svg+xml" class="hidden-md-up"></object>
+              </a>
+              <a class="resolutions-section__arrow right" href="javascript:;">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="32px" height="32px" class="hidden-sm-down">
+                  <path fill="currentColor" d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"></path>
+                </svg>
+                <object data="/images/arrow-mobile-right.svg" type="image/svg+xml" class="hidden-md-up"></object>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="resolutions-section__content" id="resolutions-intelligent">
+          <div class="resolutions-section__header">
+            <h2 class="resolutions-section__title resolutions-section__title--variant3">
+              How your data is shared is unique. So you’ll need a security solution that adapts.
+            </h2>
+            <p class="resolutions-section__text resolutions-section__text--variant3">
+              Get the smarts of a security analyst, with the scale of computers.
+            </p>
+          </div>
+          <div class="resolutions-section__video-wrap">
+            <video muted="muted" class='video-intelligent'>
+              <source src="videos/intelligent.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+
+            <div class="resolutions-section__arrows">
+              <a class="resolutions-section__arrow left" href="javascript:;">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="32px" height="32px" class="hidden-sm-down">
+                  <path fill="currentColor" d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"></path>
+                </svg>
+                <object data="/images/arrow-mobile-left.svg" type="image/svg+xml" class="hidden-md-up"></object>
+              </a>
+              <a class="resolutions-section__arrow right" href="javascript:;">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="32px" height="32px" class="hidden-sm-down">
+                  <path fill="currentColor" d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"></path>
+                </svg>
+                <object data="/images/arrow-mobile-right.svg" type="image/svg+xml" class="hidden-md-up"></object>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="resolutions-section__navs">
+          <a class="resolutions-section__nav-item active" href="#" rel="#resolutions-continuous" data-altimeter="resolution_tab">
+            <div class="resolutions-section__icon-wrap">
+              <svg width="30" height="30" viewBox="0 0 40 40">
+                <path fill="currentColor" d="M27.768 14.096l-2.967-2.5a.713.713 0 0 0-.916 1.091l1.47 1.25H18.31a4.05 4.05 0 0 0-4.046 4.046v1.28a.713.713 0 0 0 1.425 0V17.97a2.625 2.625 0 0 1 2.621-2.621h7.05l-1.47 1.25a.713.713 0 0 0 .917 1.092l2.966-2.5a.713.713 0 0 0 0-1.092l-.004-.004zM25.889 19.98a.713.713 0 0 0-.713.712v1.291a2.625 2.625 0 0 1-2.62 2.621h-7.05l1.47-1.25a.712.712 0 1 0-.896-1.075l-2.967 2.5a.713.713 0 0 0 0 1.092l2.967 2.5a.713.713 0 0 0 .917-1.092l-1.471-1.25h7.03a4.05 4.05 0 0 0 4.045-4.046v-1.291a.712.712 0 0 0-.712-.713z"/>
+              </svg>
+            </div>
+            Continuous
+          </a>
+          <a class="resolutions-section__nav-item" href="#" rel="#resolutions-accurate" data-altimeter="resolution_tab">
+            <div class="resolutions-section__icon-wrap">
+              <svg width="30" height="30" viewBox="0 0 40 40">
+                <path fill="currentColor" d="M30 12.571L27 13l.429-3-2.282 2.282a9.652 9.652 0 0 0-5.45-1.676c-5.356 0-9.697 4.342-9.697 9.697C10 25.659 14.341 30 19.697 30c5.355 0 9.697-4.341 9.697-9.697 0-2.02-.618-3.897-1.676-5.45L30 12.571zm-4.732 13.303a7.827 7.827 0 0 1-5.571 2.308 7.827 7.827 0 0 1-5.571-2.308 7.827 7.827 0 0 1-2.308-5.571c0-2.105.82-4.083 2.308-5.571a7.827 7.827 0 0 1 5.571-2.308c1.798 0 3.504.6 4.892 1.702l-2.167 2.167a4.848 4.848 0 1 0 1.286 1.286l2.166-2.168a7.819 7.819 0 0 1 1.702 4.892c0 2.105-.82 4.083-2.308 5.571zm-5.971-5.17a.906.906 0 0 0 1.285 0l1.801-1.801c.22.419.344.895.344 1.4 0 1.67-1.36 3.03-3.03 3.03-1.671 0-3.03-1.359-3.03-3.03 0-1.67 1.359-3.03 3.03-3.03.505 0 .981.125 1.4.344l-1.8 1.8a.91.91 0 0 0 0 1.286z"></path>
+              </svg>
+            </div>
+            Accurate
+          </a>
+          <a class="resolutions-section__nav-item" href="#" rel="#resolutions-intelligent" data-altimeter="resolution_tab">
+            <div class="resolutions-section__icon-wrap">
+              <svg width="30" height="30" viewBox="0 0 40 40">
+                <path fill="currentColor" d="M28.786 11.248a3.867 3.867 0 0 0-2.752-1.145 3.867 3.867 0 0 0-3.521 2.256l-2.034-2.034a.681.681 0 0 0-.975 0l-9.23 9.23a.681.681 0 0 0 0 .975l9.23 9.23a.685.685 0 0 0 .496.206.685.685 0 0 0 .496-.205l2.94-2.94a.686.686 0 0 0 .154-.736.685.685 0 0 0-.599-.444 2.626 2.626 0 0 1-1.59-.718 2.496 2.496 0 0 1-.734-1.778c0-.666.256-1.299.735-1.777a2.496 2.496 0 0 1 1.777-.736c.667 0 1.3.257 1.778.736.428.427.684.991.718 1.59a.666.666 0 0 0 .445.598.686.686 0 0 0 .735-.154l2.854-2.855a.685.685 0 0 0 .206-.496.685.685 0 0 0-.206-.495l-2.034-2.035c.41-.188.787-.461 1.111-.769 1.522-1.521 1.522-4 0-5.504zm-.974 4.513c-.41.41-.94.666-1.521.718a.686.686 0 0 0-.582.461.664.664 0 0 0 .171.718l2.376 2.376-1.504 1.504a3.635 3.635 0 0 0-.803-1.162 3.867 3.867 0 0 0-2.752-1.145c-1.043 0-2.018.41-2.753 1.145a3.867 3.867 0 0 0-1.145 2.752c0 1.043.41 2.017 1.145 2.752.342.342.735.616 1.163.804l-1.59 1.59-8.273-8.24 8.239-8.24 2.376 2.377a.705.705 0 0 0 .718.17.708.708 0 0 0 .461-.58 2.447 2.447 0 0 1 .718-1.522 2.496 2.496 0 0 1 1.778-.735c.667 0 1.3.257 1.778.735.974.958.974 2.547 0 3.522z"/>
+              </svg>
+            </div>
+            Intelligent
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section testimonials">
+      <h2>Testimonials</h2>
+      <div data-boast-component="boast-display-widget" data-widget-id="7b999529-c617-42e8-bbeb-86f47a28750f"></div>
+    </section>
+
+    <div class="home-section get-started get-started--section get-started--home">
+      <object id="bits-animation" data="/images/bits.svg" type="image/svg+xml" class="get-started__bits"></object>
+      <div class="get-started__container">
+        <h2></h2>
+        <!--[if lte IE 8]>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "na1",
+            portalId: "5502362",
+            formId: "87804724-7636-4a9a-84f0-11a5b21bb352"
+          });
+        </script>
+        <div class="get-started__success">
+          <span class="get-started__success-icon">✔</span>
+          Thank you for subscribing!
+        </div>
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,677 @@
+/* SCROLL WRAPPER */
+.scroll-wrapper {
+  height: 100vh;
+  width: 100vw;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  position: relative;
+  top: 0;
+  padding: 70px 0 0;
+}
+
+/* CTA form input */
+.cta-input {
+  border-color: transparent !important;
+  background-color: rgb(236,236,236) !important;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: solid 1px;
+  display: block;
+  outline: 0;
+  padding: 0 1rem;
+  width: 100%;
+
+  &:focus {
+    border-color: #0177ff !important;
+    box-shadow: none !important;
+  }
+
+  &--shadowed {
+    background-color: #fdfdfd !important;
+    &, &:focus {
+      box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.02), 0 1px 3px 0 rgba(50, 50, 93, 0.15) !important;
+    }
+  }
+}
+
+/* CTA Subscribe */
+.cta-subscribe, .cta-subscribe-trigger {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 480px;
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  
+  &__form--vertical {
+    display: block;
+  }
+  
+  &__form input {
+    border-color: transparent;
+    background-color: rgb(236,236,236);
+    height: 40px;
+    box-sizing: border-box;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex: 1;
+  }
+  
+  &__form--vertical input {
+    margin-bottom: 11px;
+    border-radius: 4px;
+  }
+  
+  &__form input:focus {
+    box-shadow: none;
+    border-color: #0177ff;
+  }
+  
+  &__form button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0;
+  }
+  
+  &__form--vertical button {
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  &__success {
+    display: none;
+    text-align: center;
+  }
+  
+  &__success-icon {
+    color: #70a60c;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  &__notice {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    text-align: center;
+    color: #90959d;
+  
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+
+
+/* CTA button */
+.cta-button {
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: #0177ff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff !important;
+  text-decoration: none;
+  
+  &--outline {
+    background: none;
+    border: 1px solid #0177ff;
+    color: #0177ff !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.08);
+  }
+  
+  &:hover {
+    box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+    cursor: pointer;
+  }
+
+  &--outline:hover {
+    color: #0177ff !important;
+  }
+
+  &--outline:hover:active {
+    background: none !important;
+  }
+}
+
+.card-box-img-container {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* to be used with div */
+.secondary-button-container {
+  min-width: 176px;
+  height: 40px;
+  padding: 8px 0;
+  border-radius: 4px;
+  border: solid 1px #13466c;
+  background-color: #ffffff;
+}
+
+/* to be used with <a href... class="secondary-button" /> */
+.secondary-button {
+  width: 176px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #222c3c !important;
+  background: transparent;
+  text-decoration: none;
+}
+
+.document-link {
+  text-decoration: none;
+
+  .document-button {
+    margin-bottom: 33px;
+    font-size: 30px;
+    height: auto;
+  }
+}
+
+/* CTA MODAL */
+.cta-subscribe-modal, .cta-pricing-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  padding: 50px;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+  z-index: 99999;
+
+  @media screen and (max-width: 768px) {
+    padding: 5px;
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 900px;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #f8f9fd;
+    margin: auto;
+  }
+  
+  &__close {
+    align-self: flex-end;
+    color: #222C3C;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 1px;
+  }
+  
+  &__close:hover {
+    color: #0177ff;
+  }
+  
+  &__logo {
+    display: block;
+    margin-bottom: 23px;
+  }
+  
+  &__logo img {
+    display: block;
+  }
+  
+  &__title {
+    max-width: 448px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #171c27;
+    margin-bottom: 30px;
+  }
+
+  .cta-subscribe__form {
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .cta-subscribe__notice {
+    font-size: 10px;
+  }
+  
+  .cta-subscribe__success {
+    flex-direction: column;
+  }
+  
+  .cta-subscribe__success-title {
+    max-width: 332px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .form-separator {
+    span {
+      background-color: #f8f9fd !important;
+    }
+  }
+}
+
+.eng-blog__form {
+  margin-bottom: 33px;
+  width: 66%;
+
+  &--success {
+    margin-bottom: 33px;
+  }
+}
+
+.card {
+  font-family: Montserrat;
+  color: #354052;
+  width: 270px;
+  background-color: #FFF;
+  border-radius: 4px;
+  padding: 33px 22px 33px;
+  margin: 15px 10px 22px;
+  text-align: center;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &--active, &:hover {
+    margin-top: 10px;
+    border-top: 5px solid #0177ff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin: 22px 0;
+    display: block;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  &__text {
+    color: #74828f;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    height: 120px;
+  }
+}
+
+.quote {
+  $this: &;
+  border-left: 6px solid transparent;
+  padding-left: 25px;
+
+  &, p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #222c3c;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  &--blue {
+    border-color: #0177ff
+  }
+
+  &--orange {
+    border-color: #fbc310;
+  }
+
+  &--red {
+    border-color: #ec632b;
+  }
+
+  &--green {
+    border-color: #70a60c;
+  }
+
+  &--yellow {
+    border-color: #ffc600;
+  }
+}
+
+/* RADIO & CHECKBOX BUTTON STYLING */
+.radio {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 0;
+  height: 19px;
+  width: 19px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.checkbox {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 0;
+  height: 19px;
+  width: 19px;
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+.checkmark-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin: 10px 0 10px 0px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark-container input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  z-index:100;
+}
+
+/* Radio: On mouse-over, add a grey background color */
+.checkmark-container:hover input ~ .radio {
+  background-color: #ccc;
+}
+
+/* Radio: When the radio button is checked, add our green color */
+.checkmark-container input:checked ~ .radio {
+  background-color: #70a60c;
+}
+
+/* Radio: Create the indicator (the dot/circle - hidden when not checked) */
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Radio: Show the indicator (dot/circle) when checked */
+.checkmark-container input:checked ~ .radio:after {
+  display: block;
+}
+
+/* Checkbox: On mouse-over, add a grey background color */
+.checkmark-container:hover input ~ .checkbox {
+  background-color: #ccc;
+}
+
+/* Checkbox: When the radio button is checked, add our green color */
+.checkmark-container input:checked ~ .checkbox {
+  background-color: #70a60c;
+}
+
+/* Checkbox: Create the indicator (the dot/circle - hidden when not checked) */
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Checkbox: Show the indicator (checkmark) when checked */
+.checkmark-container input:checked ~ .checkbox:after {
+  display: block;
+}
+
+.checkmark-container .checkbox:after {
+ 	top: 1px;
+	left: 0px;
+	width: 18px;
+	height: 18px;
+  //content:'\2713';
+  background-image: url("/images/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* use this span if you want an icon after the checkmark */
+.checkmarkSpan {
+  display: inline-flex;
+  width: 28px;
+  margin-right: 8px;
+  margin-left: 16px;
+  justify-content: center;
+}
+
+/* use this span for label text if you have an icon after the checkmark */
+.checkmarkLabel {
+  display: inline-flex;
+}
+
+/* use this span if you want a horizontal divider between checkmark <label> */
+.checkmarkDivider {
+  width: 275px;
+  height: 1px; 
+  min-height: 1px;
+  min-width: 200px;
+  background: #e6eaee;
+  margin-left: 50px;
+}
+
+.inputFieldLarge {
+  height: 60px;
+  margin: 0 0 0 31px;
+  padding: 5px 5px 33px 8px;
+  background-color: #f4f5f7 !important;
+  border: none !important;
+  width: 100%;
+  &::placeholder {
+    color: #7f8fa4 !important;
+    opacity: 1 !important;
+  }
+}
+
+.inputFieldText {
+  width: 100% !important;
+  height: 40px !important;
+  margin: 16px 1px 11px 0 !important;
+  background-color: #f4f5f7 !important;
+  border: none !important;
+  &::placeholder {
+    color: #7f8fa4 !important;
+    opacity: 1 !important;
+  }
+}
+
+.inputFieldTextarea {
+  width: 100% !important;
+  height: 60px !important;
+  margin: 16px 1px 11px 0 !important;
+  padding: 8px 8px 8px 11px !important;
+  background-color: #f4f5f7 !important;
+  border: none !important;
+  &::placeholder {
+    color: #7f8fa4 !important;
+    opacity: 1 !important;
+  }
+}
+
+#contactSubmit {
+  width: 100% !important;
+  height: 40px !important;
+  background-color: #0177ff !important;
+  color:#fff !important;
+  line-height: inherit !important;
+  border-radius: 2px !important; 
+  box-shadow: none !important;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  &>div{
+    margin-right: 5px;
+  }
+  &--centered { 
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.flexRowAllViews {
+  display: flex;
+  flex-direction: row;
+  &>div{
+    margin-right: 5px;
+  }
+  &--centered { 
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.marginTop0 {
+  margin-top: 0px;
+}
+
+.marginTop10 {
+  margin-top: 10px;
+}
+
+.marginTop-10 {
+  margin-top: -10px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+.marginRight10 {
+  margin-right: 10px;
+}
+
+.marginRight20 {
+  margin-right: 20px !important;
+}
+
+.marginTop30 {
+  margin-top: 30px;
+}
+
+ul.checklist {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  & li {
+    background-image: url("/images/blue-circle-checkmark.svg");
+    background-repeat: no-repeat;
+    padding-left: 25px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flexRow {
+    flex-direction: column;
+    padding: 10px;
+    &>div{
+      margin-left: 5px;
+    }
+  }
+  .marginTop10 {
+    margin-top: 2px;
+  }
+
+  .marginTop20 {
+    margin-top: 5px;
+  }
+
+  .marginRight10 {
+    margin-right: 2px;
+  }
+
+  .marginRight20 {
+    margin-right: 5px !important;
+  }
+}
+
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px !important;
+
+  h2 {
+    text-align: center;
+  }
+
+  h3, p {
+    font-family: inherit !important;
+    font-size: inherit !important;
+  }
+}
+
+.response-cards-carousel-widget { 
+  width: 100vw;
+  max-width: 1000px;
+}

@@ -1,0 +1,16 @@
+{
+  "pathParameters": {
+    "fileId": "1FcSBb-ML5uHtExf1w3zi5YUDh08e8cJ7Xujr_j7JNNM"
+  },
+  "requestContext": {
+    "authorizer": {
+      "project_id": "thoughtlabs"
+    }
+  },
+  "queryStringParameters": {
+    "page-number": "1",
+    "page-size": "5",
+    "order-by": "permissions-emailaddress",
+    "sort": "asc"
+  }
+}

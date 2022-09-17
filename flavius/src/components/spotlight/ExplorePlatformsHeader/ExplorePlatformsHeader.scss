@@ -1,0 +1,33 @@
+@import 'styles/_shared.scss';
+
+.ExplorePlatformsHeader {
+  background-color: change-color($WARNING_YELLOW, $alpha: 0.25);
+  display: flex;
+  flex-direction: row;
+  padding: $SMALL_SPACING;
+  border: 1px solid $WARNING_YELLOW;
+
+  &__container {
+    padding: $SMALL_SPACING;
+  }
+
+  &__buttons {
+    margin-right: $SMALL_SPACING;
+    display: flex;
+    flex-direction: row;
+
+    .Button {
+      background-color: $MUTED_GREEN;
+      display: inline-block;
+      min-width: 7em;
+      text-align: center;
+      font-weight: 700;
+      color: white;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      padding: $BASE_SPACING;
+      margin-bottom: 0;
+    }
+  }
+}

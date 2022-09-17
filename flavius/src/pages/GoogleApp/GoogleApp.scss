@@ -1,0 +1,68 @@
+@import 'styles/_shared.scss';
+
+.GoogleApp {
+  &__initiate {
+    margin-top: 5em;
+    text-align: center;
+
+    & > h2 {
+      font-weight: bold;
+    }
+  }
+
+  &__google-logo {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
+
+  &__start-button {
+    display: block;
+    margin: 5em auto;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__progress-loading {
+    margin: 3rem 0;
+
+    text-align: center;
+
+    img {
+      height: 3rem;
+    }
+
+    h2 {
+      font-weight: 600;
+      display: inline;
+    }
+  }
+
+  &__org-showcase {
+    display: grid;
+    margin: 3rem auto;
+    grid-auto-flow: column;
+    padding: 0 10%;
+  }
+
+  &__org {
+    width: 8rem;
+    height: 3rem;
+    margin: 0 3rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__loading-risks {
+    display: grid;
+    place-items: center;
+
+    min-height: 50vh;
+
+    img {
+      width: 3rem;
+    }
+  }
+}

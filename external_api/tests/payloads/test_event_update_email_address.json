@@ -1,0 +1,12 @@
+{
+  "requestContext": {
+    "authorizer": {
+        "project_id": "thoughtlabs"
+    }
+  },
+  "Records": [
+    {
+      "body": "{\"new_status\":\"REMOVED\", \"action\": \"update_status\", \"email\": \"pabloschall@gmail.com\"}"
+    }
+  ]
+}

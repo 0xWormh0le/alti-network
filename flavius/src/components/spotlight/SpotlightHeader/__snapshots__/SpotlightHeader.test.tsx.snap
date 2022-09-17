@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpotlightHeader renders correctly 1`] = `
+<div>
+  <div
+    class="SpotlightHeader"
+  >
+    <div
+      class="SpotlightHeader__title"
+    >
+      <h3
+        class="Typography Typography--h3 Typography--normal SpotlightHeader__title-name"
+      >
+        Test User
+      </h3>
+      <span
+        class="Typography Typography--body SpotlightHeader__title--email trigger"
+      >
+        test@email.com
+      </span>
+      <span
+        class="SpotlightHeader__title-separator"
+      >
+        |
+      </span>
+      <span
+        class="Typography Typography--body SpotlightHeader__title-count"
+      >
+        1 email
+      </span>
+      <span
+        class="SpotlightHeader__title-separator"
+      >
+        |
+      </span>
+      <span
+        class="Typography Typography--body SpotlightHeader__title-count"
+      >
+        0 files total
+      </span>
+      <span
+        class="SpotlightHeader__title-separator"
+      >
+        |
+      </span>
+      <span
+        class="Typography Typography--body SpotlightHeader__title-count"
+      >
+        0 risks total
+      </span>
+    </div>
+  </div>
+</div>
+`;

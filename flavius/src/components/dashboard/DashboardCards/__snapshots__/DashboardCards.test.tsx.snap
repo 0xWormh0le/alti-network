@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardCards renders correctly 1`] = `
+<div>
+  <div
+    class="DashboardCards"
+  >
+    <div
+      class="DashboardCards__card DashboardCards__card--active"
+    >
+      <div
+        class="Typography Typography--h1 DashboardCards__card-value"
+      >
+        0
+      </div>
+      <span
+        class="Typography Typography--label DashboardCards__card-label"
+      >
+        Sharing Risks
+      </span>
+    </div>
+    <div
+      class="DashboardCards__card"
+    >
+      <div
+        class="Typography Typography--h1 DashboardCards__card-value"
+      >
+        0
+      </div>
+      <span
+        class="Typography Typography--label DashboardCards__card-label"
+      >
+        Relationship Risks
+      </span>
+    </div>
+    <div
+      class="DashboardCards__card"
+    >
+      <div
+        class="Typography Typography--h1 DashboardCards__card-value"
+      >
+        0
+      </div>
+      <span
+        class="Typography Typography--label DashboardCards__card-label"
+      >
+        Activity Risks
+      </span>
+    </div>
+    <div
+      class="DashboardCards__card"
+    >
+      <div
+        class="Typography Typography--h1 DashboardCards__card-value"
+      >
+        0
+      </div>
+      <span
+        class="Typography Typography--label DashboardCards__card-label"
+      >
+        Informational Risks
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DashboardCards renders skeleton loader correctly 1`] = `
+<div>
+  <div
+    class="DashboardCards"
+  >
+    <div
+      class="DashboardCards__card DashboardCards__card--active"
+    >
+      <svg
+        aria-labelledby="DashboardCards__card-value-aria"
+        class="DashboardCards__card-value"
+        height="90"
+        role="img"
+      >
+        <title
+          id="DashboardCards__card-value-aria"
+        >
+          Loading...
+        </title>
+        <rect
+          clip-path="url(#DashboardCards__card-value-diff)"
+          height="100%"
+          role="presentation"
+          style="fill: url(#DashboardCards__card-value-animated-diff);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs
+          role="presentation"
+        >
+          <clippath
+            id="DashboardCards__card-value-diff"
+          >
+            <rect
+              height="90"
+              width="100%"
+              x="0"
+              y="0"
+            />
+          </clippath>
+          <lineargradient
+            id="DashboardCards__card-value-animated-diff"
+          >
+            <stop
+              offset="0%"
+              stop-color="#cce8fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-2; -2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#e5f3fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-1; -1; 2"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#cce8fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="0; 0; 3"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+      <span
+        class="Typography Typography--label DashboardCards__card-label"
+      >
+        Sharing Risks
+      </span>
+    </div>
+    <div
+      class="DashboardCards__card"
+    >
+      <svg
+        aria-labelledby="DashboardCards__card-value-aria"
+        class="DashboardCards__card-value"
+        height="90"
+        role="img"
+      >
+        <title
+          id="DashboardCards__card-value-aria"
+        >
+          Loading...
+        </title>
+        <rect
+          clip-path="url(#DashboardCards__card-value-diff)"
+          height="100%"
+          role="presentation"
+          style="fill: url(#DashboardCards__card-value-animated-diff);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs
+          role="presentation"
+        >
+          <clippath
+            id="DashboardCards__card-value-diff"
+          >
+            <rect
+              height="90"
+              width="100%"
+              x="0"
+              y="0"
+            />
+          </clippath>
+          <lineargradient
+            id="DashboardCards__card-value-animated-diff"
+          >
+            <stop
+              offset="0%"
+              stop-color="#cce8fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-2; -2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#e5f3fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-1; -1; 2"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#cce8fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="0; 0; 3"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+      <span
+        class="Typography Typography--label DashboardCards__card-label"
+      >
+        Relationship Risks
+      </span>
+    </div>
+    <div
+      class="DashboardCards__card"
+    >
+      <svg
+        aria-labelledby="DashboardCards__card-value-aria"
+        class="DashboardCards__card-value"
+        height="90"
+        role="img"
+      >
+        <title
+          id="DashboardCards__card-value-aria"
+        >
+          Loading...
+        </title>
+        <rect
+          clip-path="url(#DashboardCards__card-value-diff)"
+          height="100%"
+          role="presentation"
+          style="fill: url(#DashboardCards__card-value-animated-diff);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs
+          role="presentation"
+        >
+          <clippath
+            id="DashboardCards__card-value-diff"
+          >
+            <rect
+              height="90"
+              width="100%"
+              x="0"
+              y="0"
+            />
+          </clippath>
+          <lineargradient
+            id="DashboardCards__card-value-animated-diff"
+          >
+            <stop
+              offset="0%"
+              stop-color="#cce8fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-2; -2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#e5f3fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-1; -1; 2"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#cce8fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="0; 0; 3"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+      <span
+        class="Typography Typography--label DashboardCards__card-label"
+      >
+        Activity Risks
+      </span>
+    </div>
+    <div
+      class="DashboardCards__card"
+    >
+      <svg
+        aria-labelledby="DashboardCards__card-value-aria"
+        class="DashboardCards__card-value"
+        height="90"
+        role="img"
+      >
+        <title
+          id="DashboardCards__card-value-aria"
+        >
+          Loading...
+        </title>
+        <rect
+          clip-path="url(#DashboardCards__card-value-diff)"
+          height="100%"
+          role="presentation"
+          style="fill: url(#DashboardCards__card-value-animated-diff);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs
+          role="presentation"
+        >
+          <clippath
+            id="DashboardCards__card-value-diff"
+          >
+            <rect
+              height="90"
+              width="100%"
+              x="0"
+              y="0"
+            />
+          </clippath>
+          <lineargradient
+            id="DashboardCards__card-value-animated-diff"
+          >
+            <stop
+              offset="0%"
+              stop-color="#cce8fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-2; -2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#e5f3fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="-1; -1; 2"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#cce8fe"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="1.2s"
+                keyTimes="0; 0.25; 1"
+                repeatCount="indefinite"
+                values="0; 0; 3"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+      <span
+        class="Typography Typography--label DashboardCards__card-label"
+      >
+        Informational Risks
+      </span>
+    </div>
+  </div>
+</div>
+`;

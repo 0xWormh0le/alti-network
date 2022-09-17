@@ -1,0 +1,25 @@
+@import 'styles/_shared.scss';
+
+.WhitelistItemAddForm {
+  margin-bottom: $BASE_SPACING;
+  display: flex;
+
+  &__input {
+    flex-grow: 1;
+    margin-right: $BASE_SPACING;
+  }
+
+  button {
+    font-size: 0.8em;
+    min-width: 11.5em;
+    margin-top: $TINY_SPACING;
+  }
+
+  input {
+    margin-right: $BASE_SPACING;
+
+    &:not(:first-child) {
+      margin-top: $BASE_SPACING;
+    }
+  }
+}

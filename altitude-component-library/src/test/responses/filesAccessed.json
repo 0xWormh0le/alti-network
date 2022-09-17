@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "createdAt": 1590702811,
+      "createdBy": {
+        "accessCount": 0,
+        "avatar": null,
+        "email": "michael@thoughtlabs.io",
+        "firstName": "Michael",
+        "lastName": "Coates",
+        "otherEmails": [],
+        "personId": "michael@thoughtlabs.io",
+        "riskCount": 0
+      },
+      "externalAccessCount": 0,
+      "externalAccessList": [],
+      "fileId": "1rjQsU6I583x6h8OcZOL5n16lAAzN2cb9",
+      "fileName": "50files",
+      "iconUrl": "",
+      "internalAccessCount": 0,
+      "internalAccessList": [],
+      "lastIngested": "",
+      "lastModified": 1596133771,
+      "linkVisibility": "none",
+      "md5Checksum": "",
+      "mimeType": "",
+      "sharedToDomains": [
+        {
+          "name": "",
+          "permissionId": ""
+        }
+      ],
+      "trashed": ""
+    },
+    {
+      "createdAt": 1590702855,
+      "createdBy": {
+        "accessCount": 0,
+        "avatar": null,
+        "email": "michael@thoughtlabs.io",
+        "firstName": "Michael",
+        "lastName": "Coates",
+        "otherEmails": [],
+        "personId": "michael@thoughtlabs.io",
+        "riskCount": 0
+      },
+      "externalAccessCount": 0,
+      "externalAccessList": [],
+      "fileId": "1vSCU356vs3x2yi18C7qmz9_OU1HUqJl6",
+      "fileName": "file22.txt",
+      "iconUrl": "",
+      "internalAccessCount": 0,
+      "internalAccessList": [],
+      "lastIngested": "",
+      "lastModified": 1596133771,
+      "linkVisibility": "none",
+      "md5Checksum": "",
+      "mimeType": "",
+      "sharedToDomains": [
+        {
+          "name": "",
+          "permissionId": ""
+        }
+      ],
+      "trashed": ""
+    }
+  ],
+  "orderBy": "lastModified",
+  "pageCount": 1,
+  "pageNumber": 1,
+  "pageSize": 10,
+  "riskId": "7addd78cabb7de59d7ea721c464e93f186390006",
+  "sort": "desc"
+}

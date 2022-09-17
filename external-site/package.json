@@ -1,0 +1,51 @@
+{
+  "name": "external-site",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Marketing website with information about the company, deployed to https://altitudenetworks.com/",
+  "repository": "git@github.com:altitudenetworks/external-site.git",
+  "author": "Joe Fatora <joe@altitudenetworks.com>, Lucas Mancini <lucas@altitudenetworks.com>, Leo Esaki <leo@altitudenetworks.com>, Joe Linstrum <jlinstrum@altitudenetworks.com>",
+  "engines": {
+    "node": ">=10.14"
+  },
+  "devDependencies": {
+    "@types/segment-analytics": "^0.0.31",
+    "async": "^3.2.0",
+    "axios": "^0.21.0",
+    "escape-quotes": "^1.0.2",
+    "html-entities": "^1.3.1",
+    "js-yaml": "^3.14.0",
+    "jstransformer-nunjucks": "^1.0.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-beautify": "^0.2.0",
+    "metalsmith-code-highlight": "^1.1.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-concat": "^7.0.3",
+    "metalsmith-define": "^2.1.3",
+    "metalsmith-fingerprint": "^1.0.3",
+    "metalsmith-ignore": "^1.0.0",
+    "metalsmith-in-place": "^4.4.1",
+    "metalsmith-jstransformer": "^0.13.2",
+    "metalsmith-layouts": "^2.3.1",
+    "metalsmith-move-up": "^2.0.1",
+    "metalsmith-pagination": "^1.5.0",
+    "metalsmith-sass": "^1.6.0",
+    "metalsmith-sitemap": "^1.2.2",
+    "metalsmith-svgo": "^1.0.4",
+    "moment": "^2.29.0",
+    "rebuild": "^0.1.2",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "start": "npm run serve-local & rebuild -w ./src -w ./src/assets/scss -w ./src/assets/js -w ./src/images -w ./src/videos -w ./src/layouts -w ./src/layouts/partials npm run build-dev",
+    "start-content": "npm run serve-local & rebuild -w ./src -w ./src/assets/scss -w ./src/assets/js -w ./src/images -w ./src/videos -w ./src/layouts -w ./src/layouts/partials npm run build",
+    "serve-local": "npm run build && serve ./build",
+    "build": "export NODE_ENV=production && node build.js && node generate-content.js && node build-no-clear.js",
+    "build-dev": "export NODE_ENV=dev && node build-no-clear.js",
+    "build-staging": "export NODE_ENV=staging && node build.js && node generate-content.js && node build-no-clear.js"
+  },
+  "dependencies": {
+    "prismic-dom": "^2.2.3",
+    "prismic-javascript": "^3.0.2"
+  }
+}

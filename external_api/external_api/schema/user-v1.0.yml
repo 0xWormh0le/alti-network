@@ -1,0 +1,171 @@
+id: https://api.altitudenetworks.com/schema/2020-11/user
+$schema: https://json-schema.org/draft/2019-09/schema
+title: AltNetUserModel
+description: A representation of a user, person, service account in Altitude Networks app
+type: object
+properties:
+  altnetId:
+    type: string
+  accessCount:
+    type: integer
+    format: int32
+  internalCount:
+    type: integer
+    format: int32
+  externalCount:
+    type: integer
+    format: int32
+  projectId:
+    type: string
+  internal:
+    type: boolean
+  name:
+    $ref: "#/definitions/name"
+  userKind:
+    $ref: "#/definitions/userKind"
+  accessLevel:
+    $ref: "#/definitions/accessLevel"
+  avatar:
+    $ref: "#/definitions/avatar"
+  primaryEmail:
+    $ref: "#/definitions/email"
+  recoveryEmail:
+    $ref: "#/definitions/email"
+  riskCount:
+    type: integer
+  emails:
+    type: array
+    items:
+      $ref: "#/definitions/email"
+  phones:
+    type: array
+    items:
+      $ref: "#/definitions/phone"
+  externalIds:
+    type: array
+    items:
+      $ref: "#/definitions/id"
+  lastLoginTime:
+    type: integer
+    format: int32
+  orgUnitPath:
+    type: string
+  isEnrolledInMFA:
+    type: boolean
+  etag:
+    type: string
+  creationTime:
+    type: integer
+    format: int32
+  lastModifiedTime:
+    type: integer
+    format: int32
+  lastRemovedPermissions:
+    type: integer
+    format: int32
+  notes:
+    $ref: "#/definitions/notes"
+allOf:
+  - required:
+      - projectId
+  - anyOf:
+      - required:
+          - primaryEmail
+      - required:
+          - altnetId
+definitions:
+  userKind:
+    type: string
+    enum:
+      - user
+      - person
+      - service_account
+  accessLevel:
+    type: string
+    enum:
+      - member
+      - manager
+      - admin
+      - owner
+  kind:
+    type: string
+    enum:
+      - personal
+      - work
+  platform:
+    type: string
+    enum:
+      - altitude
+      - box
+      - confluence
+      - dropbox
+      - gsuite
+      - o365
+      - salesforce
+      - slack
+  id:
+    type: object
+    properties:
+      platform:
+        $ref: "#/definitions/platform"
+      value:
+        type: string
+  name:
+    type: object
+    properties:
+      givenName:
+        type: string
+      familyName:
+        type: string
+      fullName:
+        type: string
+    required:
+      - givenName
+      - familyName
+    additionalProperties: false
+  email:
+    type: object
+    properties:
+      address:
+        type: string
+        format: idn-email
+      kind:
+        $ref: "#/definitions/kind"
+      primary:
+        type: boolean
+      accessCount:
+        type: integer
+        format: int32
+      riskCount:
+        type: integer
+        format: int32
+      lastDeletedPermissions:
+        type: integer
+        format: int32
+    additionalProperties: false
+  phone:
+    type: object
+    properties:
+      number:
+        type: string
+      kind:
+        $ref: "#/definitions/kind"
+      primary:
+        type: boolean
+  avatar:
+    type: object
+    properties:
+      url:
+        type: string
+      urlEtag:
+        type: string
+    required:
+      - url
+  notes:
+    type: object
+    properties:
+      content:
+        type: string
+      contentType:
+        type: string
+    additionalProperties: false

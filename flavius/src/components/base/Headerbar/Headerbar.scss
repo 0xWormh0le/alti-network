@@ -1,0 +1,70 @@
+@import 'styles/_shared.scss';
+
+.Headerbar {
+  font-size: map-get($FONT_SIZES, 'SUBHEAD1');
+  user-select: none;
+  width: 100vw;
+  position: fixed;
+  z-index: $STACKING_CONTEXT_HIGHEST;
+  border-bottom: 1px solid $PALE_GREY;
+
+  &__bar {
+    background-color: white;
+    padding: 0 $SMALL_SPACING;
+    height: $STANDARD_BAR_HEIGHT;
+    flex-flow: row nowrap;
+    position: relative;
+
+    @include flex(row, space-between, center);
+
+    &-brand {
+      display: inline-block;
+      margin-right: 1rem;
+      line-height: inherit;
+      white-space: nowrap;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+
+    &-item {
+      display: flex;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__separator {
+    @include vertical-separator();
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__flat-button {
+    @include set-typography('LABEL', 'normal');
+    color: $TEXT_COLOR !important;
+    padding-bottom: 6px;
+    cursor: pointer;
+    margin: 0 $BASE_SPACING;
+
+    &:hover {
+      border-bottom: 2px solid $MAIN_BRAND_COLOR;
+      text-decoration: none;
+    }
+  }
+
+  &__avatar {
+    margin: 0 $BASE_SPACING;
+  }
+
+  a.Headerbar__home {
+    text-decoration: underline;
+    color: $TEXT_COLOR;
+  }
+}

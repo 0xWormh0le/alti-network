@@ -1,0 +1,518 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSpotlightGrid renders correctly 1`] = `
+<div>
+  <div
+    class="AppSpotlightGrid"
+  >
+    <div
+      class="AppSpotlightHeader"
+    >
+      <div
+        class="AppSpotlightAppImage"
+      >
+        <div
+          class="AppSpotlightAppImage__wrapper"
+        >
+          <img
+            alt="Hello Sign"
+            src="https://via.placeholder.com/150"
+          />
+        </div>
+        <div
+          class="AppSpotlightAppImage__title"
+        >
+          <h3
+            class="Typography Typography--h3 Typography--normal AppSpotlightHeader__title-name"
+            data-testid="apptitle"
+          >
+            Hello Sign
+          </h3>
+        </div>
+        <div
+          class="AppSpotlightAppImage__marketplace"
+        >
+          <p
+            class="Typography Typography--body-small Typography--normal AppSpotlightAppImage__fallback-marketplace-link"
+          >
+            Not Available on
+            <br />
+            G Suite Marketplace
+          </p>
+        </div>
+      </div>
+      <div
+        class="AppSpotlightGrantContainer"
+      >
+        <div
+          class="AppSpotlightGrantContainer__top"
+        >
+          <h3
+            class="Typography Typography--h3 Typography--normal AppSpotlightAppImage__top-title"
+          >
+            This app has been granted access to:
+          </h3>
+        </div>
+        <div
+          class="AppSpotlightGrantContainer__top-bar"
+        >
+          <div
+            class="AppSpotlightAppbar"
+          >
+            <div
+              class="horizontal-menu"
+              style="align-items: center; display: flex; user-select: none;"
+            >
+              <div
+                class="AppSpotlightAppbar__arrow-wrapper AppSpotlightAppbar__arrow-wrapper--disabled"
+              >
+                <div
+                  class="AppSpotlightAppbar__arrow"
+                >
+                  ‹
+                </div>
+              </div>
+              <div
+                class="menu-wrapper"
+                style="overflow: hidden; user-select: none;"
+              >
+                <div
+                  class="menu-wrapper--inner"
+                  style="transform: translate3d(0px, 0, 0); transition: transform 0s; white-space: nowrap; text-align: left;"
+                >
+                  <div
+                    class="AppSpotlightAppbar__item "
+                    role="button"
+                    style="display: inline-block;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="AppSpotlightAppbarItem selected"
+                    >
+                      <div
+                        class="AppSpotlightAppbarItem__wrapper"
+                      >
+                        <img
+                          alt="Gmail"
+                          class="AppSpotlightAppbarItem__wrapper--image"
+                          draggable="false"
+                          src="/services/gmail.png"
+                        />
+                        <span
+                          class="Typography Typography--label Typography--normal AppSpotlightAppbarItem__wrapper--title"
+                        >
+                          Gmail
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="AppSpotlightAppbar__item "
+                    role="button"
+                    style="display: inline-block;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="AppSpotlightAppbarItem"
+                    >
+                      <div
+                        class="AppSpotlightAppbarItem__wrapper"
+                      >
+                        <img
+                          alt="Sheets"
+                          class="AppSpotlightAppbarItem__wrapper--image"
+                          draggable="false"
+                          src="/services/sheets.png"
+                        />
+                        <span
+                          class="Typography Typography--label Typography--normal AppSpotlightAppbarItem__wrapper--title"
+                        >
+                          Sheets
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="AppSpotlightAppbar__arrow-wrapper AppSpotlightAppbar__arrow-wrapper--disabled"
+              >
+                <div
+                  class="AppSpotlightAppbar__arrow"
+                >
+                  ›
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="AppSpotlightGrantContainer__bottom"
+          tabindex="0"
+        >
+          <span
+            class="AppSpotlightGrantContainer__bottom--close"
+          >
+            ×
+          </span>
+          <ul
+            class="AppSpotlightAppScopes"
+          >
+            <li>
+              Manage your sensitive mail settings, including who can manage your mail
+            </li>
+            <li>
+              Send email on your behalf
+            </li>
+            <li>
+              View your email messages and settings
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="AppSpotlightGrid__wrapper"
+    >
+      <div
+        class="Tabs AppSpotlighGrid__Tabs"
+      >
+        <div
+          class="Tabs__tab-list AppSpotlightGrid__TabList"
+        >
+          <div
+            class="Tabs__tab-list-scrolled"
+          >
+            <div
+              class="Tabs__tab-list-arrow-left Tabs__tab-list-arrow-left--hidden Tabs__tab-list-arrow-default"
+            >
+              ‹
+            </div>
+            <div
+              class="Tabs__tab-list-scroll-wrapper"
+            >
+              <div
+                class="Tabs__tab-list-scroll"
+                style="left: 0px;"
+              >
+                <div
+                  aria-roledescription="tab"
+                  class="Tabs__tab AppSpotlightGrid__Tab Tabs__tab--selected"
+                >
+                  <div
+                    class="AppSpotlightGridTabItem"
+                  >
+                    <div
+                      class="AppSpotlightGridTabItem--title"
+                    >
+                      Authorized By
+                    </div>
+                    <div
+                      class="AppSpotlightGridTabItem--content"
+                    >
+                      <div
+                        class="AppSpotlightGridTabItem--details"
+                      >
+                        of 100 total users
+                      </div>
+                      <div
+                        class="AppSpotlightGridTabItem--chart"
+                      >
+                        <div
+                          class="DonutChart DonutChart__auth"
+                        >
+                          <div
+                            class="ct-chart "
+                          />
+                          <div
+                            class="DonutChart__body"
+                          >
+                            <div
+                              class="DonutChart__body--title"
+                            >
+                              90%
+                            </div>
+                            <div
+                              class="DonutChart__body--subtitle"
+                            >
+                              of Users
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-roledescription="tab"
+                  class="Tabs__tab AppSpotlightGrid__Tab"
+                >
+                  <div
+                    class="AppSpotlightGridTabItem"
+                  >
+                    <div
+                      class="AppSpotlightGridTabItem--title"
+                    >
+                      File Downloads
+                    </div>
+                    <div
+                      class="AppSpotlightGridTabItem--content"
+                    >
+                      <div
+                        class="AppSpotlightGridTabItem--details"
+                      >
+                        130 sensitive files
+                      </div>
+                      <div
+                        class="AppSpotlightGridTabItem--chart"
+                      >
+                        <div
+                          class="DonutChart DonutChart__download"
+                        >
+                          <div
+                            class="ct-chart "
+                          />
+                          <div
+                            class="DonutChart__body"
+                          >
+                            <div
+                              class="DonutChart__body--title"
+                            >
+                              51k+
+                            </div>
+                            <div
+                              class="DonutChart__body--subtitle"
+                            >
+                              Downloads
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-roledescription="tab"
+                  class="Tabs__tab AppSpotlightGrid__Tab"
+                >
+                  <div
+                    class="AppSpotlightGridTabItem"
+                  >
+                    <div
+                      class="AppSpotlightGridTabItem--title"
+                    >
+                      Associated Risks
+                    </div>
+                    <div
+                      class="AppSpotlightGridTabItem--content"
+                    >
+                      <div
+                        class="AppSpotlightGridTabItem--details"
+                      >
+                        <ul>
+                          <li
+                            class="Severe2"
+                          >
+                            Severity 2 
+                            <span>
+                              1
+                               
+                              risk
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="AppSpotlightGridTabItem--chart"
+                      >
+                        <div
+                          class="DonutChart DonutChart__risk"
+                        >
+                          <div
+                            class="ct-chart "
+                          />
+                          <div
+                            class="DonutChart__body"
+                          >
+                            <div
+                              class="DonutChart__body--title"
+                            >
+                              1
+                            </div>
+                            <div
+                              class="DonutChart__body--subtitle"
+                            >
+                              Risks
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="Tabs__tab-list-arrow-right Tabs__tab-list-arrow-default"
+            >
+              ›
+            </div>
+          </div>
+          <div
+            class="Tabs__tab-list-scroll-spacer"
+            style="height: 0px;"
+          />
+        </div>
+      </div>
+      <div
+        class="AppSpotlightGrid__content"
+      >
+        <div
+          class="AppSpotlightGrid__content--details"
+        >
+          <div
+            class="AppSpotlightGrid__content--header"
+          >
+            <div
+              class="title"
+            >
+              Individuals who have authorized this App
+            </div>
+            <div
+              class="prev-chart"
+            >
+              <div
+                class="PreviewChartWrapper"
+              >
+                <div
+                  class="hot-point hidden blue"
+                />
+                <div
+                  class="ct-chart PreviewChart ct-double-octave blue"
+                />
+                <div
+                  class="PreviewChartState"
+                />
+              </div>
+            </div>
+          </div>
+          <div />
+          <div
+            class="Table TableLoading"
+          >
+            <svg
+              aria-labelledby="table-loading-aria"
+              class="TableLoading__loader"
+              height="365"
+              preserveAspectRatio="none"
+              role="img"
+            >
+              <title
+                id="table-loading-aria"
+              >
+                Loading...
+              </title>
+              <rect
+                clip-path="url(#table-loading-diff)"
+                height="100%"
+                role="presentation"
+                style="fill: url(#table-loading-animated-diff);"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs
+                role="presentation"
+              >
+                <clippath
+                  id="table-loading-diff"
+                >
+                  <rect
+                    height="52"
+                    width="100%"
+                    x="0"
+                    y="0"
+                  />
+                  <rect
+                    height="52"
+                    width="100%"
+                    x="0"
+                    y="62"
+                  />
+                  <rect
+                    height="52"
+                    width="100%"
+                    x="0"
+                    y="124"
+                  />
+                  <rect
+                    height="52"
+                    width="100%"
+                    x="0"
+                    y="186"
+                  />
+                  <rect
+                    height="52"
+                    width="100%"
+                    x="0"
+                    y="248"
+                  />
+                  <rect
+                    height="40"
+                    width="10%"
+                    x="90%"
+                    y="310"
+                  />
+                </clippath>
+                <lineargradient
+                  id="table-loading-animated-diff"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#f0f0f0"
+                    stop-opacity="1"
+                  >
+                    <animate
+                      attributeName="offset"
+                      dur="1.2s"
+                      keyTimes="0; 0.25; 1"
+                      repeatCount="indefinite"
+                      values="-2; -2; 1"
+                    />
+                  </stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#f7f7f7"
+                    stop-opacity="1"
+                  >
+                    <animate
+                      attributeName="offset"
+                      dur="1.2s"
+                      keyTimes="0; 0.25; 1"
+                      repeatCount="indefinite"
+                      values="-1; -1; 2"
+                    />
+                  </stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f0f0f0"
+                    stop-opacity="1"
+                  >
+                    <animate
+                      attributeName="offset"
+                      dur="1.2s"
+                      keyTimes="0; 0.25; 1"
+                      repeatCount="indefinite"
+                      values="0; 0; 3"
+                    />
+                  </stop>
+                </lineargradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

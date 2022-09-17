@@ -1,0 +1,11 @@
+{
+  "requestContext": {
+    "authorizer": {
+        "project_id": "thoughtlabs"
+    }
+  },
+  "queryStringParameters": {
+    "risk-id": "01c568d821375a4c19c0118547fdb1d47fdc6cce",
+    "email": "no@gmail.com"
+  }
+}

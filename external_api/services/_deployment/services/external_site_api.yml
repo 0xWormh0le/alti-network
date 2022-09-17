@@ -1,0 +1,19 @@
+type: apigateway
+name: external-site-{{ENV}}-api
+spec_path: external_api/api/external_site.v1.yml
+stage_name: &stage_name "{{ENV}}-{{SUFFIX}}"
+stage_description: External Site API {{ENV}}
+endpoint_type: REGIONAL
+{% if ENV == 'staging' %}
+domain_name: external-staging.altitudenetworks.com
+{% endif %}
+{% if ENV == 'prod' %}
+cors_origin: https://altitudenetworks.com
+domain_name: external.altitudenetworks.com
+{% endif %}
+{% if ENV == 'dev' %}
+domain_name: external-dev.altitudenetworks.com
+{% endif %}
+domain_base_path: *stage_name
+tags:
+  ApplicationRole: ExternalSiteAPI

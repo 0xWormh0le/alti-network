@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders correctly 1`] = `
+<div>
+  <div
+    class="Checkbox Checkbox--custom"
+  >
+    <label
+      class="Checkbox__label Checkbox__label--right"
+    >
+      <input
+        checked=""
+        name="check-it"
+        type="checkbox"
+      />
+      <i
+        class="Checkbox__helper"
+      />
+      <span
+        class="Checkbox__label-text"
+      >
+        Check it
+      </span>
+    </label>
+  </div>
+</div>
+`;

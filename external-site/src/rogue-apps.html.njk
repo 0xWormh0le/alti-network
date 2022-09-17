@@ -1,0 +1,140 @@
+---
+title: Data Threat Protections Against Rogue Apps | Altitude Networks
+url: /rogue-apps
+rogue: true
+description: Altitude Network's data threat protection solution identifies rogue apps that could be stealing your corporate data and can quickly remediate those app risks.
+---
+
+{% extends "./layouts/layout.njk" %}
+
+{% block scripts %}
+  <script src="{{ fingerprint['assets/js/rogue-apps.js'] }}"></script>
+{% endblock %}
+
+{% block body %}
+  <section class="feature-page-section feature-page-hero-section hero-section rogue-apps-hero-section">
+    <div class="feature-page-section__container feature-page-hero-section__container">
+      <object class="feature-page-hero-section__dots blue" data="/images/blue-dots.svg" type="image/svg+xml"></object>
+      <object class="feature-page-hero-section__dots red" data="/images/red-dots.svg" type="image/svg+xml"></object>
+      <object class="feature-page-hero-section__dots yellow" data="/images/yellow-dots.svg" type="image/svg+xml"></object>
+      <object class="feature-page-hero-section__dots green" data="/images/green-dots.svg" type="image/svg+xml"></object>
+
+      <h2 class="feature-page-hero-section__title rogue-apps-hero-section__title">
+        Should the
+        <img class="rogue-apps-hero-section__roulette-animation hidden-sm-down" src="/images/app-roulette.gif">
+        <div class="rogue-apps-hero-section__animation-wrapper hidden-md-up">
+          <img class="rogue-apps-hero-section__roulette-animation" src="/images/app-roulette.gif">
+        </div>
+        app be authorized to access your enterprise cloud applications?
+      </h2>
+
+      <p class="feature-page-hero-section__text rogue-apps-hero-section__text">
+        We uncover rogue applications that are stealing your corporate data.
+      </p>
+    </div>
+  </section>
+
+  <section class="feature-page-section feature-page-features-section rogue-apps-video-section">
+    <div class="feature-page-section__container rogue-apps-video-section__container">
+      <video muted autoplay playsinline loop class='video-rogue-apps'>
+        <source src="videos/rogue-apps-movie.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="rogue-apps-video-section__subtitle-wrapper">
+        <div class="rogue-apps-video-section__subtitle scene-1">
+          Charles leads a security team. One morning, he receives a risk summary email from Altitude Networks.
+        </div>
+        <div class="rogue-apps-video-section__subtitle scene-2">
+          Suspiciously, the app can access all company files. The employee who authorized this app overlooked this detail.
+        </div>
+        <div class="rogue-apps-video-section__subtitle scene-3">
+          Charles immediately notifies the employee of the risk, and asks her to uninstall the app.
+        </div>
+        <div class="rogue-apps-video-section__subtitle scene-4">
+          The employee receives Charles' email and promptly uninstalls the app.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-page-section feature-page-features-section rogue-apps-features-section">
+    <div class="feature-page-section__container feature-page-features-section__container">
+      <div class="feature-page-features-section__row feature-page-features-section__row--header-wrapper">
+        <h1  class="feature-page-features-section__header">
+          What are Rogue Applications?
+        </h1>
+        <p class="feature-page-features-section__subheader">
+          A continued growing threat to cloud security and cybersecurity, rogue applications are fraudulent versions of credible apps that are made to look like original versions. While they are similar to phishing emails, they can be more deceptive because they simulate the look and usability of real applications.
+        </p>
+        <p class="feature-page-features-section__subheader">
+          Altitude Network’s cloud data security application can automatically detect rogue applications that can steal your company’s data, help you understand your global app exposure, provide context into what data is being accessed, and ultimately remediate those rogue app risks with one click for continued data protection and to prevent any type of data exfiltration. <a href="https://info.altitudenetworks.com/assessment">Contact our team</a> today to get a free assessment and understand your overall cloud security posture.
+        </p>
+      </div>
+      <div class="feature-page-features-section__row">
+        <div class="feature-page-features-section__content rogue-apps-features-section__content--first">
+          <h2 class="feature-page-features-section__title">
+            Automatically detect <span class="text-blue">unauthorized apps</span>
+          </h2>
+          <img src="/images/rogue-apps-feature-1.png" class="feature-page-features-section__image hidden-md-up" />
+          <div class="quote quote--blue feature-page-features-section__quote-view">
+            Take action before data is breached.
+          </div>
+        </div>
+        <img src="/images/rogue-apps-feature-1.png" class="feature-page-features-section__image feature-page-features-section__image--first rogue-apps-features-section__image--first hidden-sm-down" />
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-page-section feature-page-features-section">
+    <div class="feature-page-section__container feature-page-features-section__container">
+      <div class="feature-page-features-section__row">
+        <img src="/images/rogue-apps-feature-2.png" class="feature-page-features-section__image hidden-sm-down" />
+        <div class="feature-page-features-section__content">
+          <h2 class="feature-page-features-section__title">
+            Understand <span class="text-green">global app exposure</span> with a glance
+          </h2>
+          <img src="/images/rogue-apps-feature-2.png" class="feature-page-features-section__image hidden-md-up" />
+          <div class="quote quote--green feature-page-features-section__quote-external">
+            We uncover apps that deserve your attention.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-page-section feature-page-features-section">
+    <div class="feature-page-section__container feature-page-features-section__container">
+      <div class="feature-page-features-section__row">
+        <div class="feature-page-features-section__content">
+          <h2 class="feature-page-features-section__title">
+            <span class="text-yellow">Context and details</span> at your fingertips
+          </h2>
+          <img src="/images/rogue-apps-feature-3.png" class="feature-page-features-section__image hidden-md-up" />
+          <div class="quote quote--yellow feature-page-features-section__quote-remove">
+            Know exactly what data is being accessed.
+          </div>
+        </div>
+        <img src="/images/rogue-apps-feature-3.png" class="feature-page-features-section__image rogue-apps-features-section__image--third hidden-sm-down" />
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-page-section feature-page-features-section">
+    <div class="feature-page-section__container feature-page-features-section__container">
+      <div class="feature-page-features-section__row">
+        <img src="/images/rogue-apps-feature-4.png" class="feature-page-features-section__image rogue-apps-features-section__image--fourth hidden-sm-down" />
+        <div class="feature-page-features-section__content rogue-apps-features-section__content--fourth">
+          <h2 class="feature-page-features-section__title">
+            <span class="text-red">Quickly remediate</span> app risks with impacted parties
+          </h2>
+          <img src="/images/rogue-apps-feature-4.png" class="feature-page-features-section__image  hidden-md-up" />
+          <div class="quote quote--red feature-page-features-section__quote-remove">
+            Identify who autorized the app and easily remove access.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include "./layouts/partials/learn-more-form.njk" %}
+{% endblock %}

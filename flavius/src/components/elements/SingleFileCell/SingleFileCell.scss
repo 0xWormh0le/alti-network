@@ -1,0 +1,54 @@
+@import 'styles/_shared.scss';
+
+.SingleFileCell {
+  &__spacer-05 {
+    margin-right: 0.5em;
+  }
+  &__link {
+    @include brand-link();
+  }
+
+  &__folder-container {
+    line-height: 1em;
+  }
+
+  &__sensitive-marker {
+    margin-top: $BASE_SPACING;
+  }
+
+  &__title-container {
+    display: flex;
+  }
+
+  &__not-found {
+    color: $BLUEY_GREY;
+    font-style: italic;
+  }
+
+  &__icon-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__folder-text {
+    margin-top: $BASE_SPACING / 2;
+    font-size: map-get($FONT_SIZES, 'BODY_SMALL');
+    font-weight: map-get($FONT_WEIGHTS, 'normal');
+
+    span {
+      &:first-child {
+        color: $BLUEY_GREY;
+      }
+
+      img {
+        margin-right: $BASE_SPACING / 3;
+        vertical-align: inherit;
+      }
+
+      .disabled {
+        color: $BLUEY_GREY;
+        font-style: italic;
+      }
+    }
+  }
+}

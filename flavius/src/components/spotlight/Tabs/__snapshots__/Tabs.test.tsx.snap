@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spotlight Tabs renders correctly 1`] = `
+<div>
+  <div
+    class="Table TableLoading"
+  >
+    <svg
+      aria-labelledby="table-loading-aria"
+      class="TableLoading__loader"
+      height="365"
+      preserveAspectRatio="none"
+      role="img"
+    >
+      <title
+        id="table-loading-aria"
+      >
+        Loading...
+      </title>
+      <rect
+        clip-path="url(#table-loading-diff)"
+        height="100%"
+        role="presentation"
+        style="fill: url(#table-loading-animated-diff);"
+        width="100%"
+        x="0"
+        y="0"
+      />
+      <defs
+        role="presentation"
+      >
+        <clippath
+          id="table-loading-diff"
+        >
+          <rect
+            height="52"
+            width="100%"
+            x="0"
+            y="0"
+          />
+          <rect
+            height="52"
+            width="100%"
+            x="0"
+            y="62"
+          />
+          <rect
+            height="52"
+            width="100%"
+            x="0"
+            y="124"
+          />
+          <rect
+            height="52"
+            width="100%"
+            x="0"
+            y="186"
+          />
+          <rect
+            height="52"
+            width="100%"
+            x="0"
+            y="248"
+          />
+          <rect
+            height="40"
+            width="10%"
+            x="90%"
+            y="310"
+          />
+        </clippath>
+        <lineargradient
+          id="table-loading-animated-diff"
+        >
+          <stop
+            offset="0%"
+            stop-color="#f0f0f0"
+            stop-opacity="1"
+          >
+            <animate
+              attributeName="offset"
+              dur="1.2s"
+              keyTimes="0; 0.25; 1"
+              repeatCount="indefinite"
+              values="-2; -2; 1"
+            />
+          </stop>
+          <stop
+            offset="50%"
+            stop-color="#f7f7f7"
+            stop-opacity="1"
+          >
+            <animate
+              attributeName="offset"
+              dur="1.2s"
+              keyTimes="0; 0.25; 1"
+              repeatCount="indefinite"
+              values="-1; -1; 2"
+            />
+          </stop>
+          <stop
+            offset="100%"
+            stop-color="#f0f0f0"
+            stop-opacity="1"
+          >
+            <animate
+              attributeName="offset"
+              dur="1.2s"
+              keyTimes="0; 0.25; 1"
+              repeatCount="indefinite"
+              values="0; 0; 3"
+            />
+          </stop>
+        </lineargradient>
+      </defs>
+    </svg>
+  </div>
+</div>
+`;

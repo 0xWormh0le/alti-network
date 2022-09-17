@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkSharingIndicator renders correctly 1`] = `
+<div>
+  <div
+    class="Typography Typography--body-small Typography--bold LinkSharingIndicator"
+  >
+    <span
+      class="LinkSharingIndicator__label"
+    >
+      Link sharing: 
+    </span>
+    <span
+      class="Typography Typography--body Marker Marker__group"
+    >
+      No Link Sharing
+    </span>
+  </div>
+</div>
+`;

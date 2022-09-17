@@ -1,0 +1,13 @@
+{
+    "pathParameters": {
+        "parentId": "0AGQ3hhAIv0EpUk9PVA"
+    },
+    "requestContext": {
+        "authorizer": {
+            "project_id": "thoughtlabs"
+        }
+    },
+    "queryStringParameters": {
+        "platform-id": "o365"
+    }
+}

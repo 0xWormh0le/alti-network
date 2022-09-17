@@ -1,0 +1,43 @@
+type: lambda
+runtime: python3.7
+function_name: &function_name altitude-{{ENV}}-lambda-risk-summary-emails-{{SUFFIX}}
+handler: services.risk_summary_emails.risk_summary_emails_handler.main_handler
+iam_role: arn:aws:iam::{{AWS_ACCOUNT}}:role/altitude-{{ENV}}-lambda-execution-frontend-role
+description: Sends daily summary emails to customers on Top risks found
+use_vpc: True
+memory_size: 1728
+timeout: 30
+tracing_config_mode: Active
+notification_email: devops@altitudenetworks.com
+log_group_subscriptions:
+  - filter_name: log-dna
+    destination_arn: {{ENV_CONFIG.logdna_destination_arn}}
+environment:
+  {% if ENV == "prod" %}
+  URL: https://app.altitudenetworks.com/risks?utm-source=risk-summary-email&riskTypeIds
+  {% elif ENV == "staging" %}
+  URL: https://app-staging.altitudenetworks.com/risks?utm-source=risk-summary-email&riskTypeIds
+  {% elif ENV == "dev" %}
+  URL: https://app-dev.altitudenetworks.com/risks?utm-source=risk-summary-email&riskTypeIds
+  {% endif %}
+  {% set DEBUG_MODE = "true" if ENV == "dev" else "false" %}
+  DEBUG_MODE: '{{DEBUG_MODE}}'
+event_rules:
+  {% for PROJECT_CONFIG in ACTIVE_CONFIGS %}
+  - name: {{PROJECT_CONFIG.project_name}}-{{ENV}}-risk-summary-emails-{{SUFFIX}}
+    cron: cron(0 14 ? * MON-FRI *)
+    {% if (ENV == "staging") and (PROJECT_CONFIG.project_name != "thoughtlabs") %}
+    enabled: False
+    {% else %}
+    enabled: True
+    {% endif %}
+    permission_id: {{PROJECT_CONFIG.project_name}}-{{ENV}}-risk-summary-emails-event-{{SUFFIX}}
+    targets:
+      - id: {{PROJECT_CONFIG.project_name}}-{{ENV}}-risk-summary-emails
+        type: lambda
+        function_name: *function_name
+        input:
+          project_id: {{PROJECT_CONFIG.project_name}}
+    tags:
+      Project: {{PROJECT_CONFIG.project_name}}
+  {% endfor %}

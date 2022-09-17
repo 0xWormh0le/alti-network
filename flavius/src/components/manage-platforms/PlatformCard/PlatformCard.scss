@@ -1,0 +1,53 @@
+@import 'styles/_shared.scss';
+.PlatformCard {
+  min-height: 17em;
+  max-height: 17em;
+  width: 30em;
+
+  outline: $PALE_GREY 1px solid;
+  margin: $SMALL_SPACING;
+  padding: $SMALL_SPACING;
+
+  transition: all 0.25s ease;
+
+  &:hover {
+    box-shadow: 0px 1px 10px 0px #00000026;
+  }
+
+  &__loading {
+    &-body {
+      margin-top: $SMALL_SPACING;
+    }
+  }
+
+  &__icon {
+    height: 2em;
+    width: 2em;
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  &__header {
+    padding-bottom: $SMALL_SPACING;
+    margin-bottom: $BASE_SPACING;
+    border-bottom: $PALE_GREY 1px solid;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $BASE_SPACING;
+  }
+
+  &__footer {
+    border-top: $PALE_GREY 1px solid;
+    margin-top: $BASE_SPACING;
+    padding-top: $BASE_SPACING;
+    margin-top: 5em;
+  }
+
+  .Button--alert {
+    background: none;
+    color: $TOMATO;
+  }
+}

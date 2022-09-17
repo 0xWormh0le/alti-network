@@ -1,0 +1,19 @@
+@import '../../styles/_shared.scss';
+
+.VisibilityIndicator {
+  background: transparent;
+  display: inline-block;
+  padding: 0 5px;
+  @include set-typography('BODY_TINY', 'normal');
+
+  &--internal {
+    color: $TEXT_COLOR;
+    border: 1px solid $TEXT_COLOR;
+  }
+
+  &--external {
+    color: $TOMATO;
+    border: 1px solid $TOMATO;
+    border-radius: 8px;
+  }
+}

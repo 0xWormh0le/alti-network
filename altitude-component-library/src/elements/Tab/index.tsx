@@ -1,0 +1,8 @@
+export { default as Tabs } from './Tabs'
+export { default as TabList } from './TabList'
+export { default as TabPanel } from './TabPanel'
+export { default as Tab } from './Tab'
+export type { TabProps } from './Tab'
+export type { TabsProps } from './Tabs'
+export type { TabListProps } from './TabList'
+export type { TabPanelProps } from './TabPanel'

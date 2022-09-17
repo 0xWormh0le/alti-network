@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardPersonInfo renders correctly 1`] = `
+<div>
+  <div
+    class="DashboardPersonInfo"
+  >
+    <a
+      href="/dashboard/spotlight/bobbie%40thoughtlabs.io"
+    >
+      <span
+        class="PersonAvatar DashboardPersonInfo__avatar PersonAvatar__clickable trigger"
+      >
+        <div
+          class="BaseAvatar "
+          style="font-size: 1.25em; display: inline-block;"
+        >
+          <div
+            class="BaseAvatar__image"
+          >
+            <img
+              alt="HB"
+              src="avatar"
+              style="width: 2em;"
+            />
+          </div>
+        </div>
+      </span>
+    </a>
+    <div
+      class="DashboardPersonInfo__text"
+    >
+      <div
+        class="Typography Typography--label DashboardPersonInfo__personname"
+      >
+        Hawaii Bobbie
+      </div>
+      <div
+        class="Typography Typography--body DashboardPersonInfo__email"
+      >
+        <a
+          href="/dashboard/spotlight/bobbie%40thoughtlabs.io"
+        >
+          bobbie@thoughtlabs.io
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

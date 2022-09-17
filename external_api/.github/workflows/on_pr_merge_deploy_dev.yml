@@ -1,0 +1,124 @@
+name: Dev - Deploy application services
+
+"on":
+  push:
+    branches:
+      - master
+
+    paths-ignore:
+      - docs/**
+      - external_api/version.txt
+      - CHANGELOG.md
+      - README.md
+
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: Reason for deployment
+        required: true
+
+jobs:
+  deploy_dev_services:
+    runs-on: ubuntu-latest
+    # To add custom steps to this workflow, start step name with `Custom: `
+    # To override existing step, set name to `Custom: <original_step_name>`
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        env:
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+        run: |
+          python -m pip install -i https://${INTERNAL_PYPI_USERNAME}:${INTERNAL_PYPI_PASS}@${INTERNAL_PYPI_URL} -U deployment_management awscliv2 github_actions_script
+      - name: Send Slack deployment started message
+        env:
+          SLACK_WEBHOOK: "${{ secrets.SLACK_WEBHOOK }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          SENDER="${{ github.event.sender.login }}"
+          REASON="${{ github.event.inputs.reason }}"
+          if [[ "${REASON}" = "" ]]; then
+            REASON="Pull Request merged"
+          fi
+          python -m github_actions_script -d slack_message "dev deployment started by ${SENDER}: ${REASON}"
+      - name: Build docker images
+        env:
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+          ECR_REGISTRY: "${{ secrets.ECR_REGISTRY_DEV }}"
+          ENV: dev
+        run: |
+          for DOCKERFILE_PATH in $(find services -name Dockerfile); do
+            SERVICE_NAME=`echo $DOCKERFILE_PATH | cut -d '/' -f 2-2`
+            IMAGE_NAME=`echo "${ECR_REGISTRY}/altitudenetworks/external_api/${SERVICE_NAME}" | tr _ -`
+            echo "Building image ${IMAGE_NAME}:${ENV} from ${DOCKERFILE_PATH}"
+
+            docker build -t ${IMAGE_NAME}:${ENV} \
+              --build-arg INTERNAL_PYPI_PASS=${INTERNAL_PYPI_PASS} \
+              --build-arg INTERNAL_PYPI_USERNAME=${INTERNAL_PYPI_USERNAME} \
+              --build-arg INTERNAL_PYPI_URL=${INTERNAL_PYPI_URL} \
+              -f ${DOCKERFILE_PATH} \
+              .
+          done
+      - name: Setup AWS CLI V2
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_DEV }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}"
+          ROLE_ARN: "${{ secrets.AWS_DEPLOYMENT_ROLE_ARN_DEV }}"
+          AWS_REGION: us-west-2
+        run: |
+          awsv2 --install
+          awsv2 --configure default ${AWS_ACCESS_KEY_ID} ${AWS_SECRET_ACCESS_KEY}
+          awsv2 configure set region ${AWS_REGION}
+          awsv2 --assume-role deployment default ${ROLE_ARN}
+      - name: Push docker images to ECR
+        env:
+          ECR_REGISTRY: "${{ secrets.ECR_REGISTRY_DEV }}"
+          AWS_PROFILE: deployment
+          AWS_REGION: us-west-2
+          ENV: dev
+        run: |
+          DOCKER_PASSWORD=`awsv2 ecr get-login-password`
+          docker login -u AWS -p ${DOCKER_PASSWORD} ${ECR_REGISTRY}
+
+          for DOCKERFILE_PATH in $(find services -name Dockerfile); do
+            SERVICE_NAME=`echo $DOCKERFILE_PATH | cut -d '/' -f 2-2`
+            REPOSITORY_NAME=`echo "altitudenetworks/external_api/${SERVICE_NAME}" | tr _ -`
+            IMAGE_NAME=`echo "${ECR_REGISTRY}/${REPOSITORY_NAME}" | tr _ -`
+            echo "Creating ECR Repository if does not exist"
+            awsv2 ecr describe-repositories --repository-names ${REPOSITORY_NAME} || awsv2 ecr create-repository --repository-name ${REPOSITORY_NAME}
+
+            echo "Pushing image ${IMAGE_NAME}:${ENV} from ${DOCKERFILE_PATH} to ECR"
+            docker push ${IMAGE_NAME}:${ENV}
+          done
+      - name: Deploy services to dev
+        env:
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+          ENV: dev
+          AWS_PROFILE: deployment
+          AWS_REGION: us-west-2
+          SUFFIX: "01"
+        run: |
+          service_deployer full_app --env ${ENV} --region ${AWS_REGION} --suffix ${SUFFIX} --deploy --local --clean
+      - name: "Custom: apigateway integration tests"
+        env:
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_DEV }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}"
+          ENV: dev
+          AWS_REGION: us-west-2
+          SUFFIX: "01"
+          AWS_DEFAULT_REGION: us-west-2
+        run: |
+          python run_integration_tests.py

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageNumberInput renders correctly 1`] = `
+<div>
+  <form
+    class="PageNumberInput"
+  >
+    <div
+      class="Typography Typography--body-tiny Typography--semibold PageNumberInput__label"
+    >
+      Go to page
+    </div>
+    <div
+      class="PageNumberInput__input-wrapper"
+    >
+      <input
+        class="PageNumberInput__input"
+        type="text"
+        value="2"
+      />
+    </div>
+    <button
+      class="Button PageNumberInput__submit Button--pagination"
+      type="submit"
+    >
+      GO
+    </button>
+  </form>
+</div>
+`;

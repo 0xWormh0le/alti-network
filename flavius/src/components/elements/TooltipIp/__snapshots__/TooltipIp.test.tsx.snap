@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHeadingCell renders correctly 1`] = `
+<div>
+  <div
+    class="TooltipIp-wrapper"
+  >
+    <div
+      class="TooltipIpCell"
+    >
+      <div
+        class="trigger"
+        data-testid="ipaddress"
+      >
+        <p
+          class="Typography Typography--body-small Typography--normal TooltipIpContainer__displayIp"
+        >
+          75.187.232.222
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,91 @@
+{% extends './layout.njk' %}
+
+{% block scripts %}
+<script type="text/javascript">
+  (function ($) {
+    $(document).ready(function () {
+      const path = location.pathname.split('/');
+      let pageCategory = path[path.length - 1];
+      if (path.indexOf('all-resources') > -1) {
+        pageCategory = 'resources'
+      }
+      else if (path.indexOf('blog') > -1) {
+        pageCategory = 'blog'
+      }
+      else if (path.indexOf('webcasts') > -1) {
+        pageCategory = 'webcasts'
+      }
+
+      $(`#${pageCategory}-category-link`).addClass('active')
+    });
+  })(jQuery);
+</script>
+{% endblock %}
+
+{% block body %}
+<div class='resources'>
+  <div class='resources__wrapper resources__wrapper--home'>
+    <h1>Resources</h1>
+    {% for post in collections.featured %}
+      {% if loop.index0 === 0 %}
+        <div class='resources__hero' style="background-image: url('{{ post.thumbnail }}')">
+          <a href="{{ post.url }}">
+            <div class='resources__hero--wrapper'>
+              <div class='resources__hero--wrapper-inner'>
+                <div class='post-type'>{{ post.type | capitalize }}</div>
+                <div class='resources__hero--summary'>
+                  <h2>{{ post.title }}</h2>
+                  <h4 class='hidden-sm-down'>{{ post.description | truncate(160) }}</h4>
+                  <h4 class='hidden-md-up'>{{ post.description | truncate(120) }}</h4>
+                </div>
+                <div class='author hidden-sm-down'>{{ post.author }}, {{ post.prettyDate }}</div>
+                <div class='author hidden-md-up'>{{ post.author }}, {{ post.shortDate }}</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+    <ul class='resources__category-filters'>
+      <a href='/resources'><li id='resources-category-link'>All Resources</li></a>
+      <a href='/resources/blog'><li id='blog-category-link'>Blog</li></a>
+      <a href='/resources/webcasts'><li id='webcasts-category-link'>Webcasts</li></a>
+      <!-- <a href='/resources/events'><li id='events-category-link'>Events &amp; Webinars</li></a> -->
+      <a href='/resources/documents'><li id='documents-category-link'>Documents</li></a>
+      <!-- <a href='/resources/press'><li id='press-category-link'>Press</li></a> -->
+    </ul>
+    <div class='resources__posts'>
+    {% for post in pagination.files %}
+      <a class='resources__posts--card' href='{{ post.url }}'>
+        <div class='resources__posts--card-hero' style="background-image: url('{{ post.thumbnail }}')"></div>
+        <div class='resources__posts--card-description'>
+          <div class='post-type'>{{ post.type | capitalize }}</div>
+          <div class='resources__posts--card-summary'>
+            <h4>{{ post.title | truncate(50) }}</h4>
+            <h5>{{ post.description | truncate(160) }}</h5>
+          </div>
+          <div class='author'>{{ post.author }}, {{ post.prettyDate }}</div>
+        </div>
+      </a>
+    {% else %}
+      <h3>No Articles Found</h3>
+    {% endfor %}
+    </div>
+    <div class='pagination'>
+      <div class='pagination-buttons'>
+        <div class='pagination-info'>Page {{ pagination.num }} of {{ pagination.pages.length }}</div>
+        <a href='/resources/{{ pagination.previous.path }}'>
+            <button {%if pagination.previous %}{% else %}disabled{% endif %}>
+              <img src="/images/arrow-left.svg">
+            </button>
+        </a>
+        <a href='/resources/{{ pagination.next.path }}'>
+          <button {%if pagination.next %}{% else %}disabled{% endif %}>
+            <img src="/images/arrow-right.svg">
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

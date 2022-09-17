@@ -1,0 +1,427 @@
+.landingHeadContainer {
+  width: 100%;
+  min-height: 200px;
+}
+
+.landingBodyContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.landingBody {
+  width: 950px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--header {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  &--center {
+    width: 100%;
+  }
+  
+}
+
+.landingHeadTop {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landingHeadBottom{
+  background-color: #f9f9f9;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 50% / 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.landingThreeColumns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 850px;
+  align-items: stretch;
+  &>div:first-child {
+    flex: 1.2;
+  }
+  &>div:last-child {
+    flex: .8
+  }
+  &--col {
+    flex: 1;
+  }
+}
+
+.card-box-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.landingHero {
+  min-height: 45px;
+  margin: 32px 0px 32px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--text);
+}
+
+.landingSubHero {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #171c27;
+  margin-bottom: 22px;
+  &--parent {
+    font-size: 20px !important;
+    font-weight: normal;
+  }
+}
+
+.landingCheck {
+  display: flex;
+  &>div:first-child {
+    align-items: flex-start;
+    padding-top:7px;
+    display: flex;
+    padding-right:5px;
+  }
+  &>div>span:nth-child(1){
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+  }
+  &>div>span:nth-child(2) {
+    font-family: Montserrat;
+    color: #979797;
+    font-size: 16px;
+  }
+}
+
+.landingSecondaryButton {
+  position: absolute;
+  bottom: 15px;
+  left: calc(50% - 88px)
+}
+
+.card-box {
+  height: 140px;
+  width: 100%;
+  &--title {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+  }
+}
+
+.solutionLogos {
+  height: 20px;
+}
+
+.landingDivider {
+  max-height: 1px;
+  width: 100%;
+  background: #e6eaee;
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+  z-index:10;
+}
+
+.solutionsFormContainer {
+  width: 1032px;
+  background: #f9f9f9;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  flex-direction: column;
+}
+
+.solutionsForm {
+  width: 600px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #e6eaee;
+  border-radius: 3px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &--inputContainer {
+    margin-left: 20px;
+  }
+  &--title {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  &--header {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  img {
+    max-height: 20px;
+  }
+  label {
+    font-size: 20px;
+  }
+  &--textInput {
+    margin-left: 10px;
+  }
+  &--rightCol {
+    width: 278px;
+    margin-left: -8px;
+  }
+  &--fullColHeader {
+    width: 400px;
+  }
+  &--fullColInfo {
+    & > div {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+/* very specific field for the input text after a .checkbox */
+.inputFieldForCheckbox {
+  margin-left:20px;
+  width:278px;
+}
+
+.otherPlatformsLarge {
+  & img {
+    height: 40px;
+    margin: 0px 20px 0 0 
+  }
+}
+
+.landingChecklist {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #979797;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  line-height: 20px;
+  max-width: 360px;
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+/* office-365 page */
+#office-365-img {
+  margin-left:12px;
+  margin-right:12px;
+  height:30px;
+  display:flex;
+}
+#office-beta {
+  font-size:16px;
+  font-style:italic;
+  font-weight:normal;
+}
+
+/* g-suite page */
+.img {
+  
+  &-google {
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 30px;
+    display:flex;
+    margin-top: -2px;
+  }
+  
+}
+
+.altitude-title {
+  font-size:30px;
+}
+
+
+.color-blurb {
+  padding-left: 20px;
+
+  &--blue {
+    border-left: 5px solid #0177ff;
+  }
+  &--orange {
+    border-left: 5px solid #ec632b;
+  }
+  &--gold {
+    border-left: 5px solid #ffc600;
+  }
+  &--green {
+    border-left: 5px solid #70a60c;
+  }
+  &--red {
+    border-left: 5px solid #e23115;
+  }
+  &--text-blue {
+    color: #0177ff !important;
+  }
+  &--text-orange {
+    color: #ec632b;
+  }
+  &--text-gold {
+    color: #ffc600;
+  }
+  &--text-green {
+    color:  #70a60c;
+  }
+  &--text-red {
+    color: #e23115;
+  }
+}
+
+/* Solutions-form specific */
+.solutions-form {
+  &--checkbox-img {
+    height:17px;
+    padding-top:3px;
+  }
+  &--checkbox-img-lg {
+    height:24px;
+    padding-top:3px;
+  }
+}
+
+.landingCol {
+  &--title {
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  &--title-large {
+    font-size:30px;
+  }
+  &--text {
+    font-size: 18px;
+  }
+}
+
+.landingLeft {
+  max-width: 420px;
+}
+
+.landingRight {
+  max-width: 420px;
+  margin-left: 20px;
+  & img {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 930px) {
+  form {
+    width: 100%;
+  }
+  .landingBody {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .landingHeadTop {
+    flex-direction: column;
+  }
+  .landingHero {
+    width: 100%;
+    text-align: center;
+  }
+  .landingThreeColumns {
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+  }
+  .landingSubHero {
+    margin-bottom: 5px;
+  }
+  .landingHeadBottom {
+    min-height: 20px;
+  }
+  .landingLeft {
+    width: 100%;
+  }
+  .landingRight {
+    width: 100%;
+    img {
+      margin-top: 10px;
+    }
+  }
+  .landingCol {
+    &--title {
+      text-align: left;
+    }
+  }
+  .otherPlatformsLarge {
+    & img {
+      height: 20px;
+      margin: 0px 20px 0 0 
+    }
+  }
+  .solutionsFormContainer {
+    width: 100%;
+  }
+  .solutionsForm{
+    width: 100%;
+    &--fullColHeader {
+      width: 100%;
+    }
+    &--fullColInfo {
+      width: 100%;
+      & > div {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .color-blurb {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .landingHeadTop {
+    width: 100%;
+  }
+  .landingHero {
+    margin: 20px 0 20px 0px;
+    padding: 0;
+  }
+}

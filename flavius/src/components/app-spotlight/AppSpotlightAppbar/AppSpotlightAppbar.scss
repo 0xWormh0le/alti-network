@@ -1,0 +1,44 @@
+@import 'styles/_shared.scss';
+
+$ITEM_HEIGHT: 54px;
+
+.AppSpotlightAppbar {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+
+  .menu-wrapper {
+    margin-left: -25px;
+  }
+
+  &__no-scroll {
+    @include flex(row);
+  }
+
+  &__arrow-wrapper {
+    @include flex(column, center, center);
+    height: $ITEM_HEIGHT;
+    cursor: pointer;
+    z-index: 9;
+
+    &--disabled {
+      visibility: hidden;
+    }
+  }
+
+  &__item:focus {
+    outline-color: transparent;
+    outline: none;
+  }
+
+  &__arrow {
+    width: 25px;
+    text-align: center;
+    color: $TEXT_COLOR;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    background-color: white;
+  }
+}

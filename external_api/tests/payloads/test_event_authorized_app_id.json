@@ -1,0 +1,15 @@
+{
+  "pathParameters": {
+    "applicationId": "261251194779"
+  },
+  "requestContext": {
+    "authorizer": {
+        "project_id": "thoughtlabs"
+    }
+  },
+  "queryStringParameters": {
+    "event-type": "download",
+    "page-size": "10",
+    "page-number": "01"
+  }
+}

@@ -1,0 +1,44 @@
+name: Publish new Flavius MockServer and Client SDK to PyPI
+
+on:
+  push:
+    branches:
+      - master
+      - hotfix/*
+
+    paths:
+      - external_api/api/flavius.v1.yml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Install Python dependencies
+        env:
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+        run: |
+          python -m pip install -i https://${INTERNAL_PYPI_USERNAME}:${INTERNAL_PYPI_PASS}@${INTERNAL_PYPI_URL} -U pypi_upload openapi_utils
+      - name: Build and publish Flavius Client SDK
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_DEV }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}"
+        run: |
+          python -m openapi_utils client_sdk --schema external_api/api/flavius.v1.yml -o /tmp/temp_client_sdk --format --package-name flavius_client_sdk
+          python -m pypi_upload --release --repo-path /tmp/temp_client_sdk
+          rm -rf /tmp/temp_client_sdk
+      - name: Build and publish Flavius Mockserver
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_DEV }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}"
+        run: |
+          python -m openapi_utils mockserver --schema external_api/api/flavius.v1.yml -o /tmp/temp_mockserver --format --package-name flavius_mockserver
+          python -m pypi_upload --release --repo-path /tmp/temp_mockserver
+          rm -rf /tmp/temp_mockserver

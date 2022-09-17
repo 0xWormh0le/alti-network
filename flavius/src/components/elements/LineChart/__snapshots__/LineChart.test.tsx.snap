@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineChart renders correctly 1`] = `
+<div>
+  <div
+    class="ct-chart LineChart ct-double-octave"
+  />
+</div>
+`;

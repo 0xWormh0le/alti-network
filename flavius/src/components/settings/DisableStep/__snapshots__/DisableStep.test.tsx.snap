@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CongratsStep renders correctly 1`] = `
+<div>
+  <section
+    class="DisableStep TwoFactorAuthentication__step"
+  >
+    <h3
+      class="Typography Typography--h3 Typography--semibold DisableStep__title"
+    >
+      Disable Two-Factor Authentication
+    </h3>
+    <p
+      class="Typography Typography--body-large"
+    >
+      You will need to enter your current password and your confirmation code to disable this feature.
+    </p>
+    <p
+      class="Typography Typography--body-large"
+    >
+      The changes will take effect the next time you log in. After that, whenever you log in to Altitude Networks app, we will ask you for your username and password only.
+    </p>
+    <div
+      class="FormGroup DisableStep__form-group"
+    >
+      <label
+        class="FormLabel"
+        for="password"
+      >
+        Password
+      </label>
+      <input
+        class="FormControl FormControl--flat"
+        id="password"
+        type="password"
+        value="password"
+      />
+    </div>
+    <div
+      class="FormGroup DisableStep__form-group"
+    >
+      <label
+        class="FormLabel"
+        for="challengeAnswer"
+      >
+        Confirmation Code
+      </label>
+      <input
+        class="FormControl FormControl--flat"
+        id="challengeAnswer"
+        value="answer"
+      />
+    </div>
+    <button
+      class="Button DisableStep__button Button--primary"
+      data-testid="confirm-disable-button"
+      type="button"
+    >
+      Confirm
+    </button>
+  </section>
+</div>
+`;

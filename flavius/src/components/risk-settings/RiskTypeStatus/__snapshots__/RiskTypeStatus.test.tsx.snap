@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RiskTypeStatus after loading finished renders correctly 1`] = `
+<div>
+  <div
+    class="RiskTypeStatus"
+  >
+    <p
+      class="Typography Typography--body-large Typography--normal"
+    >
+      The following risk types are currently enabled
+    </p>
+    <div
+      class="RiskTypeStatus__configuration"
+    >
+      <div
+        class="RiskTypeSetting"
+      >
+        <div
+          class="RiskTypeSetting__content"
+        >
+          <div
+            class="RiskTypeSetting__overview"
+          >
+            <div
+              class="RiskTypeSetting__group-item"
+            >
+              <span
+                class="Typography Typography--label Typography--medium"
+              >
+                Sharing Risks
+              </span>
+            </div>
+            <div
+              class="RiskTypeSetting__subgroup-item"
+            >
+              <div
+                class="RiskIndicator RiskIndicator--circle"
+              >
+                <div
+                  class="RiskIndicator__inner RiskIndicator--high"
+                />
+              </div>
+              <span
+                class="Typography Typography--body Typography--normal"
+              >
+                File Shared by Link Externally - Company Owned
+              </span>
+            </div>
+            <div
+              class="RiskTypeSetting__subgroup-item"
+            >
+              <div
+                class="RiskIndicator RiskIndicator--circle"
+              >
+                <div
+                  class="RiskIndicator__inner RiskIndicator--high"
+                />
+              </div>
+              <span
+                class="Typography Typography--body Typography--normal"
+              >
+                Potentially Sensitive File Shared by Link Externally - Company Owned
+              </span>
+            </div>
+            <div
+              class="RiskTypeSetting__subgroup-item"
+            >
+              <div
+                class="RiskIndicator RiskIndicator--circle"
+              >
+                <div
+                  class="RiskIndicator__inner RiskIndicator--low"
+                />
+              </div>
+              <span
+                class="Typography Typography--body Typography--normal"
+              >
+                Potentially Sensitive File Shared by Link Internally - Company Owned
+              </span>
+            </div>
+          </div>
+          <div
+            class="RiskTypeSetting__overview"
+          >
+            <div
+              class="RiskTypeSetting__group-item"
+            >
+              <span
+                class="Typography Typography--label Typography--medium"
+              >
+                Relationship Risks
+              </span>
+            </div>
+            <div
+              class="RiskTypeSetting__subgroup-item"
+            >
+              <div
+                class="RiskIndicator RiskIndicator--circle"
+              >
+                <div
+                  class="RiskIndicator__inner RiskIndicator--high"
+                />
+              </div>
+              <span
+                class="Typography Typography--body Typography--normal"
+              >
+                Potentially Sensitive File Shared to Personal Email Account - Company Owned
+              </span>
+            </div>
+            <div
+              class="RiskTypeSetting__subgroup-item"
+            >
+              <div
+                class="RiskIndicator RiskIndicator--circle"
+              >
+                <div
+                  class="RiskIndicator__inner RiskIndicator--low"
+                />
+              </div>
+              <span
+                class="Typography Typography--body Typography--normal"
+              >
+                File Shared to Personal Email Account - Company Owned
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="RiskTypeSetting__actions"
+        >
+          <button
+            class="Button Button--primary"
+            type="button"
+          >
+            Edit Risk Type Setting
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

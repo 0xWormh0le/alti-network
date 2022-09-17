@@ -1,0 +1,22 @@
+import { Story, Meta, Canvas } from '@storybook/addon-docs/blocks'
+import BaseAvatar, { BaseAvatarProps } from './BaseAvatar'
+
+<Meta title='Base/Avatar/Doc' component={BaseAvatar} />
+
+# Base Avatar
+
+The base avatar component is used to render avatars for users.
+
+Given an image source, it will render the image as the avatar, It can be round or square
+
+<div style={{display: 'flex', columnGap: '4em', marginBottom: '3em'}}>
+
+<Story id='base-avatar--image-source-provided' />
+
+<Story id='base-avatar--not-round' />
+
+  </div>
+
+## However when not given an image source, it will default to rendering the user's initials instead.
+
+<Story id='base-avatar--only-name-provided' />

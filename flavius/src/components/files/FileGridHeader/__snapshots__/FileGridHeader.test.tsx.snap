@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileGridHeader renders correctly 1`] = `
+<div>
+  <div
+    class="FileGridHeader"
+  >
+    <div
+      class="FileGridHeader--wrapper"
+    >
+      <div
+        class="FileGridHeader--section"
+      >
+        <div
+          class="FileGridHeader__file-info"
+        >
+          <div
+            class="FileInfo"
+          >
+            <div
+              class="FileInfo__icon"
+            >
+              <a
+                class="FileInfo__link-btn"
+                href="https://docs.google.com/document/d/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3/edit?usp=drivesdk"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="doc"
+                  src="https://drive-thirdparty.googleusercontent.com/256/type/document/png"
+                />
+              </a>
+            </div>
+            <div
+              title="Quarterly Earnings"
+            >
+              <a
+                class="FileInfo__link-btn FileInfo__name"
+                href="https://docs.google.com/document/d/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3/edit?usp=drivesdk"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Quarterly Earnings"
+              >
+                Quarterly Earnings
+              </a>
+              <div
+                class="FileGridHeader__platform-container"
+              >
+                <span
+                  class="FileGridHeader__descriptor"
+                >
+                  Platform
+                </span>
+                <span
+                  class="FileGridHeader__file-info-icon"
+                >
+                  <div
+                    class="platform-container"
+                  >
+                    <div
+                      class="trigger"
+                    >
+                      <div>
+                        <div
+                          class="platform-icon-container"
+                          data-testid="platform-icon"
+                        >
+                          <img
+                            alt="Google Workspace"
+                            class="platform-icon"
+                            src="google-logo.svg"
+                            title="Google Workspace"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="FileGridHeader__button-wrapper"
+          >
+            <a
+              class="FileInfo__link-btn"
+              href="https://docs.google.com/document/d/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3/edit?usp=drivesdk"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button
+                class="Button Button--secondary"
+                type="button"
+              >
+                View Original File in Drive
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="FileGridHeader--split"
+      />
+      <div
+        class="FileGridHeader--section"
+      >
+        <div
+          class="FileGridHeader__permission-info"
+        >
+          <div
+            class="PermissionInfo"
+          >
+            <div
+              class="OwnedBy FileAttributeGroup"
+            >
+              <div
+                class="FileAttribute"
+              >
+                <span
+                  class="FileGridHeader__file-attribute"
+                >
+                  Owned by
+                </span>
+                <span>
+                  <span
+                    class="FileGridHeader__file-attribute-value FileGridHeader__owner"
+                  >
+                    <a
+                      href="/dashboard/spotlight/test%40email.com"
+                    >
+                      <span
+                        class="PersonAvatar FileGridHeader__file-attribute-avatar PersonAvatar__clickable trigger"
+                      >
+                        <div
+                          class="BaseAvatar "
+                        >
+                          <div
+                            class="BaseAvatar__text"
+                            style="background-color: rgb(255, 130, 70);"
+                          >
+                            <div>
+                              T
+                              U
+                            </div>
+                          </div>
+                        </div>
+                      </span>
+                    </a>
+                    <strong>
+                      Test User
+                    </strong>
+                    <span
+                      class="Typography Typography--body trigger Marker Marker__ext"
+                    >
+                      EXT
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div
+              class="FileSharing FileAttributeGroup"
+            >
+              <div
+                class="FileAttribute"
+              >
+                <span
+                  class="FileGridHeader__file-attribute"
+                >
+                  File sharing
+                </span>
+                <span>
+                  <span
+                    class="FileGridHeader__file-attribute-value"
+                  >
+                    1 Internal, 0 External
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div
+              class="LinkSharing FileAttributeGroup"
+            >
+              <div
+                class="FileGridHeader__row"
+              >
+                <div>
+                  <span
+                    class="Typography Typography--body Marker Marker__user"
+                  >
+                    No Link Sharing
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="FileGridHeader__button-wrapper"
+          >
+            <button
+              class="Button Button--secondary"
+              type="button"
+            >
+              Edit Permissions
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="FileGridHeader--split"
+      />
+      <div
+        class="FileGridHeader--section"
+      >
+        <div
+          class="FileGridHeader__file-date"
+        >
+          <div
+            class="FileDate"
+          >
+            <div
+              class="File__created FileAttributeGroup"
+            >
+              <div
+                class="FileAttribute"
+              >
+                <span
+                  class="FileGridHeader__file-attribute"
+                >
+                  Created
+                </span>
+                <span>
+                  <div
+                    class="FileGridHeader__file-attribute-value"
+                  >
+                    <time
+                      datetime="1504170378000"
+                    >
+                      Aug 31, 2017
+                    </time>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div
+              class="File__modified FileAttributeGroup"
+            >
+              <div
+                class="FileAttribute"
+              >
+                <span
+                  class="FileGridHeader__file-attribute"
+                >
+                  Modified
+                </span>
+                <span>
+                  <div
+                    class="FileGridHeader__file-attribute-value"
+                  >
+                    <time
+                      datetime="1534150370000"
+                    >
+                      Aug 13, 2018
+                    </time>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div
+              class="File__analyzed FileAttributeGroup"
+            >
+              <div
+                class="FileAttribute"
+              >
+                <span
+                  class="FileGridHeader__file-attribute"
+                >
+                  Analyzed
+                </span>
+                <span>
+                  <div
+                    class="FileGridHeader__file-attribute-value"
+                  >
+                    <span>
+                      Unknown
+                    </span>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="FileGridHeader__button-wrapper hidden"
+          >
+            <button
+              class="Button Button--secondary"
+              type="button"
+            >
+              Analyze File
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

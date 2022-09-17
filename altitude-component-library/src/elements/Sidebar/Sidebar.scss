@@ -1,0 +1,131 @@
+@import '../../styles/_shared.scss';
+
+$SIDEBAR_TEXT_COLOR: $BLUE_GREY_MEDIUM;
+$SIDEBAR_PADDING: $BASE_SPACING $BASE_SPACING;
+
+.Sidebar {
+  min-width: $MIN_SIDEBAR_WIDTH;
+  max-width: 30vw;
+  padding: ($LARGE_SPACING) 0 0;
+  position: fixed;
+  top: 0;
+
+  font-size: 14px;
+  height: 100%;
+
+  color: $SIDEBAR_TEXT_COLOR;
+  background-color: $DARK;
+  user-select: none;
+  z-index: 99;
+
+  a {
+    &:hover {
+      color: $PALE_GREY;
+      text-decoration: none;
+    }
+  }
+
+  &__group-title {
+    padding: $SIDEBAR_PADDING;
+    text-transform: uppercase;
+    font-weight: 700;
+    &--support {
+      margin-top: 30px;
+    }
+  }
+
+  &__section {
+    margin-bottom: 2em;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    color: $SIDEBAR_TEXT_COLOR;
+    display: flex;
+    transition: background-color $TRANSITION_DURATION ease-in-out, color $TRANSITION_DURATION ease-in-out;
+    text-decoration: none;
+  }
+
+  &__nav-menu {
+    &-links {
+      border-left: 1px solid #7f8fa44d;
+      margin-left: 2em;
+      transition: all 0.5s ease;
+    }
+
+    &-arrow {
+      margin-left: 0.5em;
+      transition: all 0.3s ease;
+      svg {
+        width: 0.75em;
+        height: 0.75em;
+        display: inline-block;
+        path {
+          fill: $SIDEBAR_TEXT_COLOR;
+        }
+      }
+
+      &--inverted {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding: $SIDEBAR_PADDING;
+
+    &:hover,
+    &--active {
+      background-color: $DARKER;
+      text-decoration: none;
+      color: white;
+
+      .Sidebar__link {
+        color: white;
+      }
+
+      .Sidebar__nav-menu-arrow {
+        svg {
+          path {
+            fill: white;
+          }
+        }
+      }
+
+      .Sidebar__icon {
+        fill: white;
+        path {
+          fill: white;
+        }
+      }
+    }
+
+    &--disabled {
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 0.5em;
+    svg,
+    img {
+      display: inline;
+      width: 1em;
+      height: 1em;
+    }
+    transition: fill $TRANSITION_DURATION ease-in-out;
+    fill: $SIDEBAR_TEXT_COLOR;
+    path {
+      transition: fill $TRANSITION_DURATION ease-in-out;
+      fill: $SIDEBAR_TEXT_COLOR;
+    }
+  }
+}

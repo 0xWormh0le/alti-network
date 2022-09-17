@@ -1,0 +1,44 @@
+name: Push Storybook
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [develop]
+
+jobs:
+  push-storybook:
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
+          aws-region: us-west-2
+      - name: Install dependencies
+        run: npm install
+      - name: Build story book
+        run: npm run build-storybook
+      - name: Push storybook
+        uses: docker://amazon/aws-cli:latest
+        with:
+          entrypoint: /usr/local/bin/aws
+          args: s3 sync ./storybook-static s3://altitude-storybook

@@ -1,0 +1,12 @@
+{
+  "requestContext": {
+    "authorizer": {
+        "project_id": "thoughtlabs"
+    }
+  },
+  "Records": [
+    {
+      "body": "{\"risk_id\": \"301c568d821375a4c19c0118547fdb1d47fdc6cce\", \"action\": \"update_status\", \"new_status\": \"REMOVED\"}"
+    }
+  ]
+}

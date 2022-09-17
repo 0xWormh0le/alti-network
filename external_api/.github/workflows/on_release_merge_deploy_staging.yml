@@ -1,0 +1,182 @@
+name: Staging - Deploy application services
+
+"on":
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: Reason for deployment
+        required: true
+
+  push:
+    branches:
+      - master
+      - hotfix/*
+
+    paths:
+      - external_api/version.txt
+
+jobs:
+  deploy_staging_services:
+    runs-on: ubuntu-latest
+    # To add custom steps to this workflow, start step name with `Custom: `
+    # To override existing step, set name to `Custom: <original_step_name>`
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: Get version
+        id: version
+        uses: vemel/nextversion@0.1.1
+        with:
+          path: external_api/version.txt
+          result: input
+          type: pep440
+      - name: Check conditions
+        id: check
+        uses: actions/github-script@v3
+        with:
+          script: |
+            const inputs = context.payload.inputs || {}
+            const reason = inputs.reason
+            const confirm = inputs.confirm
+            const isPrerelease = ${{ steps.version.outputs.is-prerelease }}
+            const version = ${{ toJSON(steps.version.outputs.result) }}
+
+            if (reason === "") {
+              core.info(`Workflow triggered by a new release ${version}`)
+              if (!isPrerelease) {
+                core.info(`Version ${version} is not a pre-release and will not be deployed to staging, run manually to override`)
+                return false
+              }
+              return true
+            }
+
+            const sender = context.payload.sender.login
+            core.info(`Workflow triggered manually by ${sender}`)
+            return true
+      - name: Set up Python
+        if: "steps.check.outputs.result == 'true'"
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+        run: |
+          python -m pip install -i https://${INTERNAL_PYPI_USERNAME}:${INTERNAL_PYPI_PASS}@${INTERNAL_PYPI_URL} -U deployment_management awscliv2 github_actions_script
+      - name: Send Slack deployment started message
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          SLACK_WEBHOOK: "${{ secrets.SLACK_WEBHOOK }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          SENDER: "${{ github.event.sender.login }}"
+          REASON: "${{ github.event.inputs.reason }}"
+        run: |
+          if [[ "${REASON}" = "" ]]; then
+            REASON="Pre-release PR merged"
+          fi
+          python -m github_actions_script -d slack_message "staging deployment started by ${SENDER}: ${REASON}"
+      - name: Checkout release branch
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          BRANCH=`python -m github_actions_script get_release_branch_name -d`
+          echo "Release branch" $BRANCH
+          git fetch origin $BRANCH
+          git checkout $BRANCH
+      - name: Build images
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+          ECR_REGISTRY: "${{ secrets.ECR_REGISTRY_STAGING }}"
+        run: |
+          for DOCKERFILE_PATH in $(find services -name Dockerfile); do
+            SERVICE_NAME=`echo $DOCKERFILE_PATH | cut -d '/' -f 2-2`
+            IMAGE_NAME=`echo "${ECR_REGISTRY}/altitudenetworks/external_api/${SERVICE_NAME}" | tr _ -`
+            echo "Building image ${IMAGE_NAME}:staging from ${DOCKERFILE_PATH}"
+
+            docker build -t ${IMAGE_NAME}:staging \
+              --build-arg INTERNAL_PYPI_PASS=${INTERNAL_PYPI_PASS} \
+              --build-arg INTERNAL_PYPI_USERNAME=${INTERNAL_PYPI_USERNAME} \
+              --build-arg INTERNAL_PYPI_URL=${INTERNAL_PYPI_URL} \
+              -f ${DOCKERFILE_PATH} \
+              .
+          done
+      - name: Setup AWS CLI V2
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_STAGING }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_STAGING }}"
+          ROLE_ARN: "${{ secrets.AWS_DEPLOYMENT_ROLE_ARN_STAGING }}"
+          AWS_REGION: us-west-2
+        run: |
+          awsv2 --install
+          awsv2 --configure default ${AWS_ACCESS_KEY_ID} ${AWS_SECRET_ACCESS_KEY}
+          awsv2 configure set region ${AWS_REGION}
+          awsv2 --assume-role deployment default ${ROLE_ARN}
+      - name: Push images to ECR
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          ECR_REGISTRY: "${{ secrets.ECR_REGISTRY_STAGING }}"
+          AWS_PROFILE: deployment
+          AWS_REGION: us-west-2
+          ENV: staging
+        run: |
+          DOCKER_PASSWORD=`awsv2 ecr get-login-password`
+          docker login -u AWS -p ${DOCKER_PASSWORD} ${ECR_REGISTRY}
+
+          for DOCKERFILE_PATH in $(find services -name Dockerfile); do
+            SERVICE_NAME=`echo $DOCKERFILE_PATH | cut -d '/' -f 2-2`
+            REPOSITORY_NAME=`echo "altitudenetworks/external_api/${SERVICE_NAME}" | tr _ -`
+            IMAGE_NAME=`echo "${ECR_REGISTRY}/${REPOSITORY_NAME}" | tr _ -`
+            echo "Creating ECR Repository if does not exist"
+            awsv2 ecr describe-repositories --repository-names ${REPOSITORY_NAME} || awsv2 ecr create-repository --repository-name ${REPOSITORY_NAME}
+
+            echo "Pushing image ${IMAGE_NAME}:${ENV} from ${DOCKERFILE_PATH} to ECR"
+            docker push ${IMAGE_NAME}:${ENV}
+          done
+      - name: Deploy services to staging
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+          AWS_PROFILE: deployment
+          ENV: staging
+          AWS_REGION: us-west-2
+          SUFFIX: "01"
+        run: |
+          service_deployer full_app --env ${ENV} --region ${AWS_REGION} --suffix ${SUFFIX} --deploy --local --clean
+      - name: Send slack notification
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          SLACK_WEBHOOK: "${{ secrets.SLACK_WEBHOOK }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          ECR_REGISTRY: "${{ secrets.ECR_REGISTRY_STAGING }}"
+        run: |
+          python -m github_actions_script -d slack_message "deployed to staging"
+          for DOCKERFILE_PATH in $(find services -name Dockerfile); do
+            SERVICE_NAME=`echo $DOCKERFILE_PATH | cut -d '/' -f 2-2`
+            IMAGE_NAME=`echo "${ECR_REGISTRY}/altitudenetworks/external_api/${SERVICE_NAME}" | tr _ -`
+
+            python -m github_actions_script -d slack_message "docker image ${IMAGE_NAME} pushed to staging"
+          done
+      - name: "Custom: apigateway integration tests"
+        if: "steps.check.outputs.result == 'true'"
+        env:
+          INTERNAL_PYPI_USERNAME: "${{ secrets.INTERNAL_PYPI_USERNAME }}"
+          INTERNAL_PYPI_PASS: "${{ secrets.INTERNAL_PYPI_PASS }}"
+          INTERNAL_PYPI_URL: "${{ secrets.INTERNAL_PYPI_URL }}"
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_STAGING }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_STAGING }}"
+          ENV: staging
+          AWS_REGION: us-west-2
+          SUFFIX: "01"
+          AWS_DEFAULT_REGION: us-west-2
+        run: |
+          python run_integration_tests.py

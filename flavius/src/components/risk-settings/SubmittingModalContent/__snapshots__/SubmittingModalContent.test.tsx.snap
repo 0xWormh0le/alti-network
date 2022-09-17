@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubmittingModalContent renders content for add action correctly 1`] = `
+<div>
+  <div
+    class="SubmittingModalContent"
+  >
+    <h3
+      class="Typography Typography--h3 SubmittingModalContent__text"
+    >
+      Submitting phrases
+    </h3>
+    <div
+      class="LoadingBar"
+    >
+      <div
+        class="LoadingBar__inner"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SubmittingModalContent renders content for delete action correctly 1`] = `
+<div>
+  <div
+    class="SubmittingModalContent"
+  >
+    <h3
+      class="Typography Typography--h3 SubmittingModalContent__text"
+    >
+      Deleting phrases
+    </h3>
+    <div
+      class="LoadingBar"
+    >
+      <div
+        class="LoadingBar__inner"
+      />
+    </div>
+  </div>
+</div>
+`;

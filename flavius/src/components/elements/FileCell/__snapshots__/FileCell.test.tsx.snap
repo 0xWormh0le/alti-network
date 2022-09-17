@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="FileCell FileCell__multiline"
+  >
+    <div
+      class="FileCell__icons"
+    >
+      <span
+        class="AppIndicator"
+      >
+        <div
+          class="platform-container"
+        >
+          <a
+            class="trigger"
+            href="webLink"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div>
+              <div>
+                <div
+                  class="platform-icon-container"
+                  data-testid="platform-icon"
+                >
+                  <img
+                    alt="Google Workspace"
+                    class="platform-icon"
+                    src="google-logo.svg"
+                    title="Google Workspace"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </span>
+      <div
+        style="margin-right: 0.3em;"
+      />
+      <div
+        class="file_icon_container"
+      >
+        <div
+          class="trigger"
+        >
+          <img
+            alt="mimeType"
+            class="file_icon"
+            src="iconUrl"
+          />
+        </div>
+      </div>
+    </div>
+    <a
+      class="FileCell__link"
+      data-testid="file-cell-link"
+      href="/dashboard/file/fileA?owner=hello@world.com&selection=sensitive&platformId=gsuite&sensitive=true"
+    >
+      <div>
+        <div>
+          Test Filename
+        </div>
+        <div
+          class="FileCell__spacer-top-5"
+        >
+          <div
+            class="sensitiveFileAlert trigger"
+            data-testid="sensitiveFileAlert"
+          >
+            <span
+              class="Typography Typography--body Marker Marker__sensitive_content"
+            >
+              Sensitive Content
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,41 @@
+@import 'styles/_shared.scss';
+
+$CONFIRMATION_MODAL_WIDTH: 660px;
+
+.ModalConfirmationDialog {
+  width: $CONFIRMATION_MODAL_WIDTH;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+
+  &--top {
+    top: 150px;
+    transform: translate(-50%, 0%);
+  }
+
+  &__main {
+    margin-top: $STANDARD_BAR_HEIGHT;
+    padding: $LARGE_SPACING 4 * $LARGE_SPACING;
+  }
+
+  &__message {
+    text-align: center;
+    margin-bottom: $LARGE_SPACING;
+    color: $TEXT_COLOR;
+  }
+
+  &__buttons {
+    @include flex(row, center, center);
+    padding: 0 100px;
+  }
+
+  &__button {
+    min-width: 200px;
+    margin: 0 $BASE_SPACING / 2;
+  }
+}

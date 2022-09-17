@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When 2FA is enabled renders correctly 1`] = `
+<div>
+  <div
+    class="TwoFactorAuthentication"
+  >
+    <h3
+      class="Typography Typography--h3 SectionTitle"
+    >
+      Two-Factor Authentication (2FA)
+    </h3>
+    <p>
+      Set up 2FA using Time-based One-time Password (TOTP)
+    </p>
+    <button
+      class="Button Button--primary"
+      type="button"
+    >
+      Disable 2FA for this user
+    </button>
+  </div>
+</div>
+`;

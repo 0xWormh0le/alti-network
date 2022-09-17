@@ -1,0 +1,14 @@
+@import 'styles/_shared.scss';
+
+.TwoFactorAuthentication {
+  &__separator {
+    margin: 1.5rem 0;
+    background: $PALE_GREY;
+  }
+
+  &__step {
+    width: 450px;
+    margin: 0 auto;
+    color: $TEXT_COLOR;
+  }
+}

@@ -1,0 +1,33 @@
+type: lambda
+runtime: python3.7
+function_name: &func_name altitude-{{ENV}}-lambda-altimeter-{{SUFFIX}}
+handler: services.altimeter.altimeter_handler.main_handler
+iam_role: arn:aws:iam::{{AWS_ACCOUNT}}:role/altitude-{{ENV}}-lambda-execution-frontend-role
+description: Lambda function Events captured by Segment on external website
+memory_size: 1728
+timeout: 30
+tracing_config_mode: Active
+notification_email: devops@altitudenetworks.com
+log_group_subscriptions:
+  - filter_name: log-dna
+    destination_arn: {{ENV_CONFIG.logdna_destination_arn}}
+environment:
+  {% set DEBUG_MODE = "true" if ENV == "dev" else "false" %}
+  DEBUG_MODE: '{{DEBUG_MODE}}'
+triggers:
+  - type: apigateway
+    name: flavius-{{ENV}}-{{SUFFIX}}
+    path: /altimeter
+    method: post
+    function_name: *func_name
+    function_alias: {{ENV}}
+    authorization_required: True
+    application_role: FlaviusAPI
+  - type: apigateway
+    name: external-site-{{ENV}}-{{SUFFIX}}
+    path: /altimeter
+    method: post
+    function_name: *func_name
+    function_alias: {{ENV}}
+    authorization_required: False
+    application_role: ExternalSiteAPI

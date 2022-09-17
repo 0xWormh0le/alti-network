@@ -1,0 +1,13 @@
+{
+  "pathParameters": {
+    "fileId": "016MCEIVFUWWODSSBS4VFIULB3J5EUDEIH"
+  },
+  "requestContext": {
+    "authorizer": {
+        "project_id": "thoughtlabs"
+    }
+  },
+  "queryStringParameters": {
+    "platform-id": "o365"
+  }
+}

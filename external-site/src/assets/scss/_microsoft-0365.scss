@@ -1,0 +1,78 @@
+.microsoft-0365 {
+  &-description {
+    font-size: 18px;
+    margin-bottom: 4rem;
+    max-width: 53rem;
+    padding: 0 0.5rem;
+  }
+
+  &-learn {
+    &-brief {
+      padding: 0 1rem;
+      max-width: 50rem;
+
+      &-description {
+        margin-bottom: 1rem;
+        font-size: 22px;
+        font-family: Montserrat;
+        font-weight: 600;
+      }
+
+      &-button {
+        cursor: pointer;
+        user-select: none;
+        display: inline-block;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+        background: rgb(53,116,227);
+        border-radius: 6px;
+        border-width: 0px;
+        color: rgb(255,255,255);
+        font-family: sans-serif;
+        height: auto;
+        transition: all .4 ease;
+        padding: 6px 18px;
+        text-shadow: none;
+        width: auto;
+        font-size: 24px;
+        line-height: 1.5em;
+      }
+
+      &-button:hover {
+        background: rgb(58,127,249);
+      }
+
+      ul {
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        margin-top: 1rem;
+      }
+    }
+
+    &-video {
+      padding: 0 1rem;
+
+      text-align: center;
+
+      &-description {
+        margin-bottom: 1rem;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      &-instance {
+        margin: auto;
+        margin-top: 1rem;
+        max-width: 560px;
+        max-height: 315px;
+      }
+
+      iframe {
+        max-width: 560px;
+        max-height: 315px;
+        width: 100%;
+      }
+    }
+  }
+}

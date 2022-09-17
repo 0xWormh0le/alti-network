@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WelcomeMessage renders correctly 1`] = `
+<div>
+  <div
+    class="WelcomeMessage"
+  >
+    <h1
+      class="Typography Typography--h1 WelcomeMessage__title"
+    >
+      Welcome to 
+      <span
+        class="WelcomeMessage__app-name"
+      >
+        Altitude Networks
+      </span>
+    </h1>
+    <p
+      class="Typography Typography--body Typography--medium WelcomeMessage__first-paragraph"
+    >
+      We're very excited to provide you early access!
+    </p>
+    <p
+      class="Typography Typography--body WelcomeMessage__paragraph"
+    >
+      Please be candid with any feedback. What works, what doesn't, what would you like to see. Please use the chat system in the lower left of the screen or email us (
+      <a
+        href="mailto:feedback@altitudenetworks.com"
+        target="_blank"
+      >
+        feedback@altitudenetworks.com
+      </a>
+      ) with any questions or feedback.
+    </p>
+    <p
+      class="Typography Typography--body WelcomeMessage__paragraph"
+    >
+      Changes and new features will be deployed on an ongoing basis. For now, please enjoy the 'Top Risks' page which highlights key issues for review.
+    </p>
+    <p
+      class="Typography Typography--body WelcomeMessage__paragraph"
+    >
+      From the Top Risks page you can click on any file, person or list, to open a modal and explore more about it.
+    </p>
+  </div>
+</div>
+`;

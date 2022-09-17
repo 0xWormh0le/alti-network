@@ -1,0 +1,9 @@
+@import 'styles/_shared.scss';
+
+.AppIndicator {
+  @include flex(row, center, center);
+
+  a {
+    @include flex(row, center, center);
+  }
+}

@@ -1,0 +1,39 @@
+@import 'styles/_shared.scss';
+
+.NewSensitivePhrase {
+  margin-bottom: $BASE_SPACING * 3;
+
+  &__field {
+    width: 100%;
+    margin-bottom: $BASE_SPACING * 3;
+  }
+
+  &__radios {
+    display: flex;
+    margin-bottom: $BASE_SPACING;
+  }
+
+  &__radio {
+    margin-right: $SMALL_SPACING;
+  }
+
+  &__help-box {
+    border: 1px dashed $BORDER_COLOR;
+    padding: $BASE_SPACING $SMALL_SPACING;
+    padding-right: $BASE_SPACING * 7;
+    display: flex;
+    align-items: center;
+  }
+
+  &__helper-text {
+    color: $HELPER_TEXT_COLOR;
+  }
+
+  &__helper-img {
+    margin-left: $SMALL_SPACING;
+  }
+
+  &__button {
+    width: 100px;
+  }
+}

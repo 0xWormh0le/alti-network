@@ -1,0 +1,49 @@
+@import './_shared.scss';
+
+.BaseAvatar {
+  color: white;
+  text-transform: capitalize;
+  &__text {
+    line-height: 1;
+  }
+}
+
+.Sidebar {
+  padding-top: 5em;
+  width: $MIN_SIDEBAR_WIDTH;
+
+  &__icon {
+    margin-right: 0.5em;
+
+    svg,
+    img {
+      width: 1.25em;
+      height: 1.25em;
+    }
+  }
+
+  &__item {
+    padding: 1em;
+    width: 100%;
+  }
+
+  &__nav-menu {
+    .Sidebar__item {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.Table {
+  &__heading {
+    th {
+      white-space: nowrap;
+
+      span {
+        font-size: 1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "pathParameters": {"personId": "bobbie@thoughtlabs.io"},
+    "queryStringParameters": {},
+    "requestContext": {"authorizer": {"project_id": "thoughtlabs"}}
+}

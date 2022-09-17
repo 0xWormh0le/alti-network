@@ -1,0 +1,25 @@
+---
+title: Get Started
+---
+
+{% extends "./layouts/layout.njk" %}
+
+{% block body %}
+  <div class="get-started get-started--page">
+    <div class="get-started__container">
+      <h2></h2>
+      <p></p>
+      <form id="get-started--page__form" class="get-started__form" data-id="1">
+        <input type="email" name="work-email" value="" placeholder="Work Email" required />
+        <button type="submit" class="cta-button" data-altimeter="newsletter_subscribe">Subscribe</button>
+        <div class="get-started__form-notice">
+          Unsubscribe at any time with one click.
+        </div>
+      </form>
+      <div class="get-started__success">
+        <span class="get-started__success-icon">✔</span>
+        Thank you for subscribing!
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,56 @@
+@import '../../styles/_shared.scss';
+
+$expand-icon-width: 3rem;
+$expand-icon-height: 2rem;
+
+.Accordion {
+  border-top: 1px solid $PALE_GREY;
+
+  &:last-child {
+    border-bottom: 1px solid $PALE_GREY;
+  }
+
+  &__summary {
+    position: relative;
+    padding-right: $expand-icon-width;
+    min-height: $expand-icon-height;
+    overflow: hidden;
+  }
+
+  &__expand {
+    position: absolute;
+    width: $expand-icon-width;
+    height: $expand-icon-height;
+    top: 0;
+    right: 0;
+    @include clear-button-style();
+
+    svg {
+      width: 1em;
+      transition: all 0.25s ease;
+    }
+
+    &--open {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    &--close {
+      svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__details {
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+    &--open {
+      height: auto;
+    }
+    &--close {
+      max-height: 0;
+    }
+  }
+}

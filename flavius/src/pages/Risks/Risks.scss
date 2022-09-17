@@ -1,0 +1,47 @@
+@import 'styles/_shared.scss';
+
+.Risks {
+  &__risks {
+    margin: 20px $PAGE_MARGIN $PAGE_MARGIN;
+    max-width: $MAX_CONTENT_WIDTH;
+  }
+
+  &__header {
+    display: flex;
+    padding: $LARGE_SPACING;
+    margin-bottom: $LARGE_SPACING;
+    background-color: $PALE_GREY_LIGHTEST;
+    border-radius: 5px;
+    gap: $SMALL_SPACING;
+
+    &__filter {
+      width: 16rem;
+    }
+  }
+
+  .Table {
+    &__table {
+      padding-right: 1em;
+    }
+
+    &__heading {
+      &-cell-sortable {
+        padding: 0;
+      }
+    }
+
+    &__row {
+      &.ignored-risk {
+        background-color: $PALE_GREY_LIGHTEST;
+
+        &:hover {
+          background-color: $PALE_GREY;
+        }
+      }
+
+      .Table__cell:last-child {
+        padding-right: 2em;
+      }
+    }
+  }
+}

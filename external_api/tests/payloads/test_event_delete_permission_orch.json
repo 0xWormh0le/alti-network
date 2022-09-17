@@ -1,0 +1,12 @@
+{
+  "requestContext": {
+    "authorizer": {
+        "project_id": "thoughtlabs"
+    }
+  },
+  "Records": [
+    {
+      "body": "{\"message_count\": \"1 \", \"message_number\": \"1\", \"permission_details_list\": [{\"owner_email\": \"michael@thoughtlabs.io\", \"file_id\": \"1pY55hCKgoXVkp_7_qpQevyidt-wJLmXE\", \"permissions_id\":\"1pY55hCKgoXVkp_7_qpQevyidt-wJLmXE\"}]}"
+    }
+  ]
+}

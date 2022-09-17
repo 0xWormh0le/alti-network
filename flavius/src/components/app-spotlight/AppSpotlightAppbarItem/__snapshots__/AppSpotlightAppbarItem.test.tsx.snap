@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSpotlightAppbarItem renders correctly 1`] = `
+<div>
+  <div
+    class="AppSpotlightAppbarItem selected"
+  >
+    <div
+      class="AppSpotlightAppbarItem__wrapper"
+    >
+      <img
+        alt=""
+        class="AppSpotlightAppbarItem__wrapper--image"
+        draggable="false"
+        src=""
+      />
+      <span
+        class="Typography Typography--label Typography--normal AppSpotlightAppbarItem__wrapper--title"
+      />
+    </div>
+  </div>
+</div>
+`;

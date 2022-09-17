@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSpotlightAppImage renders correctly 1`] = `
+<div>
+  <div
+    class="AppSpotlightAppImage"
+  >
+    <div
+      class="AppSpotlightAppImage__wrapper"
+    >
+      <img
+        alt="Unknown"
+        src="https://via.placeholder.com/150"
+      />
+    </div>
+    <div
+      class="AppSpotlightAppImage__title"
+    >
+      <h3
+        class="Typography Typography--h3 Typography--normal AppSpotlightHeader__title-name"
+        data-testid="apptitle"
+      >
+        Unknown
+      </h3>
+    </div>
+    <div
+      class="AppSpotlightAppImage__marketplace"
+    >
+      <a
+        href="https://gsuite.google.com/marketplace/app/hello_sign/aaaaaaaa"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          class="Button AppSpotlightAppImage__marketplace--url Button--secondary"
+          type="button"
+        >
+          View in G Suite Marketplace
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;

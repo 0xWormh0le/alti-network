@@ -1,0 +1,195 @@
+@import 'styles/_shared.scss';
+
+$darkGrey: #354052;
+$dominantColor: #354052;
+$secondaryColor: #ff6633;
+$subColor: #e23115;
+
+.RiskGraph__ {
+  &top {
+    width: 100%;
+    @include flex(row, space-between, flex-start);
+  }
+  &container {
+    min-width: 45rem;
+    width: 45rem;
+    height: 31rem;
+    margin-right: $SMALL_SPACING;
+    margin-bottom: $SMALL_SPACING * 3;
+  }
+  &graph_container {
+    width: 100%;
+    height: 100%;
+    border: solid 1px $PALE_GREY;
+    border-radius: 5px;
+  }
+  &graph_empty {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-top: -1rem;
+
+    .ErrorBox {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &platforms {
+    position: relative;
+
+    &__filter {
+      &-container,
+      &-dropdown {
+        width: 16rem;
+      }
+    }
+  }
+  &option_container {
+    @include flex(row, flex-start, center);
+    position: relative;
+    & > div:first-child {
+      margin-left: 0.3rem;
+    }
+    & > div:nth-child(2) {
+      margin-left: 2.3rem;
+      width: 100%;
+    }
+  }
+}
+
+.nodeContainer {
+  @include flex(column, center, center);
+  position: relative;
+  max-width: 150px;
+  cursor: default;
+}
+
+.nodeLabel {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  background: transparent;
+  margin-top: -0.313;
+  margin-bottom: 0.313rem;
+  line-height: 0.875rem;
+}
+
+.circleNodeMarker {
+  background: transparent;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  border: none;
+  & > div:first-child {
+    display: none;
+  }
+}
+
+.circleNode {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > div:nth-child(1) {
+    background: #fff;
+    display: flex;
+    border-radius: 50%;
+    font-size: 0.688rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.edgeDashed {
+  stroke-dasharray: 3;
+}
+
+.edgeAnimated {
+  animation: stroke_fill 4s ease forwards;
+  stroke-dasharray: 324.774;
+  stroke-dashoffset: 324.774;
+  stroke-width: 10;
+}
+
+.circleLarge {
+  width: 6.25rem;
+  height: 6.25rem;
+  & > div:nth-child(1) {
+    width: 96%;
+    height: 96%;
+  }
+}
+
+.circleMedium {
+  width: 4.75rem;
+  height: 4.75rem;
+  & > div:nth-child(1) {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+.circleSmall {
+  width: 3.375rem;
+  height: 3.375rem;
+  & > div:nth-child(1) {
+    width: 94%;
+    height: 94%;
+  }
+}
+
+.circleSmaller {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nodeOrange {
+  background: $secondaryColor;
+}
+
+.nodeBlack {
+  background: $dominantColor;
+}
+
+.nodeRed {
+  background: $subColor;
+}
+
+#arrowRight {
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 0.375rem solid transparent;
+  border-left: 0.375rem solid $secondaryColor;
+  border-bottom: 0.375rem solid transparent;
+  background: white;
+  border-radius: 0;
+}
+
+.stat {
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 0.938;
+  @include flex(column, center, center);
+}
+
+// animation
+@keyframes stroke_fill {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: white;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+// .animation {
+//   animation: stroke_fill 4s ease forwards;
+//   stroke-dasharray: 324.774;
+//   stroke-dashoffset: 324.774;
+// }

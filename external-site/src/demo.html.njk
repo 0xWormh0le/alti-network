@@ -1,0 +1,172 @@
+---
+title: Enterprise Cloud Data Security Solutions | Altitude Networks
+description: Altitude Networks is at the forefront of cloud security⁠—-protecting your company’s cloud data against unauthorized access, accidental or malicious sharing, and theft.
+url: /demo
+---
+
+{% extends "./layouts/layout-demo.njk" %}
+
+{% block scripts %}
+  <script>
+    (function($) {
+      $(document).ready(function() {
+        altNet.onMainScroll = altNet.throttle(function() {
+          altNet.altimeter({
+            altimeterMethod: "track",
+            eventName: "Demo Page Scroll",
+            metadata: {
+              position: $('.scroll-wrapper').scrollTop()
+            }
+          });
+        }, 500);
+      });
+    })(jQuery);
+    </script>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.min.css"/>
+    <style type="text/css">
+      .cta-subscribe__success {
+        color: #292c39;
+      }
+    </style>
+{% endblock %}
+
+
+{% block body %}
+    <section class="home-section home-hero-section hero-section demo-section">
+      <div class="oval"></div>
+      <div class="home-hero-section__inner">
+        <p class="home-hero-section__Discover-Critical-Cl">
+          Discover <span class="home-hero-section__Discover-Ciritical-Cl text-style-1">Critical Cloud-based</span> Data Loss
+        </p>
+        <h1 class="home-hero-section__And-remediate-it-At">
+          And remediate it. At enterprise scale.
+        </h1>
+        <div class="hero-content">
+          <div class="hero-content__descr">
+            <div class="hero-content__descr--header">
+              <img src="/images/landingpage-checkmark.svg" alt="checkmark" class="hero-content__descr--check-mark" />
+              <span class="hero-content__descr--title">Sensitive Data Protection</span>
+            </div>
+            <p class="hero-content__descr--text">
+              Automatic classification & alerting of data at risk
+            </p>
+            <div class="hero-content__descr--header">
+              <img src="/images/landingpage-checkmark.svg" alt="checkmark" class="hero-content__descr--check-mark" />
+              <span class="hero-content__descr--title">Offboarding</span>
+            </div>
+            <p class="hero-content__descr--text">
+              Data stolen by exiting employees or contractors
+            </p>
+            <div class="hero-content__descr--header">
+              <img src="/images/landingpage-checkmark.svg" alt="checkmark" class="hero-content__descr--check-mark" />
+              <span class="hero-content__descr--title">Rogue Apps</span>
+            </div>
+            <p class="hero-content__descr--text">
+              3rd party applications exfiltrating cloud data
+            </p>
+          </div>
+          <div class="hero-content__dashboard">
+            <img src="/images/landingpage-topdashboard.png" alt="dashboard" class="hero-content__dashboard--img" />
+          </div>
+        </div>
+      </div>
+    </section>
+  <div class="container">
+
+    <section class="home-section protect-section">
+      <h1 class="protect-header">
+        Discover, Remediate and Prevent Cloud Data Risks that Matter
+      </h1>
+      <div class="protect-section__content">
+        <div class="protect-row">
+          <div class="protect-row__imgcol accur-img">
+            <img src="/images/landingpage-point1.jpg" alt="point1" class="protect-row__imgcol--img protect-row__imgcol--img-1" />
+          </div>
+          <div class="protect-row__descr accur-descr">
+            <p class="protect-row__descr--title accur-title">
+              Protect <span class="text-style-3">What Matters Most</span>
+            </p>
+            <p class="protect-row__descr--text accur-text">
+              <span class="yellow">
+                Automatically understand what data is sensitive and when sensitive data is at risk.
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="protect-row offboarding-row">
+          <div class="protect-row__descr offboarding-descr">
+            <p class="protect-row__descr--title offboarding-title">
+              One Click  <span class="text-style-2">Offboarding</span>
+            </p>
+            <p class="protect-row__descr--text offboarding-text">
+              <span class="green">
+                Remove backdoor access to corporate files via personal email account access. 
+              </span>
+            </p>
+          </div>
+          <div class="protect-row__imgcol offboarding-img">
+            <img src="/images/landingpage-point2.png" alt="point2" class="protect-row__imgcol--img offboarding" />
+          </div>
+        </div>
+
+        <div class="protect-row">
+          <div class="protect-row__imgcol rogue-img">
+            <img src="/images/landingpage-point3.jpg" alt="point3" class="protect-row__imgcol--img rogueapp" />
+          </div>
+          <div class="protect-row__descr rogue-descr">
+            <p class="protect-row__descr--title rogue-title">
+              Identify  <span class="text-style-1">Rogue Application</span> Access
+            </p>
+            <p class="protect-row__descr--text rogue-text">
+              <span class="yellow">
+                Uncover OAuth’ed applications with access to corporate data and understand breadth of user installation and data access.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="home-section demo demo--section demo--home demo--footer">
+    <div class="demo__container">
+      <p>
+        Discover <span class="text-style-1">Critical Cloud-based</span> Data Loss
+      </p>
+      <h2>
+        And remediate it. At enterprise scale.
+      </h2>
+      <form class="cta-subscribe__form demo__form">
+        <input type="text" name="first-name" value="" placeholder="First Name" required />
+        <input type="text" name="last-name" value="" placeholder="Last Name" required />
+        <input type="email" name="work-email" value="" placeholder="Work Email" required />
+        <button type="submit" class="cta-button" data-altimeter="get_a_demo_cta_bottom">Get A Demo</button>
+      </form>
+      <div class="cta-subscribe__success">
+        <span class="cta-subscribe__success-icon">✔</span>
+        Thank you for signing up, we will be in touch soon!
+      </div>
+    </div>
+  </div>
+  <div class="cta-subscribe-modal">
+    <div class="cta-subscribe-modal__content">
+      <span id="closeModal" class="cta-subscribe-modal__close">&times;</span>
+      <form id="cta-subscribe__form" class="demo__form">
+        <input type="text" name="first-name" value="" placeholder="First Name" required />
+        <input type="text" name="last-name" value="" placeholder="Last Name" required />
+        <input type="email" name="work-email" value="" placeholder="Work Email" required />
+        <button type="submit" class="cta-button" data-altimeter="get_a_demo_cta_top">Get A Demo</button>
+      </form>
+      <div class="cta-subscribe__success">
+        <div class="cta-subscribe__success-title">
+          Thank you for signing up, we will be in touch soon!
+        </div>
+        <object data="/images/cta-success-envelope.svg" type="image/svg+xml"></object>
+      </div>
+    </div>
+  </div>
+{% endblock %}

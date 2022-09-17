@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmPhraseModalContent renders content for add action correctly 1`] = `
+<div>
+  <div
+    class="ConfirmPhraseModalContent"
+  >
+    <h3
+      class="Typography Typography--h3"
+    >
+      Is this phrase correct?
+    </h3>
+    <div
+      class="Phrase Phrase--lg"
+    >
+      internal
+    </div>
+    <div
+      class="ConfirmPhraseModalContent__infobox"
+    >
+      <div
+        class="ConfirmPhraseModalContent__infobox-text"
+      >
+        <span
+          class="Typography Typography--label Typography--bold"
+        >
+          This phrase uses 
+          Exact Match
+        </span>
+        <div
+          class="Typography Typography--body-tiny ConfirmPhraseModalContent__infobox-desc"
+        >
+          For example, "int" would match the filename "Number or int" but would NOT match "Internal Review Notes".
+        </div>
+      </div>
+      <img
+        alt="exact matching"
+        class="NewSensitivePhrase__infobox-img"
+        src="exact-matching.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ConfirmPhraseModalContent renders content for delete action correctly 1`] = `
+<div>
+  <div
+    class="ConfirmPhraseModalContent"
+  >
+    <h3
+      class="Typography Typography--h3"
+    >
+      Delete this phrase?
+    </h3>
+    <div
+      class="Phrase Phrase--lg"
+    >
+      internal
+    </div>
+    <div
+      class="ConfirmPhraseModalContent__infobox"
+    >
+      <div
+        class="ConfirmPhraseModalContent__infobox-text"
+      >
+        <span
+          class="Typography Typography--label Typography--bold"
+        >
+          This phrase uses 
+          Exact Match
+        </span>
+        <div
+          class="Typography Typography--body-tiny ConfirmPhraseModalContent__infobox-desc"
+        >
+          For example, "int" would match the filename "Number or int" but would NOT match "Internal Review Notes".
+        </div>
+      </div>
+      <img
+        alt="exact matching"
+        class="NewSensitivePhrase__infobox-img"
+        src="exact-matching.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

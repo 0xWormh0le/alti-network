@@ -1,0 +1,91 @@
+@import 'styles/_shared.scss';
+
+.Radio {
+  $this: &;
+
+  position: relative;
+
+  &--inline {
+    display: inline-flex;
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &--right {
+      flex-direction: row;
+      justify-content: flex-start;
+
+      #{$this}__helper {
+        margin-right: $BASE_SPACING;
+      }
+    }
+
+    &--left {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      #{$this}__helper {
+        margin-left: $BASE_SPACING;
+      }
+    }
+
+    &-text {
+      font-size: map-get($FONT_SIZES, 'BODY');
+    }
+  }
+
+  // do not render the default radio
+  input[type='radio'] {
+    display: none;
+  }
+
+  &__helper {
+    position: relative;
+    width: $RADIO_SIZE;
+    height: $RADIO_SIZE;
+    margin: 4px 0;
+    cursor: pointer;
+    display: block;
+    font-size: map-get($FONT_SIZES, 'BODY');
+    user-select: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.1), inset 0 1.5px 1px 0 rgba(0, 0, 0, 0.15);
+      border: solid 0.5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  input[type='radio']:checked ~ &__helper {
+    &:before {
+      background-color: $RADIO_ACTIVE_COLOR;
+      border: solid 0.5px $RADIO_ACTIVE_COLOR;
+      box-shadow: none;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      box-shadow: 0 0.5px 1px 0 $RADIO_ACTIVE_COLOR;
+      background-color: #ffffff;
+    }
+  }
+}

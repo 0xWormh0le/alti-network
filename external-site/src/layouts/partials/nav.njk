@@ -1,0 +1,127 @@
+  <nav>
+    <!-- Hamburger -->
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+      <span class="navicon" />
+    </label>
+
+    <!-- Menu items -->
+    <button type="button" class="cta-button cta-demo">Let's Talk</button>
+    <ul class="nav-links">
+      <li class="header-cta">
+        <a href="https://info.altitudenetworks.com/lets-talk" target="_blank" class="cta-button lets-talk">Let's Talk</a>
+      </li>
+
+      <li class='nav-dropdown-parent'>
+        <input type="checkbox" class="nav-parent--checkbox" id="use-case--checkbox" {% if hiw or scd or rogue or offboarding or ransomware %}checked{% endif %}>
+        <label for='use-case--checkbox'>Use Cases<span class="arrow"></span></label>
+        <ul class='nav-dropdown nav-dropdown--uses'>
+          <a data-nav-id="/how-it-works" href="/how-it-works" {% if hiw %}class="active"{% endif %}>
+            <li>
+              <span class='nav-dropdown--title'>How It Works</span>
+            </li>
+          </a>
+          <a data-nav-id="/sensitive-content-detection" href="/sensitive-content-detection" {% if scd %}class="active"{% endif %}>
+            <li>
+              <span class='nav-dropdown--title'>Prevent Sensitive Content Leaks</span>
+            </li>
+          </a>
+          <a data-nav-id="/rogue-apps" href="/rogue-apps" {% if rogue %}class="active"{% endif %}>
+            <li>
+              <span>Rogue Applications</span>
+            </li>
+          </a>
+          <a data-nav-id="/offboarding" href="/offboarding" {% if offboarding %}class="active"{% endif %}>
+            <li>
+              <span>Offboarding</span>
+            </li>
+          </a>
+          <a data-nav-id="/ransomware" target="_blank" href="https://info.altitudenetworks.com/ransomware-prevention">
+            <li>
+              <span>Ransomware</span>
+            </li>
+          </a>
+          <a data-nav-id="/malicious-insider-threats" target="_blank" href="https://info.altitudenetworks.com/malicious-insider-threats">
+            <li>
+              <span>Malicious Insider Threats</span>
+            </li>
+          </a>
+          <a data-nav-id="/accidental-file-sharing" target="_blank" href="https://info.altitudenetworks.com/accidental-file-sharing">
+            <li>
+              <span>Accidental File Sharing</span>
+            </li>
+          </a>
+          <a data-nav-id="/data-exfiltration-by-departing-employees" target="_blank" href="https://info.altitudenetworks.com/data-exfiltration-by-departing-employees">
+            <li>
+              <span>Data Exfiltration By Departing Employees</span>
+            </li>
+          </a>
+        </ul>
+      </li>
+
+    <li class='nav-dropdown-parent'>
+      <!-- <a class='{% if solutions %}active{% endif %}' href="/solutions">Solutions</a> -->
+      <input type="checkbox" class="nav-parent--checkbox" id="solutions-checkbox" {% if gsuite or microsoft0365 or slack or otherPlatforms %}checked{% endif %}>
+      <label for='solutions-checkbox'>Solutions<span class="arrow"></span></label>
+      <ul class='nav-dropdown'>
+        <a data-nav-id='/gsuite-googleworkspace' href='/gsuite-googleworkspace' {% if gsuite %}class="active"{% endif %}>
+          <li>
+            <span class='nav-dropdown--title'>Google Workspace</span>
+          </li>
+        </a>
+        <a data-nav-id='/microsoft-0365' href='/microsoft-0365' {% if microsoft0365 %}class="active"{% endif %}>
+          <li>
+            <span class='nav-dropdown--title'>Microsoft 365</span>
+          </li>
+        </a>
+        <a data-nav-id='/slack-integration' href='/slack-integration' {% if slack %}class="active"{% endif %}>
+          <li>
+            <span class='nav-dropdown--title'>Slack Integration</span>
+          </li>
+        </a>
+        <a data-nav-id='/other-platforms' href='/other-platforms' {% if otherPlatforms %}class="active"{% endif %}>
+          <li>
+            <span class='nav-dropdown--title'>Upcoming</span>
+          </li>
+        </a>
+      </ul>
+    </li>
+
+      <li {% if resources %}class="active"{% endif %} >
+        <a href="/resources">Resources</a>
+      </li>
+      <li {% if pricing %}class="active"{% endif %}>
+        <a href="/pricing">Pricing</a>
+      </li>
+      <li class='nav-dropdown-parent'>
+        <input type="checkbox" class="nav-parent--checkbox" id="company-checkbox" {% if careers or about %}checked{% endif %}>
+        <label for='company-checkbox'>Company<span class="arrow"></span></label>
+        <ul class='nav-dropdown nav-dropdown--company'>
+          <a data-nav-id="/careers" href='/careers' {% if careers %}class="active"{% endif %}>
+            <li>
+              <span>Careers</span>
+            </li>
+          </a>
+          <a data-nav-id="/about-us" href='/about-us' {% if about %}class="active"{% endif %}>
+            <li>
+              <span>About</span>
+            </li>
+          </a>
+          <a id='mailto-nav' href='https://info.altitudenetworks.com/contact-us' rel="noopener" target="_blank">
+            <li>
+              <span>Contact Us</span>
+            </li>
+          </a>
+        </ul>
+      </li>
+      <li>
+        <a href='https://app.altitudenetworks.com' rel="noopener" target="_blank">Log in</a>
+      </li>
+      <li>
+        <span class="nav-links-separator" />
+      </li>
+      <li>
+        <a href="https://info.altitudenetworks.com/assessment/">Security Assessment</a>
+      </li>
+    </ul>
+  </nav>

@@ -1,0 +1,26 @@
+@import 'styles/_shared.scss';
+
+.DashboardPersonInfo {
+  @include flex(row, flex-start, center);
+
+  a {
+    display: grid;
+    place-items: center;
+  }
+
+  &__avatar {
+    margin-right: $BASE_SPACING;
+  }
+
+  &__text {
+    overflow: hidden;
+  }
+
+  &__email,
+  &__personname {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+}

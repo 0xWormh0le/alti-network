@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Support renders correctly 1`] = `
+<div>
+  <div
+    class="Support"
+  >
+    <script>
+      
+  hbspt.forms.create({
+    'portalId': "5502362",
+    'formId': "292c57c9-7e9f-4a00-950e-d00db0f096c8"
+  });
+
+    </script>
+  </div>
+</div>
+`;

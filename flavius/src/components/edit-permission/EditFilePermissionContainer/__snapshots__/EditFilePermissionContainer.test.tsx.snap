@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditFilePermissionContainer renders correctly 1`] = `
+<div>
+  <div
+    class="EditFilePermissionContainer"
+  >
+    <div
+      class="EditFilePermissionHeader"
+    >
+      <div
+        class="EditFilePermissionHeader__title EditFilePermissionHeader__title--permissions"
+      >
+        <a
+          href="/dashboard/file/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3"
+        >
+          <h3
+            class="Typography Typography--h3 Typography--normal EditFilePermissionHeader__filename"
+          >
+            Quarterly Earnings
+          </h3>
+        </a>
+      </div>
+      <div
+        class="EditFilePermissionHeader__subheader EditFilePermissionHeader__subheader--permissions"
+      >
+        <span
+          class="AppIndicator EditFilePermissionHeader__subheader--icon"
+        >
+          <div
+            class="platform-container"
+          >
+            <a
+              class="trigger"
+              href="https://docs.google.com/document/d/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3/edit?usp=drivesdk"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div>
+                <div>
+                  <div
+                    class="platform-icon-container"
+                    data-testid="platform-icon"
+                  >
+                    <img
+                      alt="Google Workspace"
+                      class="platform-icon"
+                      src="google-logo.svg"
+                      title="Google Workspace"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </span>
+        <span
+          class="EditFilePermissionHeader__file-attribute"
+        >
+          <span>
+            Owned by:
+          </span>
+          <span
+            class="EditFilePermissionHeader__file-attribute-value"
+          >
+            <a
+              class="EditFilePermissionHeader__link"
+              href="/dashboard/spotlight/test%40email.com"
+            >
+              Test User
+            </a>
+          </span>
+        </span>
+        <span
+          class="EditFilePermissionHeader__file-attribute"
+        >
+          <span>
+            Created:
+          </span>
+          <time
+            class="EditFilePermissionHeader__file-attribute-value"
+            datetime="1504170378000"
+          >
+            Aug 31, 2017
+          </time>
+        </span>
+        <span
+          class="EditFilePermissionHeader__file-attribute"
+        >
+          <span>
+            Last Modified:
+          </span>
+          <time
+            class="EditFilePermissionHeader__file-attribute-value"
+            datetime="1534150370000"
+          >
+            Aug 13, 2018
+          </time>
+        </span>
+      </div>
+    </div>
+    <div
+      class="EditFilePermissionContainer--wrapper"
+    >
+      <div
+        class="Typography Typography--h4 Typography--normal EditFilePermissionContainer__heading"
+      >
+        File Permissions
+      </div>
+      <div
+        class="FilePermissions"
+      >
+        <div
+          class="Table FilePermissions__Table"
+        >
+          <table
+            class="Table__table"
+          >
+            <thead>
+              <tr
+                class="Table__heading"
+              >
+                <th
+                  class="Table__heading-cell"
+                >
+                  <span>
+                    2 permissions in total
+                  </span>
+                </th>
+                <th
+                  class="Table_heading-cell"
+                />
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="Table__row"
+              >
+                <td
+                  class="Table__cell"
+                >
+                  <span
+                    class="DescriptionCell"
+                  >
+                    <a
+                      href="/dashboard/spotlight/ahead%40orca.org"
+                    >
+                      ahead@orca.org
+                    </a>
+                     can Write
+                  </span>
+                </td>
+                <td
+                  class="Table__cell"
+                >
+                  <span
+                    class="TooltipButton trigger"
+                  >
+                    <button
+                      class="Button Button--disabled Button--secondary Button--size-small"
+                      type="button"
+                    >
+                      Remove
+                    </button>
+                  </span>
+                </td>
+              </tr>
+              <tr
+                class="Table__row"
+              >
+                <td
+                  class="Table__cell"
+                >
+                  <span
+                    class="DescriptionCell"
+                  >
+                    <a
+                      href="/dashboard/spotlight/ahead%40bombast.org"
+                    >
+                      ahead@bombast.org
+                    </a>
+                     can Write
+                  </span>
+                </td>
+                <td
+                  class="Table__cell"
+                >
+                  <span
+                    class="TooltipButton trigger"
+                  >
+                    <button
+                      class="Button Button--disabled Button--secondary Button--size-small"
+                      type="button"
+                    >
+                      Remove
+                    </button>
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div
+            class="Table__children"
+          >
+            <div
+              class="EntityCountPagination"
+            >
+              <div />
+              <div
+                class="EntityCountPagination__pagination-info"
+              >
+                <div
+                  class="EntityCountPagination__page-size EntityCountPagination__items-count"
+                >
+                  <span>
+                    Displaying 10 Items Per Page
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

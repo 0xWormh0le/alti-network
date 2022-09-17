@@ -1,0 +1,322 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpotlightGrid renders correctly 1`] = `
+<div>
+  <div
+    class="SpotlightGrid"
+  >
+    <div
+      class="SpotlightGrid__header"
+    >
+      <div
+        class="SpotlightHeader"
+      >
+        <div
+          class="SpotlightHeader__title"
+        >
+          <h3
+            class="Typography Typography--h3 Typography--normal SpotlightHeader__title-name"
+          >
+            Test User
+          </h3>
+          <span
+            class="Typography Typography--body SpotlightHeader__title--email trigger"
+          >
+            test@email.com
+          </span>
+          <span
+            class="SpotlightHeader__title-separator"
+          >
+            |
+          </span>
+          <span
+            class="Typography Typography--body SpotlightHeader__title-count"
+          >
+            1 email
+          </span>
+          <span
+            class="SpotlightHeader__title-separator"
+          >
+            |
+          </span>
+          <span
+            class="Typography Typography--body SpotlightHeader__title-count"
+          >
+            0 files total
+          </span>
+          <span
+            class="SpotlightHeader__title-separator"
+          >
+            |
+          </span>
+          <span
+            class="Typography Typography--body SpotlightHeader__title-count"
+          >
+            0 risks total
+          </span>
+        </div>
+      </div>
+      <div
+        class="Tabs SpotlightGrid__tabbox"
+      >
+        <div
+          class="Tabs__tab-list SpotlightGrid__tablist"
+        >
+          <div
+            aria-roledescription="tab"
+            class="Tabs__tab SpotlightGrid__tab"
+          >
+            <div
+              class="SpotlightContactTabItem"
+            >
+              <span
+                class="PersonAvatar SpotlightContactTabItem__avatar trigger"
+              >
+                <div
+                  class="BaseAvatar "
+                  style="font-size: 0.75em; margin-right: 1em;"
+                >
+                  <div
+                    class="BaseAvatar__image"
+                  >
+                    <img
+                      alt="TU"
+                      src="avatar"
+                      style="width: 2em;"
+                    />
+                  </div>
+                </div>
+              </span>
+              <div
+                class="Typography Typography--h4 SpotlightContactTabItem__email-text"
+              >
+                test@email.com
+              </div>
+            </div>
+          </div>
+          <div
+            aria-roledescription="tab"
+            class="Tabs__tab SpotlightGrid__tab"
+          >
+            <div
+              class="SpotlightContactTabItem"
+            >
+              <span
+                class="PersonAvatar SpotlightContactTabItem__avatar trigger"
+              >
+                <div
+                  class="BaseAvatar "
+                  style="font-size: 0.75em; margin-right: 1em;"
+                >
+                  <div
+                    class="BaseAvatar__image"
+                  >
+                    <img
+                      alt="TU"
+                      src="avatar"
+                      style="width: 2em;"
+                    />
+                  </div>
+                </div>
+              </span>
+              <div
+                class="Typography Typography--h4 SpotlightContactTabItem__email-text"
+              >
+                test@email.com
+              </div>
+              <span
+                class="Typography Typography--body SpotlightContactTabItem__external-marker Marker Marker__email_external"
+              >
+                External
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span />
+    </div>
+    <div
+      class="SpotlightGrid__wrapper"
+    >
+      <div
+        class="SpotlightGridNav"
+      >
+        <div
+          class="SpotlightGridNav__group"
+        >
+          <p
+            class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+          >
+            Risks
+          </p>
+          <hr />
+          <nav
+            class="SpotlightGridNav__item SpotlightGridNav__item--selected"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              All
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Created
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+        </div>
+        <div
+          class="SpotlightGridNav__group"
+        >
+          <p
+            class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+          >
+            Files
+          </p>
+          <hr />
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Accessible
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Owned & At-Risk
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Received
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Shared
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+        </div>
+        <div
+          class="SpotlightGridNav__group"
+        >
+          <p
+            class="Typography Typography--body Typography--bold SpotlightGridNav__group--title"
+          >
+            Activity
+          </p>
+          <hr />
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Downloads (non-app)
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              App Downloads
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              Collaborator Adds
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+          <nav
+            class="SpotlightGridNav__item"
+          >
+            <span
+              class="Typography Typography--body-small SpotlightGridNav__item-label"
+            >
+              All File Events
+            </span>
+            <span
+              class="Typography Typography--body-small Typography--bold SpotlightGridNav__item-value"
+            />
+          </nav>
+        </div>
+      </div>
+      <div
+        class="SpotlightGrid__main"
+      >
+        <div
+          class="SpotlightGrid__content"
+        >
+          <div
+            class="SpotlightGrid__content--header"
+          >
+            <h3
+              class="Typography Typography--h3 title"
+            >
+              All Risks
+            </h3>
+            <div
+              class="prev-chart"
+            />
+          </div>
+          <div>
+            test@email.com
+             - modal
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

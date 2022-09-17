@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileGridNavProps renders correctly 1`] = `
+<div>
+  <div
+    class="FileGridNav"
+  >
+    <div
+      class="FileGridNav__group"
+    >
+      <nav
+        class="FileGridNav__item FileGridNav__item--selected"
+      >
+        <span
+          class="Typography Typography--body-small FileGridNav__item-label"
+        >
+          File Action Timeline
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold FileGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="FileGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small FileGridNav__item-label"
+        >
+          Internal Collaborators
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold FileGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="FileGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small FileGridNav__item-label"
+        >
+          External Collaborators
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold FileGridNav__item-value"
+        />
+      </nav>
+      <nav
+        class="FileGridNav__item"
+      >
+        <span
+          class="Typography Typography--body-small FileGridNav__item-label"
+        >
+          All Folder Contents
+        </span>
+        <span
+          class="Typography Typography--body-small Typography--bold FileGridNav__item-value"
+        />
+      </nav>
+    </div>
+  </div>
+</div>
+`;

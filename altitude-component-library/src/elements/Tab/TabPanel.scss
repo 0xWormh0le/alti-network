@@ -1,0 +1,15 @@
+@import '../../styles/_shared.scss';
+
+.Tabs {
+  .hidden {
+    display: none;
+  }
+
+  &__tab-panel {
+    padding: 1em;
+    position: relative;
+    border: 1px solid $TABLE_DARK_BG_COLOR;
+    background-color: white;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.08);
+  }
+}

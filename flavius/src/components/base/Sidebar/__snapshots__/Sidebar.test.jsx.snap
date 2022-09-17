@@ -1,0 +1,513 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Visibility levels renders all menu items when the visibility level is \`high\` 1`] = `
+<nav
+  class="Sidebar "
+>
+  <div
+    class="Sidebar__section"
+  >
+    <div
+      class="Typography Typography--subhead1 Typography--uppercase Sidebar__group-title"
+    >
+      Main menu
+    </div>
+    <ul
+      class="Sidebar__list"
+    >
+      <a
+        class="Sidebar__link"
+        href="/dashboard"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              dashboard.svg
+            </svg>
+          </span>
+          <span>
+            Dashboard
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/risks"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              iron.svg
+            </svg>
+          </span>
+          <span>
+            Risks
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/search"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              search.svg
+            </svg>
+          </span>
+          <span>
+            Search
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/risk-settings"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              risk-settings.svg
+            </svg>
+          </span>
+          <span>
+            Risk Settings
+          </span>
+        </div>
+      </a>
+    </ul>
+  </div>
+  <div
+    class="Sidebar__section"
+  >
+    <div
+      class="Typography Typography--subhead1 Typography--uppercase Sidebar__group-title"
+    >
+      Support
+    </div>
+    <ul
+      class="Sidebar__list"
+    >
+      <a
+        class="Sidebar__link"
+        href="/settings"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              settings.svg
+            </svg>
+          </span>
+          <span>
+            Settings
+          </span>
+        </div>
+      </a>
+    </ul>
+  </div>
+</nav>
+`;
+
+exports[`Visibility levels renders some menu items when the visibility level is \`low\` 1`] = `
+<nav
+  class="Sidebar "
+>
+  <div
+    class="Sidebar__section"
+  >
+    <div
+      class="Typography Typography--subhead1 Typography--uppercase Sidebar__group-title"
+    >
+      Main menu
+    </div>
+    <ul
+      class="Sidebar__list"
+    >
+      <a
+        class="Sidebar__link"
+        href="/dashboard"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              dashboard.svg
+            </svg>
+          </span>
+          <span>
+            Dashboard
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/risks"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              iron.svg
+            </svg>
+          </span>
+          <span>
+            Risks
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/search"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              search.svg
+            </svg>
+          </span>
+          <span>
+            Search
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/risk-settings"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              risk-settings.svg
+            </svg>
+          </span>
+          <span>
+            Risk Settings
+          </span>
+        </div>
+      </a>
+    </ul>
+  </div>
+  <div
+    class="Sidebar__section"
+  >
+    <div
+      class="Typography Typography--subhead1 Typography--uppercase Sidebar__group-title"
+    >
+      Support
+    </div>
+    <ul
+      class="Sidebar__list"
+    >
+      <a
+        class="Sidebar__link"
+        href="/settings"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              settings.svg
+            </svg>
+          </span>
+          <span>
+            Settings
+          </span>
+        </div>
+      </a>
+    </ul>
+  </div>
+</nav>
+`;
+
+exports[`Visibility levels renders some menu items when the visibility level is \`medium\` 1`] = `
+<nav
+  class="Sidebar "
+>
+  <div
+    class="Sidebar__section"
+  >
+    <div
+      class="Typography Typography--subhead1 Typography--uppercase Sidebar__group-title"
+    >
+      Main menu
+    </div>
+    <ul
+      class="Sidebar__list"
+    >
+      <a
+        class="Sidebar__link"
+        href="/dashboard"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              dashboard.svg
+            </svg>
+          </span>
+          <span>
+            Dashboard
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/risks"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              iron.svg
+            </svg>
+          </span>
+          <span>
+            Risks
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/search"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              search.svg
+            </svg>
+          </span>
+          <span>
+            Search
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/risk-settings"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              risk-settings.svg
+            </svg>
+          </span>
+          <span>
+            Risk Settings
+          </span>
+        </div>
+      </a>
+    </ul>
+  </div>
+  <div
+    class="Sidebar__section"
+  >
+    <div
+      class="Typography Typography--subhead1 Typography--uppercase Sidebar__group-title"
+    >
+      Support
+    </div>
+    <ul
+      class="Sidebar__list"
+    >
+      <a
+        class="Sidebar__link"
+        href="/settings"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              settings.svg
+            </svg>
+          </span>
+          <span>
+            Settings
+          </span>
+        </div>
+      </a>
+    </ul>
+  </div>
+</nav>
+`;
+
+exports[`renders correctly with a user with no visibility level 1`] = `
+<nav
+  class="Sidebar "
+>
+  <div
+    class="Sidebar__section"
+  >
+    <div
+      class="Typography Typography--subhead1 Typography--uppercase Sidebar__group-title"
+    >
+      Main menu
+    </div>
+    <ul
+      class="Sidebar__list"
+    >
+      <a
+        class="Sidebar__link"
+        href="/dashboard"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              dashboard.svg
+            </svg>
+          </span>
+          <span>
+            Dashboard
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/risks"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              iron.svg
+            </svg>
+          </span>
+          <span>
+            Risks
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/search"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              search.svg
+            </svg>
+          </span>
+          <span>
+            Search
+          </span>
+        </div>
+      </a>
+      <a
+        class="Sidebar__link"
+        href="/risk-settings"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              risk-settings.svg
+            </svg>
+          </span>
+          <span>
+            Risk Settings
+          </span>
+        </div>
+      </a>
+    </ul>
+  </div>
+  <div
+    class="Sidebar__section"
+  >
+    <div
+      class="Typography Typography--subhead1 Typography--uppercase Sidebar__group-title"
+    >
+      Support
+    </div>
+    <ul
+      class="Sidebar__list"
+    >
+      <a
+        class="Sidebar__link"
+        href="/settings"
+      >
+        <div
+          class="Sidebar__item "
+        >
+          <span
+            class="Sidebar__icon"
+          >
+            <svg>
+              settings.svg
+            </svg>
+          </span>
+          <span>
+            Settings
+          </span>
+        </div>
+      </a>
+    </ul>
+  </div>
+</nav>
+`;

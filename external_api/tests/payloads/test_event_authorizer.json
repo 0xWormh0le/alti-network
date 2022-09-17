@@ -1,0 +1,10 @@
+{
+  "authorizationToken": "1234",
+  "body": {
+    "authorizationToken": "1234",
+    "methodArn": "arn:aws:execute-api:region:accntno:apigwid/apigwstage/method/endpoint",
+    "type": "TOKEN"
+  },
+  "methodArn": "arn:aws:execute-api:region:accntno:apigwid/apigwstage/method/endpoint",
+  "type": "TOKEN"
+}

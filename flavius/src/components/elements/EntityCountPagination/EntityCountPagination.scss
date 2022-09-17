@@ -1,0 +1,68 @@
+@import 'styles/_shared.scss';
+$ROW_HEIGHT: 42px;
+
+.EntityCountPagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__items-count {
+    margin-right: 1em;
+    position: relative;
+    color: $BLUE_GREY_MEDIUM;
+    white-space: nowrap;
+    line-height: $ROW_HEIGHT !important;
+    @include set-typography('BODY_SMALL', 'normal');
+  }
+
+  &__page-size {
+    display: flex;
+    margin-right: $BASE_SPACING;
+
+    .FormControl {
+      padding: 0;
+      color: $DARK;
+      @include set-typography('BODY_SMALL', 'normal');
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      height: auto;
+    }
+
+    &::after {
+      margin-left: $BASE_SPACING;
+      content: ' | ';
+    }
+  }
+
+  &__controller {
+    width: 4em;
+    display: grid;
+    margin-right: $BASE_SPACING;
+    margin-left: $BASE_SPACING;
+    place-items: center;
+  }
+
+  &__export-button {
+    display: inline-block;
+    white-space: nowrap;
+
+    padding: 5px 10px;
+    margin-right: $SMALL_SPACING;
+    width: 80px;
+    @include set-typography('BODY_SMALL', 'normal');
+
+    .Button__spinner {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__items-with-br {
+    line-height: 16px !important;
+    margin-top: 12px;
+  }
+
+  &__pagination-info {
+    display: flex;
+  }
+}

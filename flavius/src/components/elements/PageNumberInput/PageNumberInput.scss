@@ -1,0 +1,67 @@
+@import 'styles/_shared.scss';
+
+$input-width: 36px;
+$input-height: 32px;
+
+.PageNumberInput {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+  margin-left: $BASE_SPACING;
+
+  &__label {
+    margin-right: 4px;
+    white-space: nowrap;
+  }
+
+  &__input-wrapper {
+    position: relative;
+    &:before {
+      content: '';
+      @include absolute-full-size;
+      box-shadow: inset 0 1px 2px 0 $PAGINATION_INPUT_SHADOW_COLOR;
+      background-color: $INPUT_BG_FLAT;
+    }
+  }
+
+  &__input {
+    position: relative;
+    text-align: center;
+    height: $input-height;
+    width: $input-width;
+    padding: 0.5rem 0.2rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: $PAGINATION_ACTIVE_TEXT_COLOR;
+    outline: none !important;
+    background-color: transparent;
+    border: 1px solid $PAGINATION_BORDER_COLOR;
+    z-index: 1;
+    @include set-typography('BODY_TINY', 'normal');
+
+    &:focus {
+      color: $PAGINATION_ACTIVE_TEXT_COLOR;
+      border-color: $INPUT_FOCUS_BORDER;
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__input-spacer {
+    height: $input-height;
+    width: $input-width;
+    background-color: $PAGINATION_ACTIVE_BG_COLOR;
+    box-shadow: inset 0 1px 2px 0 $PAGINATION_INPUT_SHADOW_COLOR;
+    margin-right: 10px;
+  }
+
+  &__submit {
+    margin-left: 4px;
+    color: $PAGINATION_ACTIVE_TEXT_COLOR;
+  }
+}

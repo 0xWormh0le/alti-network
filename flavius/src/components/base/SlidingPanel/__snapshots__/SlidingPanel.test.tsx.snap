@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlidingPanel renders correctly 1`] = `
+<div>
+  <aside
+    class="SlidingPanel"
+  >
+    <button
+      aria-label="Close sliding panel"
+      class="SlidingPanel__close-button"
+    >
+      ×
+    </button>
+    <h3
+      class="SlidingPanel__title"
+    />
+    <section
+      class="SlidingPanel__content"
+    />
+    <div
+      class="SlidingPanel__buttons"
+    >
+      <button
+        class="Button SlidingPanel__button Button--primary"
+        type="button"
+      >
+        Confirm
+      </button>
+      <button
+        class="Button SlidingPanel__button Button--cancel-primary"
+        type="button"
+      >
+        Cancel
+      </button>
+    </div>
+  </aside>
+</div>
+`;

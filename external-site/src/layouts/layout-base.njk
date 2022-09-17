@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Description" content="{{ description | default('Altitude Networks tackles data security in the cloud to protect enterprises against unauthorized data access, accidental or malicious sharing to unintended individuals, and data theft.', true) }}">
+    <meta name="facebook-domain-verification" content="pk0q1k626xv48rnxi2epdmraul4to0">
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{ title }}">
+    <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Altitude Networks">
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ baseUrl | default('https://altitudenetworks.com', true)}}{{ url }}">
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ baseUrl | default('https://altitudenetworks.com', true)}}{{ thumbnail | default('/images/buildings.png', true) }}">
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{ description }}"><meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@altitude" />
+
+    <link rel="icon" type="image/png" href="/images/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/images/icons/favicon-128.png" sizes="128x128" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+
+    {% block styles %}
+    {% endblock %}
+
+    <link rel="stylesheet" href="/{{ fingerprint['assets/css/styles.css'] }}" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TKR26H7');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '457876525326665');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=457876525326665&ev=PageView&noscript=1" />
+    </noscript>
+      <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKR26H7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <noscript>
+      You need to enable JavaScript to view this site.
+    </noscript>
+    {% block main %}{% endblock %}
+  </body>
+
+  {% include "./partials/cta-modal.njk" %}
+
+  <script src="/{{ fingerprint['assets/js/app.js'] }}"></script>
+  {% block scripts %}
+  {% endblock %}
+
+  <script>
+    window._6si = window._6si || [];
+    window._6si.push(['enableEventTracking', true]);
+    window._6si.push(['setToken', '0467ac15e8c7a99293e7c11d244557f8']);
+    window._6si.push(['setEndpoint', 'b.6sc.co']);
+    (function() {
+      var gd = document.createElement('script');
+      gd.type = 'text/javascript';
+      gd.async = true;
+      gd.src = "/{{ fingerprint['assets/js/6si.min.js'] }}";
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gd, s);
+    })();
+  </script>
+
+</html>

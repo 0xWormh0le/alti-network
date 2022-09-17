@@ -1,0 +1,1212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard renders correctly 1`] = `
+<div>
+  <div
+    class="Page"
+  >
+    <div
+      class="Dashboard"
+    >
+      <h1
+        class="Typography Typography--h2 Typography--normal PageTitle"
+      >
+        Dashboard
+      </h1>
+      <div
+        class="Dashboard__wrapper Dashboard__wrapper_separator"
+      />
+      <div
+        class="Dashboard__wrapper"
+      >
+        <div
+          class="Dashboard__wrapper_top"
+        >
+          <div
+            class="RiskGraph__container"
+          >
+            <div
+              class="RiskGraph__top"
+            >
+              <h3
+                class="Typography Typography--h3 SectionTitle"
+              >
+                Company's File Sharing Stats
+              </h3>
+              <div
+                class="Filter__container RiskGraph__platforms__filter-container"
+              >
+                <div
+                  class="Filter__header"
+                >
+                  <div
+                    class="Filter__header-label"
+                  >
+                    Platform
+                  </div>
+                  <div
+                    class="Filter__header-selected-text"
+                  >
+                    <span>
+                      Google Workspace
+                    </span>
+                    <div
+                      class="Filter__header-arrow-down"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="Filter__dropdown Filter__dropdown-close RiskGraph__platforms__filter-dropdown"
+                  style="max-height: 0px;"
+                >
+                  <div
+                    class="Filter__dropdown-inner"
+                  >
+                    <div
+                      class="Filter__dropdown-item single"
+                    >
+                      <div>
+                        <img
+                          alt="Google Workspace"
+                          src="google-logo.svg"
+                        />
+                        <span
+                          style="margin-left: 0.5rem;"
+                        >
+                          Google Workspace
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="Filter__dropdown-item single"
+                    >
+                      <div>
+                        <img
+                          alt="Microsoft 365"
+                          src="office-365.svg"
+                        />
+                        <span
+                          style="margin-left: 0.5rem;"
+                        >
+                          Microsoft 365
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="RiskGraph__graph_container"
+            >
+              <div
+                class="react-flow"
+              >
+                <div
+                  class="react-flow__renderer react-flow__zoompane"
+                >
+                  <div
+                    class="react-flow__nodes"
+                    style="transform: translate(0px,0px) scale(1);"
+                  >
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-user-accounts"
+                      style="z-index: 3; transform: translate(30px,0px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleMedium nodeBlack"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(53, 64, 82);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-right nodrag source"
+                              data-handleid="node-user-accounts-source-right"
+                              data-handlepos="right"
+                              data-nodeid="node-user-accounts"
+                              style="background: transparent;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          User Accounts
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-apps"
+                      style="z-index: 3; transform: translate(5px,110px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleMedium nodeOrange"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(249, 119, 61);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-right nodrag source"
+                              data-handleid="node-apps-source"
+                              data-handlepos="right"
+                              data-nodeid="node-apps"
+                              style="background: transparent; top: 40px; right: 25px;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          External apps accessing files
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-2"
+                      style="z-index: 3; transform: translate(160px,180px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleLarge nodeBlack"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(53, 64, 82);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-right nodrag source"
+                              data-handleid="node-2-source"
+                              data-handlepos="right"
+                              data-nodeid="node-2"
+                              style="background: transparent;"
+                            />
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag source"
+                              data-handleid="node-2-source-left"
+                              data-handlepos="left"
+                              data-nodeid="node-2"
+                              style="background: transparent;"
+                            />
+                            <div
+                              class="react-flow__handle react-flow__handle-top nodrag target"
+                              data-handleid="node-2-target-top"
+                              data-handlepos="top"
+                              data-nodeid="node-2"
+                              style="width: 0px; height: 0px; border-left: 6px solid transparent; border-right: 6px solid transparent; background: transparent; border-radius: 0; border-top: 6px solid #354052;"
+                            />
+                            <div
+                              class="react-flow__handle react-flow__handle-bottom nodrag target"
+                              data-handleid="node-2-target-bottom"
+                              data-handlepos="bottom"
+                              data-nodeid="node-2"
+                              style="width: 0px; height: 0px; border-left: 6px solid transparent; border-right: 6px solid transparent; background: transparent; border-radius: 0; border-bottom: 6px solid #F9773D;"
+                            />
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag target"
+                              data-handleid="node-2-target-upper-left"
+                              data-handlepos="left"
+                              data-nodeid="node-2"
+                              style="width: 0px; height: 0px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; background: white; border-radius: 0; border-left: 6px solid #F9773D; top: 50px; left: 2px;"
+                            />
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag target"
+                              data-handleid="node-2-target-lower-left"
+                              data-handlepos="left"
+                              data-nodeid="node-2"
+                              style="width: 0px; height: 0px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; background: white; border-radius: 0; border-left: 6px solid #F9773D; top: 80px; left: 2px;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          Company Files
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="external-users"
+                      style="z-index: 3; transform: translate(7px,235px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleMedium nodeOrange"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(249, 119, 61);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-right nodrag source"
+                              data-handleid="external-users-source"
+                              data-handlepos="right"
+                              data-nodeid="external-users"
+                              style="background: transparent; right: 20px;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          External users accessing files
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-3"
+                      style="z-index: 3; transform: translate(7px,365px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleMedium nodeOrange"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(249, 119, 61);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-right nodrag source"
+                              data-handleid="node-3-source"
+                              data-handlepos="right"
+                              data-nodeid="node-3"
+                              style="background: transparent;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          External users with potential file access
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-4"
+                      style="z-index: 3; transform: translate(350px,40px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleMedium nodeBlack"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(53, 64, 82);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-right nodrag source"
+                              data-handleid="node-4-source"
+                              data-handlepos="right"
+                              data-nodeid="node-4"
+                              style="background: transparent; top: 53.5px; right: 15px;"
+                            />
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag target"
+                              data-handleid="node-4-target"
+                              data-handlepos="left"
+                              data-nodeid="node-4"
+                              style="width: 0px; height: 0px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; background: white; border-radius: 0; border-left: 6px solid #354052;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          Files shared by link internally
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-5"
+                      style="z-index: 3; transform: translate(350px,190px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleMedium nodeOrange"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(249, 119, 61);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-right nodrag source"
+                              data-handleid="node-5-source"
+                              data-handlepos="right"
+                              data-nodeid="node-5"
+                              style="background: transparent; top: 55px; right: 15px;"
+                            />
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag target"
+                              data-handleid="node-5-target"
+                              data-handlepos="left"
+                              data-nodeid="node-5"
+                              style="width: 0px; height: 0px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; background: white; border-radius: 0; border-left: 6px solid #354052;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          Files shared by link externally to anyone
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-6"
+                      style="z-index: 3; transform: translate(350px,330px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleMedium nodeOrange"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(249, 119, 61);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-right nodrag source"
+                              data-handleid="node-6-source"
+                              data-handlepos="right"
+                              data-nodeid="node-6"
+                              style="background: transparent; top: 55px; right: 15px;"
+                            />
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag target"
+                              data-handleid="node-6-target"
+                              data-handlepos="left"
+                              data-nodeid="node-6"
+                              style="width: 0px; height: 0px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; background: white; border-radius: 0; border-left: 6px solid #354052;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          Files shared to personal account
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-7"
+                      style="z-index: 3; transform: translate(550px,55px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleSmall nodeRed"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(226, 49, 21);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag target"
+                              data-handleid="node-7-target"
+                              data-handlepos="left"
+                              data-nodeid="node-7"
+                              style="background: white; top: 39px; left: 25px; width: 0px; height: 0px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-radius: 0; border-left: 6px solid #354052;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          Sensitive files at risk internally
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-8"
+                      style="z-index: 3; transform: translate(550px,198px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleSmall nodeRed"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(226, 49, 21);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag target"
+                              data-handleid="node-8-target"
+                              data-handlepos="left"
+                              data-nodeid="node-8"
+                              style="background: white; top: 47px; left: 25px; width: 0px; height: 0px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-radius: 0; border-left: 6px solid #F9773D;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          Sensitive files at risk externally
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="react-flow__node react-flow__node-special selectable"
+                      data-id="node-9"
+                      style="z-index: 3; transform: translate(555px,350px); pointer-events: all; opacity: 1;"
+                    >
+                      <div
+                        class="nodeContainer"
+                      >
+                        <div
+                          style="border: 10px solid transparent;"
+                        >
+                          <div
+                            class="circleNode circleSmall nodeRed"
+                          >
+                            <div
+                              class="stat"
+                              style="color: rgb(226, 49, 21);"
+                            >
+                              <div>
+                                0
+                              </div>
+                            </div>
+                            <div
+                              class="react-flow__handle react-flow__handle-left nodrag target"
+                              data-handleid="node-9-target"
+                              data-handlepos="left"
+                              data-nodeid="node-9"
+                              style="background: white; top: 35px; left: 25px; width: 0px; height: 0px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-radius: 0; border-left: 6px solid #F9773D;"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="nodeLabel"
+                        >
+                          Sensitive files shared to personal account
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <svg
+                    class="react-flow__edges"
+                    height="1"
+                    width="1"
+                  >
+                    <defs>
+                      <marker
+                        class="react-flow__arrowhead"
+                        id="react-flow__arrowclosed"
+                        markerHeight="12.5"
+                        markerWidth="12.5"
+                        orient="auto"
+                        refX="0"
+                        refY="0"
+                        viewBox="-10 -10 20 20"
+                      >
+                        <polyline
+                          fill="#b1b1b7"
+                          points="-5,-4 0,0 -5,4 -5,-4"
+                          stroke="#b1b1b7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1"
+                        />
+                      </marker>
+                      <marker
+                        class="react-flow__arrowhead"
+                        id="react-flow__arrow"
+                        markerHeight="12.5"
+                        markerWidth="12.5"
+                        orient="auto"
+                        refX="0"
+                        refY="0"
+                        viewBox="-10 -10 20 20"
+                      >
+                        <polyline
+                          fill="none"
+                          points="-5,-4 0,0 -5,4"
+                          stroke="#b1b1b7"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                        />
+                      </marker>
+                    </defs>
+                    <g
+                      transform="translate(0,0) scale(1)"
+                    >
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed "
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 31,0.5L 155.5,0.5Q 160.5,0.5 160.5,5.5L 160.5,180"
+                          marker-end="none"
+                          style="stroke: #354052;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed"
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 6,110.5L 78,110.5Q 83,110.5 83,115.5L 83,175.5Q 83,180.5 88,180.5L 160,180.5"
+                          marker-end="none"
+                          style="stroke: #F9773D;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed"
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 8,365.5L 155.5,365.5Q 160.5,365.5 160.5,360.5L 160.5,181"
+                          marker-end="none"
+                          style="stroke: #F9773D;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed"
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 161,180.5L 250.5,180.5Q 255.5,180.5 255.5,185.5L 255.5,185.5Q 255.5,190.5 260.5,190.5L 350,190.5"
+                          marker-end="none"
+                          style="stroke: #354052;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed"
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 8,235.5L 79,235.5Q 84,235.5 84,230.5L 84,185.5Q 84,180.5 89,180.5L 160,180.5"
+                          marker-end="none"
+                          style="stroke: #F9773D;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed"
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 161,180.5L 250.5,180.5Q 255.5,180.5 255.5,185.5L 255.5,325.5Q 255.5,330.5 260.5,330.5L 350,330.5"
+                          marker-end="none"
+                          style="stroke: #354052;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed"
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 161,180.5L 250.5,180.5Q 255.5,180.5 255.5,175.5L 255.5,45.5Q 255.5,40.5 260.5,40.5L 350,40.5"
+                          marker-end="none"
+                          style="stroke: #354052;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed "
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 351,40.5L 445.5,40.5Q 450.5,40.5 450.5,45.5L 450.5,50.5Q 450.5,55.5 455.5,55.5L 550,55.5"
+                          marker-end="none"
+                          style="stroke: #354052;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed "
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 351,190.5L 446.5,190.5Q 450.5,190.5 450.5,194.5L 450.5,194.5Q 450.5,198.5 454.5,198.5L 550,198.5"
+                          marker-end="none"
+                          style="stroke: #F9773D;"
+                        />
+                      </g>
+                      <g
+                        class="react-flow__edge react-flow__edge-smoothstep edgeDashed "
+                      >
+                        <path
+                          class="react-flow__edge-path"
+                          d="M 351,330.5L 448,330.5Q 453,330.5 453,335.5L 453,345.5Q 453,350.5 458,350.5L 555,350.5"
+                          marker-end="none"
+                          style="stroke: #F9773D;"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  <div
+                    class="react-flow__pane"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="DashboardRiskInsights"
+          >
+            <h3
+              class="Typography Typography--h3 SectionTitle"
+            >
+              Risk Insights
+            </h3>
+            <div
+              class="DashboardRiskInsights__tiles"
+            >
+              <div
+                class="DashboardRiskInsights__tile-item"
+              >
+                <div
+                  class="DashboardRiskTile"
+                >
+                  <div
+                    class="Typography Typography--label DashboardRiskTile__title"
+                  >
+                    Creator of Most Risks
+                  </div>
+                  <div
+                    class="DashboardPersonInfo"
+                  >
+                    <a
+                      href="/dashboard/spotlight/michael%40altitudenetworks.com"
+                    >
+                      <span
+                        class="PersonAvatar DashboardPersonInfo__avatar PersonAvatar__clickable trigger"
+                      >
+                        <div
+                          class="BaseAvatar "
+                          style="font-size: 1.25em; display: inline-block;"
+                        >
+                          <div
+                            class="BaseAvatar__image"
+                          >
+                            <img
+                              alt="MC"
+                              src="avatar"
+                              style="width: 2em;"
+                            />
+                          </div>
+                        </div>
+                      </span>
+                    </a>
+                    <div
+                      class="DashboardPersonInfo__text"
+                    >
+                      <div
+                        class="Typography Typography--label DashboardPersonInfo__personname"
+                      >
+                        Michael Coates
+                      </div>
+                      <div
+                        class="Typography Typography--body DashboardPersonInfo__email"
+                      >
+                        <a
+                          href="/dashboard/spotlight/michael%40altitudenetworks.com"
+                        >
+                          michael@altitudenetworks.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="/dashboard/spotlight/michael%40altitudenetworks.com?selectedSubNavKey=risksCreated"
+                  >
+                    <button
+                      class="DashboardRiskTile__button"
+                    >
+                      <span
+                        class="Typography Typography--h1 DashboardRiskTile__count"
+                      >
+                        2
+                      </span>
+                      <span
+                        class="Typography Typography--label DashboardRiskTile__label"
+                      >
+                        risks created
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="DashboardRiskInsights__tile-item"
+              >
+                <div
+                  class="DashboardRiskTile"
+                >
+                  <div
+                    class="Typography Typography--label DashboardRiskTile__title"
+                  >
+                    File with Most Risks
+                  </div>
+                  <div
+                    class="DashboardFileInfo"
+                  >
+                    <div
+                      class="DashboardFileInfo__text"
+                    >
+                      <div
+                        class="Typography Typography--label DashboardFileInfo__filename"
+                      >
+                        Getting started
+                      </div>
+                      <div
+                        class="Typography Typography--body DashboardFileInfo__email"
+                      >
+                        Owner: 
+                        <a
+                          href="/dashboard/spotlight/dev-01%40g-drive-usage-monitoring.iam.gserviceaccount.com"
+                        >
+                          dev-01@g-drive-usage-monitoring.iam.gserviceaccount.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="/dashboard/file/0Bw5MKqz8XL31c3RhcnRlcl9maWxl?platformId=undefined&owner=dev-01@g-drive-usage-monitoring.iam.gserviceaccount.com"
+                  >
+                    <button
+                      class="DashboardRiskTile__button"
+                    >
+                      <span
+                        class="Typography Typography--h1 DashboardRiskTile__count"
+                      >
+                        1
+                      </span>
+                      <span
+                        class="Typography Typography--label DashboardRiskTile__label"
+                      >
+                        risks associated
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="DashboardRiskInsights__tile-item"
+              >
+                <div
+                  class="DashboardRiskTile"
+                >
+                  <div
+                    class="Typography Typography--label DashboardRiskTile__title"
+                  >
+                    Owner of Most At-Risk Files
+                  </div>
+                  <div
+                    class="DashboardPersonInfo"
+                  >
+                    <a
+                      href="/dashboard/spotlight/dev-01%40g-drive-usage-monitoring.iam.gserviceaccount.com"
+                    >
+                      <span
+                        class="PersonAvatar DashboardPersonInfo__avatar PersonAvatar__clickable trigger"
+                      >
+                        <div
+                          class="BaseAvatar "
+                          style="font-size: 1.25em; display: inline-block;"
+                        >
+                          <div
+                            class="BaseAvatar__image"
+                          >
+                            <img
+                              alt="d"
+                              src="avatar"
+                              style="width: 2em;"
+                            />
+                          </div>
+                        </div>
+                      </span>
+                    </a>
+                    <div
+                      class="DashboardPersonInfo__text"
+                    >
+                      <div
+                        class="Typography Typography--label DashboardPersonInfo__personname"
+                      >
+                        dev-01
+                      </div>
+                      <div
+                        class="Typography Typography--body DashboardPersonInfo__email"
+                      >
+                        <a
+                          href="/dashboard/spotlight/dev-01%40g-drive-usage-monitoring.iam.gserviceaccount.com"
+                        >
+                          dev-01@g-drive-usage-monitoring.iam.gserviceaccount.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="/dashboard/spotlight/dev-01%40g-drive-usage-monitoring.iam.gserviceaccount.com?selectedSubNavKey=atRiskFilesOwned"
+                  >
+                    <button
+                      class="DashboardRiskTile__button"
+                    >
+                      <span
+                        class="Typography Typography--h1 DashboardRiskTile__count"
+                      >
+                        9
+                      </span>
+                      <span
+                        class="Typography Typography--label DashboardRiskTile__label"
+                      >
+                        at-risk files owned
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="DashboardRiskInsights__tile-item"
+              >
+                <div
+                  class="DashboardRiskTile"
+                >
+                  <div
+                    class="Typography Typography--label DashboardRiskTile__title"
+                  >
+                    External Account with Most File Access
+                  </div>
+                  <div
+                    class="DashboardPersonInfo"
+                  >
+                    <a
+                      href="/dashboard/spotlight/jfatora%40gmail.com"
+                    >
+                      <span
+                        class="PersonAvatar DashboardPersonInfo__avatar PersonAvatar__clickable trigger"
+                      >
+                        <div
+                          class="BaseAvatar "
+                          style="font-size: 1.25em; display: inline-block;"
+                        >
+                          <div
+                            class="BaseAvatar__image"
+                          >
+                            <img
+                              alt="j"
+                              src="avatar"
+                              style="width: 2em;"
+                            />
+                          </div>
+                        </div>
+                      </span>
+                    </a>
+                    <div
+                      class="DashboardPersonInfo__text"
+                    >
+                      <div
+                        class="Typography Typography--label DashboardPersonInfo__personname"
+                      >
+                        jfatora
+                      </div>
+                      <div
+                        class="Typography Typography--body DashboardPersonInfo__email"
+                      >
+                        <a
+                          href="/dashboard/spotlight/jfatora%40gmail.com"
+                        >
+                          jfatora@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="/dashboard/spotlight/jfatora%40gmail.com?selectedSubNavKey=filesAccessible"
+                  >
+                    <button
+                      class="DashboardRiskTile__button"
+                    >
+                      <span
+                        class="Typography Typography--h1 DashboardRiskTile__count"
+                      >
+                        1977
+                      </span>
+                      <span
+                        class="Typography Typography--label DashboardRiskTile__label"
+                      >
+                        files accessible by external account
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="DashboardRiskSummary"
+        >
+          <div
+            class="DashboardGrid"
+          >
+            <h3
+              class="Typography Typography--h3 SectionTitle"
+            >
+              Risk Summary
+            </h3>
+            <div
+              class="DashboardGrid__main"
+            >
+              <div
+                class="DashboardCards"
+              >
+                <div
+                  class="DashboardCards__card DashboardCards__card--active"
+                >
+                  <div
+                    class="Typography Typography--h1 DashboardCards__card-value"
+                  >
+                    1
+                  </div>
+                  <span
+                    class="Typography Typography--label DashboardCards__card-label"
+                  >
+                    Sharing Risks
+                  </span>
+                </div>
+                <div
+                  class="DashboardCards__card"
+                >
+                  <div
+                    class="Typography Typography--h1 DashboardCards__card-value"
+                  >
+                    1
+                  </div>
+                  <span
+                    class="Typography Typography--label DashboardCards__card-label"
+                  >
+                    Relationship Risks
+                  </span>
+                </div>
+                <div
+                  class="DashboardCards__card"
+                >
+                  <div
+                    class="Typography Typography--h1 DashboardCards__card-value"
+                  >
+                    0
+                  </div>
+                  <span
+                    class="Typography Typography--label DashboardCards__card-label"
+                  >
+                    Activity Risks
+                  </span>
+                </div>
+                <div
+                  class="DashboardCards__card"
+                >
+                  <div
+                    class="Typography Typography--h1 DashboardCards__card-value"
+                  >
+                    1
+                  </div>
+                  <span
+                    class="Typography Typography--label DashboardCards__card-label"
+                  >
+                    Informational Risks
+                  </span>
+                </div>
+              </div>
+              <div
+                class="RiskTypesList"
+              >
+                <div
+                  class="RiskTypesList__table"
+                >
+                  <div
+                    class="RiskTypesList__headers"
+                  >
+                    <div
+                      class="Typography Typography--body-small Typography--bold Typography--uppercase RiskTypesList__heading-cell RiskTypesList--severity-column"
+                    >
+                      Risk severity
+                    </div>
+                    <div
+                      class="Typography Typography--body-small Typography--bold Typography--uppercase RiskTypesList__heading-cell RiskTypesList--type-column"
+                    >
+                      Risk type
+                    </div>
+                    <div
+                      class="Typography Typography--body-small Typography--bold Typography--uppercase RiskTypesList__heading-cell RiskTypesList--count-column"
+                    >
+                      Risk count
+                    </div>
+                    <div
+                      class="RiskTypesList__heading-cell RiskTypesList--actions-column"
+                    />
+                  </div>
+                  <div
+                    class="RiskTypesList__rows"
+                  >
+                    <div
+                      class="RiskTypeRow"
+                    >
+                      <div
+                        class="RiskTypeRow--severity RiskTypesList--severity-column"
+                      >
+                        <div
+                          class="RiskIndicator RiskIndicator--bar"
+                        >
+                          <div
+                            class="RiskIndicator__inner RiskIndicator--high"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="RiskTypesList--type-column"
+                      >
+                        <span
+                          class="Typography Typography--body Typography--semibold"
+                        >
+                          File Shared by Link Externally - Company Owned
+                        </span>
+                      </div>
+                      <div
+                        class="RiskTypesList--count-column"
+                      >
+                        <span
+                          class="Typography Typography--h2"
+                        >
+                          1
+                        </span>
+                      </div>
+                      <div
+                        class="RiskTypesList--actions-column"
+                      >
+                        <a
+                          class="NavButton"
+                          href="/risks?riskTypeIds=[1020]"
+                        >
+                          <button
+                            class="Button Button--secondary"
+                            type="button"
+                          >
+                            See all
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="NavButton"
+                  href="/risks?riskTypeIds=[1020]"
+                >
+                  <button
+                    aria-label="show all risks"
+                    class="Button RiskTypesList__show-all-button Button--primary Button--size-large"
+                    type="button"
+                  >
+                    Show All Sharing Risks
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

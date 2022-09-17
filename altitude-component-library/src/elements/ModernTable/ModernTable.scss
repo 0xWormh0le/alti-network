@@ -1,0 +1,166 @@
+@import '../../styles/_shared.scss';
+
+$PALE_GREY_BORDER: 1px solid $PALE_GREY;
+
+@mixin pagination-control() {
+  color: $TEXT_COLOR;
+
+  border: $PALE_GREY_BORDER;
+  border-radius: 5px;
+
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    background-color: $PALE_GREY;
+  }
+}
+
+.Table {
+  color: $TEXT_COLOR;
+  @include set-typography('BODY', 'semibold');
+  width: 100%;
+  position: relative;
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: $BASE_SPACING;
+  }
+
+  &__heading {
+    color: $TEXT_COLOR_SECONDARY;
+    text-transform: uppercase;
+    user-select: none;
+    font-weight: normal;
+
+    &-sorting-state {
+      margin-left: 5px;
+    }
+
+    &-cell {
+      &-sortable {
+        padding: 0.5em;
+        cursor: pointer;
+      }
+    }
+
+    th {
+      text-align: left;
+      @include set-typography('BODY_SMALL', 'semibold');
+    }
+  }
+
+  &__row {
+    min-height: 52px;
+    border: $PALE_GREY_BORDER;
+
+    &:hover {
+      background-color: $PALE_GREY;
+    }
+  }
+
+  &__cell,
+  &__heading-cell {
+    padding: 0.5em;
+  }
+
+  &__no-results {
+    color: $TEXT_COLOR_SECONDARY;
+    padding: 105px 100px 100px;
+    text-align: center;
+    @include set-typography('H3', 'bold');
+    @include list-skeleton();
+  }
+
+  // Footer
+  &__footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  // Export CSV button
+  &__export-button {
+    display: inline-block;
+    white-space: nowrap;
+
+    padding: 5px 10px;
+    margin-right: $SMALL_SPACING;
+    width: 80px;
+    @include set-typography('BODY_SMALL', 'normal');
+
+    .Button__spinner {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  // Items count
+  &__items-count {
+    position: relative;
+    color: $BLUE_GREY_MEDIUM;
+    white-space: nowrap;
+    @include set-typography('BODY_SMALL', 'normal');
+  }
+
+  // Pagination styles
+  &__pagination {
+    margin-left: $SMALL_SPACING;
+    flex: 1;
+    text-align: right;
+  }
+
+  &__page-dropdown {
+    background-color: white;
+    margin: 0 10px;
+    width: 50px;
+    height: 32px;
+
+    @include pagination-control;
+  }
+
+  &__next-button,
+  &__previous-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    @include set-typography('BODY_SMALL', 'normal');
+
+    @include pagination-control;
+  }
+}
+
+.TableLoading {
+  width: 100%;
+  padding-top: 32px;
+
+  &__loader {
+    width: 100%;
+    height: 380px;
+  }
+
+  &__loading-skeleton {
+    @include list-skeleton-loading();
+    height: 52px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &-btn {
+      height: 40px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: white;
+      }
+    }
+  }
+
+  &__children {
+    margin-top: 1em;
+  }
+}

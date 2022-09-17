@@ -1,0 +1,10 @@
+{
+  "pathParameters": {
+    "folderId": "13LIVQvVpynppp-JscuLdDAc5xplpWQTE"
+  },
+  "requestContext": {
+    "authorizer": {
+        "project_id": "thoughtlabs"
+    }
+  }
+}

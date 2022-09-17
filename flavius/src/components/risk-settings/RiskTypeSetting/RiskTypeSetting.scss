@@ -1,0 +1,107 @@
+@import 'styles/_shared.scss';
+
+@mixin slack-notification-checkbox {
+  input[type='checkbox'] {
+    width: $CHECKBOX_SIZE;
+    height: $CHECKBOX_SIZE;
+    margin-right: $BASE_SPACING;
+  }
+}
+
+.RiskTypeSetting {
+  .Accordion {
+    padding: $BASE_SPACING 0;
+  }
+
+  &__button-group {
+    width: 100%;
+    @include flex();
+
+    button {
+      margin-right: $BASE_SPACING;
+    }
+  }
+
+  &__content {
+    border-left: 1px solid $BORDER_COLOR;
+    border-right: 1px solid $BORDER_COLOR;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 35rem;
+  }
+
+  &__overview {
+    padding: $BASE_SPACING 0;
+    border-bottom: 1px solid $BORDER_COLOR;
+
+    &:first-child {
+      border-top: 1px solid $BORDER_COLOR;
+    }
+  }
+
+  &__group-item {
+    display: flex;
+    align-items: center;
+    padding: $BASE_SPACING $SMALL_SPACING;
+    @include slack-notification-checkbox;
+
+    label {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &--disabled {
+      color: $PLACEHOLDER_COLOR;
+    }
+  }
+
+  &__group-item-loader {
+    padding: $BASE_SPACING $SMALL_SPACING;
+  }
+
+  &__subgroup-item-loader {
+    padding: $BASE_SPACING / 2 $SMALL_SPACING;
+  }
+
+  &__subgroup-item {
+    display: flex;
+    align-items: center;
+    padding: $BASE_SPACING / 2 $SMALL_SPACING;
+    @include slack-notification-checkbox;
+
+    &:hover {
+      background-color: $PALE_GREY_LIGHTER;
+    }
+
+    &:last-child {
+      margin-bottom: $BASE_SPACING;
+    }
+
+    input[type='checkbox'] {
+      margin-left: $SMALL_SPACING;
+    }
+
+    label {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .RiskIndicator {
+      margin-right: $BASE_SPACING;
+    }
+
+    &--disabled {
+      color: $PLACEHOLDER_COLOR;
+
+      .RiskIndicator--circle .RiskIndicator__inner {
+        background-color: $PLACEHOLDER_COLOR;
+      }
+    }
+  }
+
+  &__actions {
+    margin-top: $BASE_SPACING;
+  }
+}

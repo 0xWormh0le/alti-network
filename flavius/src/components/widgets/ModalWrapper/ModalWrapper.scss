@@ -1,0 +1,43 @@
+@import 'styles/_shared.scss';
+
+$MODAL_SIZE: 90%;
+
+.ModalContainer {
+  position: fixed;
+  z-index: $STACKING_CONTEXT_MODAL;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.ModalWrapper {
+  max-width: 1200px;
+  &--bg {
+    width: $MODAL_SIZE;
+    height: $MODAL_SIZE;
+  }
+
+  &--sm {
+    width: 728px;
+    height: auto;
+
+    .ModalPage {
+      height: auto;
+    }
+  }
+
+  &__EditFilePermission {
+    margin-top: 5em;
+    width: auto;
+    height: auto;
+  }
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+}

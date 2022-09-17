@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+<div>
+  <button
+    class="Button Button--secondary Button--size-small"
+    type="button"
+  />
+</div>
+`;

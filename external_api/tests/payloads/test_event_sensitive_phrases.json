@@ -1,0 +1,13 @@
+{
+  "httpMethod": "POST",
+  "queryStringParameters": {
+    "phrase": "test-exact-again-and-now",
+    "exact": "false"
+  },
+  "requestContext": {
+    "authorizer": {
+      "project_id": "thoughtlabs"
+    },
+    "httpMethod": "POST"
+  }
+}

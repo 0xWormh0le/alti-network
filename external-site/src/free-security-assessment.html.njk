@@ -1,0 +1,134 @@
+---
+title: Rapid Security Assessment
+url: /free-security-assessment
+description: Get started with a free security assessment. Optimized for G Suite, Altitude Networks is offering the only file sharing and data security risk analysis for enterprises at zero cost.
+thumbnail: /images/rsa-thumbnail.png
+---
+
+{% extends "./layouts/layout-base.njk" %}
+
+{% block main %}
+  <div class="scroll-wrapper welcome-scroll-wrapper">
+    <section class="welcome-header">
+      <div class="welcome-header__logo">
+        <a class="logo" href="/">
+          <img src="/images/logo-outline.svg" alt="Altitude Networks" />
+        </a>
+      </div>
+      <div class="welcome-section__container">
+        <div class="welcome-header__row">
+          <div class="welcome-header__col">
+            <h2 class="welcome-header__headline">
+              Altitude Networks<br/>Rapid Security Assessment
+            </h2>
+            <div class="welcome-header__content">
+              <p>
+                With Altitudes Networks’ Rapid Security Assessment, organizations gain insight into data security risks and understand their current enterprise cloud security posture. The assessment provides actionable intelligence on the cloud data risks of the organization. Specifically, Altitude Networks discovers:
+              </p>
+              <ul>
+                <li>Offboarded employees or contractors with residual access to critical files via personal accounts</li>
+                <li>Confidential company documents exposed to the entire company or whole world</li>
+                <li>Malicious or compromised accounts downloading thousands of documents from G Suite</li>
+                <li>User-authorized rogue applications that are accessing and exfiltrating corporate files</li>
+              </ul>
+            </div>
+          </div>
+          <div class="welcome-header__col">
+            <div class="welcome-header-cta">
+              <object id="bits-animation" data="/images/bits.svg" type="image/svg+xml" class="welcome-header__bits"></object>
+              <h3 class="welcome-header-cta__title">
+                Sign up for a Rapid Security Assessment
+              </h3>
+              <form class="cta-subscribe__form cta-subscribe__form--vertical get-an-rsa__form">
+                <input class="cta-input cta-input--shadowed" type="email" name="work-email" value="" placeholder="Work Email" required />
+                <input class="cta-input cta-input--shadowed" type="text" name="company-name" value="" placeholder="Company Name" />
+                <input class="cta-input cta-input--shadowed" type="text" name="first-name" value="" placeholder="First Name" />
+                <input class="cta-input cta-input--shadowed" type="text" name="last-name" value="" placeholder="Last Name" />
+                <button type="submit" class="cta-button welcome-header-cta__button" data-altimeter="welcome_cta_top">Get an Assessment</button>
+                <div class="cta-subscribe__notice">
+                  We will <em>only</em> use your email to contact you for this security assessment.
+                </div>
+              </form>
+              <div class="cta-subscribe__success">
+                <span class="cta-subscribe__success-icon">✔</span>
+                Thank you, we will be in touch soon!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome-section rsa-section">
+      <div class="welcome-section__container rsa-example__container">
+        <div class="row">
+          <div class="rsa-example__image"></div>
+          <!-- <img src="/images/rsa-example.jpg"> -->
+          <div class="rsa-example__text">
+            <h2 class="welcome-header__headline">How It Works</h2>
+            <ol>
+              <li>Authorize connectivity to your G Suite account</li>
+              <li>Give Altitude Networks read-only permissions</li>
+              <li>Get Assessment results</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome-section welcome-cards-section rsa-cards">
+      <div class="welcome-section__container">
+        <h2>Resources</h2>
+        <div class="row welcome-cards-section__row">
+          <div class="card">
+            <div class="card__title rsa-card__title">An Investor's Perspective on Cloud-Native DLP</div>
+            <!-- <img src="/images/automation.svg" class="card__icon" /> -->
+            <!-- <p class="card__text rsa-card__text">
+              As companies move to cloud-native architecture and deployments, data security and Data Leak Prevention (DLP) take on new challenges. The problem is especially acute with today's threats and regulatory pressure. Hear first hand from Rain Capital why they invested in Altitude Networks. 
+            </p> -->
+            <a href="https://blog.altitudenetworks.com/an-investors-perspective-the-case-for-altitude-networks-cloud-native-dlp-for-saas-collaboration?utm-source=get-an-rsa"><button class="cta-button" target="_blank">Read More</button></a>
+          </div>
+          <div class="card">
+            <div class="card__title rsa-card__title">Security Tooling Precision vs. Findings</div>
+            <!-- <img src="/images/automation.svg" class="card__icon" /> -->
+            <!-- <p class="card__text rsa-card__text">
+              There are a lot of different security tools and solutions. From the network layer through application, there are many places for security solutions to solve unique and complex challenges. With every security solution there are a few different factors that are evaluated by the security team. We provide several of the top considerations for you.
+            </p> -->
+            <a href="https://blog.altitudenetworks.com/security-tooling-precision-vs-findings?utm-source=get-an-rsa" target="_blank"><button class="cta-button">Read More</button></a>
+          </div>
+          <div class="card">
+            <div class="card__title rsa-card__title">Uncover Rogue Applications That are Stealing your Corporate Data</div>
+            <!-- <img src="/images/automation.svg" class="card__icon" /> -->
+            <!-- <p class="card__text rsa-card__text">
+              Rogue application detection to enable stronger data protection against unmanaged third-party applications accessing cloud data. Security teams can now detect user-authorized applications with malicious or questionable access privileges to sensitive data within cloud platforms like G Suite.
+            </p> -->
+            <a href="https://altitudenetworks.com/rogue-apps.html?utm-source=get-an-rsa" target="_blank"><button class="cta-button">Read More</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome-section welcome-cta-section">
+      <object id="bits-animation" data="/images/bits.svg" type="image/svg+xml" class="welcome-cta-section__bits"></object>
+      <div class="welcome-section__container">
+        <h2 class="welcome-cta-section__title">
+          Get started with a free Security Assessment to find the gaps in your cloud security strategy
+        </h2>
+        <div class="cta-subscribe welcome-cta-subscribe">
+          <form class="cta-subscribe__form cta-subscribe__form--vertical get-an-rsa__form">
+            <input class="cta-input" type="email" name="work-email" value="" placeholder="Your Work Email" required />
+            <button type="submit" class="cta-button" data-altimeter="welcome_cta_bottom">Get Started</button>
+            <div class="cta-subscribe__notice">
+              We will <em>only</em> use your email to contact you for this security assessment.
+            </div>
+          </form>
+          <div class="cta-subscribe__success">
+            <span class="cta-subscribe__success-icon">✔</span>
+            Thank you for signing up, we will be in touch soon!
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "./layouts/partials/footer.njk" %}
+  </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+@import 'styles/_shared.scss';
+
+.WhitelistTable {
+  &__delete {
+    text-transform: uppercase;
+    margin-left: auto;
+  }
+}
+
+.WhitelistItem {
+  margin-bottom: $SMALL_SPACING;
+
+  &.Table {
+    width: calc(100% - 1px); // this is to fix the right border disappear bug
+  }
+}

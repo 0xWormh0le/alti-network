@@ -1,0 +1,16 @@
+@import 'styles/_shared.scss';
+
+.WhitelistGroup {
+  flex-grow: 1;
+
+  .Accordion {
+    padding-left: $BASE_SPACING;
+    padding-right: $BASE_SPACING;
+    border-left: 1px solid $PALE_GREY;
+    border-right: 1px solid $PALE_GREY;
+  }
+
+  .Accordion__summary {
+    line-height: 3em;
+  }
+}

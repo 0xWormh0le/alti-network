@@ -1,0 +1,7 @@
+@import 'styles/_shared.scss';
+
+.NavButton {
+  &:hover {
+    text-decoration: none;
+  }
+}

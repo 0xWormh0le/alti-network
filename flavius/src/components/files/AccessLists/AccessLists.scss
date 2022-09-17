@@ -1,0 +1,40 @@
+@import 'styles/_shared.scss';
+
+.AccessLists {
+  @include flex(row, flex-start, stretch);
+
+  &__separator {
+    border-left: 1px solid $PALE_GREY;
+    margin: 0 25px;
+  }
+}
+
+.AccessList {
+  color: $DARK_GREY_BLUE;
+  flex-basis: 100%;
+
+  &__count {
+    padding: 12px 0 6px;
+  }
+
+  &__value {
+    @include set-font-weight('normal');
+    font-size: 48px;
+    line-height: 48px;
+    margin-right: 4px;
+  }
+
+  &__shared-with,
+  &__unit {
+    color: $TEXT_COLOR_SECONDARY;
+  }
+
+  &__shared-with {
+    margin-bottom: 5px;
+  }
+}
+
+.AccessListLoading {
+  width: 180px;
+  height: 132px;
+}

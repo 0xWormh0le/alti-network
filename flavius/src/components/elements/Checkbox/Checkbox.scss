@@ -1,0 +1,82 @@
+@import 'styles/_shared.scss';
+
+.Checkbox {
+  $this: &;
+
+  position: relative;
+
+  &__label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &--right {
+      flex-direction: row;
+      justify-content: flex-start;
+
+      #{$this}__helper {
+        margin-right: $BASE_SPACING;
+      }
+    }
+
+    &--left {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      #{$this}__helper {
+        margin-left: $BASE_SPACING;
+      }
+    }
+
+    &-text {
+      font-size: map-get($FONT_SIZES, 'BODY');
+    }
+  }
+
+  // do not render the default checkbox
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  &__helper {
+    position: relative;
+    width: $CHECKBOX_SIZE;
+    height: $CHECKBOX_SIZE;
+    margin: 4px 0;
+    cursor: pointer;
+    display: block;
+    font-size: map-get($FONT_SIZES, 'BODY');
+    user-select: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: transform $TRANSITION_DURATION ease;
+      background-color: $PALE_GREY;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 5px;
+      border-bottom: 2px solid white;
+      border-left: 2px solid white;
+      transform: rotate(-45deg) scale(0);
+      position: absolute;
+      top: 4px;
+      left: 3px;
+    }
+  }
+
+  input[type='checkbox']:checked ~ &__helper::before {
+    background-color: $CHECKBOX_TICK_BG_COLOR;
+    color: white;
+  }
+
+  input[type='checkbox']:checked ~ &__helper::after {
+    transform: rotate(-45deg) scale(1);
+  }
+}

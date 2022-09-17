@@ -1,0 +1,26 @@
+type: lambda
+runtime: python3.7
+function_name: &func_name altitude-{{ENV}}-lambda-person-id-{{SUFFIX}}
+handler: services.person_id.person_id_handler.main_handler
+iam_role: arn:aws:iam::{{AWS_ACCOUNT}}:role/altitude-{{ENV}}-lambda-execution-frontend-rw-role
+description: Lambda function for Person ID endpoint in External Integration APIs
+use_vpc: True
+memory_size: 1728
+timeout: 30
+tracing_config_mode: Active
+notification_email: devops@altitudenetworks.com
+log_group_subscriptions:
+  - filter_name: log-dna
+    destination_arn: {{ENV_CONFIG.logdna_destination_arn}}
+environment:
+  {% set DEBUG_MODE = "true" if ENV == "dev" else "false" %}
+  DEBUG_MODE: '{{DEBUG_MODE}}'
+triggers:
+  - type: apigateway
+    name: flavius-{{ENV}}-{{SUFFIX}}
+    path: /person/{personId}
+    method: get
+    function_name: *func_name
+    function_alias: {{ENV}}
+    authorization_required: True
+    application_role: FlaviusAPI

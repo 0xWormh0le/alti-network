@@ -1,0 +1,15 @@
+@import 'styles/_shared.scss';
+
+.GoogleApp {
+  &__oval {
+    background-color: $VIBRANT_BLUE_ACCENT;
+    color: white;
+    display: grid;
+    place-items: center;
+
+    // Achieve actual oval shape
+    width: 100%;
+    border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+    height: 10rem;
+  }
+}

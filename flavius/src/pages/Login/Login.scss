@@ -1,0 +1,94 @@
+@import 'styles/_shared.scss';
+
+.Login {
+  color: $TEXT_COLOR;
+  padding: 60px 0;
+
+  &__button {
+    height: 45px;
+    width: 100%;
+  }
+
+  &__message {
+    margin: 10px auto;
+
+    text-align: center;
+    font-size: map-get($FONT_SIZES, 'BODY');
+  }
+
+  & form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  &__demo-title {
+    max-width: 750px;
+    margin: 0 auto 1rem;
+    text-align: center;
+  }
+
+  &__demo-subtitle {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  &__cancel-provider-button {
+    margin-top: $SMALL_SPACING;
+    width: $LOGIN_BUTTON_WIDTH;
+  }
+
+  &__microsoft-button {
+    margin-top: $SMALL_SPACING;
+    width: $LOGIN_BUTTON_WIDTH;
+    background-color: #00a4ef;
+  }
+
+  &__okta-button,
+  &__okta-input {
+    width: $LOGIN_BUTTON_WIDTH;
+  }
+
+  &__okta-input {
+    margin-bottom: 0;
+  }
+
+  &__okta-button {
+    margin-top: $SMALL_SPACING;
+    background-color: #00297a;
+    border: 1px solid #00297a;
+
+    &:hover {
+      background-color: rgba(0, 41, 121, 0.8);
+      border: 1px solid rgba(0, 41, 121, 0.6);
+    }
+  }
+
+  &__external-login-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__okta-clear {
+    display: inline-block;
+    margin: $BASE_SPACING auto 0;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  &__or-separator {
+    margin: $SMALL_SPACING 0;
+    @include flex(row, center, center);
+
+    &__line {
+      flex: 1 1 100%;
+      border-top: 1px solid $PALE_GREY;
+    }
+
+    &__text {
+      margin: 0 $BASE_SPACING;
+    }
+  }
+}

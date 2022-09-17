@@ -1,0 +1,130 @@
+openapi: 3.0.1
+info:
+  title: external-site
+  description: Altimeter endpoint for external site
+  version: 1.6.2
+  contact:
+    name: External Site API
+    url: "https://altitudenetworks.com"
+    email: devops@altitudenetworks.com
+servers:
+  - description: External Site Altimeter
+    url: "https://altitudenetworks.com"
+tags:
+  - name: altimeter
+    description: Events captured by Segment
+paths:
+  /altimeter:
+    post:
+      description: Events captured by Segment on external website
+      operationId: PostAltimeter
+      tags:
+        - altimeter
+      parameters:
+        - name: user-id
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: metadata
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: event-name
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: altimeter-method
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: new-user-id
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: success response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DefaultStatus'
+        '201':
+          description: Created
+        '400':
+          description: request error response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DefaultStatus'
+        '500':
+          description: server error response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DefaultStatus'
+      security: []
+    options:
+      description: Default response for CORS method
+      operationId: OptionsAltimeter
+      tags:
+        - altimeter
+      responses:
+        '200':
+          description: success response
+          headers:
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DefaultStatus'
+components:
+  schemas:
+    DefaultStatus:
+      title: DefaultStatus Schema
+      required:
+        - code
+        - message
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+      example:
+        code: 200
+        message: success

@@ -1,0 +1,170 @@
+@import 'styles/_shared.scss';
+.PreviewChartWrapper {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  color: #7f8fa4;
+  cursor: pointer;
+  margin-top: 0.5em;
+
+  .PreviewChartState {
+    span {
+      font-family: LatoLatin;
+      font-size: 10px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #90959d;
+      vertical-align: middle;
+      margin-left: -50px;
+      border: 1px solid #e6eaee;
+      border-radius: 4px;
+      padding: 6px;
+      background-color: #f7f9fa;
+    }
+  }
+
+  .hot-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 #c2c5cb;
+    border: solid 2px #ffffff;
+    z-index: 2;
+
+    &.hidden {
+      display: none;
+    }
+
+    &.red {
+      background-color: $PREV_CHART_COLOR_RED;
+    }
+
+    &.green {
+      background-color: $PREV_CHART_COLOR_GREEN;
+    }
+
+    &.blue {
+      background-color: $PREV_CHART_COLOR_BLUE;
+    }
+
+    &.disabled {
+      background-color: #c2c5cb !important;
+    }
+  }
+
+  .PreviewChart {
+    // customization of lines
+    width: 180px;
+
+    .ct-chart-line {
+      margin-left: -40px;
+    }
+
+    &.blue {
+      .ct-series-a {
+        .ct-line {
+          stroke: $PREV_CHART_COLOR_BLUE;
+        }
+
+        .ct-point {
+          fill: $PREV_CHART_COLOR_BLUE;
+        }
+
+        .ct-area {
+          fill: #dfeeff;
+        }
+      }
+    }
+
+    &.green {
+      .ct-series-a {
+        .ct-line {
+          stroke: $PREV_CHART_COLOR_GREEN;
+        }
+
+        .ct-point {
+          fill: $PREV_CHART_COLOR_GREEN;
+        }
+
+        .ct-area {
+          fill: #70a60c;
+        }
+      }
+    }
+
+    &.red {
+      .ct-series-a {
+        .ct-line {
+          stroke: $PREV_CHART_COLOR_RED;
+        }
+
+        .ct-point {
+          fill: $PREV_CHART_COLOR_RED;
+        }
+
+        .ct-area {
+          fill: #ef978a;
+        }
+      }
+    }
+
+    .ct-area {
+      fill-opacity: 1 !important;
+    }
+
+    &.disabled {
+      .ct-series-a {
+        .ct-line {
+          stroke: $PREV_CHART_COLOR_GRAY !important;
+        }
+
+        .ct-point {
+          fill: $PREV_CHART_COLOR_GRAY !important;
+        }
+
+        .ct-area {
+          fill: #dedede !important;
+        }
+      }
+    }
+
+    .ct-series-a {
+      .ct-line {
+        stroke-width: 2px;
+      }
+
+      .ct-point {
+        display: none;
+      }
+    }
+
+    // customization of grid
+    .ct-grid {
+      display: none;
+    }
+
+    // customization of labels
+    .ct-labels {
+      display: none;
+    }
+
+    .ct-label {
+      color: $TEXT_COLOR_SECONDARY;
+      font-size: map-get($FONT_SIZES, 'BODY');
+    }
+
+    .ct-label.ct-horizontal {
+      position: relative;
+      right: 20px;
+      top: 5px;
+    }
+
+    .ct-label.ct-horizontal.ct-end {
+      justify-content: center;
+    }
+  }
+}

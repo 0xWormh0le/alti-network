@@ -1,0 +1,164 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.repo_checker]
+save-comments = true
+
+# Set max line length for `flake8`, `pylint`, `isort` and `black`
+line-length = 100
+
+# First package should be your main package, it will contain `version.txt`
+# CI and pre-commit checks run for all listed packages
+packages = [
+    "external_api",
+    "services",
+]
+
+# Checks to run on commit with auto-fix and on push CI
+# `black` - Check if all files are formatted with `black`
+# `pylint` - Check for linting issues with `pylint`
+# `vulture` - Check for unused code with `vulture`
+# `mypy` - Check for typing issues with `mypy`
+# `pyright` - Check for typing issues with `pyright`
+# `pyright-verify` - Check for typing completeness with `pyright`
+# `flake8` - Check for linting issues with `flake8`
+# `pytest` - Run unit tests, do not activate, enabled `on_push` workflow
+# `pytest-integration` - Run integration tests, do not activate, enabled `on_push` workflow
+# `install` - Check whether packages for enabled checks are installed.
+# `branch` - Prevent commits to protected branches.
+# `version` - Prevent manual edits `version.txt`
+# `pytest-cov` - Do not activate, it does the same as `pytest`
+# `vscode` - Update `.vscode/settings.json`, run manually
+checks = [
+    "flake8",
+    "black",
+    "flake8",
+    "mypy",
+]
+
+# Checks to run on commit with disabled auto-fix
+# You can add any checks from the list above to disable auto-fix for them
+# `install` - Check whether packages for enabled checks are installed.
+# `branch` - Prevent commits to protected branches.
+# `version` - Prevent manual edits `version.txt`
+# `requirements` - Check `requirements.txt` and `requirements-dev.txt` files
+# `pre-commit` - Check `.git/hooks/pre-commit` file, keep it enabled
+# `pipfile-lock` - Check `Pipfile.lock` file, keep it enabled
+local-checks = [
+    "pre-commit",
+    "version",
+    "branch",
+    "pipfile-lock",
+]
+
+# Set to `github-library` or `github-application`
+ci = "github-application"
+
+# Prohibit commits to the following branches
+protected-branch-names = [
+    "master",
+    "develop",
+    "^release-.*$",
+    "^release/.*$",
+]
+
+# Main development branch
+main-branch-name = "master"
+
+# Python versions to support (e.g. '3.6.10' or '3')
+python-versions = [
+    "3.7",
+]
+
+# Paths that are updated by `repo_checker -u`
+# update-files = [
+# ".github/CODEOWNERS",
+# ".github/PULL_REQUEST_TEMPLATE.md",
+# ".gitignore",
+# ".pylintrc",
+# "CHANGELOG.md",
+# "codecov.yml",
+# "Pipfile",
+# "README.md",
+# "setup.py",
+# ]
+update-files = [
+    ".github/CODEOWNERS",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".pylintrc",
+    "Pipfile",
+    "CHANGELOG.md",
+    "README.md",
+    "setup.py",
+    "codecov.yml",
+]
+
+# List of stakeholders and owners of the project
+# Accepts a list of usernames and teams, e.g. `user` or `org_name/admin`
+# They are assigned as reviewers for release RPs and
+# notified about new PRs
+owners = [
+    "altitudenetworks/admin",
+]
+
+# GitHub organization name
+organization-name = "altitudenetworks"
+
+# GitHub repository name
+repository-name = "external_api"
+
+# PyPI main package name
+pypi-package-name = "external_api"
+
+# Deploy services from GitHub CI
+deploy-services = true
+
+# Do not change other sections manually,
+# use `tool.repo_checker` section above
+# and run `repo_checker -u`
+
+[tool.black]
+line-length = 100
+include = "(external_api|services|tests)/.*\\.pyi?$"
+target-version = [
+    "py37",
+]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = [
+    "external_api",
+    "services",
+    "tests",
+]
+src_paths = []
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+
+[tool.coverage.run]
+branch = true
+source = [
+    "external_api",
+    "services",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if self.debug:",
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "@overload",
+]
+ignore_errors = true
+omit = [
+    "tests/*",
+]

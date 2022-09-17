@@ -1,0 +1,13 @@
+{
+  "pathParameters": {
+    "permissionId": "14078799046229454690k"
+  },
+  "requestContext": {
+    "authorizer": {
+      "project_id": "thoughtlabs"
+    }
+  },
+  "queryStringParameters": {
+    "file-id": "1rFUnBfNBE_chQGB39Hh9vTPZkmkZqXaI9iRbGv7OEbs"
+  }
+}

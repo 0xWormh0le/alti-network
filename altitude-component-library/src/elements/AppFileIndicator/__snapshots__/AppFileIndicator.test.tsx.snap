@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppFileIndicator renders correctly 1`] = `
+<div>
+  <span
+    class="AppFileIndicator test"
+  >
+    <a
+      href="https://drive.google.com/open?id=test-file-id"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Google Drive File"
+        class="AppFileIndicator__icon"
+        src="google-drive-file-icon.svg"
+      />
+    </a>
+  </span>
+</div>
+`;

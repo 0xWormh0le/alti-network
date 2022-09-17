@@ -1,0 +1,11 @@
+{
+  "requestContext": {
+    "authorizer": {
+      "project_id": "thoughtlabs"
+    }
+  },
+  "queryStringParameters": {
+    "email": "lucas@thoughtlabs00.onmicrosoft.com",
+    "platform-id": "o365"
+  }
+}

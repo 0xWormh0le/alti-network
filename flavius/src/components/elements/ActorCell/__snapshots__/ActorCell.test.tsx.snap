@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActorCell Unit Tests renders correctly 1`] = `
+<div>
+  <div
+    class="ActorCell"
+    data-testid="actorCellContainer"
+  >
+    <a
+      class="ActorCell__link"
+      href="/dashboard/spotlight/email%40email.com"
+    >
+      <div
+        class="ActorCell__full-name"
+        data-testid="actorFullName"
+      >
+        givenName familyName
+      </div>
+      <div
+        class="ActorCell__email"
+      >
+        email@email.com
+      </div>
+    </a>
+  </div>
+</div>
+`;

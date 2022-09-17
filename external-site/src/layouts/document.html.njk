@@ -1,0 +1,38 @@
+{% extends '../layouts/layout.njk' %}
+
+{% block styles %}
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+(function ($) {
+    $(document).ready(function () {
+      // Load featured section
+      $('#featured-section').load('/resources/partials/featured.html');
+    });
+})(jQuery);
+</script>
+{% endblock %}
+
+{% block body %}
+<a class='resources__back-link' href='/resources'><img src="/images/arrow-left.svg"> All Resources</a>
+<div class='resources__wrapper'>
+  <h1 class='post-title'>{{ title }}</h1>
+  <div class='author-header'>Document  |  {{ author }}, {{ prettyDate }}</div>
+  {% if thumbnail %}
+  <div class='post-hero' style="background-image: url('{{ thumbnail }}')"></div>
+  {% endif %}
+  {% if docType === 'Business Impact Brief' %}
+  <a class="document-link" href='https://info.altitudenetworks.com/the-need-for-cloud-native-dlp' target='_blank'>
+  {% else %}
+  <a class="document-link" href='{{ documentUrl }}' download='{{ title }}' target='_blank'>
+  {% endif %}
+    <button class="cta-button document-button">
+      Download the {{ docType }}
+    </button>
+  </a>
+  {{ body | decode | safe }}
+  <div id='featured-section'></div>
+</div>
+{% include "../layouts/partials/learn-more-form.njk" %}
+{% endblock %}

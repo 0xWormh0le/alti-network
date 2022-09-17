@@ -1,0 +1,13 @@
+@import 'styles/_shared.scss';
+
+.CongratsStep {
+  &__title {
+    @include flex(row, flex-start, center);
+    color: $TEXT_COLOR;
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    @include icon();
+  }
+}

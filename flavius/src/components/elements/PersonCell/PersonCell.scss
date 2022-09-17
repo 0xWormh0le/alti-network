@@ -1,0 +1,35 @@
+@import 'styles/_shared.scss';
+
+.PersonCell {
+  &__link {
+    @include brand-link();
+
+    &:hover {
+      .PersonCell__email {
+        color: $AZURE;
+      }
+    }
+  }
+
+  &__full-name {
+    display: flex;
+  }
+
+  &__name {
+    max-width: 100px;
+    height: 14px;
+    line-height: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__email {
+    @include set-typography('BODY', 'normall');
+    color: $TEXT_COLOR;
+  }
+
+  &__email-ext {
+    margin-left: 0.5em;
+  }
+}

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateAndTimeCell renders correctly 1`] = `
+<div>
+  <div
+    class="DateAndTimeCell"
+  >
+    <time
+      class="DateAndTimeCell__date"
+      datetime="1566492823000"
+    >
+      Aug 22, 2019
+    </time>
+    <div
+      class="DateAndTimeCell__time-container"
+    >
+      <time
+        class="DateAndTimeCell__time"
+        datetime="1566492823000"
+      >
+        09:53am
+      </time>
+    </div>
+  </div>
+</div>
+`;

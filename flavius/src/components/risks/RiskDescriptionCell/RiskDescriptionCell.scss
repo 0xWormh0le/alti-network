@@ -1,0 +1,15 @@
+@import 'styles/_shared.scss';
+
+.RiskDescriptionCell {
+  min-width: 280px;
+
+  &-beta-flag {
+    font-style: italic;
+    color: $TOMATO;
+  }
+
+  &__metadata {
+    @include set-typography('BODY_SMALL', 'normal');
+    color: $TEXT_COLOR_SECONDARY;
+  }
+}

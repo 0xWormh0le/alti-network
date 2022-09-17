@@ -1,0 +1,584 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RiskDescriptionCell Risk Type 0 (TopSharedFilesCompanyOwned) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Most Shared Files - Company Owned
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 10 (TopSharedFilesNonCompanyOwned) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Most Shared Files- Not Company Owned
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 1011 (SensitiveFileSharedByLinkInternal) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Potentially Sensitive File Shared by Link Internally
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 1020 (FileSharedByLinkExternal) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      File Shared by Link Externally
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 1021 (SensitiveFileSharedByLinkExternal) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Potentially Sensitive File Shared by Link Externally
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 1050 (FileSharedByLinkExternalDate) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      File Shared by Link Externally- Created Over 180 Days Ago
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 1051 (SensitiveFileSharedByLinkExternalDate) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Potentially Sensitive File Shared by Link Externally- Created Over 180 Days Ago
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 2000 (FileSharedToPersonalEmail) renders anonymous user correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      File Shared to Personal Email Account
+       (
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 2000 (FileSharedToPersonalEmail) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      File Shared to Personal Email Account
+       (
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 2001 (SensitiveFileSharedToPersonalEmail) renders anonymous user correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Potentially Sensitive File Shared to Personal Email Account
+       (
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 2001 (SensitiveFileSharedToPersonalEmail) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Potentially Sensitive File Shared to Personal Email Account
+       (
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 2010 (FileSharedToPersonalEmailDate) renders anonymous user correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      File Shared to Personal Email Account- Created Over 180 Days Ago
+       (
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 2010 (FileSharedToPersonalEmailDate) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      File Shared to Personal Email Account- Created Over 180 Days Ago
+       (
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 2011 (SensitiveFileSharedToPersonalEmailDate) renders anonymous user correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Sensitive File Shared to Personal Email Account- Created Over 180 Days Ago
+       (
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 2011 (SensitiveFileSharedToPersonalEmailDate) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Sensitive File Shared to Personal Email Account- Created Over 180 Days Ago
+       (
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3010 (ManyDownloadsByApp) renders anonymous user correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by App
+       
+      (
+      <a
+        href="/dashboard/app-spotlight/906807168814?platformId=gsuite"
+      >
+        plugin name - ID:906807168814
+      </a>
+       
+      on behalf of 
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3010 (ManyDownloadsByApp) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by App
+       
+      (
+      <a
+        href="/dashboard/app-spotlight/906807168814?platformId=gsuite"
+      >
+        plugin name - ID:906807168814
+      </a>
+       
+      on behalf of 
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3010 (ManyDownloadsByApp) renders unknown app if \`plugName\` is not provided 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by App
+       
+      (
+      <a
+        href="/dashboard/app-spotlight/906807168814?platformId=gsuite"
+      >
+        Unknown App - ID:906807168814
+      </a>
+       
+      on behalf of 
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3010 (ManyDownloadsByApp) renders without \`(pluginId)\` if pluginId is not provided. 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by App
+       
+      on behalf of 
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3012 (ManyDownloadsByAppNonCustomerOwned) renders anonymous user correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by App Non Customer Owned
+       
+      (
+      <a
+        href="/dashboard/app-spotlight/906807168814?platformId=gsuite"
+      >
+        plugin name - ID:906807168814
+      </a>
+       
+      on behalf of 
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3012 (ManyDownloadsByAppNonCustomerOwned) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by App Non Customer Owned
+       
+      (
+      <a
+        href="/dashboard/app-spotlight/906807168814?platformId=gsuite"
+      >
+        plugin name - ID:906807168814
+      </a>
+       
+      on behalf of 
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3012 (ManyDownloadsByAppNonCustomerOwned) renders unknown app if no plugName 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by App Non Customer Owned
+       
+      (
+      <a
+        href="/dashboard/app-spotlight/906807168814?platformId=gsuite"
+      >
+        Unknown App - ID:906807168814
+      </a>
+       
+      on behalf of 
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3012 (ManyDownloadsByAppNonCustomerOwned) renders without \`(pluginId)\` if pluginId is not provided. 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by App Non Customer Owned
+       
+      on behalf of 
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3100 (ManyDownloadsByPersonInternal) renders anonymous user correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by internal account
+       (
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3100 (ManyDownloadsByPersonInternal) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by internal account
+       (
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io?selectedSubNavKey=personDownloads"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3200 (ManyDownloadsByPersonExternal) renders anonymous user correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by external account
+       (
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell Risk Type 3200 (ManyDownloadsByPersonExternal) renders correctly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours by external account
+       (
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io?selectedSubNavKey=personDownloads"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell UserEmail renders as Anonymous User with tooltip if email is equal to \`anonymous\` 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      Many files downloaded in 24 hours
+       (
+      <a
+        class="trigger"
+        href="https://blog.altitudenetworks.com/about-the-google-drive-anonymous-user/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anonymous User
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RiskDescriptionCell UserEmail renders email with link properly 1`] = `
+<div>
+  <div
+    class="RiskDescriptionCell"
+  >
+    <span>
+      File Shared to Personal Email Account
+       (
+      <a
+        href="/dashboard/spotlight/testuser%40thoughtlabs.io"
+      >
+        testuser@thoughtlabs.io
+      </a>
+      )
+    </span>
+  </div>
+</div>
+`;

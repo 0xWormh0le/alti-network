@@ -1,0 +1,20 @@
+@import 'styles/_shared.scss';
+
+.DashboardRiskInsights {
+  width: 100%;
+  margin-bottom: $LARGE_SPACING;
+
+  &__tiles {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 -#{$BASE_SPACING / 2};
+  }
+
+  &__tile-item {
+    padding: 0 $BASE_SPACING / 2;
+    margin-bottom: $BASE_SPACING;
+    min-width: 20rem;
+    width: 25%;
+  }
+}

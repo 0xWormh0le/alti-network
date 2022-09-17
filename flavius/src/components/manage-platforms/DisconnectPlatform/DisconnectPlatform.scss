@@ -1,0 +1,32 @@
+@import 'styles/_shared.scss';
+
+.DisconnectPlatform {
+  background-color: #f8f9fd;
+  padding: 2em;
+
+  &__platform-icon {
+    display: inline-block;
+  }
+
+  &__icons {
+    position: relative;
+    margin-bottom: 1em;
+    hr {
+      position: relative;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+      top: 0.5em;
+      border: none;
+      border-top: 1px dashed #000;
+      display: inline-block;
+      width: 3em;
+      height: 1px;
+    }
+
+    img {
+      display: inline-block;
+      height: 2.5em;
+      width: 2.5em;
+    }
+  }
+}

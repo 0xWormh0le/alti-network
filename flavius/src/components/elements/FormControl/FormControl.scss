@@ -1,0 +1,50 @@
+@import 'styles/_shared.scss';
+
+.FormControl {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 4px 15px;
+  font-size: 16px;
+  line-height: 28px;
+  color: $INPUT_COLOR;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: solid 2px transparent;
+
+  &::placeholder {
+    color: $INPUT_PLACEHOLDER_COLOR;
+  }
+
+  &:focus {
+    border-color: $INPUT_FOCUS_BORDER;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &--flat {
+    background-color: $INPUT_BG_FLAT;
+  }
+
+  &--invalid {
+    &:not(:focus) {
+      border-color: $INPUT_INVALID_COLOR;
+    }
+
+    &-message {
+      color: $INPUT_INVALID_COLOR;
+      font-size: 80%;
+    }
+  }
+
+  &--shadowed {
+    background-color: $INPUT_BG_SHADOWED;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.02), 0 1px 3px 0 rgba(50, 50, 93, 0.15);
+
+    &:focus {
+      background-color: #ffffff;
+    }
+  }
+}

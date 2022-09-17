@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Headerbar renders correctly 1`] = `
+<div>
+  <header
+    class="Headerbar"
+  >
+    <nav
+      class="Headerbar__bar"
+    >
+      <span
+        class="Headerbar__bar-brand"
+      >
+        <a
+          href="/"
+        >
+          <div
+            class="Brand"
+          >
+            <img
+              alt="Navbar Logo"
+              class="Brand__logo d-inline-block align-middle"
+              src="/logo-wordmark.png"
+            />
+          </div>
+        </a>
+      </span>
+      <div
+        class="Headerbar__nav"
+      >
+        <span
+          class="Headerbar__nav-item"
+        >
+          <span
+            class="Headerbar__flat-button"
+            role="button"
+          >
+            Help
+          </span>
+        </span>
+        <span
+          class="Headerbar__nav-item"
+        >
+          <span
+            class="Headerbar__flat-button"
+            role="button"
+          >
+            Support
+          </span>
+        </span>
+        <span
+          class="Headerbar__nav-item"
+        >
+          <span
+            class="Headerbar__flat-button"
+            role="button"
+          >
+            About
+          </span>
+        </span>
+        <span
+          class="Headerbar__separator"
+        >
+          |
+        </span>
+        <span
+          class="Headerbar__nav-item Headerbar__avatar trigger"
+        >
+          <div
+            class="BaseAvatar "
+          >
+            <div
+              class="BaseAvatar__text"
+              style="background-color: rgb(255, 130, 70);"
+            >
+              <div>
+                T
+                U
+              </div>
+            </div>
+          </div>
+        </span>
+        <span
+          class="Headerbar__nav-item"
+        >
+          <button
+            class="Button LogoutButton Button--secondary"
+            type="button"
+          >
+            Log out
+          </button>
+        </span>
+      </div>
+    </nav>
+  </header>
+</div>
+`;

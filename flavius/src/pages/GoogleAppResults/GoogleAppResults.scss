@@ -1,0 +1,23 @@
+.GoogleAppResults {
+  &__assessment {
+    width: 50%;
+    margin: 3em auto !important;
+    position: relative;
+  }
+
+  &__results {
+    width: 100% !important;
+
+    & > .Table__table {
+      width: 100% !important;
+    }
+  }
+
+  &__teaser {
+    position: relative;
+    float: right;
+    width: 60% !important;
+    padding: 1em;
+    background-color: #0177ff0d;
+  }
+}

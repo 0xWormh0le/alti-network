@@ -1,0 +1,41 @@
+@import 'styles/_shared.scss';
+
+$ICON_SIZE: 1.2em;
+
+.FileCell {
+  &__icons {
+    display: flex;
+    margin-top: 4px;
+  }
+
+  &__spacer-top-5 {
+    padding-top: 5px;
+  }
+
+  &__singleline {
+    @include flex(row, flex-start, flex-start);
+    & > a > div:nth-child(1) {
+      display: flex;
+    }
+  }
+  &__multiline {
+    @include flex(row, flex-start, flex-start);
+  }
+
+  min-width: 150px;
+  max-width: 200px;
+
+  @media (min-width: 1200px) {
+    max-width: 300px;
+  }
+
+  &__link {
+    @include brand-link();
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  & > div {
+    line-height: 1em;
+  }
+}

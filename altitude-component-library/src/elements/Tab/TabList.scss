@@ -1,0 +1,66 @@
+@import '../../styles/_shared.scss';
+
+.Tabs {
+  &__tab-list {
+    display: flex;
+    margin-left: 2rem;
+    position: relative;
+
+    &-scrolled {
+      display: flex;
+      margin-left: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    &-scroll {
+      display: flex;
+      transition: 0.5s left ease;
+      position: relative;
+    }
+
+    &-scroll-wrapper {
+      overflow-x: clip;
+    }
+
+    &-arrow {
+      &-default {
+        border-radius: 0.3rem;
+        padding: 0.5rem;
+      }
+
+      &-left {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+
+        &--hidden {
+          visibility: hidden;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: $PREV_CHART_COLOR_GRAY;
+        }
+      }
+
+      &-right {
+        margin-left: 0.5rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+
+        &--hidden {
+          display: none;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: $PREV_CHART_COLOR_GRAY;
+        }
+      }
+    }
+  }
+}

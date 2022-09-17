@@ -1,0 +1,42 @@
+{% extends '../layouts/layout.njk' %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/assets/css/tomorrow-night-eighties.css" />
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+(function ($) {
+    $(document).ready(function () {
+      // perform code higlighting with automatic language detection via highlight.js
+      document.querySelectorAll('pre').forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+
+      // Load featured section
+      $('#featured-section').load('/resources/partials/featured.html');
+    });
+
+    
+})(jQuery);
+</script>
+{% endblock %}
+
+{% block body %}
+<a class='resources__back-link' href='/resources'><img src="/images/arrow-left.svg"> All Resources</a>
+<div class='resources__wrapper'>
+  <h1 class='post-title'>{{ title }}</h1>
+  <div class='author-header'>Blog  |  {{ author }}, {{ prettyDate }}</div>
+  {% if thumbnail %}
+  <div class='post-hero' style="background-image: url('{{ thumbnail }}')"></div>
+  {% endif %}
+
+  {{ body | decode | safe }}
+
+  {% if showEngineeringSignupForm %}
+    {% include "../layouts/partials/eng-blog-form.njk" %}
+  {% endif%}
+  <div id='featured-section'></div>
+</div>
+{% include "../layouts/partials/learn-more-form.njk" %}
+{% endblock %}

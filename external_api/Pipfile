@@ -1,0 +1,14 @@
+[[source]]
+name = "internal"
+url = "https://${INTERNAL_PYPI_USERNAME}:${INTERNAL_PYPI_PASS}@${INTERNAL_PYPI_URL}"
+verify_ssl = true
+
+[dev-packages]
+altitude-db-schema = ">=3.3.0"
+freezegun = "*"
+pytest-helpers-namespace = "*"
+repo_checker = "*"
+callee = "*"
+
+[packages]
+external-api = {path = ".",editable = true}

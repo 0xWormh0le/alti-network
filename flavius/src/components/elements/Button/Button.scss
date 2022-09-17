@@ -1,0 +1,182 @@
+@import 'styles/_shared.scss';
+
+@mixin button-action-style(
+  $color,
+  $background,
+  $border-color,
+  $color-hover: white,
+  $background-hover: $CTA_HOVER_COLOR,
+  $border-color-hover: $CTA_HOVER_COLOR
+) {
+  color: $color;
+  background-color: $background;
+  border: 1px solid $border-color;
+
+  &:hover {
+    color: $color-hover;
+    background-color: $background-hover;
+    border: 1px solid $border-color-hover;
+  }
+}
+
+.Button {
+  @include set-typography('LABEL', 'semibold');
+  line-height: 22px;
+  user-select: none;
+
+  display: block;
+  padding: 8px 22px;
+
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: background-color $TRANSITION_DURATION ease-in-out, color $TRANSITION_DURATION ease-in-out,
+    border $TRANSITION_DURATION ease-in-out;
+
+  &__spinner {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    color: inherit;
+  }
+
+  &--primary {
+    @include button-action-style(
+      $CTA_SECONDARY_COLOR,
+      $MAIN_BRAND_COLOR,
+      $MAIN_BRAND_COLOR,
+      white,
+      $MAIN_BRAND_WASHED,
+      $MAIN_BRAND_WASHED
+    );
+  }
+
+  &--secondary {
+    @include set-typography('LABEL', 'normal');
+    @include button-action-style($CTA_COLOR, $CTA_SECONDARY_COLOR, $CTA_COLOR);
+    &:hover {
+      background: $VIBRANT_BLUE;
+      border: 1px solid $VIBRANT_BLUE_ACCENT;
+    }
+
+    &.Button--disabled {
+      @include button-action-style(
+        $PLACEHOLDER_COLOR,
+        $CTA_SECONDARY_COLOR,
+        $PLACEHOLDER_COLOR,
+        $PLACEHOLDER_COLOR,
+        $CTA_SECONDARY_COLOR,
+        $PLACEHOLDER_COLOR
+      );
+      cursor: default;
+    }
+  }
+
+  &--tertiary {
+    @include button-action-style(
+      $DUSK_BLUE_DARK,
+      transparent,
+      transparent,
+      $DUSK_BLUE_DARK,
+      $LIGHT_GREY_LIGHT,
+      transparent
+    );
+
+    &.Button--disabled {
+      @include button-action-style(
+        $PLACEHOLDER_COLOR,
+        transparent,
+        transparent,
+        $PLACEHOLDER_COLOR,
+        $LIGHT_GREY_LIGHT,
+        transparent
+      );
+      cursor: default;
+    }
+  }
+
+  &--cancel-primary {
+    @include button-action-style(white, $AZURE, $CTA_COLOR);
+  }
+
+  &--cancel-secondary {
+    @include button-action-style(white, $SILVER, $SILVER);
+  }
+
+  &--alert {
+    @include button-action-style($CTA_SECONDARY_COLOR, $TOMATO, $TOMATO, $TOMATO, $CTA_SECONDARY_COLOR, $TOMATO);
+  }
+
+  &--disabled {
+    @include button-action-style(
+      $PLACEHOLDER_COLOR,
+      $CTA_SECONDARY_COLOR,
+      $PLACEHOLDER_COLOR,
+      $PLACEHOLDER_COLOR,
+      $CTA_SECONDARY_COLOR,
+      $PLACEHOLDER_COLOR
+    );
+    cursor: default;
+  }
+
+  &--simple {
+    height: 3em;
+    border: none;
+    line-height: 1;
+    padding: $BASE_SPACING;
+    margin-left: $BASE_SPACING;
+    background-color: white;
+    outline: 0;
+    font-size: 0.8em;
+
+    &:not(:disabled) {
+      color: $DARK_GREY_BLUE;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  &--pagination {
+    @include set-typography('BODY_TINY', 'normal');
+    padding: 8px 18px;
+    @include button-action-style(
+      $PAGINATION_SIDE_TEXT_COLOR,
+      white,
+      $PAGINATION_BORDER_COLOR,
+      $PAGINATION_ACTIVE_TEXT_COLOR,
+      white,
+      $PAGINATION_ACTIVE_TEXT_COLOR
+    );
+
+    &:disabled {
+      @include button-action-style(
+        $PAGINATION_BORDER_COLOR,
+        white,
+        $PAGINATION_BORDER_COLOR,
+        $PAGINATION_BORDER_COLOR,
+        white,
+        $PAGINATION_BORDER_COLOR
+      );
+    }
+  }
+
+  &--size-large {
+    padding: 8px 28px;
+    @include set-typography('LABEL_LARGE', 'bold');
+  }
+
+  &--size-small {
+    padding: 4px 20px;
+    @include set-typography('BODY_TINY', 'bold');
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

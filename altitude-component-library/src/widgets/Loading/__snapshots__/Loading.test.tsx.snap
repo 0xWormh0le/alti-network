@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading renders correctly 1`] = `
+<div>
+  <div
+    class="Loading"
+  >
+    <svg
+      class="Spinner undefined"
+      viewBox="0 0 50 50"
+    >
+      <circle
+        class="path"
+        cx="25"
+        cy="25"
+        fill="none"
+        r="20"
+        stroke-width="5"
+      />
+    </svg>
+    <img
+      alt="Altitude Networks logo"
+      class="Loading__logo"
+      src="/logo.png"
+    />
+  </div>
+</div>
+`;

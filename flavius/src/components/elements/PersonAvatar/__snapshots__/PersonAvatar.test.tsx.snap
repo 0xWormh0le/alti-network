@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonAvatar when the \`clickable\` prop is false does not render any links and PersonAvatar__clickable classname is not included 1`] = `
+<span
+  class="PersonAvatar trigger"
+>
+  <div
+    class="BaseAvatar "
+  >
+    <div
+      class="BaseAvatar__image"
+    >
+      <img
+        alt="RG"
+        src="avatar"
+        style="width: 2em;"
+      />
+    </div>
+  </div>
+</span>
+`;
+
+exports[`PersonAvatar when the \`clickable\` prop is true wraps the element with a link (anchor tag) to the Spotlight page using the id from the person 1`] = `
+<a
+  href="/dashboard/spotlight/rorygarret%40mycompany.org"
+>
+  <span
+    class="PersonAvatar PersonAvatar__clickable trigger"
+  >
+    <div
+      class="BaseAvatar "
+    >
+      <div
+        class="BaseAvatar__image"
+      >
+        <img
+          alt="RG"
+          src="avatar"
+          style="width: 2em;"
+        />
+      </div>
+    </div>
+  </span>
+</a>
+`;

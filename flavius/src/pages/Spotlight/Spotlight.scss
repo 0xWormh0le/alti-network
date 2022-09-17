@@ -1,0 +1,19 @@
+@import 'styles/_shared.scss';
+
+.Spotlight {
+  height: 100%;
+
+  &__bookmark {
+    margin: 0 auto 22px;
+    text-align: center;
+    user-select: none;
+  }
+
+  &__no-results {
+    color: $DARK_GREY_BLUE;
+    width: 100%;
+    margin-top: 44px;
+    text-align: center;
+    user-select: none;
+  }
+}

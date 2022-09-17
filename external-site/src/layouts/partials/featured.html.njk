@@ -1,0 +1,21 @@
+<div class='featured-section'>
+  <div class='featured-section__wrapper'>
+    <h6>MORE FROM ALTITUDE NETWORKS</h6>
+    <div class='resources__posts'>
+      {% for post in pagination.files %}
+        <a class='resources__posts--card' href='{{ post.url }}'>
+          <div class='resources__posts--card-hero' style="background-image: url('{{ post.thumbnail }}')">
+          </div>
+          <div class='resources__posts--card-description'>
+            <div class='post-type'>{{ post.type | capitalize }}</div>
+            <div class='resources__posts--card-summary'>
+              <h4>{{ post.title | truncate(70) }}</h4>
+              <h5>{{ post.description | truncate(160) }}</h5>
+            </div>
+            <div class='author'>{{ post.author }}, {{ post.prettyDate }}</div>
+          </div>
+        </a>
+        {% endfor %}
+    </div>
+  </div>
+</div>

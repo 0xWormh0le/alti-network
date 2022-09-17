@@ -1,0 +1,199 @@
+.pricing {
+  background-color: #ffffff;
+
+  h1 {
+    margin-bottom: 22px;
+    @media screen and (max-width: 900px) {
+      font-size: 36px;
+    }
+  }
+
+  h2 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+
+  &-subhead {
+    font-size: 16px;
+    color: #222c3c;
+    display: inline-flex;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+      display: inline;
+    }
+  }
+
+  hr {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e6eaee;
+    margin: 22px 0;
+  }
+
+  .feature-page-cards-section__row {
+    padding: 22px 0 0;
+    width: 100%;
+
+    .card {
+      width: 32%;
+      max-width: 300px;
+      margin-right: 5px;
+      margin-left: 5px;
+      padding: 22px;
+      align-items: flex-start;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+
+      * {
+        font-family: Montserrat;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 22px;
+      }
+
+      button {
+        align-self: center;
+        width: 100%;
+      }
+    }
+  }
+
+  &-faqs {
+    h2 {
+      padding: 22px 0;
+    }
+
+    h4 {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 0;
+      transition: margin 300ms ease-in-out;
+    }
+
+    p {
+      font-family: Montserrat;
+      font-size: 16px;
+    }
+
+    &__section {
+      display: flex;
+      justify-content: space-around;
+      cursor: pointer;
+      $this: &;
+
+      &--content {
+        width: 80%;
+
+        p {
+          height: 0;
+          transition: height 300ms ease-in-out;
+          overflow: hidden;
+          margin-bottom: 0;
+
+          @media screen and (max-width: 900px) {
+            font-size: 13px;
+          }
+        }
+      }
+
+      &--toggle {
+        width: 10px;
+        height: 20px;
+        background-image: url(/images/arrow-right.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(90deg);
+        transition: transform 300ms ease-in-out;
+      }
+
+      &.active {
+        #{$this}--toggle {
+          transform: rotate(-90deg);
+        }
+
+        h4 {
+          margin-bottom: 11px;
+        }
+
+        #{$this}--content {
+          p {
+            height: 120px;
+
+            @media screen and (max-width: 900px) {
+              height: 216px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home-section {
+    padding-top: 0;
+  }
+
+  .get-started__container {
+    h2 {
+      font-size: 30px;
+    }
+
+    .cta-subscribe__form {
+      width: 500px;
+      @media screen and (max-width: 900px) {
+        max-width: 95%;
+      }
+    }
+
+    .cta-button {
+      width: 150px;
+    }
+  }
+
+  #bits-animation {
+    position: relative;
+  }
+
+  .inline-logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+  }
+
+  #google-workspace-logo {
+    background-image: url(/images/google-workspace-logo.svg);
+    width: 156px;
+    position: relative;
+    top: 2px;
+    margin: 0 6px;
+  }
+
+  #o365-icon {
+    background-image: url(/images/o365-icon.png);
+    width: 20px;
+    margin: 0 4px 0 5px;
+  }
+}
+
+.calendly-wrapper {
+  margin-top: -33px;
+  margin-bottom: 44px;
+}
+
+.cta-demo {
+  display: none;
+}

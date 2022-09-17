@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CopyEmail renders correctly 1`] = `
+<div>
+  <div
+    class="trigger"
+  >
+    sample@test.com
+  </div>
+</div>
+`;

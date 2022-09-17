@@ -1,0 +1,28 @@
+@import 'styles/_shared.scss';
+
+.EventDescriptionCell {
+  min-width: 83px;
+  word-break: break-word;
+  max-width: 450px;
+
+  &__date,
+  &__time {
+    display: block;
+  }
+
+  &__time {
+    @include set-typography('BODY_SMALL', 'normal');
+    color: $TEXT_COLOR_SECONDARY;
+  }
+
+  &__date--unknown {
+    font-style: oblique;
+    color: $TEXT_COLOR_SECONDARY;
+  }
+  &__ipContainer {
+    margin-top: -5px;
+    p {
+      color: $LIGHT_GREY;
+    }
+  }
+}

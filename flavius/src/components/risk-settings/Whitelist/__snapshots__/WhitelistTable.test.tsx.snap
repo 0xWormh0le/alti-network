@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WhitelistTable render correctly 1`] = `
+<div>
+  <div
+    class="Table WhitelistItem"
+  >
+    <table
+      class="Table__table"
+    >
+      <thead>
+        <tr
+          class="Table__heading"
+        >
+          <th
+            class="Table__heading-cell"
+          >
+            <span>
+              Domain
+            </span>
+          </th>
+          <th
+            class="Table_heading-cell"
+          />
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <span
+              class="Whitelist__table-item"
+            >
+              alice.com
+            </span>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button WhitelistTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <span
+              class="Whitelist__table-item"
+            >
+              bob.com
+            </span>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button WhitelistTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <span
+              class="Whitelist__table-item"
+            >
+              carl.com
+            </span>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button WhitelistTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="Table__children"
+    >
+      <div
+        class="EntityCountPagination"
+      >
+        <div />
+        <div
+          class="EntityCountPagination__pagination-info"
+        >
+          <div
+            class="EntityCountPagination__page-size EntityCountPagination__items-count"
+          >
+            <span>
+              Displaying 10 Items Per Page
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WhitelistTable renders Delete button only when allowDelete field is specified for internal domains 1`] = `
+<div>
+  <div
+    class="Table WhitelistItem"
+  >
+    <table
+      class="Table__table"
+    >
+      <thead>
+        <tr
+          class="Table__heading"
+        >
+          <th
+            class="Table__heading-cell"
+          >
+            <span>
+              Domain
+            </span>
+          </th>
+          <th
+            class="Table_heading-cell"
+          />
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <span
+              class="Whitelist__table-item"
+            >
+              alice.com
+            </span>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button WhitelistTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <span
+              class="Whitelist__table-item"
+            >
+              bob.com
+            </span>
+          </td>
+          <td
+            class="Table__cell"
+          />
+        </tr>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <span
+              class="Whitelist__table-item"
+            >
+              carl.com
+            </span>
+          </td>
+          <td
+            class="Table__cell"
+          />
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="Table__children"
+    >
+      <div
+        class="EntityCountPagination"
+      >
+        <div />
+        <div
+          class="EntityCountPagination__pagination-info"
+        >
+          <div
+            class="EntityCountPagination__page-size EntityCountPagination__items-count"
+          >
+            <span>
+              Displaying 10 Items Per Page
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,375 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResolveRisk renders correctly 1`] = `
+<div>
+  <div
+    class="ModalPage"
+  >
+    <div
+      class="ResolveRisk"
+    >
+      <div
+        class="Actionbar"
+      >
+        <div
+          class="Typography Typography--h4 Typography--normal Actionbar__title-wrapper"
+        >
+          <div
+            class="Breadcrumb"
+          >
+            <div
+              class="Breadcrumb__item"
+            >
+              Resolve Risk
+            </div>
+          </div>
+        </div>
+        <div
+          class="Actionbar__close"
+        >
+          ×
+        </div>
+      </div>
+      <div
+        class="ResolveRiskContainer"
+      >
+        <div
+          class="ResolveRiskContainer--header"
+        >
+          <p
+            class="ResolveRiskContainer__heading"
+          >
+            This Risk was the result of 
+            <a
+              href="/dashboard/spotlight/michael%40altitudenetworks.com"
+            >
+              michael@altitudenetworks.com
+            </a>
+            <br />
+             having permission to access 7 files.
+          </p>
+          <div
+            class="ResolveRiskContainer__heading--action"
+          >
+            <button
+              class="Button Button--primary Button--primary"
+              type="button"
+            >
+              REMOVE ALL FILE ACCESS
+            </button>
+          </div>
+          <span />
+          <hr
+            class="ResolveRiskContainer__heading--hr"
+          />
+        </div>
+        <div
+          class="ResolveRiskContainer--wrapper"
+        >
+          <div
+            class="Typography Typography--h4 Typography--normal ResolveRiskContainer--wrapper-heading"
+          >
+            Files Accessible by External Account 
+            <a
+              href="/dashboard/spotlight/michael%40altitudenetworks.com"
+            >
+              michael@altitudenetworks.com
+            </a>
+          </div>
+          <div
+            class="FilesAccessed"
+          >
+            <div
+              class="Typography Typography--label Typography--normal FilesAccessed__label"
+            >
+              7
+               
+              files
+               in total
+            </div>
+            <div
+              class="Table "
+            >
+              <table
+                class="Table__table"
+              >
+                <thead>
+                  <tr
+                    class="Table__heading"
+                  >
+                    <th
+                      class="Table__heading-cell"
+                    >
+                      <span>
+                        file
+                      </span>
+                    </th>
+                    <th
+                      class="Table_heading-cell"
+                    />
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="Table__row"
+                  >
+                    <td
+                      class="Table__cell"
+                    >
+                      <span
+                        class="DescriptionCell"
+                      >
+                        <a
+                          href="/dashboard/file/1twMLSepL5JXTtvfZvdJAEQ6Vc3jDsxH_xkPRql8QuBA"
+                        >
+                          test-external
+                        </a>
+                      </span>
+                    </td>
+                    <td
+                      class="Table__cell"
+                    >
+                      <a
+                        href="//permissions/1twMLSepL5JXTtvfZvdJAEQ6Vc3jDsxH_xkPRql8QuBA?modalPage=1"
+                      >
+                        <button
+                          class="Button Button--secondary Button--size-small"
+                          type="button"
+                        >
+                          Edit Permissions
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr
+                    class="Table__row"
+                  >
+                    <td
+                      class="Table__cell"
+                    >
+                      <span
+                        class="DescriptionCell"
+                      >
+                        <a
+                          href="/dashboard/file/1QtwZk6fMLR2rbZOMCzKaqyqA5uqiJgq35hE-Sfya6l4"
+                        >
+                          FileSharedExternally
+                        </a>
+                      </span>
+                    </td>
+                    <td
+                      class="Table__cell"
+                    >
+                      <a
+                        href="//permissions/1QtwZk6fMLR2rbZOMCzKaqyqA5uqiJgq35hE-Sfya6l4?modalPage=1"
+                      >
+                        <button
+                          class="Button Button--secondary Button--size-small"
+                          type="button"
+                        >
+                          Edit Permissions
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr
+                    class="Table__row"
+                  >
+                    <td
+                      class="Table__cell"
+                    >
+                      <span
+                        class="DescriptionCell"
+                      >
+                        <a
+                          href="/dashboard/file/0APHZWbLMYZLHUk9PVA"
+                        >
+                          Drive
+                        </a>
+                      </span>
+                    </td>
+                    <td
+                      class="Table__cell"
+                    >
+                      <a
+                        href="//permissions/0APHZWbLMYZLHUk9PVA?modalPage=1"
+                      >
+                        <button
+                          class="Button Button--secondary Button--size-small"
+                          type="button"
+                        >
+                          Edit Permissions
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr
+                    class="Table__row"
+                  >
+                    <td
+                      class="Table__cell"
+                    >
+                      <span
+                        class="DescriptionCell"
+                      >
+                        <a
+                          href="/dashboard/file/0Bw5MKqz8XL31c3RhcnRlcl9maWxl"
+                        >
+                          Getting started
+                        </a>
+                      </span>
+                    </td>
+                    <td
+                      class="Table__cell"
+                    >
+                      <a
+                        href="//permissions/0Bw5MKqz8XL31c3RhcnRlcl9maWxl?modalPage=1"
+                      >
+                        <span
+                          class="TooltipButton trigger"
+                        >
+                          <button
+                            class="Button Button--disabled Button--secondary Button--size-small"
+                            type="button"
+                          >
+                            Edit Permissions
+                          </button>
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr
+                    class="Table__row"
+                  >
+                    <td
+                      class="Table__cell"
+                    >
+                      <span
+                        class="DescriptionCell"
+                      >
+                        <a
+                          href="/dashboard/file/1CL7KqjXvMhRHKrRzoz77IMmxmi7On7Ev"
+                        >
+                          test_from_jupyter
+                        </a>
+                      </span>
+                    </td>
+                    <td
+                      class="Table__cell"
+                    >
+                      <a
+                        href="//permissions/1CL7KqjXvMhRHKrRzoz77IMmxmi7On7Ev?modalPage=1"
+                      >
+                        <span
+                          class="TooltipButton trigger"
+                        >
+                          <button
+                            class="Button Button--disabled Button--secondary Button--size-small"
+                            type="button"
+                          >
+                            Edit Permissions
+                          </button>
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr
+                    class="Table__row"
+                  >
+                    <td
+                      class="Table__cell"
+                    >
+                      <span
+                        class="DescriptionCell"
+                      >
+                        <a
+                          href="/dashboard/file/1ijMT05DsyedURDteWNj6y6yWfQOhLGdv"
+                        >
+                          bitcoin.png
+                        </a>
+                      </span>
+                    </td>
+                    <td
+                      class="Table__cell"
+                    >
+                      <a
+                        href="//permissions/1ijMT05DsyedURDteWNj6y6yWfQOhLGdv?modalPage=1"
+                      >
+                        <span
+                          class="TooltipButton trigger"
+                        >
+                          <button
+                            class="Button Button--disabled Button--secondary Button--size-small"
+                            type="button"
+                          >
+                            Edit Permissions
+                          </button>
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr
+                    class="Table__row"
+                  >
+                    <td
+                      class="Table__cell"
+                    >
+                      <span
+                        class="DescriptionCell"
+                      >
+                        <a
+                          href="/dashboard/file/1Rtyg3zaPmpo-6qI6VTn0ngP10uSiFLIogodIL59v-xI"
+                        >
+                          shared with thoughtlabs
+                        </a>
+                      </span>
+                    </td>
+                    <td
+                      class="Table__cell"
+                    >
+                      <a
+                        href="//permissions/1Rtyg3zaPmpo-6qI6VTn0ngP10uSiFLIogodIL59v-xI?modalPage=1"
+                      >
+                        <span
+                          class="TooltipButton trigger"
+                        >
+                          <button
+                            class="Button Button--disabled Button--secondary Button--size-small"
+                            type="button"
+                          >
+                            Edit Permissions
+                          </button>
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                class="Table__children"
+              >
+                <div
+                  class="EntityCountPagination"
+                >
+                  <div />
+                  <div
+                    class="EntityCountPagination__pagination-info"
+                  >
+                    <div
+                      class="EntityCountPagination__page-size EntityCountPagination__items-count"
+                    >
+                      <span>
+                        Displaying 10 Items Per Page
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,381 @@
+/*###### ABOUT US ######*/
+
+.about-section {
+  padding: 40px 0;
+
+  &__container {
+    max-width: 930px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #171c27;
+  }
+  
+  &__text {
+    &, p {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      color: #6e6e6e;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__hr {
+    margin-bottom: 0;
+  }
+}
+
+.about-hero-section {
+  padding: 50px 0;
+  background-image: radial-gradient(circle at 50% 61%, rgba(255, 255, 255, 0.9), rgba(253, 253, 253, 0.9) 53%, rgba(248, 248, 248, 0.9));
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+  }
+  
+  &__text {
+    max-width: 900px;
+    flex: 1;
+  }
+  
+  &__image {
+    display: none;
+    justify-content: center;
+    margin: 15px 15px 0;
+  
+    @media screen and (min-width: 992px) {
+      display: flex;
+      position: absolute;
+      right: -60px;
+      top: 160px;
+    }
+  }
+
+  &__bits {
+    width: 100px;
+  }
+}
+
+.about-founders-section {
+  padding-bottom: 0;
+}
+
+.about-team-section {
+  display: flex;
+  justify-content: center;
+  
+  img {
+    width: 100%;
+    max-width: 940px;
+  }
+
+  p {
+    color: #6e6e6e;
+  }
+
+}
+
+.founder-item {
+  margin: 54px 0;
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  
+  &__image {
+    background-size: cover;
+    background-position: center;
+    width: 220px;
+    height: 220px;
+  }
+  
+  &__details {
+    max-width: 620px;
+    margin-top: 33px;
+  
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+      margin-left: 33px;
+    }
+  }
+  
+  &__name {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #171c27;
+    margin-bottom: 0;
+  }
+  
+  &__role {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #6e6e6e;
+    margin-bottom: 11px;
+  }
+  
+  &__role * {
+    vertical-align: middle;
+  }
+  
+  &__role img {
+    margin-left: 10px;
+  }
+  
+  &__text {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #6e6e6e;
+  }
+}
+
+.about-board-section {
+  &__descr {
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    @media screen and (min-width: 768px) {
+      width: 630px;
+    }
+  }
+
+  &__dots {
+    position: relative;
+    height: 90px;
+    width: 100px;
+    display: none;
+    left: 100px;
+    top: -23px;
+    
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__red-dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+  }
+  
+  &__blue-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+  }
+
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__investors {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+    @media screen and (min-width: 768px) {
+      width: 25%;
+    }
+    
+    @media screen and (min-width: 1140px) {
+      width: 50%;
+    }
+  }
+
+  &__advisors {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      width: 75%;
+    }
+  
+    @media screen and (min-width: 1140px) {
+      width: 50%;
+    }
+  }
+}
+
+.board-investor {
+  width: 50%;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: 50%;
+  }
+
+  &__logo {
+    background-color: rgba(48, 48, 48, 0.7);
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+
+    @media screen and (min-width: 1500px) {
+      height: 50px;
+    }
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #171c27;
+  }
+}
+
+.board-headshot {
+  position: relative;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f7f9fa;
+  cursor: pointer;
+
+  $this: &;
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  &__logo img {
+    width: 70%;
+    margin-bottom: 11px;
+  }
+  
+  &__details {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 200ms ease-in-out;
+    background-color: #0177ff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+    color: #ffffff;
+    overflow: auto;
+
+    h6 {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.43;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-family: Montserrat;
+      font-size: 11px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+    
+  }
+
+  @media screen and (min-width: 1140px) {
+    justify-content: flex-start;
+  }
+
+  &:hover #{$this}__details {
+    opacity: 1;
+  }
+}
+
+.board-advisor {
+  width: 50%;
+
+  @media screen and (min-width: 560px) {
+    width: 33.3333%;
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: 25%;
+
+    &#adam-f {
+      width: 33%;
+      padding-right: 8%;
+    }
+  }
+
+  .board-headshot__details p {
+    @media screen and (min-width: 1140px) {
+      font-size: 9px;
+    }
+  }
+}

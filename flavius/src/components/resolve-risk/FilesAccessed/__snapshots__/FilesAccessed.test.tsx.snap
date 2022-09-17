@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilesAccessed renders correctly 1`] = `
+<div>
+  <div
+    class="FilesAccessed"
+  >
+    <div
+      class="Typography Typography--label Typography--normal FilesAccessed__label"
+    >
+      2
+       
+      files
+       in total
+    </div>
+    <div
+      class="Table "
+    >
+      <table
+        class="Table__table"
+      >
+        <thead>
+          <tr
+            class="Table__heading"
+          >
+            <th
+              class="Table__heading-cell"
+            >
+              <span>
+                file
+              </span>
+            </th>
+            <th
+              class="Table_heading-cell"
+            />
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="Table__row"
+          >
+            <td
+              class="Table__cell"
+            >
+              <span
+                class="DescriptionCell"
+              >
+                <a
+                  href="/dashboard/file/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3"
+                >
+                  Quarterly Earnings
+                </a>
+              </span>
+            </td>
+            <td
+              class="Table__cell"
+            >
+              <a
+                href="//permissions/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3?modalPage=1"
+              >
+                <span
+                  class="TooltipButton trigger"
+                >
+                  <button
+                    class="Button Button--disabled Button--secondary Button--size-small"
+                    type="button"
+                  >
+                    Edit Permissions
+                  </button>
+                </span>
+              </a>
+            </td>
+          </tr>
+          <tr
+            class="Table__row"
+          >
+            <td
+              class="Table__cell"
+            >
+              <span
+                class="DescriptionCell"
+              >
+                <a
+                  href="/dashboard/file/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3"
+                >
+                  Quarterly Earnings
+                </a>
+              </span>
+            </td>
+            <td
+              class="Table__cell"
+            >
+              <a
+                href="//permissions/1ghSxcB-ETCezb9odJLeHJufyFrBC_cG3?modalPage=1"
+              >
+                <span
+                  class="TooltipButton trigger"
+                >
+                  <button
+                    class="Button Button--disabled Button--secondary Button--size-small"
+                    type="button"
+                  >
+                    Edit Permissions
+                  </button>
+                </span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="Table__children"
+      >
+        <div
+          class="EntityCountPagination"
+        >
+          <div />
+          <div
+            class="EntityCountPagination__pagination-info"
+          >
+            <div
+              class="EntityCountPagination__page-size EntityCountPagination__items-count"
+            >
+              <span>
+                Displaying 1 Items Per Page
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

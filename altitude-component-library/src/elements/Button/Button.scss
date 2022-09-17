@@ -1,0 +1,135 @@
+@import '../../styles/_shared.scss';
+
+@mixin button-action-style(
+  $color,
+  $background,
+  $border-color,
+  $color-hover: white,
+  $background-hover: $CTA_HOVER_COLOR,
+  $border-color-hover: $CTA_HOVER_COLOR
+) {
+  color: $color;
+  background-color: $background;
+  border: 1px solid $border-color;
+
+  &:hover {
+    color: $color-hover;
+    background-color: $background-hover;
+    border: 1px solid $border-color-hover;
+  }
+}
+
+.Button {
+  @include set-typography('LABEL', 'semibold');
+  line-height: 22px;
+  user-select: none;
+
+  display: block;
+  padding: 8px 22px;
+
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: background-color $TRANSITION_DURATION ease-in-out, color $TRANSITION_DURATION ease-in-out,
+    border $TRANSITION_DURATION ease-in-out;
+
+  &__spinner {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    color: inherit;
+  }
+
+  &--primary {
+    @include button-action-style(
+      $CTA_SECONDARY_COLOR,
+      $MAIN_BRAND_COLOR,
+      $MAIN_BRAND_COLOR,
+      white,
+      $MAIN_BRAND_WASHED,
+      $MAIN_BRAND_WASHED
+    );
+  }
+
+  &--secondary {
+    @include set-typography('LABEL', 'normal');
+    @include button-action-style($CTA_COLOR, $CTA_SECONDARY_COLOR, $CTA_COLOR);
+    &:hover {
+      background: $VIBRANT_BLUE;
+      border: 1px solid $VIBRANT_BLUE_ACCENT;
+    }
+  }
+
+  &--tertiary {
+    @include button-action-style(
+      $VIBRANT_BLUE,
+      $CTA_SECONDARY_COLOR,
+      $VIBRANT_BLUE,
+      $VIBRANT_BLUE,
+      white,
+      $VIBRANT_BLUE
+    );
+
+    &:hover {
+      box-shadow: 0 1px 3px 0 #80bbff, 0 0 3px 0 #80bbff;
+    }
+  }
+
+  &--cancel-primary {
+    @include button-action-style(white, $AZURE, $CTA_COLOR);
+  }
+
+  &--cancel-secondary {
+    @include button-action-style(white, $SILVER, $SILVER);
+  }
+
+  &--alert {
+    @include button-action-style($CTA_SECONDARY_COLOR, $TOMATO, $TOMATO, $TOMATO, $CTA_SECONDARY_COLOR, $TOMATO);
+  }
+
+  &--disabled {
+    @include button-action-style($SILVER, white, $SILVER, $SILVER, white, $SILVER);
+    cursor: default;
+    &:hover {
+      box-shadow: 0 1px 3px 0 $SILVER, 0 0 3px 0 $SILVER;
+    }
+  }
+
+  &--pagination {
+    @include set-typography('BODY_TINY', 'normal');
+    padding: 8px 18px;
+    @include button-action-style(
+      $PAGINATION_SIDE_TEXT_COLOR,
+      white,
+      $PAGINATION_BORDER_COLOR,
+      $PAGINATION_ACTIVE_TEXT_COLOR,
+      white,
+      $PAGINATION_ACTIVE_TEXT_COLOR
+    );
+
+    &:disabled {
+      @include button-action-style(
+        $PAGINATION_BORDER_COLOR,
+        white,
+        $PAGINATION_BORDER_COLOR,
+        $PAGINATION_BORDER_COLOR,
+        white,
+        $PAGINATION_BORDER_COLOR
+      );
+    }
+  }
+
+  &--size-large {
+    padding: 8px 28px;
+    @include set-typography('LABEL_LARGE', 'bold');
+  }
+
+  &--size-small {
+    padding: 4px 20px;
+    @include set-typography('BODY_TINY', 'bold');
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

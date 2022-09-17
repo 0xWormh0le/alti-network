@@ -1,0 +1,52 @@
+name: Prod - Deploy External Site
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  build_deploy_services:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+      - name: Install dependencies
+        run: |
+          node --version
+          npm --version
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          nvm install v10
+          nvm use v10
+          node --version
+          npm --version
+          mkdir -p build
+      - name: Building External Site
+        run: |
+          npm install
+          npm run build
+      - name: Deploy External Site to Prod S3
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_PROD }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_PROD }}"
+          AWS_REGION: us-west-2
+        run: |
+          export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+          export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+          aws configure set preview.cloudfront true
+          aws s3 sync build/ s3://altitude-prod-external-site-bucket
+      - name: Create a CloudFront Invalidation
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID_PROD }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY_PROD }}"
+          AWS_REGION: us-west-2
+        run: |
+          export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+          export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+          aws cloudfront create-invalidation --distribution-id E3TQSOQSOKA2XP --paths "/*"  --output text

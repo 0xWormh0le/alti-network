@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VisibilityIndicator renders external indicator correctly 1`] = `
+<div>
+  <div
+    class="VisibilityIndicator VisibilityIndicator--external"
+  >
+    External
+  </div>
+</div>
+`;
+
+exports[`VisibilityIndicator renders internal indicator correctly 1`] = `
+<div>
+  <div
+    class="VisibilityIndicator VisibilityIndicator--internal"
+  >
+    Internal
+  </div>
+</div>
+`;

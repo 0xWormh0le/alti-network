@@ -1,0 +1,342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhraseTable renders a placeholder with error message if hasError prop is set 1`] = `
+<div>
+  <div
+    class="ErrorBox"
+  >
+    <div
+      class="ErrorBox__message-container"
+    >
+      <div
+        class="ErrorBox__main-message"
+      >
+        Unable to retrieve Sensitive Phrases at this time.
+      </div>
+      <div
+        class="ErrorBox__secondary-message"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PhraseTable renders content loader while loading 1`] = `
+<div>
+  <svg
+    aria-labelledby="phrase-table-loading-aria"
+    class="PhraseTableLoading"
+    height="300"
+    preserveAspectRatio="none"
+    role="img"
+  >
+    <title
+      id="phrase-table-loading-aria"
+    >
+      Loading...
+    </title>
+    <rect
+      clip-path="url(#phrase-table-loading-diff)"
+      height="100%"
+      role="presentation"
+      style="fill: url(#phrase-table-loading-animated-diff);"
+      width="100%"
+      x="0"
+      y="0"
+    />
+    <defs
+      role="presentation"
+    >
+      <clippath
+        id="phrase-table-loading-diff"
+      >
+        <rect
+          height="60"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <rect
+          height="60"
+          width="100%"
+          x="0"
+          y="120"
+        />
+        <rect
+          height="60"
+          width="100%"
+          x="0"
+          y="240"
+        />
+      </clippath>
+      <lineargradient
+        id="phrase-table-loading-animated-diff"
+      >
+        <stop
+          offset="0%"
+          stop-color="#f0f0f0"
+          stop-opacity="1"
+        >
+          <animate
+            attributeName="offset"
+            dur="1.2s"
+            keyTimes="0; 0.25; 1"
+            repeatCount="indefinite"
+            values="-2; -2; 1"
+          />
+        </stop>
+        <stop
+          offset="50%"
+          stop-color="#f7f7f7"
+          stop-opacity="1"
+        >
+          <animate
+            attributeName="offset"
+            dur="1.2s"
+            keyTimes="0; 0.25; 1"
+            repeatCount="indefinite"
+            values="-1; -1; 2"
+          />
+        </stop>
+        <stop
+          offset="100%"
+          stop-color="#f0f0f0"
+          stop-opacity="1"
+        >
+          <animate
+            attributeName="offset"
+            dur="1.2s"
+            keyTimes="0; 0.25; 1"
+            repeatCount="indefinite"
+            values="0; 0; 3"
+          />
+        </stop>
+      </lineargradient>
+    </defs>
+  </svg>
+</div>
+`;
+
+exports[`PhraseTable renders correctly 1`] = `
+<div>
+  <div
+    class="Table PhraseTable"
+  >
+    <table
+      class="Table__table"
+    >
+      <thead>
+        <tr
+          class="Table__heading"
+        >
+          <th
+            class="Table__heading-cell"
+          >
+            <span>
+              sensitive phrase
+            </span>
+          </th>
+          <th
+            class="Table__heading-cell"
+          >
+            <span>
+              exact matching
+            </span>
+          </th>
+          <th
+            class="Table_heading-cell"
+          />
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <div
+              class="Phrase Phrase--sm"
+            >
+              comp
+            </div>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <svg
+              class="PhraseRow__icon"
+              height="9"
+              viewBox="0 0 13 9"
+              width="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.188 1.824L5.452 8.687a1.06 1.06 0 0 1-1.506 0L.812 5.541a1.072 1.072 0 0 1 0-1.511 1.062 1.062 0 0 1 1.506 0l2.381 2.39L10.682.313a1.062 1.062 0 0 1 1.506 0 1.071 1.071 0 0 1 0 1.511z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button PhraseTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <div
+              class="Phrase Phrase--sm"
+            >
+              financial
+            </div>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <svg
+              class="PhraseRow__icon"
+              height="9"
+              viewBox="0 0 13 9"
+              width="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.188 1.824L5.452 8.687a1.06 1.06 0 0 1-1.506 0L.812 5.541a1.072 1.072 0 0 1 0-1.511 1.062 1.062 0 0 1 1.506 0l2.381 2.39L10.682.313a1.062 1.062 0 0 1 1.506 0 1.071 1.071 0 0 1 0 1.511z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button PhraseTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <div
+              class="Phrase Phrase--sm"
+            >
+              internal
+            </div>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <svg
+              class="PhraseRow__icon"
+              height="9"
+              viewBox="0 0 13 9"
+              width="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.188 1.824L5.452 8.687a1.06 1.06 0 0 1-1.506 0L.812 5.541a1.072 1.072 0 0 1 0-1.511 1.062 1.062 0 0 1 1.506 0l2.381 2.39L10.682.313a1.062 1.062 0 0 1 1.506 0 1.071 1.071 0 0 1 0 1.511z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </td>
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button PhraseTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <div
+              class="Phrase Phrase--sm"
+            >
+              earnings
+            </div>
+          </td>
+          <td
+            class="Table__cell"
+          />
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button PhraseTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="Table__row"
+        >
+          <td
+            class="Table__cell"
+          >
+            <div
+              class="Phrase Phrase--sm"
+            >
+              external
+            </div>
+          </td>
+          <td
+            class="Table__cell"
+          />
+          <td
+            class="Table__cell"
+          >
+            <button
+              class="Button PhraseTable__delete Button--pagination"
+              type="button"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`PhraseTable renders no results placeholder if empty sensitive phrases are passed 1`] = `
+<div>
+  <div
+    class="PhraseTable__no-results"
+  >
+    <p
+      class="Typography Typography--body-large PhraseTable__no-results-text"
+    >
+      No Sensitive Phrases created.
+    </p>
+  </div>
+</div>
+`;

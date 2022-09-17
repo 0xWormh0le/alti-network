@@ -1,0 +1,20 @@
+@import 'styles/_shared.scss';
+
+.RiskSettings {
+  position: relative;
+
+  &__configuration {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__information {
+    margin-left: $LARGE_SPACING;
+    max-width: 17rem;
+  }
+
+  &__tabs {
+    margin: $PAGE_MARGIN;
+    max-width: 55em;
+  }
+}
